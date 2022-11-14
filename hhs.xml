@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Holzhandel Schubert</name>
+	<kuerzel>HHS</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>RiSch395</modulnr>
+	<plan src="hhs.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Strecke</name>
+				<laenge einheit="cm"></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Ladestrg">
+				<name>1</name>
+				<laenge>500</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="Ladestr" gleis="Ladestrg">
+			<name>Holzhandel Schubert</name>
+			<laenge>400</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Holzhandel Schubert</name>
+			<empfang>
+				<ladegut ladestelle="Ladestr">
+					<name>Schnittholz</name>
+					<gattung>E, R, K, S</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Stammholz</name>
+					<gattung>E, R, K, S, L</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Bauelemente</name>
+					<gattung>H, E, R, K, S, G</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+				    <name>Holzschutzmittel</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+				    <name>Nägel, Schrauben, Beschläge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>				
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestr">
+					<name>Stammholz</name>
+					<gattung>E, R, K, S</gattung>
+					<wagen zeitraum="tag">1.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Schnittholz</name>
+					<gattung>E, R, K, S</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>							
+				<ladegut ladestelle="Ladestr">
+				    <name>Sägespäne</name>
+					<gattung>T</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+				    <name>Telegrafenmasten, Rammpfähle</name>
+					<gattung>R, S, L, K</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>leere Holzschutzmittelfäser</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Gartenzäune</name>
+					<gattung>H, G</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Europaletten, Holzkisten</name>
+					<gattung>G, H, E</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestr">
+					<name>Brennholz</name>
+					<gattung>G, Dienst</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<bemerkung>vorrangig 2-achsige Güterwagen,[br]bei Zustellung von 4-achsigen, oder Drehschemelwagen Überprüfung der Abstellkapazitäten an der Ladestr.</bemerkung>
+	</gv>
+	<bemerkung>Betriebstelle sollte von einem Bahnhof aus bedient werden.[br]Modul besitzt einen Wattenscheider Schacht für ein Signal</bemerkung>
+</bahnhof>

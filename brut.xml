@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Brunnthal</name>
+  <kuerzel>BRUT</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>TTBay211</modulnr>
+  <plan src="brut.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="G1">
+        <name>1</name>
+        <laenge einheit="mm">1800.0</laenge>
+        <bemerkung>Hausbahnsteig 1</bemerkung>
+      </gleis>
+      <gleis id="G2">
+        <name>2</name>
+        <laenge einheit="mm">1900.0</laenge>
+        <bemerkung>Umfahrgleis/Bahnsteig 2</bemerkung>
+      </gleis>
+      <gleis id="G3">
+        <name>3</name>
+        <laenge einheit="mm">1780.0</laenge>
+        <bemerkung>Güterzugbehandlungsgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge einheit="mm">650.0</laenge>
+        <bemerkung>Kohlehandel</bemerkung>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge einheit="mm">1110.0</laenge>
+        <bemerkung>Güterhalle</bemerkung>
+      </gleis>
+      <gleis id="gleis_13">
+        <name>13</name>
+        <laenge einheit="mm">1240.0</laenge>
+        <bemerkung>Ladestrasse</bemerkung>
+      </gleis>
+      <gleis id="gleis_21">
+        <name>21</name>
+        <laenge einheit="mm">570.0</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge einheit="mm">290.0</laenge>
+        <bemerkung>Umfahrstutzen</bemerkung>
+      </gleis>
+      <gleis id="gleis_23">
+        <name>23</name>
+        <laenge einheit="mm">420.0</laenge>
+        <bemerkung>Kopf-/Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_24">
+        <name>24</name>
+        <laenge einheit="mm">910.0</laenge>
+        <bemerkung>Schrotthandel</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="G1">
+      <name>Bahnsteig 1</name>
+      <laenge einheit="mm">1050.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="G2">
+      <name>Bahnsteig 2</name>
+      <laenge einheit="mm">1050</laenge>
+    </bahnsteig>
+    <bemerkung>Berufs- und Schülerverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Kohlehandel" gleis="gleis_11">
+      <name>Kohlehandel</name>
+      <laenge einheit="mm">500.0</laenge>
+    </ladestelle>
+    <ladestelle id="G_terhalle" gleis="gleis_12">
+      <name>Güterhalle</name>
+      <laenge einheit="mm">140.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestrasse" gleis="gleis_13">
+      <name>Ladestrasse</name>
+      <laenge einheit="mm">1240.0</laenge>
+    </ladestelle>
+    <ladestelle id="Lok-Einsatzstelle" gleis="gleis_21">
+      <name>Lok-Einsatzstelle</name>
+      <laenge einheit="mm">570.0</laenge>
+    </ladestelle>
+    <ladestelle id="Kopf-_Seitenrampe" gleis="gleis_23">
+      <name>Kopf-/Seitenrampe</name>
+      <laenge einheit="mm">420.0</laenge>
+    </ladestelle>
+    <ladestelle id="Schrotthandel" gleis="gleis_24">
+      <name>Schrotthandel</name>
+      <laenge einheit="mm">490.0</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgut" gleis="gleis_12">
+      <name>Stückgut</name>
+      <laenge einheit="mm">0.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Lokeinsatzstelle</name>
+      <empfang>
+        <ladegut ladestelle="Kohlehandel">
+          <name>Lokkohle, Tauschteile, Schmierstoffe</name>
+          <gattung>G, E, K, X</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel K. Laus</name>
+      <empfang>
+        <ladegut ladestelle="Kohlehandel">
+          <name>Kohle</name>
+          <gattung>E/F</gattung>
+          <wagen zeitraum="tag">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlehandel">
+          <name>Koks</name>
+          <gattung>E/F</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Lkw</name>
+          <gattung>S/K/R/L</gattung>
+          <wagen zeitraum="tag">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Maschinen</name>
+          <gattung>G/H/S/K/R/L</gattung>
+          <wagen zeitraum="tag">0.2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Autohaus K. Nattermann</name>
+      <empfang>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Pkw</name>
+          <gattung>L/K/R/S</gattung>
+          <wagen zeitraum="woche">4.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Kleintransporter</name>
+          <gattung>L/K/R/S</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Deutsche Post Fernmeldedienst Oberndorf</name>
+      <empfang>
+        <ladegut ladestelle="Kopf-_Seitenrampe Schrotthandel">
+          <name>Kabel</name>
+          <gattung>S/K/R/L</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Kabelsteine</name>
+          <gattung>E/S/K/R/L</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse Kopf-_Seitenrampe">
+          <name>Telegrafenmasten</name>
+          <gattung>E/S/K/R/L</gattung>
+          <wagen zeitraum="tag">0.3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Fernmeldetechnik</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>leere Kabeltrommeln</name>
+          <gattung>S/K/R/L</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG(P) Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Traktoren/Maschinen</name>
+          <gattung>K/R/S/L</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>NVA Bohrsdorf</name>
+      <empfang>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Militärtechnik</name>
+          <gattung>S/R/K/L</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopf-_Seitenrampe">
+          <name>Militärtechnik</name>
+          <gattung>S/K/R/L</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Spezialglaswerk Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Quarzsand</name>
+          <gattung>Uc</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Soda</name>
+          <gattung>Uc</gattung>
+          <wagen zeitraum="tag">0.2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Laborglas (auch als Stückgut)</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Konservenfabrik Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Weißblech</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Konservengläser</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Gemüsekonserven (auch als Stückgut)</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BHG Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Dünger</name>
+          <gattung>Td</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Baumaterial</name>
+          <gattung>G/H/E/K/R</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaft Brunnthal</name>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Rohholz</name>
+          <gattung>E/K/R</gattung>
+          <wagen zeitraum="tag">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Feuerholz</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Schuhhandwerk</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgut">
+          <name>Halbzeuge als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgut">
+          <name>Pappe als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="St_ckgut">
+          <name>Arbeitsschuhe als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgut">
+          <name>Arbeitsstiefel als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Elektro Oberndorf</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgut">
+          <name>Halbzeuge als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="St_ckgut">
+          <name>Heizelemente als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>GHG Haushaltswaren</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgut">
+          <name>Haushaltsartikel als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>PGH Feinmechanik Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgut">
+          <name>Halbzeuge als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="St_ckgut">
+          <name>Rändelschrauben als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgut">
+          <name>Gewindestangen als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgut">
+          <name>Kleinteile als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB ESDA Werk Brunnthal</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgut">
+          <name>Garne als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="St_ckgut">
+          <name>Strümpfe als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Schrotthandel R.Ost</name>
+      <versand>
+        <ladegut ladestelle="Schrotthandel">
+          <name>Eisenschrott</name>
+          <gattung>E/R/K</gattung>
+          <wagen zeitraum="tag">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Schrotthandel">
+          <name>Kupferschrott</name>
+          <gattung>E/R/K</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Sassnitz Bahnhof</name>
+  <kuerzel>SAS</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>AnNeu228</modulnr>
+  <plan src="sas.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <links nr="2">1gl</links>
+      <rechts nr="1">2gl</rechts>
+      <rechts nr="2">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">300</laenge>
+        <bemerkung>Hausbahnsteig P-Züge</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="cm">250</laenge>
+        <bemerkung>Inselbahnsteig P-Züge/Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">250</laenge>
+        <bemerkung>Güterverkehrsgleis von Stralsund</bemerkung>
+      </gleis>
+      <gleis id="gleis_3a">
+        <name>3a</name>
+        <laenge einheit="cm">180</laenge>
+        <bemerkung>Güterverkehrsgleis verkürzt von SAS Hafen</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">225</laenge>
+        <bemerkung>Abstellgruppe Nord Fremdspeisung möglich</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">225</laenge>
+        <bemerkung>Abstellgruppe Nord Fremdspeisung möglich</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="cm">195</laenge>
+        <bemerkung>Abstellgruppe Nord ohne Versorgung</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="cm">195</laenge>
+        <bemerkung>Abstellgruppe Nord ohne Versorgung</bemerkung>
+      </gleis>
+      <gleis id="gleis_9">
+        <name>9</name>
+        <laenge einheit="cm">15</laenge>
+        <bemerkung>Lokwartestelle Süd</bemerkung>
+      </gleis>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge einheit="cm">60</laenge>
+        <bemerkung>Güterschuppen offene Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge einheit="cm">50</laenge>
+        <bemerkung>Kopframpe</bemerkung>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge einheit="cm">80</laenge>
+        <bemerkung>Ladestraße und Ausziehgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_13">
+        <name>13</name>
+        <laenge einheit="cm">55</laenge>
+        <bemerkung>Baustoff und Kohlehandel</bemerkung>
+      </gleis>
+      <gleis id="gleis_14">
+        <name>14</name>
+        <laenge einheit="cm">115</laenge>
+        <bemerkung>Ausziehgleis Fischfabrik WÜST</bemerkung>
+      </gleis>
+      <gleis id="gleis_15">
+        <name>15</name>
+        <laenge einheit="cm">58</laenge>
+        <bemerkung>Fischfabrik Rampengleis Ladegleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_16">
+        <name>16</name>
+        <laenge einheit="cm">58</laenge>
+        <bemerkung>Fischfabrik Warte/Vorhaltegleisgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_17">
+        <name>17</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Tanklager 4 Pumpstationen</bemerkung>
+      </gleis>
+      <gleis id="gleis_BW1">
+        <name>BW1</name>
+        <laenge einheit="cm">70</laenge>
+        <bemerkung>Mitropa Wagen-Behandlung</bemerkung>
+      </gleis>
+      <gleis id="gleis_BW2">
+        <name>BW2</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Lokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_BW3">
+        <name>BW3</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Lokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_BW4">
+        <name>BW4</name>
+        <laenge einheit="cm">50</laenge>
+        <bemerkung>Dieseltankstelle, Notbekohlung, Wasser</bemerkung>
+      </gleis>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="cm">135</laenge>
+        <bemerkung>Ausziehgleis Süd, Mindestlänge</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="cm">135</laenge>
+        <bemerkung>Ausziehgleis Nord,</bemerkung>
+      </gleis>
+      <gleis id="gleis_18">
+        <name>18</name>
+        <laenge einheit="cm">80</laenge>
+        <bemerkung>IBahngleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="cm">45</laenge>
+        <bemerkung>Militärverladerampe, Gesamtgleis 230cm</bemerkung>
+      </gleis>
+      <gleis id="gleis_3b">
+        <name>3b</name>
+        <laenge einheit="cm">24</laenge>
+        <bemerkung>Roco Sounddrehscheibe</bemerkung>
+      </gleis>
+      <gleis id="gleis_10a">
+        <name>10a</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Kreideverladung Straße auf Schiene</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1 Hausbahnsteig</name>
+      <laenge einheit="cm">280</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2">
+      <name>2 Inselbahnsteig</name>
+      <laenge einheit="cm">245</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="G_terschuppen" gleis="gleis_10">
+      <name>Güterschuppen</name>
+      <laenge einheit="cm">30</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="gleis_10">
+      <name>Seitenrampe</name>
+      <laenge einheit="cm">30</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_13">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">80</laenge>
+    </ladestelle>
+    <ladestelle id="Kopframpe" gleis="gleis_12">
+      <name>Kopframpe</name>
+      <laenge einheit="cm">50</laenge>
+    </ladestelle>
+    <ladestelle id="Baustoff_und_Kohlehandel" gleis="gleis_13">
+      <name>Baustoff und Kohlehandel</name>
+      <laenge einheit="cm">55</laenge>
+    </ladestelle>
+    <ladestelle id="Milit_rverladung_Rampe" gleis="gleis_8">
+      <name>Militärverladung Rampe</name>
+      <laenge einheit="cm">45</laenge>
+    </ladestelle>
+    <ladestelle id="Fischfabrik_Rampe_und_Indoor" gleis="gleis_15 gleis_16">
+      <name>Fischfabrik, Rampe und Indoor</name>
+      <laenge einheit="cm">58</laenge>
+    </ladestelle>
+    <ladestelle id="Mitropa_Wagenbehandlung" gleis="gleis_BW1">
+      <name>Mitropa Wagenbehandlung</name>
+      <laenge einheit="cm">70</laenge>
+    </ladestelle>
+    <ladestelle id="Est_Sassnitz_BW_Material" gleis="gleis_BW2 gleis_BW3">
+      <name>Est Sassnitz  BW Material</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="Est_Sassnitz_BW_Dieseltankst." gleis="gleis_BW4">
+      <name>Est Sassnitz BW Dieseltankst.</name>
+      <laenge einheit="cm">15</laenge>
+    </ladestelle>
+    <ladestelle id="Est_Sasssnitz_Notbekohlung" gleis="gleis_BW4">
+      <name>Est Sasssnitz, Notbekohlung</name>
+      <laenge einheit="cm">15</laenge>
+    </ladestelle>
+    <ladestelle id="Tanklager_Sassnitz_4_Pumpen" gleis="gleis_17">
+      <name>Tanklager Sassnitz, 4 Pumpen</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="R_genkreide_Kreideverladung" gleis="gleis_10a">
+      <name>Rügenkreide, Kreideverladung</name>
+      <laenge einheit="mm">40</laenge>
+    </ladestelle>
+    <ladestelle id="Fischfabrik_Rampe_Kulisse" gleis="gleis_16">
+      <name>Fischfabrik, Rampe Kulisse</name>
+      <laenge einheit="mm">58</laenge>
+    </ladestelle>
+    <verlader>
+      <name>GV Rostock, Aust. Sassnitz</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe Ladestra_e G_terschuppen">
+          <name>Stückgut, Ersatzteile, Konsumgüter</name>
+          <gattung>G, Post</gattung>
+          <wagen zeitraum="tag">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe G_terschuppen">
+          <name>Obst, Gemüse</name>
+          <gattung>G, T,</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe G_terschuppen">
+          <name>Getränke, Konserven</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">8</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>FDGB Zentrallager Rügen</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Getränke</name>
+          <gattung>G, Habbin</gattung>
+          <wagen zeitraum="woche">10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Verbrauchsmaterial</name>
+          <gattung>G, Habbin</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Konsumgüter</name>
+          <gattung>G,Habbin</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Leergut, Leerverpackungen,</name>
+          <gattung>G; Habbin</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>NVA Kaserne Prora</name>
+      <empfang>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Truppentransporte</name>
+          <gattung />
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Militärgerät, Panzer, Fahrzeuge</name>
+          <gattung />
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Munition</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Ersatzteile</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Verbrauchsartikel, Stückgut,</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Truppentransporte</name>
+          <gattung />
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Militärgerät, Panzer,Fahrzeuge</name>
+          <gattung />
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Milit_rverladung_Rampe">
+          <name>Reparaturen, def. Teile, Kasernenaustausch</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Est Sassnitz BW</name>
+      <empfang>
+        <ladegut ladestelle="Est_Sassnitz_BW_Material">
+          <name>Ersatzteile, Farbe, Schmierstoffe</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Est_Sassnitz_BW_Dieseltankst.">
+          <name>Diesel</name>
+          <gattung />
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Est_Sassnitz_BW_Material">
+          <name>Ersatzteile, Reparaturen</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Post</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Urlaubergepäck, Fahrräder...</name>
+          <gattung>G,Post me-bll, PW</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Postsendungen, alles</name>
+          <gattung>G, Post me-bll, Pw</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Urlaubergepäck,Fahrräder...</name>
+          <gattung>G, Post me-bll, Pw</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Postsendungen, alles</name>
+          <gattung>G, Post me-bll, Pw</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Rügenkreide</name>
+      <versand>
+        <ladegut ladestelle="R_genkreide_Kreideverladung">
+          <name>Kreide</name>
+          <gattung>UC</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Mitropa DR</name>
+      <empfang>
+        <ladegut ladestelle="Mitropa_Wagenbehandlung">
+          <name>Verbrauchsmaterial Speise-und Schlafwagen Bestückung</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Mitropa_Wagenbehandlung">
+          <name>Befüllung Speisewagen</name>
+          <gattung>Wr4g, Wrge</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohle-BHG</name>
+      <empfang>
+        <ladegut ladestelle="Mitropa_Wagenbehandlung">
+          <name>Briketts</name>
+          <gattung>Fcs, Es</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baustoff_und_Kohlehandel">
+          <name>Baustahl</name>
+          <gattung>Rmms, Samms</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Container Stückgut Werft</name>
+          <gattung>Res</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Baustoff_und_Kohlehandel">
+          <name>Holz</name>
+          <gattung>E, Res, Eaos</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Metallschrott</name>
+          <gattung>Es, E,</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baustoff_und_Kohlehandel">
+          <name>Sand</name>
+          <gattung>Es, E, Res,Eaos</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Container Stückgut Werft</name>
+          <gattung>Res</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Fischkombinat Sassnitz</name>
+      <empfang>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>Verpackungen, Pappe, Metall, Gläser</name>
+          <gattung>G, Hbis</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>Zutaten, Gemüse, Gewürze</name>
+          <gattung>T, G, Hbis</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>Zutaten flüssig, Oele, Essig, Ketchup,Saucen</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Fischfabrik_Rampe_Kulisse">
+          <name>Frischfisch, NSW</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_Kulisse Fischfabrik_Rampe_und_Indoor">
+          <name>Fischkonserven ungekühlt</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_Kulisse Fischfabrik_Rampe_und_Indoor">
+          <name>Fischkonserven gekühlt</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_Kulisse">
+          <name>Fischkonserven NSW ungekühlt</name>
+          <gattung>G, Hbis</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_Kulisse">
+          <name>Fischkonseven NSW gekühlt</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>ScomberMix DDR</name>
+          <gattung>G, Hbis</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>Frischfisch DDR</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischfabrik_Rampe_und_Indoor">
+          <name>Räucherfisch DDR</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Minol Tanklager</name>
+      <empfang>
+        <ladegut ladestelle="Tanklager_Sassnitz_4_Pumpen">
+          <name>Schweröl, Schiffsdiesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">12</wagen>
+        </ladegut>
+        <ladegut ladestelle="Tanklager_Sassnitz_4_Pumpen">
+          <name>Leichtkraftstoffe, Benzin, Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Tanklager_Sassnitz_4_Pumpen">
+          <name>Propangas</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Gasflaschen, Camping/Gewerbe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>LPG Zirkow</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe">
+          <name>schwere Landmaschinen, schwere Erntemaschinen</name>
+          <gattung>Res</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopframpe">
+          <name>Schwere Ernemaschine, schwere Landmaschinen</name>
+          <gattung>Res</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Stückgute, Paletten, Sackware, Getreide, Erbsen</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Ausziehgleis 14 Fischfabrik ausgeführt als Wüst. Am Ende von Gleis 14 Wartestelle für Werklok Fischfabrik zur Waggonübernahme.[br]Bedienung Anschluß Kreidewerk nur bei freiem Gütergleis 10 möglich.[br]Gleis 9 Warteposition Rangierlok zur schnellen Übernahme von Kurswagengruppen Richtung Sassnitz Hafen oder FDY Trelleborg.[br]Mitropa Wagenbehandlung an Gleis BW1 als Wende/Befüllortder Speise und Schlafwagen.[br]In Abstellgruppe Gl4 und Gl5 gibt es  Versorgungseinrichtungen zur Fremdspeisung von P-Zügen oder Wagengruppen.[br]Minol Tanklager an Richtigen Ort.[br]BHG im Original vorhanden, allerdings ohne Gleisanschluß.[br]Rampe, Ladestraße und Güterschuppen im Original vorhanden.[br]Anschluß Kreideverladung auf der falschen Bahnhofsseite, aber im Original vorhanden.[br]Fischfabrik im Original vorhanden, veränderte Gleisanbindung.[br]BW Teil deutlich verkleinert (halbiert).[br]Gleis 8 NVA Rampe rein fiktiv, weil Modul Truppenübungsplatz und Nähe zu Prora.[br]Drehscheibe im Original als reine Wendescheibe vorhanden, geänderte Gleisführung.[br]</bemerkung>
+  </gv>
+  <bemerkung>Bitte beachten 5,40m Variante und 6,4m Variante möglich.[br]Personen-Inselverkehr, Arbeiterpendel Richtung Bergen-Stalsund-Rostock.[br]Urlauberverkehr, Tagesgäste[br]Nationaler D-Zugverkehr[br]Internationaler D-Zugverkehr mit Kurswagen DB,"Berlinaren", "Sassnitz-Express", MAV, JS, CSD "Meridian", RZD Kurswagen Oslo.[br]Umleiter anstatt Rostock-Gedser.[br]Truppen und Fahrzeugtransporte Richtung Prora.[br]Internationaler Güterverkehr Schweden/Norwegen über Fähre Trelleborg[br]Nationaler Güterverkehr, verstärkt in den Urlaubszeiten[br]Kühlwagenverkehr großes Fischkombinat, [br]Kreideverladung nur bei 6,4m Variante möglich.[br]</bemerkung>
+</bahnhof>
+

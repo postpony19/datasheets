@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Hermsdorf-Klosterlausnitz</name>
+   <kuerzel>HKL</kuerzel>
+   <typ>Bf</typ>
+   <maszstab>120</maszstab>
+   <modulnr>GuRol233</modulnr>
+   <plan src="hkl.png"/>
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="Bf1">
+         <name>1</name>
+         <laenge>3600</laenge>
+         <bemerkung>Bahnsteig- und Kreuzungsgleis</bemerkung>
+      </gleis>
+      <gleis id="Bf2">
+         <name>2</name>
+         <laenge>3450</laenge>
+         <bemerkung>Bahnsteig- und Durchgangsgleis</bemerkung>
+      </gleis>
+      <gleis id="Bf3">
+         <name>3</name>
+         <laenge>3350</laenge>
+         <bemerkung>Güterzugbehandlungsgleis</bemerkung>
+      </gleis>
+	</hgleise>
+	<ngleise>
+      <gleis id="Bf1a">
+         <name>1a</name>
+         <laenge>500</laenge>
+         <bemerkung>Schutzgleis</bemerkung>
+      </gleis>
+      <gleis id="Bf3a">
+         <name>3a</name>
+         <laenge>500</laenge>
+         <bemerkung>Schutzgleis</bemerkung>
+      </gleis>
+      <gleis id="Bf3b">
+         <name>3b</name>
+         <laenge>1000</laenge>
+         <bemerkung>Ausziehgleis</bemerkung>
+      </gleis>
+      <gleis id="Bf4">
+         <name>4</name>
+         <laenge>1500</laenge>
+         <bemerkung>OGA</bemerkung>
+      </gleis>
+      <gleis id="Bf4a">
+         <name>4a</name>
+         <laenge>500</laenge>
+         <bemerkung>Rampengleis</bemerkung>
+      </gleis>
+      <gleis id="Bf4b">
+         <name>4b</name>
+         <laenge>500</laenge>
+         <bemerkung>Schuppengleis</bemerkung>
+      </gleis>
+      <gleis id="Bf5">
+         <name>5</name>
+         <laenge>1000</laenge>
+         <bemerkung>Anschluß ACZ</bemerkung>
+      </gleis>
+      <gleis id="Bf5a">
+         <name>5a</name>
+         <laenge>100</laenge>
+      </gleis>
+      <gleis id="Bf5b">
+         <name>5b</name>
+         <laenge>100</laenge>
+      </gleis>
+      <gleis id="KWH1">
+         <name>KWH1</name>
+         <laenge>900</laenge>
+         <bemerkung>Anschlußgleis </bemerkung>
+      </gleis>
+      <gleis id="KWH2">
+         <name>KWH2</name>
+         <laenge>900</laenge>
+         <bemerkung>Anschlugleis</bemerkung>
+      </gleis>
+      <gleis id="KWH3">
+         <name>AZG1</name>
+         <laenge>800</laenge>
+         <bemerkung>Anschlußgleis</bemerkung>
+      </gleis>
+      <gleis id="KWH4">
+         <name>AZG2</name>
+         <laenge>350</laenge>
+         <bemerkung>Anschlußgleis</bemerkung>
+      </gleis>
+	</ngleise>
+   </gleise>
+   <pv>
+      <bahnsteig gleis="Bf1">
+         <name>A</name>
+         <laenge>1000</laenge>
+      </bahnsteig>
+      <bahnsteig gleis="Bf1 Bf2">
+         <name>B</name>
+         <laenge>1000</laenge>
+      </bahnsteig>
+      <bemerkung>Berufs- und Pendlerverkehr</bemerkung>
+   </pv>
+   <gv>
+      <ladestelle id="Lad1" gleis="Bf4b">
+         <name>Güterschuppen</name>
+         <laenge>400</laenge>
+      </ladestelle>
+      <ladestelle id="Lad2" gleis="Bf4">
+         <name>Ladestraße</name>
+         <laenge>1000</laenge>
+      </ladestelle>
+      <ladestelle id="Lad3" gleis="Bf4a">
+         <name>Rampe</name>
+         <laenge>400</laenge>
+      </ladestelle>
+      <ladestelle id="Lad4" gleis="Bf5">
+         <name>ACZ</name>
+         <laenge>700</laenge>
+      </ladestelle>
+      <ladestelle id="Lad5" gleis="KWH1">
+         <name>KWH_Eingang</name>
+         <laenge>500</laenge>
+      </ladestelle>
+      <ladestelle id="Lad6" gleis="KWH2">
+         <name>KWH_Ausgang</name>
+         <laenge>500</laenge>
+      </ladestelle>
+      <verlader>
+         <name>Sägewerk Walter Klenk</name>
+         <empfang>
+            <ladegut ladestelle="Lad2">
+               <name>Holzstämme</name>
+               <gattung>K, R, E</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad2">
+               <name>Schnittholz</name>
+               <gattung>K, R, E</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Sägespäne</name>
+               <gattung>E, F, T, G</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>ACZ Hermsdorf</name>
+         <empfang>
+            <ladegut ladestelle="Lad4">
+               <name>Kalisalze</name>
+               <gattung>E, F, T</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad4">
+               <name>Kalk</name>
+               <gattung>E, F, T</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>PGH Leitermacher Holzland</name>
+         <versand>
+            <ladegut ladestelle="Lad1">
+               <name>Holzleitern</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad1">
+               <name>Holzgerüste</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad1">
+               <name>Futterraufen</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad1">
+               <name>Europaletten</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>VEB Bürgel-Keramik</name>
+         <empfang>
+            <ladegut ladestelle="Lad2">
+               <name>Ton</name>
+               <gattung>E, F</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad1">
+               <name>Farbpulver</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Kohlen</name>
+               <gattung>E, F</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad1">
+               <name>Keramikgefäße</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad1">
+               <name>Geschirr</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Moorbad Bad Klosterlaußnitz</name>
+         <empfang>
+            <ladegut ladestelle="Lad2">
+               <name>Moor in Fäßern (Ep IV)</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad2">
+               <name>Moor in Fäßern (Ep III)</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>NVA Tautenhain</name>
+         <empfang>
+            <ladegut ladestelle="Lad3">
+               <name>KFZ Technik</name>
+               <gattung>K, R, S</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Baumaterial</name>
+               <gattung>E, K, R, S</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad3">
+               <name>KFZ Technik</name>
+               <gattung>K, R, S</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Staatlicher Holzwirtschaftsbetrieb Holzland</name>
+         <empfang>
+            <ladegut ladestelle="Lad3">
+               <name>Forstwirtschaftstechnik</name>
+               <gattung>K, R, S</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Leerfässer</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad2">
+               <name>Baumstämme</name>
+               <gattung>E, K, R</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Harz in Fässern</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>BHG Hermsdorf</name>
+         <empfang>
+            <ladegut ladestelle="Lad2">
+               <name>Zement, gesackt</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Betonfertigteile</name>
+               <gattung>K, R, S</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Dachpappe</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Dachziegel</name>
+               <gattung>E, K, R</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad2">
+               <name>Ziegelsteine</name>
+               <gattung>E, K, R, S</gattung>
+               <wagen zeitraum="woche">3</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>Keramische Werke Hermsdorf</name>
+         <empfang>
+            <ladegut ladestelle="Lad5">
+               <name>Sand</name>
+               <gattung>E, F, T</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Zuschlagstoffe</name>
+               <gattung>E, F, T</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Stahl</name>
+               <gattung>E, K, R, S</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Bleche</name>
+               <gattung>E, K, R, S</gattung>
+               <wagen zeitraum="woche">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Schnittholz</name>
+               <gattung>E, K, R</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Kartonagen</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Halbzeuge</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad5">
+               <name>Kohlen</name>
+               <gattung>E, F</gattung>
+               <wagen zeitraum="woche">5</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="Lad6">
+               <name>Isolatoren</name>
+               <gattung>G, H, E</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad6">
+               <name>Konsumgüter</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="Lad6">
+               <name>Stückgüter</name>
+               <gattung>G, H</gattung>
+               <wagen zeitraum="woche">2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+   </gv>
+</bahnhof>

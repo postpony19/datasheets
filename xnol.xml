@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Nový Oldřichov</name>
+    <kuerzel>XNOL</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>DStr062</modulnr>
+    <!--<plan src="zb.png"/>-->
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">1gl</links>
+            <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="gleis1">
+                <name></name>
+                <laenge einheit="cm"></laenge>
+            </gleis>
+            <gleis id="gleis2">
+                <name></name>
+                <laenge einheit="cm"></laenge>
+            </gleis>
+            <gleis id="gleis3">
+                <name></name>
+                <laenge einheit="cm"></laenge>
+            </gleis>
+            <!--<gleis id="gleis6">
+                <name>6</name>
+                <laenge einheit="cm">182</laenge>
+            </gleis>-->
+        </hgleise>
+        <ngleise>
+            <gleis id="gleis4">
+                <name></name>
+                <laenge einheit="cm"></laenge>
+            </gleis>
+            <!--<gleis id="gleis3">
+                <name>3</name>
+                <laenge einheit="cm">188</laenge>
+            </gleis>
+            <gleis id="gleis5">
+                <name>5</name>
+                <laenge einheit="cm">196</laenge>
+            </gleis>
+            <gleis id="gleis7">
+                <name>7</name>
+                <laenge einheit="cm">102</laenge>
+            </gleis>
+            <gleis id="gleis8">
+                <name>8</name>
+                <laenge einheit="cm">86</laenge>
+            </gleis>-->
+        </ngleise>
+    </gleise>
+    <!--<pv>
+        <bahnsteig gleis="gleis6">
+            <laenge einheit="cm">20</laenge>
+        </bahnsteig>
+        <bemerkung></bemerkung>
+    </pv>-->
+    <gv>
+        <ladestelle id="lade1" gleis="gleis1">
+            <name>Ladefläche</name>
+            <laenge einheit="cm"></laenge>
+        </ladestelle>
+        <ladestelle id="lade2" gleis="gleis1">
+            <name>Güterschuppen</name>
+            <laenge einheit="cm"></laenge>
+        </ladestelle>
+        <!--<ladestelle id="lade3" gleis="gleis7">
+            <name>Magazyn {Lagerhaus}</name>
+            <laenge einheit="cm">86</laenge>
+        </ladestelle>
+        <ladestelle id="lade4" gleis="gleis9">
+            <name>Plac ładunkowy {Ladeplatz}</name>
+            <laenge einheit="cm">80</laenge>
+        </ladestelle>-->
+        <verlader>
+            <name>LPG</name>
+            <empfang>
+                <ladegut ladestelle="lade2">
+                    <name>Futter</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>
+                <!--<ladegut ladestelle="lade4">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">14</wagen>
+                </ladegut>-->
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>lebende Tiere</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>
+                <!--<ladegut ladestelle="lade1">
+                    <name>Signalglas</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>Schweissglas</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>-->
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Holzbearbeitungsbetrieb</name>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>Stammholz</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Kohlelager</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>Kohle</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche"></wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+        <!--<bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung>-->
+    </gv>
+    <!--<bemerkung>Die allgemeinen Bemerkungen insbesondere die Rangierhinweise müssen noch konkret übersetzt werden!</bemerkung>-->
+</bahnhof>

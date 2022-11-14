@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Schkona</name>
+  <kuerzel>SKA</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaRue307</modulnr>
+  <plan src="ska.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Bahnsteiggleis">
+        <name>1</name>
+        <laenge einheit="mm">0</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Bahnsteiggleis">
+      <name>1</name>
+      <laenge einheit="mm">0</laenge>
+    </bahnsteig>
+    <bemerkung />
+  </pv>
+  <bemerkung>Erweiterung der Betriebsstelle GTW. In dieser Kombination  bilden GTW und SKA eine Haltestelle (Hst).</bemerkung>
+</bahnhof>
+

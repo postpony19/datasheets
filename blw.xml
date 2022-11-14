@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Blütenweiß</name>
+	<kuerzel>BLW</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>ReBuc359</modulnr>
+    <plan src="blw.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">I-Bahn</links>
+			<rechts nr="1">I-Bahn</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Strecke</name>
+				<laenge></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleis1">
+				<name>Wäscherei</name>
+				<laenge>500</laenge>
+			</gleis>
+			<gleis id="gleis2">
+				<name>Post</name>
+				<laenge>300</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ladestelle1" gleis="gleis1">
+			<name>Kesselhaus</name>
+			<laenge einheit="cm">15</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle3" gleis="gleis1">
+			<name>Abfüllstelle</name>
+			<laenge einheit="cm">10</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle2" gleis="gleis2">
+			<name>Ladegleis</name>
+			<laenge einheit="cm">30</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Blütenweiß Wäschereibetrieb</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle1">
+					<name>Kohle</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle3">
+					<name>Lauge</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+        <verlader>
+            <name>Deutsche Post Bauhof</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle2">
+					<name>Kabel</name>
+					<gattung>E, K</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle2">
+					<name>Leitungsstangen</name>
+					<gattung>K</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle2">
+					<name>leere Kabeltrommeln</name>
+					<gattung>E, K</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+        </verlader>
+	</gv>
+</bahnhof>

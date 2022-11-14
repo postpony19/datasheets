@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Bhf Titan</name>
+  <kuerzel>TIT</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr />
+  <gleise>
+    <zulaufstrecken />
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>0</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+</bahnhof>

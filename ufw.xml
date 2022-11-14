@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Umformerwerk</name>
+  <kuerzel>UFW</kuerzel>
+  <typ>Anst</typ>
+  <maszstab>120</maszstab>
+  <modulnr>MaKoh361</modulnr>
+  <plan src="ufw.jpg" />
+  <gleise>
+    <zulaufstrecken />
+    <hgleise>
+      <gleis id="gleis4">
+        <name>4</name>
+        <laenge>500.0</laenge>
+        <bemerkung>Ladegleis, 5-t Kran</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis2">
+        <name>2</name>
+        <laenge>550.0</laenge>
+        <bemerkung>ORT-Hallengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis3">
+        <name>3</name>
+        <laenge>500.0</laenge>
+        <bemerkung>Ladegleis</bemerkung>
+      </gleis>
+      <gleis id="gleis5">
+        <name>5</name>
+        <laenge>450.0</laenge>
+        <bemerkung>Ausziehgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis1">
+        <name>1</name>
+        <laenge>550.0</laenge>
+        <bemerkung>ORT-Hallengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis5a">
+        <name>5a</name>
+        <laenge>300.0</laenge>
+        <bemerkung>Ladestraße</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle gleis="gleis5" id="ladestelle1">
+      <name>Ladestraße</name>
+      <laenge>300.0</laenge>
+    </ladestelle>
+    <ladestelle gleis="gleis4" id="ladestelle2">
+      <name>Bahnstromwerk</name>
+      <laenge>500.0</laenge>
+    </ladestelle>
+    <ladestelle gleis="gleis3" id="ladestelle3">
+      <name>Bahnstromwerk 1</name>
+      <laenge>500.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Umformerwerk</name>
+      <empfang>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Isolatoren</name>
+          <gattung>G</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Trafoöl</name>
+          <gattung>Z</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Fahrleitungsmasten</name>
+          <gattung>R, S, E</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Betonmaste</name>
+          <gattung>R, S, E</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Fahrdraht, Tragseil, Hänger</name>
+          <gattung>E, R</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle3 ladestelle2">
+          <name>Ausleger, Traversen</name>
+          <gattung>E, R, K</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestelle1">
+          <name>Zement</name>
+          <gattung>Z</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+  <bemerkung>Dezentrales Umformerwerk der DR mit angeschlossenem Bahnstromwerk.[br]
+Gleise 1 und 2 gehen durch die ORT-Halle (je 260 mm Länge).[br]
+Gleise 3 und 4 sind Ladegleise des Bahnstromwerkes.[br]
+Die Gleise 1, 2, 3 und 4 gehen durch das 110 kV-Schaltfeld bis in die Umformerhalle.[br]
+Die Gleislängen sind nur bis zum Gleistor des Schaltfeldes für den normalen Betrieb zugelassen.[br]
+Gleis 5 ist eine öffentliche Ladestraße.</bemerkung>
+</bahnhof>
+

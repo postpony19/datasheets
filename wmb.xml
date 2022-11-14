@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluss Werkzeug Maschinen Bau</name>
+  <kuerzel>WMB</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>TiSpr384</modulnr>
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Streckengleis">
+        <name>Streckengleis</name>
+        <laenge>600</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>300</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Werkzeugmaschinenbau" gleis="gleis_2">
+      <name>Werkzeugmaschinenbau</name>
+      <laenge>100</laenge>
+    </ladestelle>
+    <ladestelle id="Werkzeugmaschinenbau_Kran" gleis="gleis_2">
+      <name>Werkzeugmaschinenbau Kran</name>
+      <laenge>100</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Werkzeugmaschinenbau</name>
+      <empfang>
+        <ladegut ladestelle="Werkzeugmaschinenbau">
+          <name>Halbzeug</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Werkzeugmaschinenbau_Kran">
+          <name>Maschinen in Kiste</name>
+          <gattung>R</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkzeugmaschinenbau">
+          <name>Werkzeugmaschinen</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

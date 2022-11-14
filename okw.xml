@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Abzweig Oberkaselwitz</name>
+   <kuerzel>OKW</kuerzel>
+   <typ>Abzw</typ>
+   <maszstab>120</maszstab>
+   <modulnr>BeKas405</modulnr>
+   <plan src="okw.png"/>
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<links nr="2">1gl</links>
+			<links nr="3">IBahn</links>
+			<rechts nr="1">2gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="Innenbogen">
+         <name>1</name>
+         <laenge>2000</laenge>
+      </gleis>
+      <gleis id="Aussenbogen">
+         <name>2</name>
+         <laenge>2000</laenge>
+      </gleis>
+      <gleis id="IBahn">
+         <name>3</name>
+         <laenge>800</laenge>
+      </gleis>
+      <gleis id="Abzweig">
+         <name>4</name>
+         <laenge>600</laenge>
+      </gleis>
+	</hgleise>
+	<ngleise>
+      <gleis id="Schutzgleis">
+         <name>5</name>
+         <laenge>150</laenge>
+      </gleis>
+	</ngleise>
+   </gleise>
+   <gv>
+        <ladestelle id="lade1" gleis="IBahn">
+            <name>Feldrampe</name>
+            <laenge einheit="achsen">4</laenge>
+        </ladestelle>
+        <verlader>
+            <name>VEB Forstwirtschaft Karl-Marx-Stadt BT Oberkaselwitz</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>Holz</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>Holz</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>LPG Oberkaselwitz</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>Zuckerrüben</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>Zuckerrüben</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>DR Fahrleitungsbau Lagerplatz Oberkaselwitz</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>Teile für Fahrleitungsbau</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>Schwellen</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>Teile für Fahrleitungsbau</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>Schwellen</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>NVA 9.Panzerbattalion</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>Munitionscontainer</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>Panzer</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>Munitionscontainer</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>Panzer</name>
+                    <gattung>Res, Rgs</gattung>
+                    <wagen zeitraum="tag"></wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <bemerkung>Bedienung der Feldrampe nur per Sperrfahrt in Abstimmung mit FDL OKW und Anschluß I-Bahn[br]Entladung nur per Kran, keine Seitenrampe!</bemerkung>
+   </gv>
+   <bemerkung>2gleisige Hauptbahn Abzweig auf 1gleisige Hauptbahn und Abzweig auf IBahn</bemerkung>
+</bahnhof>

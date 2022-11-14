@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Basdorf</name>
+	<kuerzel>BAS</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>FrNev210</modulnr>
+	<plan src="bas.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">268</laenge>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">130</laenge>
+			</gleis>
+			<gleis>
+				<name>3</name>
+				<laenge einheit="cm">268</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>4</name>
+				<laenge einheit="cm">136</laenge>
+			</gleis>
+			<gleis>
+				<name>5</name>
+				<laenge einheit="cm">140</laenge>
+			</gleis>
+			<gleis>
+				<name>6</name>
+				<laenge einheit="cm">140</laenge>
+			</gleis>
+			<gleis id="bmgleis">
+				<name>7</name>
+				<laenge einheit="cm">45</laenge>
+			</gleis>
+			<gleis>
+				<name>7a</name>
+				<laenge einheit="cm">18</laenge>
+			</gleis>
+			<gleis>
+				<name>8</name>
+				<laenge einheit="cm">90</laenge>
+				<bemerkung>Ziehgleis</bemerkung>
+			</gleis>
+			<gleis id="ladestrgleis">
+				<name>9</name>
+				<laenge einheit="cm">130</laenge>
+			</gleis>
+			<gleis>
+				<name>10</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+			<gleis>
+				<name>12</name>
+				<laenge einheit="cm">35</laenge>
+				<bemerkung>Bekohlung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>13</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+			<gleis>
+				<name>14</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<name>1</name>
+			<laenge einheit="cm">120</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg2">
+			<name>2</name>
+			<laenge einheit="cm">120</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="ladestr" gleis="ladestrgleis">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">130</laenge>
+		</ladestelle>
+		<ladestelle id="bm" gleis="bmgleis">
+			<name>Bm-Gleis</name>
+			<laenge einheit="cm">45</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Bahnmeisterei</name>
+			<empfang>
+				<ladegut ladestelle="bm">
+					<name>Schotter</name>
+					<gattung>F, E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="bm">
+					<name>Schienen</name>
+					<gattung>R</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="bm">
+					<name>Kleineisen</name>
+					<gattung>E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>VEB Kohlehandel "Rekord"</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen>14</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>BHG Baustoffversorgung</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Steine</name>
+					<gattung>E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Kies</name>
+					<gattung>E, F</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Zement</name>
+					<gattung>U</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Fließen</name>
+					<gattung>G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>DVP (Bereitschaftspolizei)</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Kohle</name>
+					<gattung>E</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>W50</name>
+					<gattung>R, S, K</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>GPG Frischgemüse Basdorf</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Gemüsestiegen</name>
+					<gattung>G</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Gitterboxen</name>
+					<gattung>G</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestr">
+					<name>Frischgemüse</name>
+					<gattung>I</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Kartoffeln</name>
+					<gattung>G</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung></bemerkung>
+</bahnhof>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Freiham</name>
+    <kuerzel>FHM</kuerzel>
+    <typ>Bf</typ>   
+    <maszstab>120</maszstab>
+    <modulnr>MGBMu280</modulnr>
+    <plan src="fhm.png" />
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">2gl</links>
+            <rechts nr="1">2gl</rechts>
+            <rechts nr="2">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="hg1">
+                <name>1</name>
+                <laenge einheit="cm">240</laenge>
+                <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+            </gleis>
+            <gleis id="hg2">
+                <name>2</name>
+                <laenge einheit="cm">180</laenge>
+                <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+            </gleis>
+            <gleis id="hg3">
+                <name>3</name>
+                <laenge einheit="cm">100</laenge>
+                <bemerkung>Hauptgleis der Abzweigenden Bahn</bemerkung>
+            </gleis>
+        </hgleise>
+        <ngleise>
+            <gleis id="ng31">
+                <name>31</name>
+                <laenge einheit="cm">37</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+            <gleis id="hg4">
+                <name>4</name>
+                <laenge einheit="cm">55</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+            <gleis id="ng41">
+                <name>41</name>
+                <laenge einheit="cm">60</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+            <gleis id="ng5">
+                <name>5</name>
+                <laenge einheit="cm">36</laenge>
+                <bemerkung>Freiladegleis</bemerkung>
+            </gleis>
+            <gleis id="ng51">
+                <name>51</name>
+                <laenge einheit="cm">36</laenge>
+                <bemerkung>Rampengleis</bemerkung>
+            </gleis>
+            <gleis id="ng52">
+                <name>52</name>
+                <laenge einheit="cm">64</laenge>
+                <bemerkung>Freiladegleis</bemerkung>           
+            </gleis>
+        </ngleise>
+    </gleise>
+    <gv>
+        <ladestelle id="ls3" gleis="ng51">
+            <name>Laderampe</name>
+            <laenge einheit="cm">28</laenge>
+        </ladestelle>
+        <ladestelle id="ls4" gleis="ng52">
+            <name>Ladestraße 2</name>
+            <laenge einheit="cm">64</laenge>
+        </ladestelle>
+        <ladestelle id="ls5" gleis="ng5">
+            <name>Ladestraße 1</name>
+            <laenge einheit="cm">36</laenge>
+        </ladestelle>
+        <verlader>
+            <name>Hopfenlager Freiham</name>
+            <versand>
+                <ladegut ladestelle="ls3">
+                <name>Hopfen gesackt</name>
+                <gattung>G, H</gattung>
+                <wagen zeitraum="woche">3</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>BHG Freiham</name>
+            <versand>
+                <ladegut ladestelle="ls5">
+                <name>Getreide</name>
+                <gattung>G, H</gattung>
+                <wagen zeitraum="woche">9</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Forstamt Freiham</name>
+            <versand>
+                <ladegut ladestelle="ls4">
+                <name>Stammholz</name>
+                <gattung>E, R, K, S</gattung>
+                <wagen zeitraum="woche">6</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Fa. Apfelbauer Freiham</name>
+            <versand>
+                <ladegut ladestelle="ls3">
+                <name>Äpfel</name>
+                <gattung>G, H, I</gattung>
+                <wagen zeitraum="woche">12</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Brennstoffhandel</name>
+            <empfang>
+                <ladegut ladestelle="ls4">
+                    <name>Brikett</name>
+                    <gattung>E/F</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="ls4">
+                    <name>Braunkohle</name>
+                    <gattung>E/F</gattung>
+                    <wagen zeitraum="woche">3</wagen>
+                </ladegut>
+                <ladegut ladestelle="ls4">
+                    <name>Steinkohle</name>
+                    <gattung>E/F</gattung>
+                    <wagen zeitraum="woche">4</wagen>
+                </ladegut>
+                <ladegut ladestelle="ls4">
+                    <name>Heizöl</name>
+                    <gattung>Z</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="ls4">
+                    <name>Brikettabrieb</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">0.5</wagen>
+                </ladegut>
+            </versand>
+        </verlader>     
+        <verlader>
+            <name>Eilgut</name>
+            <versand>
+                <ladegut ladestelle="ls3">
+                <name>Eilgut</name>
+                <gattung>G, H</gattung>
+                <wagen zeitraum="woche">3.5</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+    </gv>
+</bahnhof>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Holzladeplatz</name>
+  <kuerzel>HPG</kuerzel>
+  <typ>Awanst</typ>
+  <maszstab>120</maszstab>
+  <modulnr>ChKet352</modulnr>
+  <plan src="hpg.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="strecke">
+        <name>Strecke</name>
+        <laenge einheit="cm">170</laenge>
+        <bemerkung>Streckengleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="ladestrg">
+        <name>Ladegleis</name>
+        <laenge einheit="cm">100</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="ladestr" gleis="ladestrg">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">70</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Staatlicher Forstbetrieb Holzausformplatz</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Leerwagen für Stammholz</name>
+          <gattung>E, K, R, L, S</gattung>
+          <wagen zeitraum="tag">10</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="ladestr">
+          <name>Stammholz</name>
+          <gattung>E, K, R, L, S</gattung>
+          <wagen zeitraum="tag">10</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>

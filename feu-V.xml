@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Feucht</name>
+  <kuerzel>FEU</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>GeRic249</modulnr>
+  <plan src="feu.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>1250</laenge>
+        <bemerkung>Durchgehendes Streckengleis; Umfahrung beim Rangieren</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>1250</laenge>
+        <bemerkung>Bahnsteig; Einschluss für hier haltende Züge bei Kreuzungen / Überholungen</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>970</laenge>
+        <bemerkung>Ladegleis; westlich (links) Jauchegrube, dann Stückgut und Ladestraße, östlich Holzverladung</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Schüttbahnsteig, nur teilw. erhöht</name>
+      <laenge>800</laenge>
+    </bahnsteig>
+    <bemerkung>Bahnsteig ist nebenbahntypisch nur teilweise erhöht, Zustieg von Personen aber auf gesamter Länge möglich.[br][br]Nur noch wenige alte Personen nutzen die Bahn in benachbarte Dörfer und Städte. Ferkeltaxi o.ä. als letzte Rettung bis zur endgültigen Betriebseinstellung.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestra_e" gleis="gleis_3">
+      <name>Ladestraße</name>
+      <laenge>350</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Güterschuppen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Kunst-Dünger od. Kalk</name>
+          <gattung>T, U</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Obst, Gemüse, landwirtsch. Produkte</name>
+          <gattung>E, G, I, T</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>In Epoche V Zusammenbruch des Schienengüterverkehrs. Weitgehende Verlagerung auf die Straße. Jauchegrube außer Betrieb gesetzt.[br][br]Holzabfuhr jetzt per LKW, man könnte entsprechende Fahrzeuge vor der Ladestelle platzieren.[br][br]Stückgutverkehr minimal, Versand landwirtschaftl. Erzeugnisse nur noch für Massengüter wie Kartoffeln oder Rüben. Landflucht, Massenarbeitslosigkeit, Bevölkerungsrückgang. Kaum noch Stückgutverkehr.[br][br]Güterschuppen als einzige gleisgebundene Ladestelle kann den kompletten Platz nutzen, wird ihn aber nicht brauchen.</bemerkung>
+  </gv>
+  <bemerkung>Kleiner sächsischer Nebenbahn-Bahnhof im Erzgebirge. Hanglage. Inspiriert von der Strecke Nossen-Moldau.[br][br]Vollständige Ausgestaltung für Epoche I (Figuren, Fuhrwerke, Detailszenen). In Epoche V nur mit Kompromissen verwendbar - die grünen Sächsischen Uniformen sowie die noch genutzte Jaucheverladung stören. Der allgemeine Pflegezustand der Gebäude und Bahnanlagen ist zu gut.[br][br]Wahrscheinlich wäre dieser Bahnhof längst seiner Weichen beraubt und zu einem Haltepunkt degradiert worden, alternativ komplette Stillegung.[br][br]Bei Verwendung sind Zugkreuzungen weiterhin  möglich. Ortsgüterverkehr praktisch zusammengebrochenm ersonenverkehr minimal.[br][br]Der "komplette" Bahnhof besteht aus 4 Teilen. Das eigentliche Modul "Bahnhof Feucht" mit zwei Segmenten bildet die beiden mittleren Teile. Es ist möglich, den Bahnhof nur mit diesen beiden Segmenten aufzubauen, wenn man an deren Endstücken einen kleinen seitlichen Versatz ggü. FKTT-Hang-1gl akzeptiert.[br]Wenn möglich sollten westlich (links) das Segment "Feucht Walther-Hof" und östlich (rechts) das Segment "Feucht Wald" angeschlossen werden.[br][br]Die weiteren Module aus der Serie "Feucht" bilden ideale Ergänzungen westlich und östlich des Bahnhofs.</bemerkung>
+</bahnhof>
+

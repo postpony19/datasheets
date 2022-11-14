@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Gavrailovo - Гавраилово</name>
+  <kuerzel>XGAV</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>BDŽ</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>EmCha541 (CMRBu2200)</modulnr>
+  <plan src="xgav.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">2403.0</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">2200.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">860.0</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>1</name>
+      <laenge einheit="mm">490.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_1 gleis_2">
+      <name>2</name>
+      <laenge einheit="mm">1850.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Kopframpe" gleis="gleis_3">
+      <name>Kopframpe</name>
+      <laenge einheit="mm">123.0</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="gleis_2">
+      <name>Seitenrampe</name>
+      <laenge einheit="mm">115.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_3">
+      <name>Ladestraße</name>
+      <laenge einheit="mm">400.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name />
+    </verlader>
+  </gv>
+</bahnhof>
+

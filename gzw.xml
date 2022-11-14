@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Günzow</name>
+  <kuerzel>GZW</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>ClEbe242</modulnr>
+  <plan src="gzw.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">120</laenge>
+        <bemerkung>Inselbahnsteig P-Züge</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="cm">135</laenge>
+        <bemerkung>Inselbahnsteig P-Züge/Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">140</laenge>
+        <bemerkung>Güterverkehrsgleis/Durchgangsgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Güterschuppen und BHG</bemerkung>
+      </gleis>
+      <gleis id="gleis_3a">
+        <name>3a</name>
+        <laenge einheit="cm">35</laenge>
+        <bemerkung>Lokwartestelle/ Abstellung TW</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">70</laenge>
+        <bemerkung>Anschluss und Verteilgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_4a">
+        <name>4a</name>
+        <laenge einheit="cm">45</laenge>
+        <bemerkung>Lokschuppen und Lokwartung</bemerkung>
+      </gleis>
+      <gleis id="gleis_4b">
+        <name>4b</name>
+        <laenge einheit="cm">55</laenge>
+        <bemerkung>Ausziehgleis Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">100</laenge>
+        <bemerkung>Ladestraße Hafen</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="cm">90</laenge>
+        <bemerkung>Ladestraße Hafenkante</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="cm">65</laenge>
+        <bemerkung>Umfahrgleis/Ausziehgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="cm">50</laenge>
+        <bemerkung>Industriegleis Metallfabrik</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2 gleis_1">
+      <name>Inselbahnsteig</name>
+      <laenge einheit="cm">110</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2 gleis_3a">
+      <name>Inselbahnsteig kurz</name>
+      <laenge einheit="cm">55</laenge>
+    </bahnsteig>
+    <bemerkung>Berufspendler, Urlauber, Tagestouristen</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="G_terschuppen" gleis="gleis_1a">
+      <name>Güterschuppen</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_Hafen" gleis="gleis_5">
+      <name>Ladestraße Hafen</name>
+      <laenge einheit="cm">100</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_Hafenkante" gleis="gleis_6">
+      <name>Ladestraße Hafenkante</name>
+      <laenge einheit="cm">90</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_Industrie" gleis="gleis_4b">
+      <name>Ladestraße Industrie</name>
+      <laenge einheit="cm">55</laenge>
+    </ladestelle>
+    <ladestelle id="Industriegleis_Metallfabrik" gleis="gleis_8">
+      <name>Industriegleis Metallfabrik</name>
+      <laenge einheit="cm">50</laenge>
+    </ladestelle>
+    <verlader>
+      <name>GV Günzow</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Hafen G_terschuppen">
+          <name>Stückgut, Konsumgüter, E-Teile</name>
+          <gattung>G, Post</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen G_terschuppen">
+          <name>Obst, Gemüse</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Konserven, Getränke</name>
+          <gattung>G, Habbin</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>BHG</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Briketts</name>
+          <gattung>Fcs, Es</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Industrie">
+          <name>Holz</name>
+          <gattung>Res, Es, E, Eaos</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_Hafenkante">
+          <name>Sand</name>
+          <gattung>Samm, Samms, Eaos, E</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen">
+          <name>Container Stückgut</name>
+          <gattung>Res, L</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Post</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Postsendungen, Fahrräder</name>
+          <gattung>G, Post me-bll, Pw</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Expressgut, Stückgut, Gepäck Urlauber</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Postsendungen, Fahrräder</name>
+          <gattung>G, Post me-bll, Pw</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Metallgießerei Zahnradwerk</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Stahl, Walzstahl, Brammen,</name>
+          <gattung>Rmms, Samms</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Steinkohle, Koks</name>
+          <gattung>Es, E, Fcs</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Holzkisten, Stapelholz, Paletten</name>
+          <gattung>G, Shimms, Rmms, Samms</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Verpackungsmateriel</name>
+          <gattung>G, Shimms</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Industriegleis_Metallfabrik">
+          <name>Drahtrollen</name>
+          <gattung>Es, Ks, Rlmmp</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Metallschrott, Gußabfälle,</name>
+          <gattung>Es, E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Industrie Industriegleis_Metallfabrik">
+          <name>Zahnräder, Ferigteile, Maschinenteile, Gehäuse</name>
+          <gattung>G, E, Es, Shimms</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Industriegleis_Metallfabrik">
+          <name>Schlacke, Altsand</name>
+          <gattung>E, ES,</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Deutfracht/Seereederei Günzow</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Kreide, Sand, Schotter, Kies, Kohle, Massengüter</name>
+          <gattung>Samms, E, Es, Eaos, Fcs, Takkl, Rmms</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Container Stückgut, Schiffsladung Feederschiffe</name>
+          <gattung>Samms, E, Es, Eaos, Fcs, Takkl, Rmms</gattung>
+          <wagen zeitraum="woche">2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Landmaschinen, PKW, LKW</name>
+          <gattung>Res,</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Diesel, Benzin</name>
+          <gattung>Z, Zz, ZZw, Zaes, Zacs</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Kreide, Sand, Schotter, Kies, Kohle, Massengüter</name>
+          <gattung>Samms, E, Es, Eaos, Fcs, Rmms, Takkl</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Container Stückgut</name>
+          <gattung>Lgs, Rgs</gattung>
+          <wagen zeitraum="woche">2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Frischfisch</name>
+          <gattung>T, I</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Sackwaren, Kaffee, Kakao, Getreide, Paletten, Stückgut</name>
+          <gattung>G, Shimms</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen Ladestra_e_Hafenkante">
+          <name>Kuba Orangen, Obst palettiert</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Günzow BW</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Hafen">
+          <name>Ersatzteile, Schmierstoffe, Farbe</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen">
+          <name>Diesel</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Hafen">
+          <name>Kohle</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_Industrie">
+          <name>Reparaturen</name>
+          <gattung />
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Metallgießerei, Zahnradfabrik, Land-u. Forstwirtschaft, Seerederei Deutfracht</bemerkung>
+  </gv>
+  <bemerkung>Das fiktive Günzow liegt irgendwo an der Ostseeküste, vermutlich auf Rügen. Es hat aufgrund seiner zentralen Lage und dem Hafen durchaus überregionale Bedeutung. Durch Berufspendler, Urlauber und Tagestouristen aus den benachbarten Seebädern sowie zu Ausflugsschiffen herrscht reger Personenverkehr. Außerdem ist GZW öfters Zielort von spektakulären Sonderzugeinsätzen. Auf der ausgewiesenen Entlastungs-, Umleiter- und Ausweichstrecke passieren auch Schnellzüge und Duchgangsgüterzüge den Bahnhof oft ohne Halt. Vor allem der Hafen und die Metallgießerei/Zahnradfabrik sorgen  für überdurchschnittlichen  Güterverkehr. Im Hafen werden nahezu alle schiffbaren Frachten vom Massengut, über Container bis hin zu schweren Maschinenteilen verladen.</bemerkung>
+</bahnhof>
+

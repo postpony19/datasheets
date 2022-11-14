@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Mittenwalde (Mark) Ost</name>
+   <kuerzel>MIO</kuerzel>
+   <typ>Bf</typ>
+   <maszstab>120</maszstab>
+   <modulnr>MoEiC240</modulnr>
+   <plan src="mio.png"/>
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="g1">
+         <name>1</name>
+         <laenge>1960</laenge>
+         <bemerkung>Ein- und Ausfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="g2">
+         <name>2</name>
+         <laenge>2100</laenge>
+         <bemerkung>Ein- und Ausfahrgleis, für Durchfahrten vorrangig zu verwenden</bemerkung>
+      </gleis>
+	</hgleise>
+	<ngleise>
+      <gleis id="g3">
+         <name>3</name>
+         <laenge>1720</laenge>
+         <bemerkung>Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="g4">
+         <name>4</name>
+         <laenge>1720</laenge>
+         <bemerkung>Ladegleis, Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="A1">
+         <name>A1</name>
+         <laenge>1000</laenge>
+         <bemerkung>Anschlussgleis ACZ</bemerkung>
+      </gleis>
+      <gleis id="A2">
+         <name>A2</name>
+         <laenge>1100</laenge>
+         <bemerkung>Anschlussgleis ACZ mit Nebenanschliesser</bemerkung>
+      </gleis>
+	</ngleise>
+   </gleise>
+   <pv>
+      <bahnsteig gleis="g1">
+         <name>1</name>
+         <laenge>1980</laenge>
+      </bahnsteig>
+      <bahnsteig gleis="g2">
+         <name>2</name>
+         <laenge>1980</laenge>
+      </bahnsteig>
+      <bemerkung>Berufs-, Schülerverkehr</bemerkung>
+   </pv>
+   <gv>
+      <ladestelle id="LADE" gleis="g4">
+         <name>Ladestraße (Gl. 4)</name>
+         <laenge>1510</laenge>
+      </ladestelle>
+      <ladestelle id="ACZ1" gleis="A1">
+         <name>ACZ Anschlussgleis A1</name>
+         <laenge>1000</laenge>
+      </ladestelle>
+      <ladestelle id="ACZ2" gleis="A2">
+         <name>ACZ Anschlussgleis A2</name>
+         <laenge>1000</laenge>
+      </ladestelle>
+      <ladestelle id="AZC2RA" gleis="A2">
+         <name>ACZ Anschlussgleis A2 Kopf- und Seitenladerampe</name>
+         <laenge>250</laenge>
+      </ladestelle>
+      <ladestelle id="ENDE4" gleis="g4">
+         <name>Ladestraße (Gl. 4) Förderband an Gleisende</name>
+         <laenge>300</laenge>
+      </ladestelle>
+      <ladestelle id="A2ZEMENT" gleis="A2">
+         <name>ACZ Anschlussgleis A2 Zementsiloanlage</name>
+         <laenge>300</laenge>
+      </ladestelle>
+      <verlader>
+         <name>Kohlehandel Mittenwalde</name>
+         <empfang>
+            <ladegut ladestelle="ENDE4">
+               <name>Braunkohlebrikett</name>
+               <gattung>E, Fc</gattung>
+               <wagen>2</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>POS Mittenwalde</name>
+         <empfang>
+            <ladegut ladestelle="LADE">
+               <name>Braunkohlebrikett</name>
+               <gattung>E, Fc</gattung>
+               <wagen>1</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>Kreisforstverwaltung</name>
+         <versand>
+            <ladegut ladestelle="LADE">
+               <name>Stammholz, kurz</name>
+               <gattung>E, Ea</gattung>
+               <wagen>2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Agro-Chemisches Zentrum Mittenwalde (ACZ)</name>
+         <empfang>
+            <ladegut ladestelle="ACZ1">
+               <name>Düngemittel lose</name>
+               <gattung>T</gattung>
+               <wagen>2.5</wagen>
+            </ladegut>
+            <ladegut ladestelle="ACZ1">
+               <name>Spezialdüngemittel gesackt, in Fässern</name>
+               <gattung>G, H</gattung>
+               <wagen>2.5</wagen>
+            </ladegut>
+            <ladegut ladestelle="ACZ2">
+               <name>Rohbraunkohle</name>
+               <gattung>E</gattung>
+               <wagen>1</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>LPG Tierproduktion</name>
+         <empfang>
+            <ladegut ladestelle="AZC2RA">
+               <name>Tierfutter</name>
+               <gattung>G, H, E</gattung>
+               <wagen>4</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>VEB UGS (Untergrundspeicher) </name>
+         <empfang>
+            <ladegut ladestelle="ACZ2">
+               <name>Erdgasrohre</name>
+               <gattung>R, K</gattung>
+               <wagen>5</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>VEB (K) Bau Königs Wusterhausen (BT Mittenwalde)</name>
+         <empfang>
+            <ladegut ladestelle="A2ZEMENT">
+               <name>Zement</name>
+               <gattung>Z</gattung>
+               <wagen>8</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>Viessmann Heiztechnik</name>
+         <empfang>
+            <ladegut ladestelle="LADE">
+               <name>Baugruppen und Material f. Heizungsanlagen</name>
+               <gattung>H, G, K</gattung>
+               <wagen>2</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>VEB KIM Bestensee</name>
+         <versand>
+            <ladegut ladestelle="LADE">
+               <name>Speisegeflügel, gefroren</name>
+               <gattung>I</gattung>
+               <wagen>1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>VEB SERO Mittenwalde</name>
+         <versand>
+            <ladegut ladestelle="LADE">
+               <name>Schrott</name>
+               <gattung>E</gattung>
+               <wagen>1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+   </gv>
+   <bemerkung>Ansprechpartner: MEC Rosswein, Torsten Stein (stein@digitalzentrale.de)</bemerkung>
+</bahnhof>

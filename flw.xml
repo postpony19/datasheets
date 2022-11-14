@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Fliesenwerk</name>
+	<kuerzel>FLW</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>ReBuc358</modulnr>
+    <plan src="flw.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">I-Bahn</links>
+			<rechts nr="1">I-Bahn</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Strecke</name>
+				<laenge></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleisA1">
+				<name>A1</name>
+				<laenge>1200</laenge>
+			</gleis>
+			<gleis id="gleisA2">
+				<name>A2</name>
+				<laenge>1280</laenge>
+                <bemerkung>Umfahrungsgleis</bemerkung>
+			</gleis>
+			<gleis id="gleisA3">
+				<name>A3</name>
+				<laenge>940</laenge>
+                <bemerkung>VEB IFA Spezialfahrzeugwerk</bemerkung>
+			</gleis>
+			<gleis id="gleis1">
+				<name>1</name>
+				<laenge>860</laenge>
+                <bemerkung>Aufstellgleis</bemerkung>
+			</gleis>
+			<gleis id="gleis2">
+				<name>2</name>
+				<laenge>660</laenge>
+                <bemerkung>Aufstellgleis</bemerkung>
+			</gleis>
+			<gleis id="gleis3">
+				<name>3</name>
+				<laenge>620</laenge>
+                <bemerkung>Wareneingang</bemerkung>
+			</gleis>
+			<gleis id="gleis4">
+				<name>4</name>
+				<laenge>540</laenge>
+                <bemerkung>Warenausgang</bemerkung>
+			</gleis>
+			<gleis id="gleis5">
+				<name>5</name>
+				<laenge>500</laenge>
+                <bemerkung>Tonerdeentladung / Lokschuppen</bemerkung>
+			</gleis>
+			<gleis id="gleis6">
+				<name>6</name>
+				<laenge>180</laenge>
+                <bemerkung>Abstellgleis</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ladestelle1" gleis="gleisA3">
+			<name>Rampe</name>
+			<laenge>940</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle2" gleis="gleis3">
+			<name>Wareneingang</name>
+			<laenge>620</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle3" gleis="gleis4">
+			<name>Warenausgang</name>
+			<laenge>540</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle4" gleis="gleis5">
+			<name>Tonerdeentladung</name>
+			<laenge>500</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB IFA Spezialfahrzeugwerk</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle1">
+					<name>Fahrgestelle</name>
+					<gattung>K, R</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle1">
+					<name>Zulieferteile</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle1">
+					<name>fertige Fahrzeuge</name>
+					<gattung>K, R</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle1">
+					<name>Schrott</name>
+					<gattung>E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+        <verlader>
+            <name>VEB Fliesen und Steinzeugwerk</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle4">
+					<name>Tonerde</name>
+					<gattung>T</gattung>
+					<wagen zeitraum="tag">6</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle2">
+					<name>Kaolin gesackt</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">6</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle2">
+					<name>Paletten</name>
+					<gattung>E, K</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle2">
+					<name>Verpackungsmaterial</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle3">
+					<name>Kanalrohre</name>
+					<gattung>E, K</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle3">
+					<name>Fliesen</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle3">
+					<name>Spaltklinker</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+			</versand>
+        </verlader>
+	</gv>
+</bahnhof>

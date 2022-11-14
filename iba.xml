@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Industriebahnabzweig</name>
+  <kuerzel>IBA</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaPre424</modulnr>
+  <plan src="iba.jpg" />
+  <gleise>
+    <zulaufstrecken />
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Sero">
+        <name>Sero</name>
+        <laenge>350</laenge>
+      </gleis>
+      <gleis id="gleis_Minol">
+        <name>Minol</name>
+        <laenge>650</laenge>
+      </gleis>
+      <gleis id="gleis_Spinnerei_Werkhalle">
+        <name>Spinnerei Gleis2</name>
+        <laenge>300</laenge>
+      </gleis>
+      <gleis id="gleis_Spinnerei_Freiladebereich">
+        <name>Spinnerei Gleis1</name>
+        <laenge>400</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Minol" gleis="gleis_Minol">
+      <name>Minol</name>
+      <laenge>650</laenge>
+    </ladestelle>
+    <ladestelle id="Sero" gleis="gleis_Sero">
+      <name>Sero</name>
+      <laenge>350</laenge>
+    </ladestelle>
+    <ladestelle id="Freiladebereich" gleis="gleis_Spinnerei_Freiladebereich">
+      <name>Freiladebereich</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <ladestelle id="Werkhalle" gleis="gleis_Spinnerei_Werkhalle">
+      <name>Werkhalle</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Minol</name>
+      <empfang>
+        <ladegut ladestelle="Minol">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Minol">
+          <name>Benzin</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Minol">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Minol">
+          <name>Öle (Fässer und Kanister)</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Spinnmaschinenbau BT Karl-Marx-Stadt</name>
+      <empfang>
+        <ladegut ladestelle="Freiladebereich">
+          <name>Halbzeuge</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freiladebereich">
+          <name>Gussteile</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freiladebereich">
+          <name>Stahlplatten</name>
+          <gattung>R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkhalle">
+          <name>Elektronik</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkhalle">
+          <name>Öle (Faßware)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkhalle">
+          <name>Normteile (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Werkhalle">
+          <name>Rundstrickmaschinen</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkhalle">
+          <name>Spinnmaschinen</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freiladebereich">
+          <name>Schrott</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werkhalle">
+          <name>Konsumgüter</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Sero K.-M.-St. BT Kappel</name>
+      <versand>
+        <ladegut ladestelle="Sero">
+          <name>Schrott</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Sero">
+          <name>Kernschrott</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Sero">
+          <name>Altpapier</name>
+          <gattung>E</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Sero">
+          <name>Altöl in Fässern</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Sero">
+          <name>Lunpen (Sackware)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

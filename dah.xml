@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Drei Annen Hohne</name>
+  <kuerzel>DAH</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JoLan214</modulnr>
+  <plan src="dah.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>920</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>570</laenge>
+        <bemerkung>Umfahrungsgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>600</laenge>
+        <bemerkung>Ladestellengleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge>370</laenge>
+        <bemerkung>Übergabe Schmalspur</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge>670</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge>390</laenge>
+        <bemerkung>Schmalspurgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge>390</laenge>
+        <bemerkung>Schmalspurgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>Hausbahnsteig</name>
+      <laenge>770</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestelle" gleis="gleis_3">
+      <name>Ladestelle</name>
+      <laenge>600</laenge>
+    </ladestelle>
+    <ladestelle id="_bergabe_Schmalspur" gleis="gleis_1a">
+      <name>Übergabe Schmalspur</name>
+      <laenge>250</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Forsthaus Hohne mit Rinderhof</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle">
+          <name>Leerwagen für Stammholz</name>
+          <gattung>H, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kraftfutter</name>
+          <gattung>E, G, Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Ersatzteile, Landwirtschaftsgeräte</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Fahrzeuge (Traktoren, LKW's)</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Flüssiggas</name>
+          <gattung>U, Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle">
+          <name>defekte Fahrzeuge</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Tiere (Rinder, Geflügel)</name>
+          <gattung>G, V</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Stammholz</name>
+          <gattung>H, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Ferienheim Drei Annen Hohne (SKET)</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kartoffeln</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Obst, Gemüse</name>
+          <gattung>G, H, I</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Wein, Bier, Spirituosen</name>
+          <gattung>G, U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kleinvieh (Geflügel)</name>
+          <gattung>V</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Fleischprodukte</name>
+          <gattung>G, I</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Möbel</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Feuerwerkskörper</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Flüssiggas</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle">
+          <name>Leerwagen</name>
+          <gattung>E, G, H, I, V, U, Z</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Baumaschienen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Fahrzeuge (Traktoren, Krane, LKW's)</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Flüssiggas</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle">
+          <name>defekte Fahrzeuge</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Schrott</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Leerwagen</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kraftverkehr Wernigerode OT DAH</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Fahrzeuge (Busse)</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Flüssiggas</name>
+          <gattung>U, Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle">
+          <name>defekte Fahrzeuge</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle">
+          <name>Schrott</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

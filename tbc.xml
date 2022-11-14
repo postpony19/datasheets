@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Trebbichau</name>
+	<kuerzel>TBC</kuerzel>
+	<typ>Ülst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>ChKet445 (optional 446 und 454)</modulnr>
+	<plan src="tbc.gif"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="A">
+				<name>A</name>
+				<laenge>900</laenge>
+			</gleis>
+			<gleis id="B">
+				<name>B</name>
+				<laenge>900</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<bemerkung>optional Auftrennung der 2gl Strecke in 2 Eingleisige (446),[br]Ergänzungsmöglichkeit Blockstelle (454)</bemerkung>
+</bahnhof>

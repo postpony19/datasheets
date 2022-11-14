@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Hirschfelde</name>
+	<kuerzel>HFD</kuerzel>
+	<typ>Sbf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>HaVol180</modulnr>
+	<plan src="hfd.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>1</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>2</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>3</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>4</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>5</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>6</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+			<gleis>
+				<name>7</name>
+				<laenge einheit="cm">271</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>1a</name>
+				<laenge einheit="cm">60</laenge>
+			</gleis>
+			<gleis>
+				<name>6a</name>
+				<laenge einheit="cm">40</laenge>
+			</gleis>
+			<gleis>
+				<name>7a</name>
+				<laenge einheit="cm">40</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<bemerkung>Schwenkweiche</bemerkung>
+</bahnhof>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Ersatzteillager</name>
+   <kuerzel>ETL</kuerzel>
+   <typ>Awanst, Hp</typ>
+   <maszstab>120</maszstab>
+   <modulnr>HeGru355</modulnr>
+   <plan src="etl.jpg"/>
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="gl5">
+         <name>Strecke</name>
+         <laenge>3600</laenge>
+         <bemerkung>Strecke mit Haltepunkt</bemerkung>
+      </gleis>
+	</hgleise>
+	<ngleise>
+      <gleis id="gl1a">
+         <name>1a</name>
+         <laenge>200</laenge>
+         <bemerkung>Kohlegleis</bemerkung>
+      </gleis>
+      <gleis id="gl1b">
+         <name>1b</name>
+         <laenge>200</laenge>
+         <bemerkung>Ölgleis</bemerkung>
+      </gleis>
+      <gleis id="gl2a">
+         <name>2a</name>
+         <laenge>350</laenge>
+         <bemerkung>Freiladegleis</bemerkung>
+      </gleis>
+      <gleis id="gl2b">
+         <name>2b</name>
+         <laenge>300</laenge>
+         <bemerkung>Hallengleis 1</bemerkung>
+      </gleis>
+      <gleis id="gl2c">
+         <name>2c</name>
+         <laenge>300</laenge>
+         <bemerkung>Hallengleis 2</bemerkung>
+      </gleis>
+      <gleis id="gl3">
+         <name>3</name>
+         <laenge>800</laenge>
+         <bemerkung>Wüst Eingang</bemerkung>
+      </gleis>
+      <gleis id="gl4">
+         <name>4</name>
+         <laenge>750</laenge>
+         <bemerkung>Wüst Ausgang</bemerkung>
+      </gleis>
+	</ngleise>
+   </gleise>
+   <pv>
+      <bahnsteig gleis="gl5">
+         <name>Haltepunkt</name>
+         <laenge>450</laenge>
+      </bahnsteig>
+      <bemerkung>Werks-Personenverkehr VEB ETL kann auch anders genutzt werden</bemerkung>
+   </pv>
+   <gv>
+		<ladestelle id="oellager" gleis="gl1b">
+			<name>Öllager</name>
+			<laenge></laenge>
+		</ladestelle>
+		<ladestelle id="heizwerk" gleis="gl1a">
+			<name>Heizwerk (Kohlebunker)</name>
+			<laenge></laenge>
+		</ladestelle>
+		<ladestelle id="kran" gleis="gl2a">
+			<name>Kran</name>
+			<laenge></laenge>
+		</ladestelle>
+		<ladestelle id="ladestr" gleis="gl2a">
+			<name>Ladestraße</name>
+			<laenge></laenge>
+		</ladestelle>
+		<ladestelle id="halle1" gleis="gl2b">
+			<name>Lagerhalle 1</name>
+			<laenge></laenge>
+		</ladestelle>
+		<ladestelle id="halle2" gleis="gl2c">
+			<name>Lagerhalle 2</name>
+			<laenge></laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Ersatzteillager Grüna</name>
+			<empfang>
+				<ladegut ladestelle="oellager">
+					<name>Schmierstoffe</name>
+					<gattung>Z</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="heizwerk">
+					<name>Kohle</name>
+					<gattung>G</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="heizwerk">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Maschinen</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Kabelrollen</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Großteile</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Holz</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Kleinteile für Wäschemangeln</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>2.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Bügelmaschinen</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>2.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Stoffballen</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>2.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Schaltschränke</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>2.5</wagen>
+				</ladegut>
+				<!--<ladegut ladestelle="halle1 halle2">
+					<name>Kleinteile für Wäschemangeln, Bügelmaschinen, Stoffballen, Schaltschränke, Diverse Frachten</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle2">
+					<name>Kleinteile für Wäschemangeln, Bügelmaschinen, Stoffballen, Schaltschränke, Diverse Frachten</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>5</wagen>
+				</ladegut>-->
+			</empfang>
+			<versand>
+				<ladegut ladestelle="oellager">
+					<name>Schmierstoffe</name>
+					<gattung>E, U, G</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="heizwerk">
+					<name>Asche</name>
+					<gattung>E, U, G</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Maschinen</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Kabelrollen</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="kran ladestr">
+					<name>Großteile</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Holzkisten</name>
+					<gattung> Hbis, Rs, E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Wäschemangeln</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Bügelmaschinen</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Kabelrollen</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Kleinteile</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Stoffballen</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<ladegut ladestelle="halle1 halle2">
+					<name>Schaltschränke</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>1.67</wagen>
+				</ladegut>
+				<!--<ladegut ladestelle="halle2">
+					<name>Wäschemangeln, Bügelmaschinen, Kabelrollen, Kleinteile, Stoffballen, Schaltschränke</name>
+					<gattung>G, Gbs</gattung>
+					<wagen>5</wagen>
+				</ladegut>-->
+			</versand>
+		</verlader>
+   </gv>
+</bahnhof>

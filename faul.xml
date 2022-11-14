@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Faulerhorst</name>
+    <kuerzel>FAUL</kuerzel>
+    <typ>Hp</typ>
+    <maszstab>120</maszstab>
+    <modulnr>AdRan312</modulnr>
+	<plan src="faul.png" />
+    <gleise>
+        <zulaufstrecken>
+           <links nr="1">1gl</links>
+           <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+           <gleis id="bahnsteig">
+               <name>1</name>
+               <laenge einheit="cm">40</laenge>
+			   <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+           </gleis>
+        </hgleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="bahnsteig">
+            <name>1</name>
+            <laenge einheit="cm">40</laenge>
+        </bahnsteig>
+    </pv>
+</bahnhof>

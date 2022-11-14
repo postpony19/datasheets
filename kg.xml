@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Haltepunkt Katzwang</name>
+  <kuerzel>KG</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DB</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>DaBue317</modulnr>
+  <plan src="kg.jpg" />
+  <gleise>
+    <zulaufstrecken />
+    <hgleise>
+      <gleis id="gleis_Strecke">
+        <name>Strecke</name>
+        <laenge einheit="mm">948</laenge>
+        <bemerkung>Gleis mit Bahnsteig</bemerkung>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_Strecke">
+      <name>Bahnsteig "Hp Katzwang"</name>
+      <laenge einheit="mm">690</laenge>
+    </bahnsteig>
+  </pv>
+</bahnhof>
+

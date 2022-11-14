@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Leonardshafen</name>
+	<kuerzel>LHH</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>HeSch368</modulnr>
+	<plan src="lhh.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="g1">
+				<name>Ruch</name>
+				<laenge einheit="cm">14</laenge>
+			</gleis>
+			<gleis id="g2">
+				<name>Rost und Gutermuth</name>
+				<laenge einheit="cm">40</laenge>
+			</gleis>
+			<gleis id="g3">
+				<name>Rumpel und Raiffeisen</name>
+				<laenge einheit="cm">65</laenge>
+			</gleis>
+			<gleis id="g4">
+				<name>Rumpel</name>
+				<laenge einheit="cm">32</laenge>
+			</gleis>
+			<gleis id="g5">
+				<name>Raiffeisen</name>
+				<laenge einheit="cm">21</laenge>
+			</gleis>
+			<gleis id="g6">
+				<name>Kranbahn</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+			<gleis id="g7">
+				<name>Kai</name>
+				<laenge einheit="cm">46</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ruch" gleis="g1">
+			<name>Anschluss Ruch</name>
+			<laenge einheit="cm">14</laenge>
+		</ladestelle>
+		<ladestelle id="rost" gleis="g2">
+			<name>Anschluss Rost</name>
+			<laenge einheit="cm">16</laenge>
+		</ladestelle>
+		<ladestelle id="gutermuth" gleis="g2">
+			<name>Anschluss Gutermuth</name>
+			<laenge einheit="cm">16</laenge>
+		</ladestelle>
+		<ladestelle id="gschuppen" gleis="g3">
+			<name>Güterschuppen</name>
+			<laenge einheit="cm">25</laenge>
+		</ladestelle>
+		<ladestelle id="srampe" gleis="g4">
+			<name>Kopf- und Seitenrampe</name>
+			<laenge einheit="cm">25</laenge>
+		</ladestelle>
+		<ladestelle id="ladestr" gleis="g3">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">17</laenge>
+		</ladestelle>
+		<ladestelle id="silo" gleis="g5">
+			<name>Silo</name>
+			<laenge einheit="cm">21</laenge>
+		</ladestelle>
+		<ladestelle id="kranbahn" gleis="g6">
+			<name>Kranbahn</name>
+			<laenge einheit="cm">30</laenge>
+		</ladestelle>
+		<ladestelle id="kai" gleis="g7">
+			<name>Kai</name>
+			<laenge einheit="cm">46</laenge>
+		</ladestelle>
+		<verlader>
+			<name>G.Ruch Chemische Erzeugnisse</name>
+			<empfang>
+				<ladegut ladestelle="ruch">
+					<name>Soda in Fässern</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Wachse in Fässern</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Paraffin</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Natronlauge</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Lösungsmittel</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Tenside in Gebinden und Fässern</name>
+					<gattung>G, H</gattung>
+					<wagen>0.33</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ruch">
+					<name>Polierwachs in Fässern und Gebinden</name>
+					<gattung>G, H</gattung>
+					<wagen>0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Bodenreiniger in Fässern und Gebinden</name>
+					<gattung>G, H</gattung>
+					<wagen>0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Maschinenreiniger in Fässern und Gebinden</name>
+					<gattung>G, H</gattung>
+					<wagen>0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ruch">
+					<name>Waschcreme in Fässern und Gebinden</name>
+					<gattung>G, H</gattung>
+					<wagen>0.5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Armaturenfabrik Gebrüder Gutermuth</name>
+			<empfang>
+				<ladegut ladestelle="gutermuth">
+					<name>Chromsalze in Fässern</name>
+					<gattung>G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="gutermuth">
+					<name>Stahlhalbzeuge</name>
+					<gattung>K, G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="gutermuth">
+					<name>Messinghalbzeuge</name>
+					<gattung>G, H</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="gutermuth">
+					<name>Fittings</name>
+					<gattung>G, H</gattung>
+					<wagen>0.66</wagen>
+				</ladegut>
+				<ladegut ladestelle="gutermuth">
+					<name>Ventile f. chem. Ind.</name>
+					<gattung>G, H, K</gattung>
+					<wagen>0.66</wagen>
+				</ladegut>
+				<ladegut ladestelle="gutermuth">
+					<name>Armaturen f. chem. Ind.</name>
+					<gattung>G, H, K</gattung>
+					<wagen>0.66</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Rost Schiffsausrüstungen</name>
+			<empfang>
+				<ladegut ladestelle="rost">
+					<name>Stahlseile</name>
+					<gattung>G</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Dieselmotoren</name>
+					<gattung>G, X, K</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Getriebe</name>
+					<gattung>G, X, K</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Wellen</name>
+					<gattung>G, X, K</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Anker, Schiffsschrauben</name>
+					<gattung>G, X, K</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Lampen</name>
+					<gattung>G, X, K</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rost">
+					<name>Gehäuse IP 66</name>
+					<gattung>G</gattung>
+					<wagen>0.1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Spedition Rumpel</name>
+			<empfang>
+				<ladegut ladestelle="gschuppen">
+					<name>Fertigzeuge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Halbzeuge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="srampe">
+					<name>Maschinen, E-Motore z. Vers.</name>
+					<gattung>X, G</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Möbel</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Fertigzeuge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Halbzeuge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="srampe">
+					<name>Maschinen, E-Motore z. Vers.</name>
+					<gattung>X, G</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Möbel</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">0.5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Raiffeisen Waren Zentrum</name>
+			<empfang>
+				<ladegut ladestelle="silo">
+					<name>Düngemittel</name>
+					<gattung>F, G</gattung>
+					<wagen>0.2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Landwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G, F</gattung>
+					<wagen>0.2</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Forstwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G, F</gattung>
+					<wagen>0.2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Ketten</name>
+					<gattung>G</gattung>
+					<wagen>0.2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Hanfseile</name>
+					<gattung>G</gattung>
+					<wagen>0.2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="silo">
+					<name>Düngemittel</name>
+					<gattung>F, G</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Getreide</name>
+					<gattung>F</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Landwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G, F</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Forstwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G, F</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Leonardshafen Kai</name>
+			<empfang>
+				<ladegut ladestelle="kai">
+					<name>Landwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Forstwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Düngemittel</name>
+					<gattung>G, F</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Steine</name>
+					<gattung>E, Ea</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Erden</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Eisen</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Stahl</name>
+					<gattung>E, R, K</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Schrott</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Halbzeuge</name>
+					<gattung>G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Fertigzeuge</name>
+					<gattung>G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="kai">
+					<name>Landwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Forstwirtschaftliche Erzeugnisse</name>
+					<gattung>E, Ea, G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Düngemittel</name>
+					<gattung>G, F</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Steine</name>
+					<gattung>E, Ea</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Erden</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Eisen</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Stahl</name>
+					<gattung>E, R, K</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Schrott</name>
+					<gattung>E</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Halbzeuge</name>
+					<gattung>G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+				<ladegut ladestelle="kai">
+					<name>Fertigzeuge</name>
+					<gattung>G</gattung>
+					<wagen>0.38</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Hartmannsdorf Großtanklager</name>
+	<kuerzel>HMDTL</kuerzel>
+	<typ>Awanst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MaPre237</modulnr>
+	<plan src="hmdtl.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<rechts nr="1">Anschluss 1</rechts>
+			<rechts nr="2">Anschluss 2</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Anschluss 1</name>
+				<laenge></laenge>
+			</gleis>
+            <gleis>
+                <name>Anschluss 2</name>
+                <laenge></laenge>
+            </gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleisB">
+				<name>B</name>
+				<laenge einheit="cm">120</laenge>
+			</gleis>
+			<gleis id="gleisC">
+				<name>C</name>
+				<laenge einheit="cm">80</laenge>
+			</gleis>
+			<gleis id="gleisD">
+				<name>D</name>
+				<laenge einheit="cm">80</laenge>
+			</gleis>
+			<gleis id="gleisE">
+				<name>E</name>
+				<laenge einheit="cm">80</laenge>
+			</gleis>
+			<gleis id="gleisF">
+				<name>F</name>
+				<laenge einheit="cm">120</laenge>
+			</gleis>
+			<gleis id="gleisG">
+				<name>G</name>
+				<laenge einheit="cm">245</laenge>
+			</gleis>
+			<gleis id="gleisH">
+				<name>H</name>
+				<laenge einheit="cm">245</laenge>
+			</gleis>
+			<gleis id="gleisI">
+				<name>I</name>
+				<laenge einheit="cm">220</laenge>
+			</gleis>
+			<gleis id="gleisJ">
+				<name>J</name>
+				<laenge einheit="cm">220</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="Ladestelle1" gleis="gleisB">
+			<name>Ladegleis 1</name>
+			<laenge einheit="cm">60</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestelle2" gleis="gleisC">
+			<name>Ladegleis 2</name>
+			<laenge einheit="cm">40</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestelle3" gleis="gleisD">
+			<name>Ladegleis 3</name>
+			<laenge einheit="cm">40</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestelle4" gleis="gleisE">
+			<name>Ladegleis 4</name>
+			<laenge einheit="cm">40</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestelle5" gleis="gleisF">
+			<name>Seitenrampe</name>
+			<laenge einheit="cm">40</laenge>
+		</ladestelle>
+        <ladestelle id="Ladestelle6" gleis="gleisG gleisH gleisI gleisJ">
+            <name>Abstellgruppe</name>
+            <laenge einheit="cm">220</laenge>
+        </ladestelle>
+		<verlader>
+			<name>Großtanklager</name>
+			<empfang>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">max 5 Gag</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">max 2 Gag</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Benzin</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">max 1 Gag</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">Wie Empfang</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Diesel</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">Wie Empfang</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestelle6">
+					<name>Benzin</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">Wie Empfang</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+        <bemerkung>die Gag's müssen Paarisch sein, einem Produktwechsel steht jedoch nichts im Wege[br]Rangierhinweise:[br] - Übernahme, Behandlung und Bereitstellung zur Abfahrt eines Gag's vom Bahnhof innerhalb von 4h.[br]- Max 6 Gag's pro 24h Fahrplan möglich.</bemerkung>
+	</gv>
+	<bemerkung>Nur in Verbindung mit Hartmannsdorf!</bemerkung>
+</bahnhof>

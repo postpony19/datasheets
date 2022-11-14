@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Awanst Feuerwehr</name>
+  <kuerzel>AFW</kuerzel>
+  <typ>Awanst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JoLan379</modulnr>
+  <plan src="afw.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>380</laenge>
+        <bemerkung>Ladegleis Feuerwehr</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge>300</laenge>
+        <bemerkung>Übungsgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Ladegleis_Feuerwehr" gleis="gleis_2">
+      <name>Ladegleis Feuerwehr</name>
+      <laenge>380</laenge>
+    </ladestelle>
+    <ladestelle id="_bungsgleis" gleis="gleis_2a">
+      <name>Übungsgleis</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Feuerwehr</name>
+      <empfang>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Wasserwagen</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Kohlen</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Ersatzteile, Feuerwehrgeräte (Schläuche usw.)</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Fahrzeuge</name>
+          <gattung>E. R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Feuerwerkskörper</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>Flüssiggas</name>
+          <gattung>U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="_bungsgleis">
+          <name>Schrottfahrzeuge für Übungen</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>defekte Feuerwehrfahrzeuge</name>
+          <gattung>E, R, S</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>leere Wasserwagen</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladegleis_Feuerwehr">
+          <name>gebrauchte Feuerwehrgeräte</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="_bungsgleis">
+          <name>Schrottfahrzeuge nach Übungen</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

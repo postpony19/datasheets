@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Abzweig Porz</name>
+   <kuerzel>POA</kuerzel>
+   <typ>Abzw</typ>
+   <maszstab>120</maszstab>
+   <modulnr>SiFen426</modulnr>
+   <plan src="poa.gif" />
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<rechts nr="1">2gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="bogen1">
+         <name>1</name>
+         <laenge einheit="cm">122</laenge>
+      </gleis>
+      <gleis id="bogen2">
+         <name>2</name>
+         <laenge einheit="cm">122</laenge>
+      </gleis>
+	</hgleise>
+   </gleise>
+   <bemerkung>2gleisige Hauptbahn (Achtung: linkes Streckengleis (im Bild ROT) stillgelegt!) Abzweig auf 1gleisige Hauptbahn [br] zusammen mit SiFen425 Üst. Porz</bemerkung>
+</bahnhof>

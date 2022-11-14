@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Bw G-Ost</name>
+	<kuerzel>BGO</kuerzel>
+	<typ>Bw</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JuGra290</modulnr>
+	<plan src="bgo.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg5">
+				<name>5</name>
+				<laenge einheit="cm">118</laenge>
+				<bemerkung>Haupteinfahrgleis</bemerkung>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="ng1">
+				<name>1</name>
+				<laenge einheit="cm">143</laenge>
+				<bemerkung>Achtung: Länge gilt nur bis zur Abzweigweiche des ersten Lokschuppens!</bemerkung>
+			</gleis>
+			<gleis id="ng2">
+				<name>2</name>
+				<laenge einheit="cm">120</laenge>
+			</gleis>
+			<gleis id="ng3">
+				<name>3</name>
+				<laenge einheit="cm">194</laenge>
+			</gleis>
+			<gleis id="ng4">
+				<name>4</name>
+				<laenge einheit="cm">124</laenge>
+			</gleis>
+			<gleis id="ng6">
+				<name>6</name>
+				<laenge einheit="cm">48</laenge>
+			</gleis>
+			<gleis id="ng7">
+				<name>7</name>
+				<laenge einheit="cm">118</laenge>
+			</gleis>
+			<gleis id="ng8">
+				<name>8</name>
+				<laenge einheit="cm">138</laenge>
+			</gleis>
+			<gleis id="ng9">
+				<name>9</name>
+				<laenge einheit="cm">69</laenge>
+			</gleis>
+			<gleis id="ng10">
+				<name>10</name>
+				<laenge einheit="cm">28</laenge>
+			</gleis>
+			<gleis id="ng11">
+				<name>11</name>
+				<laenge einheit="cm">62</laenge>
+			</gleis>
+			<gleis id="ng12">
+				<name>12</name>
+				<laenge einheit="cm">55</laenge>
+			</gleis>
+			<gleis id="ng13">
+				<name>13</name>
+				<laenge einheit="cm">67</laenge>
+			</gleis>
+			<gleis id="ng14">
+				<name>14</name>
+				<laenge einheit="cm">56</laenge>
+			</gleis>
+			<gleis id="ng15">
+				<name>15</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle gleis="ng10">
+			<name>Materiallager</name>
+			<laenge einheit="cm"></laenge>
+		</ladestelle>
+		<ladestelle gleis="ng14 ng15">
+			<name>VT-Schuppen</name>
+			<laenge einheit="cm"></laenge>
+		</ladestelle>
+		<ladestelle gleis="ng6">
+			<name>Kohlebansen</name>
+			<laenge einheit="cm"></laenge>
+		</ladestelle>
+		<ladestelle gleis="ng11">
+			<name>Tankstelle</name>
+			<laenge einheit="cm"></laenge>
+		</ladestelle>
+		<verlader>
+			<name></name>
+		</verlader>
+	</gv>
+</bahnhof>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Lagerschuppen</name>
+	<kuerzel>BHG</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>HeMuf390</modulnr>
+	<plan src="bhg.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Hauptgleis</name>
+				<laenge>750</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Ladegleis">
+				<name>1</name>
+				<laenge>500</laenge>
+				<bemerkung>G-Wagen sind am Schuppen genau zu positionieren da keine Laderampe am Schuppen vorhanden ist</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="BHG_Lagerschuppen" gleis="Ladegleis">
+			<name>Lagerschuppen</name>
+			<laenge>350</laenge>
+		</ladestelle>
+		<ladestelle id="BHG_Rampe" gleis="Ladegleis">
+			<name>Rampe</name>
+			<laenge>100</laenge>
+		</ladestelle>
+		<verlader>
+			<name>BHG</name>
+			<empfang>
+				<ladegut ladestelle="BHG_Lagerschuppen">
+					<name>Düngemittel</name>
+					<gattung>G, H, T</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="BHG_Lagerschuppen">
+					<name>Futtermittel</name>
+					<gattung>G, H, T</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="BHG_Lagerschuppen">
+					<name>Zement, gesackt</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="BHG_Rampe">
+					<name>Baustoffe (Steine, Holz)</name>
+					<gattung>G, H, K, R, E, S</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="BHG_Rampe">
+					<name>Rüben (Saison)</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">0</wagen>
+				</ladegut>
+				<ladegut ladestelle="BHG_Rampe">
+					<name>Getreide (Saison)</name>
+					<gattung>T, E, G</gattung>
+					<wagen zeitraum="woche">0</wagen>
+				</ladegut>
+				<ladegut ladestelle="BHG_Rampe">
+					<name>Zuckerrüben (Saison)</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Maschinenausleihstation (MAS)</name>
+			<empfang>
+				<ladegut ladestelle="BHG_Rampe">
+					<name>landwirtschaftliches Gerät</name>
+					<gattung>G, H, K, R, E, S</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<bemerkung></bemerkung>
+	</gv>
+	<bemerkung>Grundstellung "GERADE" der Weiche ist nach Abschluß der Rangierarbeiten dem zuständigen FDL zu melden</bemerkung>
+</bahnhof>

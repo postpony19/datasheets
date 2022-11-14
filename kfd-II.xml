@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Kranichsfeld</name>
+  <kuerzel>KFD</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JuUhl235</modulnr>
+  <plan src="kfd.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Gleis_1b">
+        <name>1b</name>
+        <laenge einheit="mm">1800</laenge>
+        <bemerkung>Ein- und Ausfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3b">
+        <name>3b</name>
+        <laenge einheit="mm">1550</laenge>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+      </gleis>
+      <gleis id="Gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">1600</laenge>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="Gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">840</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_2a">
+        <name>2a</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>Einsatzstelle mit Triebwagenschuppen</bemerkung>
+      </gleis>
+      <gleis id="Gleis_2b">
+        <name>2b</name>
+        <laenge einheit="mm">1300</laenge>
+        <bemerkung>Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3a">
+        <name>3a</name>
+        <laenge einheit="mm">150</laenge>
+        <bemerkung>Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3c">
+        <name>3c</name>
+        <laenge einheit="mm">650</laenge>
+        <bemerkung>Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="Gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1700</laenge>
+        <bemerkung>Ladestraße/Freiladegleis und Kopframpe</bemerkung>
+      </gleis>
+      <gleis id="Gleis_A1">
+        <name>A1</name>
+        <laenge einheit="mm">950</laenge>
+        <bemerkung>Anschlußgleis VEB Salzsäure Sammelgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_A2">
+        <name>A2</name>
+        <laenge einheit="mm">950</laenge>
+        <bemerkung>Anschlußgleis VEB Salzsäure Verladegleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Gleis_1a">
+      <name>Hausbahnsteig</name>
+      <laenge einheit="mm">800</laenge>
+    </bahnsteig>
+    <bemerkung>Reger Urlauberverkehr kennzeichnet den Personenverkehr ebenso wie die Nutzung der Bahn durch Berufspendler. Besonders starken Reiseverkehr gibt es zu solchen Höhepunkten wie dem Stadt- und Rosenfest sowie zum Vatertag.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Kopframpe" gleis="Gleis_4">
+      <name>Kopframpe</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="Gleis_3a">
+      <name>Seitenrampe</name>
+      <laenge einheit="mm">150</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestraße" gleis="Gleis_4">
+      <name>Ladestraße</name>
+      <laenge einheit="mm">1500</laenge>
+    </ladestelle>
+    <ladestelle id="Güterschuppen" gleis="Gleis_3c">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">650</laenge>
+    </ladestelle>
+    <ladestelle id="Anschlu_Salzs_ure_Sammelgleis" gleis="Gleis_A1">
+      <name>Anschluß Salzsäure Sammelgleis</name>
+      <laenge einheit="mm">600</laenge>
+    </ladestelle>
+    <ladestelle id="VEB_Salzs_ure_Ladegleis" gleis="gleis_A2">
+      <name>VEB Salzsäure Ladegleis</name>
+      <laenge einheit="mm">950</laenge>
+    </ladestelle>
+    <ladestelle id="Lokremise_Kranichsfeld" gleis="Gleis_2a">
+      <name>Lokremise Kranichsfeld</name>
+      <laenge>500</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Kunstmöbeltischlerei Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Bretter</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Beschläge</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Möbel</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forst Kranichsfeld</name>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Stammholz</name>
+          <gattung>E/R/S</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bautischlerei Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Werkzeuge (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Fenster</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Türen</name>
+          <gattung>G</gattung>
+          <wagen>0.3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Dachbiner</name>
+          <gattung>R/S</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Gänsehof P. Feder Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Kraftfutter (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Daunenfedern (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Mastgänse</name>
+          <gattung>V</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Dampfsägemühle Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Kohlen</name>
+          <gattung>O</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Gatter-Sägeblätter (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Schmieröle</name>
+          <gattung>G</gattung>
+          <wagen>0.4</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Bretter</name>
+          <gattung>G/O</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Balken</name>
+          <gattung>G/K/R</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Porzellanfabrik Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Kartonagen</name>
+          <gattung>G</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Packpapier</name>
+          <gattung>G</gattung>
+          <wagen>0.4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Kaolin</name>
+          <gattung>O</gattung>
+          <wagen>0.6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Feldspat</name>
+          <gattung>O</gattung>
+          <wagen>0.3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Quarzsand</name>
+          <gattung>O</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Porzellanglasur</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Porzellanfarbe (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Steinkohle</name>
+          <gattung>O</gattung>
+          <wagen>1.2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Kaffegeschirr (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Speisegeschirr (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>0.4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Salzsäurewerk Fritz Mohnhuch</name>
+      <empfang>
+        <ladegut ladestelle="Anschlu_Salzs_ure_Sammelgleis">
+          <name>Lauge</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschlu_Salzs_ure_Sammelgleis">
+          <name>Salzsäure</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Lokremise Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Lokremise_Kranichsfeld">
+          <name>Dieselöl</name>
+          <gattung>Z</gattung>
+          <wagen>0.6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lokremise_Kranichsfeld">
+          <name>Lokkohle</name>
+          <gattung>O</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lokremise_Kranichsfeld">
+          <name>Loksand</name>
+          <gattung>O</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lokremise_Kranichsfeld">
+          <name>Amaturen und Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen>0.2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <bemerkung>Landwirtschaft, Porzellanfabrik, Dampfsägemühle, Bautischklerei, Kunstmöbeltischlerei, Molkerei</bemerkung>
+  </gv>
+</bahnhof>
+

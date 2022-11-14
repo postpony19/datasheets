@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Geraberg</name>
+	<kuerzel>GBG</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MaSch231</modulnr>
+	<plan src="gbg.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">105</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="ng1">
+				<name>2</name>
+				<laenge einheit="cm">140</laenge>
+			</gleis>
+			<gleis id="ng2">
+				<name>3</name>
+				<laenge einheit="cm">85</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<name>1</name>
+			<laenge einheit="cm">110</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="ladestr" gleis="ng2">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">80</laenge>
+		</ladestelle>
+		<ladestelle id="gschuppen" gleis="ng1">
+			<name>Güterschuppen</name>
+			<laenge einheit="cm">15</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Kofferfabrik Just</name>
+			<empfang>
+				<ladegut ladestelle="gschuppen">
+					<name>Hartpappe</name>
+					<gattung>G, H</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Brikett/Steinkohle</name>
+					<gattung>E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Tragetaschen für Schreibmaschinen</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Koffer</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Thermometerwerk Geraberg</name>
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Fieberthermometer</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Laborthermometer</name>
+					<gattung>G, H</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Staatl. Forstwirtschaftsbetrieb Geraberg</name>
+			<versand>
+				<ladegut ladestelle="ladestr">
+					<name>Stammholz</name>
+					<gattung>K, R</gattung>
+					<wagen>7</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Rindenmulch</name>
+					<gattung>E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Stückgut (Güterschuppen)</name>
+			<!--<empfang>
+				<ladegut ladestelle="gschuppen">
+					<name></name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name></name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name></name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+			</empfang>-->
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Fieberthermometer</name>
+					<gattung>G</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Laborthermometer</name>
+					<gattung>G</gattung>
+					<wagen>0.25</wagen>
+				</ladegut>
+				<!--<ladegut ladestelle="gschuppen">
+					<name></name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>-->
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>

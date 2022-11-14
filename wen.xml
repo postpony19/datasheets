@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Wendlenga</name>
+  <kuerzel>WEN</kuerzel>
+  <typ>Sbf</typ>
+  <verwaltung>Alle</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>RoWen109</modulnr>
+  <plan src="wen.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gl1">
+        <name>1</name>
+        <laenge einheit="cm">104</laenge>
+      </gleis>
+      <gleis id="gl2">
+        <name>2</name>
+        <laenge einheit="cm">104</laenge>
+      </gleis>
+      <gleis id="gl3">
+        <name>3</name>
+        <laenge einheit="cm">104</laenge>
+      </gleis>
+      <gleis id="gl4">
+        <name>4</name>
+        <laenge einheit="cm">104</laenge>
+      </gleis>
+      <gleis id="gl5">
+        <name>5</name>
+        <laenge einheit="cm">104</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="l1">
+        <name>l1</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="l2">
+        <name>l2</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="gleis_l3">
+        <name>l3</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="gleis_l4">
+        <name>l4</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="gleis_l5">
+        <name>l5</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="gleis_l6">
+        <name>l6</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+      <gleis id="gleis_l7">
+        <name>l7</name>
+        <laenge einheit="cm">20</laenge>
+        <bemerkung>Lok Abstell</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <bemerkung>Drehtellerabstellung</bemerkung>
+</bahnhof>
+

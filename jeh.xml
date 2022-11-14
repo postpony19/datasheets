@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Jenshausen</name>
+    <kuerzel>JEH</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>JeWer234</modulnr>
+    <plan src="jeh.jpg"/>
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">2gl</links>
+            <links nr="2">2gl</links>
+            <rechts nr="1">2gl</rechts>
+            <rechts nr="2">2gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="gleis1">
+                <name>1</name>
+                <laenge>??</laenge>
+                <bemerkung>Zugfahrten richtungsunabhängig</bemerkung>
+            </gleis>
+            <gleis id="gleis2">
+                <name>2</name>
+                <laenge>??</laenge>
+                <bemerkung>Zugfahrten richtungsunabhängig</bemerkung>
+            </gleis>
+            <gleis id="gleis3">
+                <name>3</name>
+                <laenge>??</laenge>
+                <bemerkung>Zugfahrten richtungsunabhängig</bemerkung>
+            </gleis>
+            <gleis id="gleis4">
+                <name>4</name>
+                <laenge>??</laenge>
+                <bemerkung>Zugfahrten richtungsunabhängig</bemerkung>
+            </gleis>
+            <gleis id="gleis5">
+                <name>5</name>
+                <laenge>??</laenge>
+                <bemerkung>Zugfahrten richtungsunabhängig</bemerkung>
+            </gleis>
+            <!-- hier können noch mehr Gleise nach obigen Schema eingefügt werden -->
+        </hgleise>
+        <ngleise>
+            <gleis id="gleis1c">
+                <name>1c</name>
+                <laenge>??</laenge>
+                <bemerkung>Stumpfgleis für Wendezüge</bemerkung>
+            </gleis>
+            <gleis id="gleis1b">
+                <name>1b</name>
+                <laenge>??</laenge>
+            </gleis>
+            <gleis id="gleis5c">
+                <name>5c</name>
+                <laenge>??</laenge>
+            </gleis>
+            <gleis id="gleis5b">
+                <name>5b</name>
+                <laenge>??</laenge>
+                <bemerkung>Lokschuppen</bemerkung>
+            </gleis>
+            <gleis id="gleis6b">
+                <name>6b</name>
+                <laenge>??</laenge>
+                <bemerkung>Lokschuppen</bemerkung>
+            </gleis>
+            <!-- hier können noch mehr Gleise nach obigen Schema eingefügt werden -->
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="gleis1 gleis1c">
+            <name>Hausbahnsteig</name>
+            <laenge>??</laenge>
+        </bahnsteig>
+        <bahnsteig gleis="gleis2 gleis3">
+            <name>Mittelbahnsteig</name>
+            <laenge>??</laenge>
+        </bahnsteig>
+        <!-- hier können beliebig viele Bahnsteige eingefügt werden -->
+        <!--<bemerkung>Berufs- und Schülerverkehr</bemerkung>-->
+    </pv>
+    <gv>
+        <!--<ladestelle id="ladestr" gleis="freiladegleis">
+            <name>Ladestraße</name>
+            <laenge einheit="achsen">10</laenge>
+        </ladestelle>-->
+        <ladestelle id="gschuppen" gleis="gleis1b">
+            <name>Güterschuppen</name>
+            <laenge einheit="cm">??</laenge>
+        </ladestelle>
+        <ladestelle id="rampe" gleis="gleis1b">
+            <name>Rampe</name>
+            <laenge einheit="mm">??</laenge>
+        </ladestelle>
+        <ladestelle id="srampe" gleis="gleis5c">
+            <name>Seitenrampe</name>
+            <laenge einheit="mm">??</laenge>
+        </ladestelle>
+        <ladestelle id="ladestr" gleis="gleis5c">
+            <name>Ladestraße</name>
+            <laenge einheit="mm">??</laenge>
+        </ladestelle>
+        <!-- hier können noch mehr Ladestellen nach obigen Schema eingefügt werden -->
+        <verlader>
+            <name>VEB Feinmechanische Werke</name>
+            <empfang>
+                <ladegut ladestelle="srampe">
+                    <name>SPW40 Armeefahrzeuge zur Revision der Zieloptiken</name>
+                    <gattung>K + G (Einheit)</gattung>
+                    <wagen zeitraum="tag">2</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="srampe">
+                    <name>SPW40 Armeefahrzeuge von Revision</name>
+                    <gattung>K + G (Einheit)</gattung>
+                    <wagen zeitraum="tag">2</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Kombinat Magdeburger Armaturenwerke, VEB Armaturenwerk Jenshausen</name>
+            <empfang>
+                <ladegut ladestelle="gschuppen">
+                    <name>Buntmetalle in Stangenform</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Schmierstoffe</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Normteile</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Halbzeuge</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="gschuppen">
+                    <name>Schiffsarmaturen</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.2</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Wasserhähne</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.2</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Absperrventile</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.2</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Thermostate</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.2</wagen>
+                </ladegut>
+                <ladegut ladestelle="gschuppen">
+                    <name>Fittinge aller Art</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.2</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>IFA-Kombinat, VEB Achsen-, Federn- und Schmiedewerke "Hermann Matern" Jenshausen</name>
+            <empfang>
+                <ladegut ladestelle="srampe">
+                    <name>Stahlgußbrammen</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+                <ladegut ladestelle="srampe">
+                    <name>Zuschlagstoffe</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+                <ladegut ladestelle="srampe">
+                    <name>Säure</name>
+                    <gattung>Z</gattung>
+                    <wagen zeitraum="tag">1</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="rampe">
+                    <name>LKW-Achsen für das gesamte IFA-Kombinat</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+                <ladegut ladestelle="rampe">
+                    <name>Blattfedern für das gesamte IFA-Kombinat</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+                <ladegut ladestelle="rampe">
+                    <name>Pleuel für den Export ins NSW (VW-Motorenwerk Wolfsburg)</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">1</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <bemerkung>Alle Angaben beziehen sich auf die Epoche IV</bemerkung>
+    </gv>
+    <bemerkung>Für die Epochen V und VI entworfen und gebaut[br]Längenermittlung 1.Quartal 2011</bemerkung>
+</bahnhof>

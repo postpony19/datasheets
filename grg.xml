@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Ueberleitstelle/Gleiswechsel Günther</name>
+	<kuerzel>GRG</kuerzel>
+	<typ>Ülst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>RoGue670</modulnr>
+	<plan src="grg.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<rechts nr="1">2gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>1</name>
+				<laenge>900</laenge>
+			</gleis>
+			<gleis>
+				<name>2</name>
+				<laenge>900</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<bemerkung>Überleitstelle mit einfachem Gleiswechsel!</bemerkung>
+</bahnhof>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Holzdorf</name>
+  <kuerzel>HDF</kuerzel>
+  <typ>Hst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JoLan322</modulnr>
+  <plan src="hdf.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>700</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>350</laenge>
+        <bemerkung>Empfangsgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>350</laenge>
+        <bemerkung>Versandgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1</name>
+      <laenge>470</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Gleis_am_S_gewerk" gleis="gleis_2">
+      <name>Gleis am Sägewerk</name>
+      <laenge>350</laenge>
+    </ladestelle>
+    <ladestelle id="Versandgleis" gleis="gleis_3">
+      <name>Versandgleis</name>
+      <laenge>350</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Sägewerk "Emil Holzbrett &amp; Co"</name>
+      <empfang>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Stammholz</name>
+          <gattung>E, G, H, K, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Kohlen</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Maschienenteile, Werkzeuge usw.</name>
+          <gattung>E, G, R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Maschienen</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Material zum Bau der Feldbahn</name>
+          <gattung>G, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Biogas</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Versandgleis">
+          <name>Stammholz klein</name>
+          <gattung>E, G, K, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Bretter aller Arten</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Europaletten</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Rindenmulch</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Hackschnitzel (für die Papierherstellung)</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Holzhandel Spahn &amp; Co</name>
+      <empfang>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Holz zum bearbeiten</name>
+          <gattung>E, G, H, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Maschinenteile / Werkzeuge usw.</name>
+          <gattung>G, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Maschienen</name>
+          <gattung>G, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Holzschutzmittel</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Nägel, Schrauben, Beläge</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Material zum Bau der Feldbahn</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gleis_am_S_gewerk">
+          <name>Biogas</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Versandgleis">
+          <name>Bretter aller Arten</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Balken jeder Größe</name>
+          <gattung>R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Kaminholz</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Leitern</name>
+          <gattung>E. R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Handwerkskunst (Nußknacker, Wurzelmännchen usw. )</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Telegrafenmaste</name>
+          <gattung>K, L, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>leere Fässer, (Holzschutz, Farbe)</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Europaletten</name>
+          <gattung>E, R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versandgleis">
+          <name>Holzpallets</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

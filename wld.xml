@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Walddorf</name>
+  <kuerzel>WLD</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>JaDen209</modulnr>
+  <plan src="wld.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">580.0</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">820.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">400.0</laenge>
+      </gleis>
+      <gleis id="gleis_1b">
+        <name>1b</name>
+        <laenge einheit="mm">0.0</laenge>
+        <bemerkung>noch nicht gebaut!</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">550.0</laenge>
+        <bemerkung>Umfahrungs- / Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">660.0</laenge>
+        <bemerkung>Sammelgleis, (Gefälle ab Weiche)</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">0.0</laenge>
+        <bemerkung>noch nicht gebaut!</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>Hausbahnsteig</name>
+      <laenge einheit="mm">500.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_1 gleis_2">
+      <name>Mittelbahnsteig</name>
+      <laenge einheit="mm">660.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestra_e_1" gleis="gleis_1a">
+      <name>Ladestraße 1</name>
+      <laenge einheit="mm">400.0</laenge>
+    </ladestelle>
+    <!--<ladestelle id="Ladestra_e_2" gleis="gleis_5">
+      <name>Ladestraße 2</name>
+      <laenge einheit="mm">0.0</laenge>
+    </ladestelle>
+    <ladestelle id="Sch_ttverladung" gleis="gleis_1b">
+      <name>Schüttverladung</name>
+      <laenge einheit="mm">0.0</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgutschuppen" gleis="gleis_1a">
+      <name>Stückgutschuppen</name>
+      <laenge einheit="achsen">4.0</laenge>
+    </ladestelle>-->
+    <verlader>
+      <name>Bauernhof Reinhards</name>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Schweine</name>
+          <gattung>V, H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <!--<ladegut ladestelle="Sch_ttverladung">
+          <name>Rüben</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">0.0</wagen>
+        </ladegut>-->
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bauernhof Hansens</name>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Hühner</name>
+          <gattung>V, H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Enten</name>
+          <gattung>V, H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Gänse</name>
+          <gattung>V, H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <!--<ladegut ladestelle="Sch_ttverladung">
+          <name>Rüben</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">0.0</wagen>
+        </ladegut>-->
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bauernhof Berger</name>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Milch</name>
+          <gattung>K</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Käse</name>
+          <gattung>K</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <!--<ladegut ladestelle="Sch_ttverladung">
+          <name>Rüben</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">0.0</wagen>
+        </ladegut>-->
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstbetrieb "GutHolz"</name>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Stammholz</name>
+          <gattung>R, S</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Stückgut</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_1">
+          <name>Post</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <bemerkung>Nutzbar bis 16 Achsen pro Tag</bemerkung>
+  </gv>
+  <bemerkung>Wichtiger Hinweis zur Vermeidung von Schäden an Fahrzeugen: Die auf beiden Bahnhofsköpfen befindlichen Dreiwegeweichen basieren auf der Tilligschen EW1!</bemerkung>
+</bahnhof>
+

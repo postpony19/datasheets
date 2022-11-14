@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Barby</name>
+	<kuerzel>BY</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>SvTar205</modulnr>
+	<plan src="by.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">306</laenge>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">415</laenge>
+				<bemerkung>Durchgehendes Hauptgleis</bemerkung>
+			</gleis>
+			<gleis id="hg3">
+				<name>3</name>
+				<laenge einheit="cm">295</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>1a</name>
+				<laenge einheit="cm">18</laenge>
+			</gleis>
+			<gleis>
+				<name>5</name>
+				<laenge einheit="cm">250</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis>
+				<name>6</name>
+				<laenge einheit="cm">250</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis>
+				<name>11</name>
+				<laenge einheit="cm">125</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis id="srampengleis">
+				<name>11a</name>
+				<laenge einheit="cm">35</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis>
+				<name>12</name>
+				<laenge einheit="cm">88</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis id="rampengleis">
+				<name>12a</name>
+				<laenge einheit="cm">32</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis id="ladestrgleis">
+				<name>13a</name>
+				<laenge einheit="cm">28</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis>
+				<name>14</name>
+				<laenge einheit="cm">78</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis>
+				<name>Anschlussgleis</name>
+				<laenge einheit="cm">40</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis id="veabgleis">
+				<name>Anschluss VEAB</name>
+				<laenge einheit="cm">20</laenge>
+				<bemerkung></bemerkung>
+			</gleis>
+			<gleis id="maisangleis">
+				<name>Anschluss Maisan</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<name>1</name>
+			<laenge einheit="cm">160</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg2">
+			<name>2</name>
+			<laenge einheit="cm">165</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg3">
+			<name>3</name>
+			<laenge einheit="cm">150</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="srampe" gleis="srampengleis">
+			<name>Seitenrampe</name>
+			<laenge einheit="cm">35</laenge>
+		</ladestelle>
+		<ladestelle id="krampe" gleis="rampengleis">
+			<name>Kopframpe</name>
+			<laenge einheit="cm">32</laenge>
+		</ladestelle>
+		<ladestelle id="ladestr" gleis="ladestrgleis">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">28</laenge>
+		</ladestelle>
+		<ladestelle id="veab" gleis="veabgleis">
+			<name>Anschluss VEAB</name>
+			<laenge einheit="cm">20</laenge>
+		</ladestelle>
+		<ladestelle id="maisan" gleis="maisangleis">
+			<name>Anschluss Maisan</name>
+			<laenge einheit="cm">30</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Kieswerk Barby</name>
+			<versand>
+				<ladegut ladestelle="ladestr">
+					<name>Kies</name>
+					<gattung>E, F</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Fertigmischungen</name>
+					<gattung>U</gattung>
+					<wagen zeitraum="tag">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Maisan Barby</name>
+			<empfang>
+				<ladegut ladestelle="maisan">
+					<name>Kohle</name>
+					<gattung>E (O)</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="maisan">
+					<name>Produktionsrückstände</name>
+					<gattung>G, E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="maisan">
+					<name>Stärke</name>
+					<gattung>G, H</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="maisan">
+					<name>Traubenzucker</name>
+					<gattung>G, H</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="maisan">
+					<name>Viehfutter</name>
+					<gattung>G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Möbelwerke Magdeburg BT Barby</name>
+			<empfang>
+				<ladegut ladestelle="krampe">
+					<name>Furnierholz</name>
+					<gattung>G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Getreideverarbeitung</name>
+			<versand>
+				<ladegut ladestelle="veab">
+					<name>Getreide</name>
+					<gattung>E</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Die erforderlichen Wagenmengen müssen noch ermittelt werden!</bemerkung>
+</bahnhof>

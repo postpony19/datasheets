@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Taubenstein</name>
+	<kuerzel>TBS</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>HeSch356</modulnr>
+	<plan src="tbs.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Strecke</name>
+				<laenge einheit="cm">80</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="g2">
+				<name>Anschluss</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="rampe" gleis="g2">
+			<name>Rampe</name>
+			<laenge einheit="cm">45</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Schlachthof "G.Flügel"</name>
+			<empfang>
+				<ladegut ladestelle="rampe">
+					<name>Geflügel</name>
+					<gattung>V, G</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Propangas</name>
+					<gattung>Z</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Trockeneis</name>
+					<gattung>I</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Gewürze</name>
+					<gattung>Stückgut</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="rampe">
+					<name>Frischgeflügel</name>
+					<gattung>I, T</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Gefriergeflügel</name>
+					<gattung>I, T</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Schlachtabfälle</name>
+					<gattung>O, E</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>

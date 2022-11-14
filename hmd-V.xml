@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Hartmannsdorf</name>
+  <kuerzel>HMD</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaPre237</modulnr>
+  <plan src="hmd.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Bahnsteig">
+        <name>2</name>
+        <laenge einheit="cm">420</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis3">
+        <name>3</name>
+        <laenge einheit="cm">300</laenge>
+        <bemerkung>Übergabegleis I zum Großtanklager</bemerkung>
+      </gleis>
+      <gleis id="gleis4">
+        <name>4</name>
+        <laenge einheit="cm">300</laenge>
+        <bemerkung>Übergabegleis II zum Großtanklager</bemerkung>
+      </gleis>
+      <gleis>
+        <name>3A</name>
+        <laenge einheit="cm">120</laenge>
+        <bemerkung>Aufstellgleis Güterwagen</bemerkung>
+      </gleis>
+      <gleis id="gleis1a">
+        <name>1A</name>
+        <laenge einheit="cm">50</laenge>
+        <bemerkung>Kopframpengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis1b">
+        <name>1B</name>
+        <laenge einheit="cm">70.0</laenge>
+        <bemerkung>Anschluss Getreidewirtschaft</bemerkung>
+      </gleis>
+      <gleis id="gleis1">
+        <name>1</name>
+        <laenge einheit="cm">100.0</laenge>
+        <bemerkung>Ladestrasse und Güterschuppengleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Bahnsteig">
+      <laenge einheit="mm">800</laenge>
+    </bahnsteig>
+    <bemerkung>Der Personenverkehr auf der Vorbildstrecke wurde zum 28.05.2000 auf der Gesamtstrecke LW eingestellt.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestelle1" gleis="gleis1a">
+      <name>Kopframpe</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestelle2" gleis="gleis1">
+      <name>Ladestrasse und Güterschuppengleis</name>
+      <laenge einheit="achsen">18</laenge>
+    </ladestelle>
+    <ladestelle id="Raiffeisen_Getreidesilo" gleis="gleis1b">
+      <name>Raiffeisen Getreidesilo</name>
+      <laenge einheit="achsen">16</laenge>
+    </ladestelle>
+    <ladestelle id="Anschluss_I_Elf_Oil_AG" gleis="gleis3">
+      <name>Anschluss  I  Elf Oil AG</name>
+      <laenge einheit="achsen">60.0</laenge>
+    </ladestelle>
+    <ladestelle gleis="gleis4" id="Anschluss_II_Elf_Oil_AG">
+      <name>Anschluss II Elf Oil AG</name>
+      <laenge einheit="achsen">60.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Hartsteinwerke Hartmannsdorf GmbH</name>
+      <versand>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Schotter</name>
+          <gattung>Fac</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Kies</name>
+          <gattung>Fac, E, R</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>MaZ Metallaufbereitung Zwickau GmbH</name>
+      <versand>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Eisenschrott</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Buntmetallschrott</name>
+          <gattung>E</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Agrargenossenschaft Hartmannsdorf</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Dünger</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Getreide</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Kartoffeln</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Raiffeisen Getreidewirtschaft Hartmannsdorf, Getreidesilo</name>
+      <empfang>
+        <ladegut ladestelle="Raiffeisen_Getreidesilo">
+          <name>Getreide</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Raiffeisen_Getreidesilo">
+          <name>Braunkohle</name>
+          <gattung>Fac</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Raiffeisen_Getreidesilo">
+          <name>Getreide</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel Kurt Polster</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Braunkohlebriketts</name>
+          <gattung>F</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Flender Guß GmbH</name>
+      <empfang>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Formsand</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Eisenbarren</name>
+          <gattung>R, S, Ea</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Öle / Trennmittel</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Schrott</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Gußteile</name>
+          <gattung>E, R, G</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Elf Oil AG Großtanklager Hartmannsdorf</name>
+      <empfang>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Flüssiggas</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Rohre</name>
+          <gattung>R, S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">7</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">7</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Benzin</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_I_Elf_Oil_AG">
+          <name>Gaswind (Abluft Lagertanks)</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Sächsiche Forstwirtschaft Chemnitzer Land</name>
+      <versand>
+        <ladegut ladestelle="Ladestelle2">
+          <name>Stammholz</name>
+          <gattung>Ea, R</gattung>
+          <wagen>6.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Einzelwagen des Großtanklagers nur in Verbindung mit dem Einsatz des Tanklagers![br]Bei nichteinsatz des Tanklagers müssen die Einzelwagen der Elf Oil AG herrausgerechnet werden.[br]Hier noch ein paar Hinweise für den Fahrplaner:[br]http://www.fktt-module.de/de/node/278</bemerkung>
+  </gv>
+  <bemerkung>Vorbild Strecke LW Wittgensdorf oB - Limbach Oberfrohna. Strecken-Km 4,1. Das Tanklager der Elf Oil AG ist der grösste Anschliesser.[br]Nach dem Bau der Produkten-Pipeline von der Raffinerie Leuna nach Hartmanndsorf erfolgt die Bedienung des GTL per Bahn in den Zeiten der Pipeline-Wartung sowie bei Wartungsarbeiten der Raffinerie von anderen Raffinerien aus täglich mit mehreren Ganzzügen.</bemerkung>
+</bahnhof>
+

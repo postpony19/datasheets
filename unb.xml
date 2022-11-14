@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Unterneubrunn</name>
+  <kuerzel>UNB</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>DeVie1200</modulnr>
+  <plan src="unb.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">740</laenge>
+        <bemerkung>Bahnsteig</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">420</laenge>
+        <bemerkung>Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">340</laenge>
+        <bemerkung>Kopframpe / Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">510</laenge>
+        <bemerkung>Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">960</laenge>
+        <bemerkung>Ladestraße / Holzverladeplatz</bemerkung>
+      </gleis>
+      <gleis id="gleis_A1">
+        <name>A1</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>Anschluß VEB Glaswerk Unterneubrunn</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="mm">140</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">690</laenge>
+        <bemerkung>Umsetzgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1</name>
+      <laenge einheit="mm">580</laenge>
+    </bahnsteig>
+    <bemerkung>Schüler-, Berufs- und Touristik-Verkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Lokschuppen" gleis="gleis_2a">
+      <name>Lokschuppen</name>
+      <laenge einheit="mm">140</laenge>
+    </ladestelle>
+    <ladestelle id="G_terschuppen" gleis="gleis_3">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">315</laenge>
+    </ladestelle>
+    <ladestelle id="Kopframpe_Ladestra_e" gleis="gleis_4">
+      <name>Kopframpe / Ladestraße</name>
+      <laenge einheit="mm">270</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_5">
+      <name>Ladestraße</name>
+      <laenge einheit="mm">510</laenge>
+    </ladestelle>
+    <ladestelle id="Holzladeplatz" gleis="gleis_6">
+      <name>Holzladeplatz</name>
+      <laenge einheit="mm">760</laenge>
+    </ladestelle>
+    <ladestelle id="Anschlu_VEB_Glaswerk" gleis="gleis_A1">
+      <name>Anschluß VEB Glaswerk</name>
+      <laenge einheit="mm">500</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Glaswerk Unterneubrunn</name>
+      <empfang>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Bruchglas</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Quarzsand</name>
+          <gattung>T, U</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Dolormit</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Soda</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Schweröl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Natriumnitrat (Fässer/Säcke)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Aluminiumhydroxid (Fässer/Säcke)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Natriumsulfat (Fässer/Säcke)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Koksgries / Kohlenstoff (Fässer/Säcke)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.125</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Pappe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Paletten</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Konservengläser</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Spirituosenflaschen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Bier-/ Limoflaschen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschlu_VEB_Glaswerk">
+          <name>Bohnerwachsflaschen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Glaswerk Gießübel</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Bruchglas</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">1.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Pappe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Paletten</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Spirituosenflaschen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Bier-/ Limoflaschen</name>
+          <gattung>G1</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Konsum Gewürzmühle</name>
+      <empfang>
+        <ladegut ladestelle="Lokschuppen">
+          <name>Gewürze</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Pappe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Gewürzmischung</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstamt</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Stiefel, Seile, Werkzeuge</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Stammholz</name>
+          <gattung>E, R, K</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Lokbahnhof</name>
+      <empfang>
+        <ladegut ladestelle="Lokschuppen">
+          <name>Kohle</name>
+          <gattung>F</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>FDGB Ferienheime</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Bier / Limo</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>HG Holzverarb. Industrie(ab1960 PGH HAWEGE-MOBA)</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Konsumgüter (Schlitten; Küchengeräte)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kleiderbügelwerk Gießübel</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Konsumgüter (Kleiderbügel)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Polstermöbelwerk (Oberneubrunn)</name>
+      <versand>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Konsumgüter (Polstermöbel)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Säge- und Kistenwerk Gießübel</name>
+      <versand>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Bretter / Kanthölzer</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Kisten</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlenhandel</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe_Ladestra_e Ladestra_e">
+          <name>Kohle / Brikett</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Sägewerk Hopf</name>
+      <versand>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Bretter / Kanthölzer</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Sägewerk</name>
+      <versand>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Bretter / Kanthölzer</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Elektronik Gießübel</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Prüfgeräte (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Netzteile (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>6 Zugpaare mit 6 - 8 Güterwagen</bemerkung>
+  </gv>
+  <bemerkung>TTm Schmalspur[br]Version 2[br]Letzte Änderung am 15.09.2016</bemerkung>
+</bahnhof>
+

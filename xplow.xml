@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Platerów</name>
+    <kuerzel>XPLOW</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>Wojciech Krzyczkowski WoKrz001</modulnr>
+    <plan src="xplow.png"/>
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">2gl</links>
+            <rechts nr="1">2gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="gleis1">
+                <name>1</name>
+                <laenge einheit="cm">230</laenge>
+                <bemerkung>Richtungsgleis</bemerkung>
+            </gleis>
+            <gleis id="gleis2">
+                <name>2</name>
+                <laenge einheit="cm">270</laenge>
+                <bemerkung>Richtungsgleis</bemerkung>
+            </gleis>
+            <gleis id="gleis3">
+                <name>3</name>
+                <laenge einheit="cm">250</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+        </hgleise>
+        <ngleise>
+            <gleis id="gleis4a">
+                <name>4a</name>
+                <laenge einheit="cm">58</laenge>
+            </gleis>
+            <gleis id="gleis2b">
+                <name>4b</name>
+                <laenge einheit="cm">130</laenge>
+            </gleis>
+            <gleis id="gleis6a">
+                <name>6a</name>
+                <laenge einheit="cm">75</laenge>
+            </gleis>
+            <gleis id="gleis6b">
+                <name>6b</name>
+                <laenge einheit="cm">130</laenge>
+            </gleis>
+            <gleis id="gleis8">
+                <name>8</name>
+                <laenge einheit="cm">71</laenge>
+            </gleis>
+            <gleis id="gleis10">
+                <name>10</name>
+                <laenge einheit="cm">60</laenge>
+            </gleis>
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="gleis1 gleis2">
+            <laenge einheit="cm">135</laenge>
+        </bahnsteig>
+    </pv>
+    <gv>
+        <ladestelle id="lade1" gleis="gleis6a">
+            <name>Rampa, magazyn {Laderampe, Lagerhaus}</name>
+            <laenge einheit="cm">28</laenge>
+        </ladestelle>
+        <ladestelle id="lade2" gleis="gleis10">
+            <name>Plac ładunkowy {Ladeplatz}</name>
+            <laenge einheit="cm">46</laenge>
+        </ladestelle>
+        <verlader>
+            <name>GS Platerów {BHG Platerów}</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>drobnica (wyroby gotowe) {Stückgut (Fertigwaren)}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">3</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">8</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>pasze i nawozy {Futter- und Düngemittel}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">3</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>produkty rolne (zboże, ziemniaki) {landwirtschaftliche Erzeugnisse (Getreide, Kartoffeln)}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+        <verlader>
+            <name>Fabryka prefabrykatów "Nad Bugiem" {Fertigbetonteilewerk "Nad Bugiem"}</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>drobnica (wyroby gotowe) {Stückgut (Fertigwaren)}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">4</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>prefabrykaty betonowe {Betonfertigteile}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">6</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Tartak {Sägewerk}</name>
+            <versand>
+                <ladegut ladestelle="lade2">
+                    <name>dłużyca (kłody) {lange Bretter/Baumstämme}</name>
+                    <gattung>K, R, S</gattung>
+                    <wagen zeitraum="woche">5</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>drewno (tarcica) {Holz (Bauholz/Bretter)}</name>
+                    <gattung>E, K, R, S</gattung>
+                    <wagen zeitraum="woche">5</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Rampa drogowców {Bahnmeisterei (BM)}</name>
+            <empfang>
+                <ladegut ladestelle="lade2">
+                    <name>gazy techniczne {Technische Gase}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>części zamienne do maszyn {Ersatzteile für Maschinen}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>oleje i smary {Öle und Fette}</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade2">
+                    <name>złom, materiały zużyte {Schrott und Abfälle}</name>
+                    <gattung>E, G, H</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <!--<bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung>-->
+    </gv>
+    <bemerkung>Die allgemeinen Bemerkungen insbesondere die Rangierhinweise müssen noch konkret übersetzt werden!</bemerkung>
+</bahnhof>

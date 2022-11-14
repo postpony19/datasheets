@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluß Kalkwerk</name>
+  <kuerzel>KW</kuerzel>
+  <typ>Anst, Awanst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JoLan364</modulnr>
+  <plan src="kw.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>650</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge>230</laenge>
+        <bemerkung>Umschlaggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_10a">
+        <name>10a</name>
+        <laenge>100</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Umschlaggleis" gleis="gleis_1">
+      <name>Umschlaggleis</name>
+      <laenge>230</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Kalkwerk Ernst Thählmann</name>
+      <empfang>
+        <ladegut ladestelle="Umschlaggleis">
+          <name>Leerwagen</name>
+          <gattung>K, T, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Umschlaggleis">
+          <name>Kalk</name>
+          <gattung>K, T, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

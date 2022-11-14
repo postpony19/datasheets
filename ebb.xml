@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Elbblick</name>
+  <kuerzel>EBB</kuerzel>
+  <typ>Hp</typ>
+  <maszstab>120</maszstab>
+  <modulnr>TTBay345</modulnr>
+  <plan src="ebb.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Bahnsteiggleis">
+        <name>1</name>
+        <laenge>1000</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="Anschlussgleis">
+        <name>2</name>
+        <laenge>600</laenge>
+        <bemerkung>Sägewerksanschluß</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>400.0</laenge>
+        <bemerkung>Sägewerksanschluß</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Bahnsteiggleis">
+      <name>1</name>
+      <laenge>860.0</laenge>
+    </bahnsteig>
+    <bemerkung>Ausflugsverkehr zu nahegelegenen Wanderzielen der sächsischen Schweiz</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Freilager" gleis="Anschlussgleis">
+      <name>Freilager</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <ladestelle id="Holzschuppen" gleis="Anschlussgleis">
+      <name>Holzschuppen</name>
+      <laenge>250</laenge>
+    </ladestelle>
+    <ladestelle id="Bretterverladung" gleis="gleis_3">
+      <name>Bretterverladung</name>
+      <laenge>400.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Holzverarbeitung Betrieb</name>
+      <empfang>
+        <ladegut ladestelle="Freilager">
+          <name>Stammholz</name>
+          <gattung>K, R, S, E</gattung>
+          <wagen zeitraum="tag">5.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Holzschuppen">
+          <name>Schnittholz, paketiert</name>
+          <gattung>K, R, S, E</gattung>
+          <wagen zeitraum="tag">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Bretterverladung">
+          <name>Bretter</name>
+          <gattung>K,R (max.6m Achsstand)</gattung>
+          <wagen>5.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzschuppen">
+          <name>Sägespänne lose / gesackt</name>
+          <gattung>E , G</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Interner Wagenverschub mit Seilzuganlage</bemerkung>
+  </gv>
+  <bemerkung>Grundstellung "ABZWEIG" ist nach Abschluß der Rangierarbeiten dem zuständigen FDL zu melden</bemerkung>
+</bahnhof>
+

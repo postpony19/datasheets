@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Feucht</name>
+  <kuerzel>FEU</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DRG</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>GeRic249</modulnr>
+  <plan src="feu.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>1250</laenge>
+        <bemerkung>Durchgehendes Streckengleis; Umfahrung beim Rangieren</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>1250</laenge>
+        <bemerkung>Bahnsteig; Einschluss für hier haltende Züge bei Kreuzungen / Überholungen</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>970</laenge>
+        <bemerkung>Ladegleis; westlich (links) Jauchegrube, dann Stückgut und Ladestraße, östlich Holzverladung</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Schüttbahnsteig, nur teilw. erhöht</name>
+      <laenge>800</laenge>
+    </bahnsteig>
+    <bemerkung>Bahnsteig ist nebenbahntypisch nur teilweise erhöht, Zustieg von Personen aber auf gesamter Länge möglich.[br][br]Minimaler Personenverkehr in benachbarte Dörfer und Städte (typisch 2 Zugpaare / Tag, ggf. als GmP). Triebwageneinsatz möglich, vor allem falls Arbeiterverkehr zu einer nahegelegenen Stadt vorkommt.[br][br]Beim Vorbild (Strecke Nossen-Moldau) in Epoche II ist Durchfahrt bzw. Umleitung hochwertiger Züge nach Böhmen möglich (Teplitz, Schönau, Karlsbad ...). Kein Halt.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Jauchegrube" gleis="gleis_3">
+      <name>Jauchegrube</name>
+      <laenge>120</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_3">
+      <name>Ladestraße</name>
+      <laenge>200</laenge>
+    </ladestelle>
+    <ladestelle id="Holzverladung" gleis="gleis_3">
+      <name>Holzverladung</name>
+      <laenge>150</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Güterschuppen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.75</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Kunst-Dünger od. Kalk</name>
+          <gattung>G, K</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>landwirtschaftliche Maschinen</name>
+          <gattung>O, R, S</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.75</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Obst, Gemüse, landwirtsch. Produkte</name>
+          <gattung>O, G, Wärmeschutzwagen, Kühlwagen, R</gattung>
+          <wagen>1.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Jauchegrube</name>
+      <empfang>
+        <ladegut ladestelle="Jauchegrube">
+          <name>Jauche</name>
+          <gattung>Sonderwagen</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaft</name>
+      <versand>
+        <ladegut ladestelle="Holzverladung">
+          <name>Stammholz, geschnitten</name>
+          <gattung>O, R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzverladung">
+          <name>Langholz, ganze Stämme</name>
+          <gattung>H, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>In Epoche II vorwiegend Zufuhr von Jauche mitels spezieller Jauchewagen, außerdem Kalk als Düngemittel. Abfuhr von Holz auf zweiachs. Rungen- und Drehschemelwagen. Sehr geringer Stückgutverkehr und Versand landwirtschaftl. Erzeugnisse. Ganz selten mal ein Dreschzug oder andere "Besonderheit" per Bahn. Verbrauch und Produktion gegenüber Epoche I leicht angestiegen, da Feucht und die umliegenden Städte wachsen.[br][br]Güterschuppen und Holzverladung liegen nebeneinander am selben Gleis, Platzangebot frei verteilbar.</bemerkung>
+  </gv>
+  <bemerkung>Kleiner sächsischer Nebenbahn-Bahnhof im Erzgebirge. Hanglage. Inspiriert von der Strecke Nossen-Moldau.[br][br]Vollständige Ausgestaltung für Epoche I (Figuren, Fuhrwerke, Detailszenen). Auch in Epoche II verwendbar - nur die grünen Sächsischen Uniformen passen nicht ganz.[br][br]Zugkreuzungen sind möglich. Geringer Ortsgüterverkehr sowie Personenverkehr vorgesehen. Die Jaucheverladung bietet ein attraktives Ziel für die vielen schönen Jauchewagen in TT.[br][br]Der "komplette" Bahnhof besteht aus 4 Teilen. Das eigentliche Modul "Bahnhof Feucht" mit zwei Segmenten bildet die beiden mittleren Teile. Es ist möglich, den Bahnhof nur mit diesen beiden Segmenten aufzubauen, wenn man an deren Endstücken einen kleinen seitlichen Versatz ggü. FKTT-Hang-1gl akzeptiert.[br]Wenn möglich sollten westlich (links) das Segment "Feucht Walther-Hof" und östlich (rechts) das Segment "Feucht Wald" angeschlossen werden.[br][br]Die weiteren Module aus der Serie "Feucht" bilden ideale Ergänzungen westlich und östlich des Bahnhofs.</bemerkung>
+</bahnhof>
+

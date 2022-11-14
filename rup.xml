@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Ruhpolding</name>
+  <kuerzel>RUP</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DB</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>JuRam250</modulnr>
+  <plan src="rup.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1100.0</laenge>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">1500.0</laenge>
+        <bemerkung>Nutzlänge inkl. Weiche und Stumpf</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1100.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">1100.0</laenge>
+        <bemerkung>Abstellgleis Reisezugwagen/Güterwagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">900.0</laenge>
+        <bemerkung>Abstellgleis Reisezugwagen/Güterwagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="mm">900.0</laenge>
+        <bemerkung>Abstellgleis Reisezugwagen/Güterwagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">800.0</laenge>
+        <bemerkung>Rampe/Lstr/Gs/Agl.</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Bstg. 1</name>
+      <laenge einheit="mm">900.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <name>Bstg. 2</name>
+      <laenge einheit="mm">1400.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_4">
+      <name>Bstg. 3</name>
+      <laenge einheit="mm">1000.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Kopf-_und_Seitenrampe" gleis="gleis_1">
+      <name>Kopf- und Seitenrampe</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestr._1" gleis="gleis_1">
+      <name>Ladestr. 1</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <ladestelle id="G_terschuppen" gleis="gleis_1">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">200.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestr._2" gleis="gleis_1">
+      <name>Ladestr. 2</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <ladestelle id="Baugleis_Tunnelbaustelle" gleis="gleis_1">
+      <name>Baugleis Tunnelbaustelle</name>
+      <laenge einheit="mm">250.0</laenge>
+    </ladestelle>
+    <ladestelle id="Anschl._BayWa" gleis="gleis_2">
+      <name>Anschl. BayWa</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Brüninghaus Metallwaren</name>
+      <empfang>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Weißblechtafeln</name>
+          <gattung>G, H, S</gattung>
+          <wagen zeitraum="tag">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Polyethylen Formlinge palettiert</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">2.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Kronkorken</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">3.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BayWa</name>
+      <empfang>
+        <ladegut ladestelle="Anschl._BayWa">
+          <name>Dünger</name>
+          <gattung>G,Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschl._BayWa">
+          <name>Tierfutter</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschl._BayWa">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Tunnelbaustelle</name>
+      <empfang>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Sprengstoff</name>
+          <gattung>G</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Rohre</name>
+          <gattung>R,S</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Stahlmatten</name>
+          <gattung>R,S</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Zement</name>
+          <gattung>Z,U</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Zuschlagstoffe</name>
+          <gattung>?</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Baugleis_Tunnelbaustelle">
+          <name>Abraum</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">6</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Güterschuppen</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Lebensmittel</name>
+          <gattung>G,H,I</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaft</name>
+      <versand>
+        <ladegut ladestelle="Ladestr._2 Ladestr._1">
+          <name>Stammholz</name>
+          <gattung>E,R</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

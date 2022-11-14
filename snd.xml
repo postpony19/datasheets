@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Schleusingerneundorf</name>
+  <kuerzel>SND</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>FdEZM244</modulnr>
+  <plan src="snd.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">140</laenge>
+        <bemerkung>Hausbahnsteig, Gütergleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="cm">120</laenge>
+        <bemerkung>Personenzüge, mit Bahnsteig</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">33</laenge>
+        <bemerkung>Stumpfgleis mit Kopf- und Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">145</laenge>
+        <bemerkung>Personenzüge, mit Bahnsteig</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">53</laenge>
+        <bemerkung>Stumpfgleis mit Seitenrampe</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Gleis 2</name>
+      <laenge einheit="cm">100</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <name>Gleis 3</name>
+      <laenge einheit="cm">125</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Gleis_1" gleis="gleis_1">
+      <name>Gleis 1</name>
+      <laenge einheit="cm">33</laenge>
+    </ladestelle>
+    <ladestelle id="Kopf-_Seitenrampe" gleis="gleis_4">
+      <name>Kopf-/Seitenrampe</name>
+      <laenge einheit="cm">33</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="gleis_5">
+      <name>Seitenrampe</name>
+      <laenge einheit="cm">53</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Verlader</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe Gleis_1 Kopf-_Seitenrampe">
+          <name>Stückgut</name>
+          <gattung>G, H, I</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe Kopf-_Seitenrampe">
+          <name>Holz, Baustoffe, Stückgut</name>
+          <gattung>E, F, G, H, I, K, R, S</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Seitenrampe Gleis_1 Kopf-_Seitenrampe">
+          <name>Stückgut</name>
+          <gattung>G, H, I</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe Kopf-_Seitenrampe">
+          <name>Holz</name>
+          <gattung>E, F, G, H, K, R</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

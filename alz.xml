@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Allzunah</name>
+  <kuerzel>ALZ</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>NoSch208</modulnr>
+  <plan src="alz.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">910.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">590.0</laenge>
+        <bemerkung>beidseitige Gleissperre</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <laenge einheit="mm">670.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Holzverladung" gleis="gleis_2">
+      <name>Holzverladung</name>
+      <laenge einheit="mm">600.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Forstbetrieb</name>
+      <empfang>
+        <ladegut ladestelle="Holzverladung">
+          <name>Holz</name>
+          <gattung>R, S</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzverladung">
+          <name>Maschinen</name>
+          <gattung>R, S</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzverladung">
+          <name>Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Holzverladung">
+          <name>Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>max. 8 Achsen pro Bedienung (z.B. 2 Stk. Res oder 4 Stk. 2-achsige Wagen)</bemerkung>
+  </gv>
+  <bemerkung>Alle Angaben der Betriebsstelle sind noch einmal auf Plausibilität zu prüfen![br]Letzte Änderung am 07.03.2015</bemerkung>
+</bahnhof>

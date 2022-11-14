@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>BHG Lilienstraße</name>
+  <kuerzel>BLS</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>JaDan363</modulnr>
+  <plan src="bls.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Hauptgleis">
+        <name>Hauptgleis</name>
+        <laenge einheit="cm">90.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_BHG">
+        <name>BHG</name>
+        <laenge einheit="cm">40.0</laenge>
+        <bemerkung>Anschlussgleis mit Gleissperre</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="BHG_Lilienstra_e" gleis="gleis_BHG">
+      <name>BHG Lilienstraße</name>
+      <laenge einheit="cm">35.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>BHG</name>
+      <empfang>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Zement</name>
+          <gattung>G,H,U</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Gartengeräte</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Saatgut</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Eisenwaren</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Dünger</name>
+          <gattung>G,H,T</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Ziegel</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Kohle</name>
+          <gattung>E,F</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Bauholz</name>
+          <gattung>E,K,R</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="BHG_Lilienstra_e">
+          <name>Kartoffeln</name>
+          <gattung>E,G,H</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

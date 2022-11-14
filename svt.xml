@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Hafen Sundevitt</name>
+  <kuerzel>SVT</kuerzel>
+  <typ>Bf, Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaKoh371</modulnr>
+  <plan src="svt.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+      <rechts nr="2">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>1000</laenge>
+        <bemerkung>durchgehendes Stammgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_21b">
+        <name>21b</name>
+        <laenge>800</laenge>
+        <bemerkung>Kaikante Hafenbecken 2</bemerkung>
+      </gleis>
+      <gleis id="gleis_21c">
+        <name>21c</name>
+        <laenge>190</laenge>
+        <bemerkung>Lokumsetzgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_31">
+        <name>31</name>
+        <laenge>600</laenge>
+        <bemerkung>Hp Sundevitt Werkbahnsteig</bemerkung>
+      </gleis>
+      <gleis id="gleis_32">
+        <name>32</name>
+        <laenge>700</laenge>
+        <bemerkung>Hp Sundevitt Strand</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>600</laenge>
+        <bemerkung>Umsetzgleis Zugbildung</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>1200</laenge>
+        <bemerkung>Mischfutterwerk</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge>800</laenge>
+        <bemerkung>Weinhandel Adrianowitsch</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge>700</laenge>
+        <bemerkung>Flüsiggasverladeanlage</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge>400</laenge>
+        <bemerkung>Schiffszubehör Hein &amp; Petersen</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge>180</laenge>
+        <bemerkung>Kruse Werft Krangleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge>380</laenge>
+        <bemerkung>Kruse Werft</bemerkung>
+      </gleis>
+      <gleis id="gleis_20a">
+        <name>20a</name>
+        <laenge>850</laenge>
+        <bemerkung>Hafenschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_20b">
+        <name>20b</name>
+        <laenge>800</laenge>
+        <bemerkung>Umsetzgleis, Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_20c">
+        <name>20c</name>
+        <laenge>340</laenge>
+        <bemerkung>Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_21a">
+        <name>21a</name>
+        <laenge>900</laenge>
+        <bemerkung>Kaikante Hafenbecken 1</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_31">
+      <name>Sundevitt Werkbahnsteig SVTW</name>
+      <laenge>230</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_32">
+      <name>Sundevitt Strand SVTS</name>
+      <laenge>300</laenge>
+    </bahnsteig>
+    <bemerkung>Der Hp Sundevitt Strand ist für den Ausflugsverkehr im Sommer gedacht. [br]Der Hp Sundevitt Werkbahnhof für den Schichtwechselverkehr.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Mischfutterwerk" gleis="gleis_3">
+      <name>Mischfutterwerk</name>
+      <laenge>1200</laenge>
+    </ladestelle>
+    <ladestelle id="Hein_Petersen" gleis="gleis_6">
+      <name>Hein &amp; Petersen</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <ladestelle id="Gasverladeanlage" gleis="gleis_5">
+      <name>Gasverladeanlage</name>
+      <laenge>700</laenge>
+    </ladestelle>
+    <ladestelle id="Kruse_Werft" gleis="gleis_8">
+      <name>Kruse Werft</name>
+      <laenge>380</laenge>
+    </ladestelle>
+    <ladestelle id="Adrianowitsch" gleis="gleis_4">
+      <name>Adrianowitsch</name>
+      <laenge>500</laenge>
+    </ladestelle>
+    <ladestelle id="Fischereihafen" gleis="gleis_21b">
+      <name>Fischereihafen</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <ladestelle id="Hafenschuppen" gleis="gleis_20a">
+      <name>Hafenschuppen</name>
+      <laenge>500</laenge>
+    </ladestelle>
+    <ladestelle id="Kaikante_Hafenbecken_1" gleis="gleis_21a">
+      <name>Kaikante Hafenbecken 1</name>
+      <laenge>900</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_20b">
+      <name>Ladestraße</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Adrianowitsch</name>
+      <empfang>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Rotwein</name>
+          <gattung>G, U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Weißwein</name>
+          <gattung>G, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Rosewein</name>
+          <gattung>G, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Bordeaux Wein</name>
+          <gattung>G, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Champagner</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Sekt</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Weinflaschen, leer</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Rotwein</name>
+          <gattung>G, U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Weißwein</name>
+          <gattung>G, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Rosewein</name>
+          <gattung>G, U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Adrianowitsch">
+          <name>Sekt</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Mischfutterwerk</name>
+      <empfang>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen>20</wagen>
+        </ladegut>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Kalk</name>
+          <gattung>F, G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Rüben</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Harnstoff</name>
+          <gattung>U, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Salz</name>
+          <gattung>F, U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Mischfutterwerk">
+          <name>Viehfutter</name>
+          <gattung>F, G</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kruse Werft</name>
+      <empfang>
+        <ladegut ladestelle="Kruse_Werft">
+          <name>Schiffszubehör</name>
+          <gattung>E, O, G</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kruse_Werft">
+          <name>Schiffsbauholz</name>
+          <gattung>E, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kruse_Werft">
+          <name>Stahlplatten</name>
+          <gattung>E, S, R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kruse_Werft">
+          <name>Holzmasten</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kruse_Werft">
+          <name>Schiffsdieselmotoren</name>
+          <gattung>R, E, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Sundgas</name>
+      <empfang>
+        <ladegut ladestelle="Gasverladeanlage">
+          <name>Butan</name>
+          <gattung>U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gasverladeanlage">
+          <name>Propan</name>
+          <gattung>U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gasverladeanlage">
+          <name>Flüssiggas</name>
+          <gattung>U</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Gasverladeanlage">
+          <name>Flüssiggas</name>
+          <gattung>U</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Hein &amp; Petersen</name>
+      <empfang>
+        <ladegut ladestelle="Hein_Petersen">
+          <name>Anker</name>
+          <gattung>R, S</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hein_Petersen">
+          <name>Schiffsbeschläge</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hein_Petersen">
+          <name>Propeller</name>
+          <gattung>E, S, R</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hein_Petersen">
+          <name>Segel, Tauwerk</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Hafenschuppen</name>
+      <empfang>
+        <ladegut ladestelle="Hafenschuppen">
+          <name>Maschinen Export</name>
+          <gattung>G, E, S</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hafenschuppen">
+          <name>Rohre</name>
+          <gattung>E, S, R</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Hafenschuppen">
+          <name>Steinkohle</name>
+          <gattung>E, F</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hafenschuppen">
+          <name>Bananen</name>
+          <gattung>I, T</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Hafenschuppen">
+          <name>Südfrüchte</name>
+          <gattung>I, T</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kaikante_Hafenbecken_1">
+          <name>Maschinen Import</name>
+          <gattung>G, E, S, R</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Fischerei</name>
+      <empfang>
+        <ladegut ladestelle="Fischereihafen">
+          <name>Marine Diesel</name>
+          <gattung>U</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischereihafen">
+          <name>Fischtransportkisten</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Fischereihafen">
+          <name>Stangeneis</name>
+          <gattung>T, I</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Fischereihafen">
+          <name>Frischfisch</name>
+          <gattung>T, I</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Im Hafen Sundevitt können diverse Frachten von der Bahn auf das Schiff und umgekehrt verladen werden. [br]Großcontainerverkehr ist in beschränktem Umfang mit bis zu 20-ft Containern und einer maximalen Bruttomasse bis 10 t  möglich.</bemerkung>
+  </gv>
+  <bemerkung>Das Segment mit dem Hp Sundevitt Strand und der Kruse-Werft kann um 90 Grad nach rechts gedreht auch an das Segment mit Hein &amp; Petersen angekopelt werden. Der Hafen ist dann 3600 mm lang.</bemerkung>
+</bahnhof>
+

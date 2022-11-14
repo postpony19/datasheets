@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluss Marienschacht</name>
+  <kuerzel>MAR</kuerzel>
+  <typ>Awanst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>AnMul372</modulnr>
+  <plan src="mar.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Streckengleis">
+        <name>Streckengleis</name>
+        <laenge einheit="mm">1962</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">700</laenge>
+        <bemerkung>Eingang sowie Ladegleis Kohle u. Frachten</bemerkung>
+      </gleis>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Eingang, Ladegleis Kohle u. Frachten sowie Lokumfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">700</laenge>
+        <bemerkung>Ausgang und Lokumfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="mm">390</laenge>
+        <bemerkung>Ausgang und Reservewagen sowie Ladegleis Frachten</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">380</laenge>
+        <bemerkung>Ladegleis Kohle und Frachten</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_Streckengleis">
+      <laenge>600</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Kohle" gleis="gleis_1 gleis_3 gleis_1a">
+      <name>Kohle</name>
+      <laenge einheit="mm">1330</laenge>
+    </ladestelle>
+    <ladestelle id="Frachten" gleis="gleis_1 gleis_3 gleis_2a gleis_1a">
+      <name>Frachten</name>
+      <laenge einheit="mm">1720</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Marienschacht</name>
+      <empfang>
+        <ladegut ladestelle="Frachten">
+          <name>Rundholz (Stammholz)</name>
+          <gattung>K, L, E, F</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Schnittholz (Bretter, Kanthölzer)</name>
+          <gattung>K, E, F</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Stahlträger</name>
+          <gattung>K, R, S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Zement, Kraftwerksasche</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Sand, Kies</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Fahrzeuge, Maschinen, Ersatzteile</name>
+          <gattung>G, K, R, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Öle, Schmierstoffe (in Fässern)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Sprengmittel</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Säure</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohle">
+          <name>Leerwagen f. Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">18</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Frachten">
+          <name>Holz- u. andere Abfälle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Fahrzeuge, Maschinen zur Reparatur</name>
+          <gattung>G, K, R, S, E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Schrott</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Altöle (in Fässern)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohle">
+          <name>Steinkohle, versch. Sorten</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">12</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohle">
+          <name>Koks</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohle">
+          <name>Briketts</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Leerwagen Frachten</name>
+          <gattung>K, L, E, F, G, U</gattung>
+          <wagen zeitraum="tag">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Frachten">
+          <name>Säurerückstände</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+  <bemerkung>Der Anschluss Marienschacht ist nach dem Vorbild an der ehem. Hänichener Kohlenbahn (Windbergbahn) erbaut.[br]Er liegt räumlich neben dem Haltepunkt Cunnersdorf (b. Freital).[br]Zusätzlich wurde auf dem Modul ein 60 cm langer Bahnsteig am Streckengleis errichtet.[br]Die Einfahrweiche sowie die gekoppelte Gleissperre haben eine Schlüsselsicherung.[br][br]Bitte das Modul nur mit Fahrzeugen mit NEM-gerechten Radsätzen befahren!</bemerkung>
+</bahnhof>
+

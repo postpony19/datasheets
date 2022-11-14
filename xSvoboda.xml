@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Svoboda - Свобода</name>
+  <kuerzel>XSvoboda</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>BDŽ</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>GeSha626 (GeSha 01-05)</modulnr>
+  <plan src="xSvoboda.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+      <rechts nr="2">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">2320.0</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">2380.0</laenge>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">1670.0</laenge>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1560.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1g">
+        <name>1g</name>
+        <laenge einheit="mm">1180.0</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1g gleis_1">
+      <name>1</name>
+      <laenge einheit="mm">1070.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_1 gleis_2">
+      <name>2</name>
+      <laenge einheit="mm">1520.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2 gleis_3">
+      <name>2</name>
+      <laenge einheit="mm">1480.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Kopframpe" gleis="gleis_1g">
+      <name>Kopframpe</name>
+      <laenge einheit="mm">0.0</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="gleis_1">
+      <name>Seitenrampe</name>
+      <laenge einheit="mm">250.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e" gleis="gleis_1g">
+      <name>Ladestraße</name>
+      <laenge einheit="mm">0.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Factory</name>
+    </verlader>
+  </gv>
+</bahnhof>
+

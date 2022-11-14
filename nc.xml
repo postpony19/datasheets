@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Coburg</name>
+  <kuerzel>NC</kuerzel>
+  <typ>Sbf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>RaBec102</modulnr>
+  <plan src="nc.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis1">
+        <name>1</name>
+        <laenge einheit="mm">3200.0</laenge>
+      </gleis>
+      <gleis id="gleis2">
+        <name>2</name>
+        <laenge einheit="mm">3100.0</laenge>
+      </gleis>
+      <gleis id="gleis3">
+        <name>3</name>
+        <laenge einheit="mm">3000.0</laenge>
+      </gleis>
+      <gleis id="gleis4">
+        <name>4</name>
+        <laenge einheit="mm">2900.0</laenge>
+      </gleis>
+      <gleis id="gleis5">
+        <name>5</name>
+        <laenge einheit="mm">2800.0</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <bemerkung>FY mit Rückmeldern[br]FY mit Anschluß an Rocrail</bemerkung>
+</bahnhof>
+

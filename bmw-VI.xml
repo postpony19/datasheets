@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Brennstoffhandel Mallow</name>
+  <kuerzel>BMW</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>HaMal353</modulnr>
+  <plan src="bmw.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <links nr="2">IBahn</links>
+      <rechts nr="1">2gl</rechts>
+      <rechts nr="2">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis>
+        <name>Strecke</name>
+        <laenge einheit="mm" />
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="g1">
+        <name>1</name>
+        <laenge einheit="cm">70</laenge>
+      </gleis>
+      <gleis id="g2">
+        <name>2</name>
+        <laenge einheit="cm">70</laenge>
+      </gleis>
+      <gleis id="g3">
+        <name>3</name>
+        <laenge einheit="cm">25</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="l1" gleis="g1">
+      <name>Ladestraße mit Kohlesilos</name>
+      <laenge einheit="cm">70</laenge>
+    </ladestelle>
+    <ladestelle id="l2" gleis="g2">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">70</laenge>
+    </ladestelle>
+    <ladestelle id="l3" gleis="g3">
+      <name>Reserve (Flachsilo) bei Bedarf</name>
+      <laenge einheit="cm">25</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Brennstoffhandel Mallow KG</name>
+      <empfang>
+        <ladegut ladestelle="l1 l2">
+          <name>Steinkohlebriketts</name>
+          <gattung>F</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1 l2">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+        <!--<ladegut ladestelle="l2">
+               <name>Wagendecken</name>
+               <gattung>Stückgut</gattung>
+               <wagen zeitraum="tag">0.25</wagen>
+            </ladegut>-->
+        <ladegut ladestelle="l2 l1">
+          <name>Bündelbriketts palettiert</name>
+          <gattung>H</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="l2 l1">
+          <name>Braunkohlebriketts</name>
+          <gattung>E, F</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="l1 l2">
+          <name>Leerwagen</name>
+          <gattung>E, F, H, Z</gattung>
+          <wagen zeitraum="woche">6.0</wagen>
+        </ladegut>
+        <!--            <ladegut ladestelle="">
+               <name>Kohle</name>
+               <gattung>F</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>
+            <ladegut ladestelle="">
+               <name>Braunkohlebriketts</name>
+               <gattung>F</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>
+            <ladegut ladestelle="">
+               <name>Koks</name>
+               <gattung>F</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>
+            <ladegut ladestelle="">
+               <name>Rohbraunkohle</name>
+               <gattung>E</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>
+            <ladegut ladestelle="">
+               <name>Heizöl</name>
+               <gattung>Z</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>
+            <ladegut ladestelle="">
+               <name>Brennholz</name>
+               <gattung>E, K, R</gattung>
+               <wagen zeitraum="tag">0</wagen>
+            </ladegut>-->
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

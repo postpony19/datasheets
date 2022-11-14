@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Sägewerk MEC</name>
+	<kuerzel>SWMEC</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MaHem360</modulnr>
+	<plan src="swmec.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">122</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="ng2">
+				<name>2</name>
+				<laenge einheit="cm">66</laenge>
+			</gleis>
+			<gleis id="ng3">
+				<name>2a</name>
+				<laenge einheit="cm">36</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ladestr1" gleis="ng2">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">66</laenge>
+		</ladestelle>
+		<ladestelle id="ladestr2" gleis="ng3">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">36</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Astloch</name>
+			<empfang>
+				<ladegut ladestelle="ladestr1">
+					<name>Hochholz</name>
+					<gattung>E, R</gattung>
+					<wagen zeitraum="tag">8</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr2">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr2">
+					<name>Maschinenteile</name>
+					<gattung>G</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestr1">
+					<name>Hackschnitzel</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr1">
+					<name>Bretter</name>
+					<gattung>R</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr1">
+					<name>Paletten</name>
+					<gattung>E, G</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung></bemerkung>
+</bahnhof>

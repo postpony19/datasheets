@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Abzweig Werkstraße</name>
+	<kuerzel>AWS</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>BeKas400</modulnr>
+    <plan src="aws.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<links nr="2">I-Bahn</links>
+			<rechts nr="1">2gl</rechts>
+			<rechts nr="2">I-Bahn</rechts>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>Strecke</name>
+				<laenge></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="gleis1">
+				<name>1</name>
+				<laenge>500</laenge>
+			</gleis>
+			<gleis id="gleis2">
+				<name>2</name>
+				<laenge>350</laenge>
+			</gleis>
+			<gleis id="gleis3">
+				<name>3</name>
+				<laenge>400</laenge>
+			</gleis>
+			<gleis id="gleis3a">
+				<name>3a</name>
+				<laenge>250</laenge>
+			</gleis>
+			<gleis id="gleis3b">
+				<name>3b</name>
+				<laenge>320</laenge>
+			</gleis>
+			<gleis id="gleis4">
+				<name>4</name>
+				<laenge>400</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ladestelle1" gleis="gleis1">
+			<name>Ladestraße</name>
+			<laenge einheit="achsen">8</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle2" gleis="gleis2">
+			<name>Laderampe</name>
+			<laenge einheit="achsen">8</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle3" gleis="gleis3">
+			<name>Rampe</name>
+			<laenge einheit="achsen">8</laenge>
+		</ladestelle>
+		<ladestelle id="ladestelle4" gleis="gleis3b">
+			<name>Heizhaus</name>
+			<laenge einheit="achsen">8</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Kabeltrommelwerk Sacktannen</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle1">
+					<name>Schnittholz</name>
+					<gattung>E, R, K</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle2">
+					<name>Kabeltrommeln</name>
+					<gattung>E, R, K</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+        <verlader>
+            <name>VEB Teppichwerk Nord</name>
+			<empfang>
+				<ladegut ladestelle="ladestelle3">
+					<name>Chemiefasern</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestelle4">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestelle3">
+					<name>Teppiche</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</versand>
+        </verlader>
+	</gv>
+</bahnhof>

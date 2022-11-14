@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Hp Iffland</name>
+	<kuerzel>IFF</kuerzel>
+	<typ>Hp</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JoIff315</modulnr>
+	<plan src="iff.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Bahnsteiggleis">
+				<name>1</name>
+				<laenge>870</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Bahnsteiggleis">
+			<name>1</name>
+			<laenge>800</laenge>
+		</bahnsteig>
+		<bemerkung></bemerkung>
+	</pv>
+</bahnhof>

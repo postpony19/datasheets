@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+   <name>Waldengenberg / Sachsen</name>
+   <kuerzel>WEB</kuerzel>
+   <typ>Bf</typ>
+   <maszstab>120</maszstab>
+   <modulnr>StEng140a-h, StEng114</modulnr>
+   <plan src="web.jpg"/>
+   <gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<links nr="2">1gl</links>
+		</zulaufstrecken>
+	<hgleise>
+      <gleis id="Gleis_1">
+         <name>1</name>
+         <laenge>3800</laenge>
+         <bemerkung>Gleisverwendung: Personenzüge, Wendezüge, Züge zur Bedienung von Anschliessern in Gleis 21</bemerkung>
+      </gleis>
+      <gleis id="Gleis_2">
+         <name>2</name>
+         <laenge>4000</laenge>
+         <bemerkung>Gleisverwendung: Ausfahrgleis für Güterzüge, Zugbildungsgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3">
+         <name>3</name>
+         <laenge>3850</laenge>
+         <bemerkung>Gleisverwendung: Ausfahrgleis für Güterzüge, Zugbildungsgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_4">
+         <name>4</name>
+         <laenge>3850</laenge>
+         <bemerkung>Gleisverwendung: Ausfahrgleis für Güterzüge, Zugbildungsgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_5">
+         <name>5</name>
+         <laenge>4000</laenge>
+         <bemerkung>Gleisverwendung: Ausfahrgleis für Güterzüge, Zugbildungsgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_6">
+         <name>6</name>
+         <laenge>4000</laenge>
+         <bemerkung>Gleisverwendung: Einfahr- und Ausfahrgleis für Güterzüge, Zugbildungsgleis, Auflösegleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_7">
+         <name>7</name>
+         <laenge>4000</laenge>
+         <bemerkung>Gleisverwendung: Einfahr- und Ausfahrgleis für Güterzüge, Zugbildungsgleis, Auflösegleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_8">
+         <name>8</name>
+         <laenge>3850</laenge>
+         <bemerkung>Gleisverwendung: Einfahrgleis für Güterzüge, Auflösegleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_9">
+         <name>9</name>
+         <laenge>3850</laenge>
+         <bemerkung>Gleisverwendung: Einfahrgleis für Güterzüge, Auflösegleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_10">
+         <name>10</name>
+         <laenge>4050</laenge>
+         <bemerkung>Gleisverwendung: Einfahr- und Ausfahrgleis für Ganzzüge und  Personenzüge aller Gattungen</bemerkung>
+      </gleis>
+	</hgleise>
+	<ngleise>
+      <gleis id="Abstellgleis_1a">
+         <name>1a</name>
+         <laenge>700</laenge>
+         <bemerkung>Abstellgleis für Tfz und Wagengarnituren</bemerkung>
+      </gleis>
+      <gleis id="Abstellgleis_1b">
+         <name>1b</name>
+         <laenge>700</laenge>
+         <bemerkung>Abstellgleis für Tfz und Wagengarnituren</bemerkung>
+      </gleis>
+      <gleis id="Abstellgleis_1c">
+         <name>1c</name>
+         <laenge>900</laenge>
+         <bemerkung>Abstellgleis für Tfz und Wagengarnituren</bemerkung>
+      </gleis>
+      <gleis id="Gleis_11">
+         <name>11</name>
+         <laenge>1300</laenge>
+         <bemerkung>Programmiergleis, nicht für Zugfahrten verwendbar, keine Infrastrukturverbindung mit restlicher Gleisanlage</bemerkung>
+      </gleis>
+      <gleis id="Gleis_21">
+         <name>21</name>
+         <laenge>beliebig</laenge>
+         <bemerkung>seitlicher Abgang von Gleis 1, Anschluss beliebiger Module möglich. Verwendung: Kohle-/Erzbunker mit Schüttgutendladung für Fals</bemerkung>
+      </gleis>
+	</ngleise>
+   </gleise>
+   <gv>
+      <ladestelle id="SDAG_Wismut_Bunker" gleis="Gleis_21">
+         <name>Bunker SDAG Wismut</name>
+         <laenge>beliebig</laenge>
+      </ladestelle>
+      <verlader>
+         <name>SDAG Wismut</name>
+         <empfang>
+            <ladegut ladestelle="SDAG_Wismut_Bunker">
+               <name>Kies</name>
+               <gattung>Fakk, Fals, Facs, Fcs</gattung>
+               <wagen zeitraum="tag">30</wagen>
+            </ladegut>
+            <ladegut ladestelle="SDAG_Wismut_Bunker">
+               <name>Braunkohle</name>
+               <gattung>Fals</gattung>
+               <wagen zeitraum="tag">60</wagen>
+            </ladegut>
+            <ladegut ladestelle="SDAG_Wismut_Bunker">
+               <name>Sand</name>
+               <gattung>Fakk</gattung>
+               <wagen zeitraum="tag">20</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <bemerkung>Nebenanschliesser an Gleis 21</bemerkung>
+   </gv>
+   <bemerkung>Weichenstellung durch Zweitastenbedienung mittels Gruppentaste Wg. Rückmeldung und Ausleuchtung beachten!</bemerkung>
+</bahnhof>

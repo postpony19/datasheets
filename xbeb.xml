@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Beli Breg - Бели Брег</name>
+  <kuerzel>XBEB</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>BDŽ</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>EmCha602 (CMRBu_2210)</modulnr>
+  <plan src="xbeb.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">1550.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1400.0</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <laenge einheit="mm">500.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Rampe" gleis="gleis_2">
+      <name>Rampe</name>
+      <laenge einheit="mm">1200.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Mine</name>
+      <empfang>
+        <ladegut ladestelle="Rampe">
+          <name>Leer für Kohle</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">24.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Rampe">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">24.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

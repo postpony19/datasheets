@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Cunnersdorf</name>
+  <kuerzel>CUN</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>AnMul316</modulnr>
+  <plan src="cun.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Streckengleis">
+        <name>Streckengleis</name>
+        <laenge>1961</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_Streckengleis">
+      <laenge>1300</laenge>
+    </bahnsteig>
+  </pv>
+  <bemerkung>Der Haltepunkt Cunnersdorf (b. Freital) ist nach dem Vorbild an der ehem. Hänichener Kohlenbahn (Windbergbahn) erbaut.[br]Er liegt räumlich neben dem Anschluss Marienschacht und besitzt vorbildentsprechend einen 130 cm langen Bahnsteig am Streckengleis.[br]Zusätzlich sind auf dem Modul 2 Wattenscheider Signalschächte verbaut.[br][br]Bitte das Modul nur mit Fahrzeugen mit NEM-gerechten Radsätzen befahren!</bemerkung>
+</bahnhof>
+

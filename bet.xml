@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Beetzendorf/Kleinbahn</name>
+	<kuerzel>BET</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JeBuc215</modulnr>
+	<plan src="bet.gif"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<links nr="2">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="bahnsteig">
+				<name>21</name>
+				<laenge>1300</laenge>
+				<bemerkung>Hauptgleis, Nutzlänge des Gleisstumpfes zum Umsetzen: 200mm</bemerkung>
+			</gleis>
+			<gleis>
+				<name>22</name>
+				<laenge>1000</laenge>
+				<bemerkung>Verkehrsgleis</bemerkung>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="freiladegleis">
+				<name>20</name>
+				<laenge>1750</laenge>
+				<bemerkung>Ladestraße</bemerkung>
+			</gleis>
+			<gleis>
+				<name>23</name>
+				<laenge>750</laenge>
+				<bemerkung>Abstellgleis</bemerkung>
+			</gleis>
+			<gleis id="anschluss">
+				<name>a</name>
+				<laenge>400</laenge>
+				<bemerkung>Anschluß Getreidemühle/VEAB</bemerkung>
+			</gleis>
+			<gleis id="loks">
+				<name>b</name>
+				<laenge>500</laenge>
+				<bemerkung>Tfz-Einsatzstelle</bemerkung>
+			</gleis>
+			<gleis>
+				<name>c</name>
+				<laenge>550</laenge>
+				<bemerkung>Bahnmeisterei</bemerkung>
+			</gleis>
+			<gleis>
+				<name>d</name>
+				<laenge>0</laenge>
+				<bemerkung>Skl-Schuppen</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="bahnsteig">
+			<name>1</name>
+			<laenge>1000</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="ladestrasse" gleis="freiladegleis">
+			<name>Ladestraße</name>
+			<laenge einheit="mm">400</laenge>
+		</ladestelle>
+		<ladestelle id="veab" gleis="anschluss">
+			<name>Getreidemühle/VEAB</name>
+			<laenge einheit="mm">300</laenge>
+		</ladestelle>
+		<ladestelle id="bw" gleis="loks">
+			<name>Tfz-Einsatzstelle</name>
+			<laenge einheit="achsen">2</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Getreidemühle Beetzendorf</name>
+			<empfang>
+				<ladegut ladestelle="veab">
+					<name>Getreide</name>
+					<gattung>E, F, G, T</gattung>
+					<wagen zeitraum="woche">6</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="veab">
+					<name>Mehl</name>
+					<gattung>G, T</gattung>
+					<wagen zeitraum="woche">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEAB</name>
+			<versand>
+				<ladegut ladestelle="veab">
+					<name>Landwirtschaftliche Erzeugnisse</name>
+					<gattung>E, G</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>SERO Sammelstelle</name>
+			<versand>
+				<ladegut ladestelle="ladestrasse">
+					<name>SERO (Glas, Papier, Schrott)</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Bw Kalbe, Est Beetzendorf</name>
+			<empfang>
+				<ladegut ladestelle="bw">
+					<name>Kohle</name>
+					<gattung>E</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="bw">
+					<name>Schlacke</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">0.2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>LPG (P) Jeeben</name>
+			<versand>
+				<ladegut ladestelle="ladestrasse">
+					<name>Kartoffeln</name>
+					<gattung>E, G</gattung>
+					<wagen zeitraum="woche">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>ACZ Beetzendorf</name>
+			<empfang>
+				<ladegut ladestelle="ladestrasse">
+					<name>Dünger</name>
+					<gattung>T</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>BHG Beetzendorf</name>
+			<empfang>
+				<ladegut ladestelle="ladestrasse">
+					<name>Zement (gesackt)</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestrasse">
+					<name>Baustoffe (Stückgut)</name>
+					<gattung>E, G, K</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<bemerkung>Wagen, deren Zustellung aus Kapazitätsgründen nicht sofort möglich ist, werden zum Staatsbahnhof überführt und später per Ortsrangierlok zugestellt.</bemerkung>
+	</gv>
+	<bemerkung>Vor dem Verlassen des Bahnhofs sind alle Weichen und Gleissperren zu verschließen und der Hauptschlüssel beim Fahrdienstleiter abzugeben.</bemerkung>
+</bahnhof>

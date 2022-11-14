@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Kranbahn</name>
+	<kuerzel>KRN</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>DiThe380</modulnr>
+	<plan src="krn.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">70</laenge>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">135</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>3</name>
+				<laenge einheit="cm">65</laenge>
+			</gleis>
+			<gleis>
+				<name>4</name>
+				<laenge einheit="cm">20</laenge>
+			</gleis>
+			<gleis id="ladestr2gleis">
+				<name>5</name>
+				<laenge einheit="cm">82</laenge>
+			</gleis>
+			<gleis id="krampengleis">
+				<name>2a</name>
+				<laenge einheit="cm">30</laenge>
+			</gleis>
+			<gleis>
+				<name>2b</name>
+				<laenge einheit="cm">20</laenge>
+			</gleis>
+			<gleis>
+				<name>1b</name>
+				<laenge einheit="cm">34</laenge>
+			</gleis>
+			<gleis>
+				<name>3b</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="ladestr1" gleis="hg2">
+			<name>Ladestraße 1</name>
+			<laenge einheit="cm">60</laenge>
+		</ladestelle>
+		<ladestelle id="silo" gleis="hg2">
+			<name>Silo Raiffeisen</name>
+			<laenge einheit="cm">26</laenge>
+		</ladestelle>
+		<ladestelle id="seitenrampe" gleis="hg2">
+			<name>Seitenrampe</name>
+			<laenge einheit="cm">28</laenge>
+		</ladestelle>
+		<ladestelle id="kopframpe" gleis="krampengleis">
+			<name>Kopframpe</name>
+			<laenge einheit="cm">30</laenge>
+		</ladestelle>
+		<ladestelle id="ladestr2" gleis="ladestr2gleis">
+			<name>Ladestraße 2</name>
+			<laenge einheit="cm">82</laenge>
+		</ladestelle>
+		<ladestelle id="ladeplatz2" gleis="hg2">
+			<name>Ladeplatz</name>
+			<laenge einheit="cm">60</laenge>
+		</ladestelle>
+		<ladestelle id="ladeplatz1" gleis="hg1">
+			<name>Ladeplatz</name>
+			<laenge einheit="cm">60</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Marmorhandel</name>
+			<empfang>
+				<ladegut ladestelle="seitenrampe">
+					<name>Marmor</name>
+					<gattung>G, H</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="seitenrampe">
+					<name>Marmor</name>
+					<gattung>G, H</gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="ladeplatz1">
+					<name>Granit</name>
+					<gattung>S, R</gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="ladeplatz2">
+					<name>Betonteile</name>
+					<gattung>S, R, K</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Baustoffhandel/Raiffeisen</name>
+			<empfang>
+				<ladegut ladestelle="ladestr1">
+					<name>Steine</name>
+					<gattung>E</gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Kiese</name>
+					<gattung>E, F</gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Sand</name>
+					<gattung>S, E</gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr1">
+					<name>Schnittholz</name>
+					<gattung>E, K, R</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Rohrbau</name>
+			<versand>
+				<ladegut ladestelle="ladestr2">
+					<name>Rohre</name>
+					<gattung>K, R</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Anlagenbau</name>
+			<empfang>
+				<ladegut ladestelle="ladeplatz1">
+					<name>Stahlteile</name>
+					<gattung>K, R, E</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="kopframpe">
+					<name>fertige Anlagen</name>
+					<gattung>K, R, S</gattung>
+					<wagen></wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Die erforderlichen Wagenmengen müssen noch ermittelt werden!</bemerkung>
+</bahnhof>

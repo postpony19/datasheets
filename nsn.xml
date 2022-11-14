@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Neu-Seehagen</name>
+	<kuerzel>NSN</kuerzel>
+	<typ>Abzw</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MaRoe246</modulnr>
+	<plan src="nsn.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">80</laenge>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>2a</name>
+				<laenge einheit="cm">0</laenge>
+				<bemerkung>Schutzgleis</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<laenge einheit="cm">11</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg2">
+			<laenge einheit="cm">11</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="rampe" gleis="hg1">
+			<name>Rampe (R)</name>
+			<laenge einheit="achsen">2</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Stückgut: Milch</name>
+			<empfang>
+				<ladegut ladestelle="rampe">
+					<name>Milchkannen (leer)</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="rampe">
+					<name>Milchkannen (voll)</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Stückgut: Kiste</name>
+			<versand>
+				<ladegut ladestelle="rampe">
+					<name>Gemüse</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Wartehäuschen mit Fernsprechapparat</bemerkung>
+</bahnhof>

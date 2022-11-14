@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Kranichsfeld</name>
+  <kuerzel>KFD</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JuUhl235</modulnr>
+  <plan src="kfd.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Gleis_1b">
+        <name>1b</name>
+        <laenge einheit="mm">1800</laenge>
+        <bemerkung>Ein- und Ausfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3b">
+        <name>3b</name>
+        <laenge einheit="mm">1550</laenge>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+      </gleis>
+      <gleis id="Gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">1600</laenge>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="Gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">840</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_2a">
+        <name>2a</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>Einsatzstelle mit Triebwagenschuppen</bemerkung>
+      </gleis>
+      <gleis id="Gleis_2b">
+        <name>2b</name>
+        <laenge einheit="mm">1300</laenge>
+        <bemerkung>Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3a">
+        <name>3a</name>
+        <laenge einheit="mm">150</laenge>
+        <bemerkung>Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="Gleis_3c">
+        <name>3c</name>
+        <laenge einheit="mm">650</laenge>
+        <bemerkung>Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="Gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1700</laenge>
+        <bemerkung>Ladestraße/Freiladegleis und Kopframpe</bemerkung>
+      </gleis>
+      <gleis id="Gleis_A1">
+        <name>A1</name>
+        <laenge einheit="mm">950</laenge>
+        <bemerkung>Anschlußgleis VEB Salzsäure Sammelgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_A2">
+        <name>A2</name>
+        <laenge>950</laenge>
+        <bemerkung>Anschlußgleis VEB Salzsäure Verladegleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Gleis_1a">
+      <name>Hausbahnsteig</name>
+      <laenge einheit="mm">800</laenge>
+    </bahnsteig>
+    <bemerkung>Reger Urlauberverkehr kennzeichnet den Personenverkehr ebenso wie die Nutzung der Bahn durch Berufspendler. Besonders starken Reiseverkehr gibt es zu solchen Höhepunkten wie dem Stadt- und Rosenfest sowie zum Vatertag.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Kopframpe" gleis="Gleis_4">
+      <name>Kopframpe</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe" gleis="Gleis_3a">
+      <name>Seitenrampe</name>
+      <laenge einheit="mm">150</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestraße" gleis="Gleis_4">
+      <name>Ladestraße</name>
+      <laenge einheit="mm">1500</laenge>
+    </ladestelle>
+    <ladestelle id="Güterschuppen" gleis="Gleis_3c">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">650</laenge>
+    </ladestelle>
+    <ladestelle id="Anschlu_Salzs_ure_Sammelgleis" gleis="Gleis_A1">
+      <name>Anschluß Salzsäure Sammelgleis</name>
+      <laenge einheit="mm">600</laenge>
+    </ladestelle>
+    <ladestelle id="Einsatzstelle" gleis="Gleis_2a">
+      <name>Einsatzstelle</name>
+      <laenge einheit="mm">500</laenge>
+    </ladestelle>
+    <ladestelle id="VEB_Salzs_ure_Ladegleis" gleis="gleis_A2">
+      <name>VEB Salzsäure Ladegleis</name>
+      <laenge>950</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Kabelwerk Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Plastgranulat</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Leitungskupfer</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Leitungsaluminium</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Installationskabel</name>
+          <gattung>G/H/Container</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Buntmetallschrott</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>GPG Frischgemüse Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>leere Gemüsestiegen</name>
+          <gattung>G/H/Container</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Saatgut</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Edelgemüse</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>POS Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Schulmöbel</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Landwarenhaus Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Güterschuppen">
+          <name>ländlicher Bedarf</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>ländlicher Bedarf</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Echtholzmöbel Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Bretter</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Beschläge</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Möbel</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Stadtwirtschaft Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe">
+          <name>Fahrzeuge</name>
+          <gattung>R</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Ersatzteile</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Hausmüll, gepresst</name>
+          <gattung>E/H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Pipelinebau, Baustelle Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Rohre</name>
+          <gattung>R</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Forstwirtschaftsbetrieb Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Pestizide</name>
+          <gattung>Z/G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Stammholz</name>
+          <gattung>E/R/S</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Rindenmulch</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Modische Maschen, BT Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Rohwolle</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Strickerzeugnisse</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB domal, BT Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Essigsäure</name>
+          <gattung>G/H/Z</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Reinigungsmittel</name>
+          <gattung>G/H/Container</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Schraubenwerk Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Rundstahl</name>
+          <gattung>X/E/R</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Schrauben, Muttern</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe">
+          <name>Holzschrauben</name>
+          <gattung>Container</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG (P) Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Saatgut</name>
+          <gattung>G/H/T</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Getreide</name>
+          <gattung>G/H/T</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Braugerste</name>
+          <gattung>G/H/Container</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Getränkegroßhandel Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Getränke aller Art</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe">
+          <name>Getränke aller Art</name>
+          <gattung>Container</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Leergut</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe">
+          <name>Leergut</name>
+          <gattung>Container</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BHG Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Zement, gesackt</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Gartengeräte</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Saatgut</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Eisenwaren</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Tierzuchtbedarf</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB SERO, BT Kranichsfeld</name>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Spirituosenflaschen</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Konservengläser</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>KONSUM Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Güterschuppen">
+          <name>Lebensmittel</name>
+          <gattung>I/G/H</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>leere Verpackungen</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Metalltechnik Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Maschinen</name>
+          <gattung>G/H/R/K</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Bier- und Getränkefässer</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe">
+          <name>Rollreifenfässer</name>
+          <gattung>G/H/E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Geschützte Werkstätten für Körperbehinderte</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Bretter</name>
+          <gattung>G/H/R/K</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Getränkekisten</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Brikett</name>
+          <gattung>E/F</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestraße">
+          <name>Eierkohlen</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Brikettabrieb</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bw Weimar, Est. Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Einsatzstelle">
+          <name>Dieselkraftstoff</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Einsatzstelle">
+          <name>Schmieröle, Hilfsstoffe</name>
+          <gattung>G/H/Z</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Einsatzstelle">
+          <name>Ersatzteile</name>
+          <gattung>G/H/K</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Einsatzstelle">
+          <name>Schmalspurdrehgestelle zur Aufarbeitung</name>
+          <gattung>X/K</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Einsatzstelle">
+          <name>Schmalspurdrehgestelle aufgearbeitet</name>
+          <gattung>X/K</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Salzsäurewerk Fritz Mohnhuch</name>
+      <empfang>
+        <ladegut ladestelle="Anschlu_Salzs_ure_Sammelgleis">
+          <name>Lauge</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschlu_Salzs_ure_Sammelgleis">
+          <name>Salzsäure</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Landwirtschaft, Kabelwerk, Schraubenwerk, Salzsäurewerk, Forstwirtschaft</bemerkung>
+  </gv>
+</bahnhof>
+

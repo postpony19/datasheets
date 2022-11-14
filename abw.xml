@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluss BayWa</name>
+  <kuerzel>ABW</kuerzel>
+  <typ>Awanst</typ>
+  <verwaltung>DB</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>GuBue366</modulnr>
+  <plan src="abw.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">IBahn</links>
+      <rechts nr="1">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Hauptgleis">
+        <name>Hauptgleis</name>
+        <laenge einheit="cm">283</laenge>
+        <bemerkung>incl. 2x Adapter Länge 353.3 cm</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">77</laenge>
+        <bemerkung>Wageneingang</bemerkung>
+      </gleis>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="cm">19</laenge>
+        <bemerkung>Stumpf</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="cm">86</laenge>
+        <bemerkung>Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">122</laenge>
+        <bemerkung>Treibstoff, Mineralöl, Holz, Schüttgut</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">122</laenge>
+        <bemerkung>Kohle, Rübenverladung, Lagerhs.2, Rampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_4a">
+        <name>4a</name>
+        <laenge einheit="cm">60</laenge>
+        <bemerkung>Spitzkehre</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">60</laenge>
+        <bemerkung>Ziehgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="cm">60</laenge>
+        <bemerkung>Verwaltung und Lagerhaus 1</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Holz" gleis="gleis_3">
+      <name>Holz</name>
+      <laenge einheit="cm">35</laenge>
+    </ladestelle>
+    <ladestelle id="Sch_ttgut" gleis="gleis_3">
+      <name>Schüttgut</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="_l_Treibstoff" gleis="gleis_3">
+      <name>Öl &amp; Treibstoff</name>
+      <laenge einheit="cm">15</laenge>
+    </ladestelle>
+    <ladestelle id="Kohle_Briketts" gleis="gleis_4">
+      <name>Kohle, Briketts</name>
+      <laenge einheit="cm">15</laenge>
+    </ladestelle>
+    <ladestelle id="Baustoffe" gleis="gleis_4">
+      <name>Baustoffe</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="R_benverladung" gleis="gleis_4">
+      <name>Rübenverladung</name>
+      <laenge einheit="cm">9</laenge>
+    </ladestelle>
+    <ladestelle id="Kopf-_und_Seitenrampe" gleis="gleis_4">
+      <name>Kopf- und Seitenrampe</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="Lagerhaus_Verwaltung" gleis="gleis_6">
+      <name>Lagerhaus &amp; Verwaltung</name>
+      <laenge einheit="cm">12</laenge>
+    </ladestelle>
+    <ladestelle id="Lagerhaus_neu" gleis="gleis_4">
+      <name>Lagerhaus neu</name>
+      <laenge einheit="cm">14</laenge>
+    </ladestelle>
+    <verlader>
+      <name>BAYWA</name>
+      <empfang>
+        <ladegut ladestelle="Kohle_Briketts">
+          <name>Festbrennstoffe</name>
+          <gattung>O</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="_l_Treibstoff">
+          <name>Mineralölprodukte</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">11</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Landmaschinen</name>
+          <gattung>R, S, G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Sch_ttgut">
+          <name>Schüttgut</name>
+          <gattung>O, Oot</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Baustoffe">
+          <name>Baustoffe</name>
+          <gattung>O, G, R, X, S</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_neu">
+          <name>Saatgut</name>
+          <gattung>G, K, Km, Kkt</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Verwaltung">
+          <name>Düngemittel</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Holz">
+          <name>Stammholz</name>
+          <gattung>O, Ot, Oot, R, S</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="R_benverladung">
+          <name>Rüben</name>
+          <gattung>O</gattung>
+          <wagen zeitraum="woche">18</wagen>
+        </ladegut>
+        <ladegut ladestelle="R_benverladung">
+          <name>Kartoffeln</name>
+          <gattung>O</gattung>
+          <wagen zeitraum="woche">10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_neu">
+          <name>Getreide</name>
+          <gattung>G, K, Km, Kkt</gattung>
+          <wagen zeitraum="woche">14</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Schlachtvieh</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenrampe">
+          <name>Obst &amp; Gemüse</name>
+          <gattung>O</gattung>
+          <wagen zeitraum="woche">2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Verwaltung">
+          <name>Hopfen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Verwaltung">
+          <name>Tabak</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_neu">
+          <name>Feingemüse</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Für bestimmte Güter besteht nur saisonaler Bedarf bzw. bestimmte landwirtschaftlichen Produkte sind nur saisonal verfügbar.</bemerkung>
+  </gv>
+  <bemerkung>Zulaufstrecken 1-gl I-Bahn / 1-gl Flach oder mit Adaptermodulen (Segment A und E) 1-gl Minidamm.[br]Durch Einsatz der Adaptermodule verlängert sich das Hauptgleis um je 35,3 cm auf 353,3 cm.[br]09/12/2018</bemerkung>
+</bahnhof>
+

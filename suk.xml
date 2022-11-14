@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Schurkau</name>
+	<kuerzel>SUK</kuerzel>
+	<typ>Hp</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MBGMu819</modulnr>
+	<plan src="suk.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<links nr="2">2gl</links>
+			<rechts nr="1">2gl</rechts>
+			<rechts nr="2">2gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">100</laenge>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">100</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<laenge einheit="cm">100</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg2">
+			<laenge einheit="cm">100</laenge>
+		</bahnsteig>
+	</pv>
+</bahnhof>

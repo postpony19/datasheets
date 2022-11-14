@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Miltitz</name>
+	<kuerzel>MI</kuerzel>
+	<typ>Bk/Hp</typ>
+	<maszstab>120</maszstab>
+	<modulnr>FrAlt329</modulnr>
+	<plan src="mi.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<rechts nr="1">2gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="gleis1">
+				<name>1</name>
+				<laenge>3000</laenge>
+			</gleis>
+			<gleis id="gleis2">
+				<name>2</name>
+				<laenge>3000</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="gleis1">
+			<!--<name>1</name>-->
+			<laenge>2000</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="gleis2">
+			<!--<name>2</name>-->
+			<laenge>2000</laenge>
+		</bahnsteig>
+	</pv>
+</bahnhof>

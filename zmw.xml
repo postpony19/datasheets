@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Zella-Mehlis West</name>
+  <kuerzel>ZMW</kuerzel>
+  <typ>Bf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>MaLan275</modulnr>
+  <plan src="zmw.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1</links>
+      <rechts nr="1">1</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="G1">
+        <name>1</name>
+        <laenge einheit="cm">135.0</laenge>
+        <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+      </gleis>
+      <gleis id="G2">
+        <name>2</name>
+        <laenge einheit="cm">165</laenge>
+        <bemerkung>Kreuzungsgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="G3">
+        <name>3</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="G3a">
+        <name>3a</name>
+        <laenge einheit="cm">25</laenge>
+        <bemerkung>Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="G4a">
+        <name>4a</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Kopf,- und Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="G4b">
+        <name>4b</name>
+        <laenge einheit="cm">32</laenge>
+        <bemerkung>Ausziehgleis</bemerkung>
+      </gleis>
+      <gleis id="G5">
+        <name>5</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="G6">
+        <name>6</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Ladestraße</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="G1">
+      <name>Bst.1</name>
+      <laenge einheit="cm">55.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="G2">
+      <name>Bst.2</name>
+      <laenge einheit="cm">120.0</laenge>
+    </bahnsteig>
+    <bemerkung>Berufs- und Schülerverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="L1" gleis="G3">
+      <name>Rangiergleis</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="L2" gleis="G3a">
+      <name>Güterschuppen</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="L3" gleis="G4a">
+      <name>Ladestraße, Rampe</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="L4" gleis="G5">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">35</laenge>
+    </ladestelle>
+    <ladestelle id="L5" gleis="G6">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">35</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Robotron Elektronik Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Elektronikbauteile, -baugruppen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Galvanikbauteile</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Büromaschinen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Baugruppen</name>
+          <gattung />
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Meteor Kettenfabriken</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge, Galvanikzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Rollenketten</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB EGS Suhl BT Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Elektronikbauteile, -gruppen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge, Galvanikzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>elektrische Haushaltsgeräte</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Wälzlagerwerk Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge, Galvanikzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB ABW August Bebel-Werk</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge, Galvanikzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Bohrfutter</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Maschinenteile</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Schreibgerätewerk Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Plastgranulat</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Kugelschreiber, Füller</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Karabinerhakenfabrik Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Metallhalbzeuge, Galvanikzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Karabinerhaken</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Brennstoffhandel Heinz Kästner</name>
+      <empfang>
+        <ladegut ladestelle="L4">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Brennstoffhandel BT Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L4">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="L4">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>LPG Zela-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L4">
+          <name>Futtermittel</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Kunstglas Zella-Mehlis</name>
+      <empfang>
+        <ladegut ladestelle="L2">
+          <name>Rohglas</name>
+          <gattung>E, G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Zusätze</name>
+          <gattung>E, G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="L2">
+          <name>Schmuckglas</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="L2">
+          <name>Laborglas</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB (K) Bau</name>
+      <empfang>
+        <ladegut ladestelle="L4">
+          <name>Baustoffe aller Art</name>
+          <gattung>E,F,G,R,S</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Sägewerk und Bautischlerei Oswald</name>
+      <empfang>
+        <ladegut ladestelle="L4">
+          <name>Stammholz</name>
+          <gattung>E, G, R</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="L4">
+          <name>Schnittholz</name>
+          <gattung>E ,G ,R</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB OGS</name>
+      <empfang>
+        <ladegut ladestelle="L1">
+          <name>Lebensmittel</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+

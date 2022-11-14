@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>VEB Kohlehandel</name>
+  <kuerzel>KHL</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>LuRau375</modulnr>
+  <plan src="khl.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <links nr="2">IBahn</links>
+      <rechts nr="1">2gl</rechts>
+      <rechts nr="2">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_I-Bahn-Stammgleis">
+        <name>I-Bahn-Stammgleis</name>
+        <laenge einheit="cm">200</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">90</laenge>
+        <bemerkung>Entladung E-Wagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="cm">100</laenge>
+        <bemerkung>Entladung F-Wagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_2b">
+        <name>2b</name>
+        <laenge einheit="cm">40</laenge>
+        <bemerkung>Entladung Flüssiggas</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Entladung_Fl_ssiggas" gleis="gleis_2b">
+      <name>Entladung Flüssiggas</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="Entladung_E-Wagen" gleis="gleis_1">
+      <name>Entladung E-Wagen</name>
+      <laenge einheit="cm">90</laenge>
+    </ladestelle>
+    <ladestelle id="Entladung_F-Wagen" gleis="gleis_2a">
+      <name>Entladung F-Wagen</name>
+      <laenge einheit="cm">100</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Kohlehandel</name>
+      <empfang>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Flüssiggas</name>
+          <gattung>G U Z</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Flüssiggas in Flaschen</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Leere Flüssiggasflaschen</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_E-Wagen Entladung_F-Wagen">
+          <name>Steinkohlenkoks</name>
+          <gattung>E Fc</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_E-Wagen Entladung_F-Wagen">
+          <name>Braunkohlenbriketts</name>
+          <gattung>E Fc</gattung>
+          <wagen>50</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_E-Wagen Entladung_F-Wagen">
+          <name>Braunkohlengries</name>
+          <gattung>E Fc</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_E-Wagen Entladung_F-Wagen">
+          <name>Fettkohle</name>
+          <gattung>E Fc</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Petroleum in Gebinden</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Acetylen in Flaschen</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Stickstoff in Flaschen</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Sauerstoff in Flaschen</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Entladung_Fl_ssiggas">
+          <name>Gasflaschen zur Aufarbeitung</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

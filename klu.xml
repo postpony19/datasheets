@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Kluckow</name>
+  <kuerzel>KLU</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaRue305</modulnr>
+  <plan src="klu.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Strecke">
+        <name>Strecke</name>
+        <laenge einheit="cm">50.0</laenge>
+        <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_Strecke">
+      <laenge einheit="cm">23.5</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle gleis="gleis_Strecke" id="Milchrampe">
+      <name>Milchrampe</name>
+      <laenge einheit="achsen">2</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Diverse Milchlieferanten</name>
+      <empfang>
+        <ladegut ladestelle="Milchrampe">
+          <name>leere Milchkannen</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Milchrampe">
+          <name>volle Milchkannen</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

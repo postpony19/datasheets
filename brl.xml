@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Brettleben</name>
+	<kuerzel>BRL</kuerzel>
+	<typ>Sbf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>ReBue107</modulnr>
+	<plan src="brl.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>1</name>
+				<laenge>1500</laenge>
+				<bemerkung>Bei Nutzung der Bockgleise 1b und 2b als Verkehrsgleis freihalten</bemerkung>
+			</gleis>
+			<gleis>
+				<name>1b</name>
+				<laenge>1280</laenge>
+				<bemerkung>Reisezüge</bemerkung>
+			</gleis>
+			<gleis>
+				<name>2</name>
+				<laenge>1560</laenge>
+				<bemerkung>Reisezüge</bemerkung>
+			</gleis>
+			<gleis>
+				<name>2b</name>
+				<laenge>1280</laenge>
+				<bemerkung>Reisezüge</bemerkung>
+			</gleis>
+			<gleis>
+				<name>3</name>
+				<laenge>3000</laenge>
+				<bemerkung>vorzugsweise Züge ohne rangierdienstliche Behandlung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>4</name>
+				<laenge>3000</laenge>
+				<bemerkung>vorzugsweise Züge ohne rangierdienstliche Behandlung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>5</name>
+				<laenge>3000</laenge>
+				<bemerkung>Güterverkehr Zugbildung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>6</name>
+				<laenge>3000</laenge>
+				<bemerkung>Güterverkehr Zugbildung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>7</name>
+				<laenge>3000</laenge>
+				<bemerkung>Güterverkehr Zugbildung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>8</name>
+				<laenge>1400</laenge>
+				<bemerkung>Güterverkehr Zugbildung 8 und 8b kombinierbar</bemerkung>
+			</gleis>
+			<gleis>
+				<name>8b</name>
+				<laenge>1280</laenge>
+				<bemerkung>Güterverkehr Zugbildung</bemerkung>
+			</gleis>
+			<gleis>
+				<name>9</name>
+				<laenge>1400</laenge>
+				<bemerkung>bei Nutzung der Bockgleise 8b und 9b als Verkehrsgleis freihalten</bemerkung>
+			</gleis>
+			<gleis>
+				<name>9b</name>
+				<laenge>1280</laenge>
+				<bemerkung>Güterverkehr Zugbildung</bemerkung>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<bemerkung>Gesamtausdehnung 500x4000 auch mit 3 Segmenten aufbaubar dann Nutzlänge jeweils 2000</bemerkung>
+</bahnhof>

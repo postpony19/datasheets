@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>ŻABI RÓG</name>
+    <kuerzel>XŻR</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>Andrzej Czarnak</modulnr>
+    <plan src="xzr.png"/>
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">1gl</links>
+            <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="gleis1">
+                <name>1</name>
+                <laenge einheit="cm">210</laenge>
+            </gleis>
+            <gleis id="gleis2">
+                <name>2</name>
+                <laenge einheit="cm">210</laenge>
+            </gleis>
+        </hgleise>
+        <ngleise>
+            <gleis id="gleis3">
+                <name>3</name>
+                <laenge einheit="cm">190</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+            <gleis id="gleis3a">
+                <name>3a</name>
+                <laenge einheit="cm">45</laenge>
+            </gleis>
+            <gleis id="gleis3b">
+                <name>3b</name>
+                <laenge einheit="cm">30</laenge>
+            </gleis>
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="gleis1 gleis2">
+            <laenge einheit="cm">190</laenge>
+        </bahnsteig>
+    </pv>
+    <gv>
+        <ladestelle id="lade1" gleis="gleis3a">
+            <name>Plac ładunkowy {Ladeplatz}</name>
+            <laenge einheit="mm">450</laenge>
+        </ladestelle>
+        <verlader>
+            <name>ŻR Żabi Róg. {BHG}</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>drobnica (wyroby gotowe) {Stückgut (Fertigwaren)}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>cement, wapno {Zement, Kalk}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>pasze {Futtermittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+        <verlader>
+            <name>PGR {LPG}</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>paliwo dla PGR-u {Treibstoff für die LPG}</name>
+                    <gattung>Z</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>nawozy {Düngemittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>pasze {Futtermittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>trzoda chlewna i bydło {Schweine und Rinder}</name>
+                    <gattung>G (V)</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Żwirownia {Kiesgrube}</name>
+            <versand>
+                <ladegut ladestelle="lade1">
+                    <name>żwir {Kies}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>piasek {Sand}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <!--<bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung>-->
+    </gv>
+    <bemerkung>Die allgemeinen Bemerkungen insbesondere die Rangierhinweise müssen noch konkret übersetzt werden!</bemerkung>
+</bahnhof>

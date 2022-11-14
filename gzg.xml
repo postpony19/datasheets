@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Görzig</name>
+    <kuerzel>GZG</kuerzel>
+    <typ>Hst</typ>
+    <maszstab>120</maszstab>
+    <modulnr>HaPeiXXX</modulnr>
+    <plan src="gzg.png"/>
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">1gl</links>
+            <rechts nr="1">1gl</rechts>
+            <!-- es sind folgende Werte zugelassen 1gl, 2gl und IBahn -->
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="strecke">
+                <name>1</name>
+                <laenge einheit="cm">91.7</laenge>
+                <bemerkung>Streckengleis</bemerkung>
+            </gleis>
+            <!-- hier können noch mehr Gleise nach obigen Schema eingefügt werden -->
+        </hgleise>
+        <ngleise>
+            <gleis id="freiladegleis">
+                <name>2</name>
+                <laenge einheit="cm">70.8</laenge>
+            </gleis>
+            <gleis id="stumpfgleis">
+                <name>2a</name>
+                <laenge einheit="cm">29</laenge>
+            </gleis>
+            <!-- hier können noch mehr Gleise nach obigen Schema eingefügt werden -->
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="strecke">
+            <!--<name>1</name>-->
+            <laenge einheit="cm">41.6</laenge>
+        </bahnsteig>
+        <!-- hier können beliebig viele Bahnsteige eingefügt werden -->
+        <!-- <bemerkung>Berufs- und Schülerverkehr</bemerkung> -->
+    </pv>
+    <gv>
+        <ladestelle id="ladestr" gleis="freiladegleis stumpfgleis">
+            <name>Ladestraße</name>
+            <laenge einheit="cm">75</laenge>
+        </ladestelle>
+        <ladestelle id="rampe" gleis="freiladegleis">
+            <name>Rampe</name>
+            <laenge einheit="cm">12.5</laenge>
+        </ladestelle>
+        <!-- hier können noch mehr Ladestellen nach obigen Schema eingefügt werden -->
+        <verlader>
+            <name>VEG Görzig West</name>
+            <empfang>
+                <ladegut ladestelle="ladestr">
+                    <name>Tierfutter</name>
+                    <gattung>G, E</gattung>
+                    <wagen></wagen>
+                    <!-- Dezimalzahlen immer mit Punkt eingeben, nicht das Komma verwenden!-->
+                </ladegut>
+                <!-- hier können noch mehr Ladegüter nach obigen Schema eingefügt werden-->
+            </empfang>
+            <versand>
+                <ladegut ladestelle="rampe ladestr">
+                    <name>landwirtschlaftliche Produkte (Getreide, Kartoffel, Mais, Milch)</name>
+                    <gattung>G, H, E</gattung>
+                    <wagen></wagen>
+                </ladegut>
+                <!-- hier können noch mehr Ladegüter nach obigen Schema eingefügt werden-->
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Kohlenhandel Russwurm Görzig</name>
+            <empfang>
+                <ladegut ladestelle="ladestr">
+                    <name>Kohle</name>
+                    <gattung>E</gattung>
+                    <wagen></wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+        <verlader>
+            <name>Baustoffhandel Baumann Rietz-Neuendorf</name>
+            <empfang>
+                <ladegut ladestelle="rampe">
+                    <name>Baustoffe</name>
+                    <gattung>G, H</gattung>
+                    <wagen></wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+<!--        <verlader>
+            <name>Baustoffhandel Baumann Rietz-Neuendorf</name>
+        </verlader>-->
+        <!--<verlader>
+            <name>Diverse Stückgüter</name>
+            <empfang>
+                <ladegut ladestelle="gboden">
+                    <name>Eilsendungen</name>
+                    <gattung>Gex</gattung>
+                    <wagen>5</wagen>
+                </ladegut>-->
+                <!-- hier können noch mehr Ladegüter nach obigen Schema eingefügt werden-->
+        <!--    </empfang>
+        </verlader>
+        <verlader>
+            <name>VEB Brett</name>
+            <versand>
+                <ladegut ladestelle="ladestr rampe">
+                    <name>Schnittholz</name>
+                    <gattung>E, G</gattung>
+                    <wagen>2</wagen>
+                </ladegut>
+            </versand>
+        </verlader> -->
+        <!-- hier können noch mehr Verlader nach obigen Schema eingefügt werden -->
+        <!-- <bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung> -->
+    </gv>
+    <!-- <bemerkung>Hier stehen allgemeine Bemerkungen zur Betriebsstelle selbst</bemerkung> -->
+</bahnhof>

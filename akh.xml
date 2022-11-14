@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluss Kohlenhandel</name>
+  <kuerzel>AKH</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>TiSpr383</modulnr>
+  <plan src="akh.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Streckengleis">
+        <name>Streckengleis</name>
+        <laenge>600</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>300</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Kohlenhandel" gleis="gleis_2">
+      <name>Kohlenhandel</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Verlader</name>
+      <empfang>
+        <ladegut ladestelle="Kohlenhandel">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+

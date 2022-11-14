@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Spitz</name>
+	<kuerzel>SPZ</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>UdSpi255</modulnr>
+	<plan src="spz.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis>
+				<name>1</name>
+				<laenge einheit="cm">220</laenge>
+				<bemerkung>Güterzuggleis</bemerkung>
+			</gleis>
+			<gleis id="hg2">
+				<name>2</name>
+				<laenge einheit="cm">210</laenge>
+				<bemerkung>durchgehendes Hauptgleis</bemerkung>
+			</gleis>
+			<gleis id="hg3">
+				<name>3</name>
+				<laenge einheit="cm">205</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>1b</name>
+				<laenge einheit="cm">40</laenge>
+			</gleis>
+			<gleis id="ladegleis">
+				<name>4</name>
+				<laenge einheit="cm">150</laenge>
+				<bemerkung>Ladestraße mit Güterschuppen</bemerkung>
+			</gleis>
+			<gleis id="heizgleis">
+				<name>5a</name>
+				<laenge einheit="cm">75</laenge>
+				<bemerkung>Anschlussgleis Heizwerk</bemerkung>
+			</gleis>
+			<gleis id="maschgleis">
+				<name>5b</name>
+				<laenge einheit="cm">65</laenge>
+				<bemerkung>Anschlussgleis Maschinenfabrik</bemerkung>
+			</gleis>
+			<gleis>
+				<name>6</name>
+				<laenge einheit="cm">65</laenge>
+				<bemerkung>Ziehgleis und Abstellgleis</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg2">
+			<name>1</name>
+			<laenge einheit="cm">175</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="hg3">
+			<name>2</name>
+			<laenge einheit="cm">175</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="ladestr" gleis="ladegleis">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">133</laenge>
+		</ladestelle>
+		<ladestelle id="gschuppen" gleis="ladegleis">
+			<name>Güterschuppen</name>
+			<laenge einheit="cm">17</laenge>
+		</ladestelle>
+		<ladestelle id="maschinenfabrik" gleis="maschgleis">
+			<name>Anschluss Maschinenfabrik</name>
+			<laenge einheit="cm">65</laenge>
+		</ladestelle>
+		<ladestelle id="heizwerk" gleis="heizgleis">
+			<name>Anschluss Heizwerk</name>
+			<laenge einheit="cm">75</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Chemische Werke Spitz - Fettchemie</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Öle</name>
+					<gattung>Z, G</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>chemische Produkte</name>
+					<gattung>E, G</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestr">
+					<name>Fette</name>
+					<gattung>G</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Öle</name>
+					<gattung>Z, G</gattung>
+					<wagen>10</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Büromaschinen Sömmerda, Außenstelle Spitz</name>
+			<empfang>
+				<ladegut ladestelle="gschuppen">
+					<name>Maschinenelemente</name>
+					<gattung>G, H</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Bleche</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>elektronische Bauteile</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Monitore</name>
+					<gattung>G, H</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Großrechenanlagen</name>
+					<gattung>G, H</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Fräs- und Drehmaschinenbau "Hans Beimler"</name>
+			<empfang>
+				<ladegut ladestelle="maschinenfabrik">
+					<name>Coils</name>
+					<gattung>R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="maschinenfabrik">
+					<name>Maschinenelemente</name>
+					<gattung>G, R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="maschinenfabrik">
+					<name>Werkzeugmaschinen</name>
+					<gattung>G, R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="maschinenfabrik">
+					<name>Metallspäne</name>
+					<gattung>E</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>BHG Spitz</name>
+			<empfang>
+				<ladegut ladestelle="gschuppen">
+					<name>Dünger</name>
+					<gattung>G</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Saatgut</name>
+					<gattung>G</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Maschinen</name>
+					<gattung>G, R, S</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="gschuppen">
+					<name>Briketts</name>
+					<gattung>E, F</gattung>
+					<wagen>3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="gschuppen">
+					<name>Landwirtschaftsprodukte</name>
+					<gattung>G, F</gattung>
+					<wagen>10</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Rohrleitungsbau Spitz</name>
+			<empfang>
+				<ladegut ladestelle="ladestr">
+					<name>Coils</name>
+					<gattung>R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Halbzeuge</name>
+					<gattung>R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ladestr">
+					<name>Rohre</name>
+					<gattung>R, S</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="ladestr">
+					<name>Stahlrohre</name>
+					<gattung>R, S</gattung>
+					<wagen>4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Heizwerk Spitz</name>
+			<empfang>
+				<ladegut ladestelle="heizwerk">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen>14</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="heizwerk">
+					<name>Asche</name>
+					<gattung>U</gattung>
+					<wagen>5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>

@@ -1,0 +1,37 @@
+<!ELEMENT bahnhof (name,kuerzel,typ,verwaltung?,maszstab,modulnr,plan?,gleise,pv?,gv?,bemerkung?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT kuerzel (#PCDATA)>
+<!ELEMENT typ (#PCDATA)>
+<!ELEMENT verwaltung (#PCDATA)>
+<!ELEMENT maszstab (#PCDATA)>
+<!ELEMENT modulnr (#PCDATA)>
+<!ELEMENT plan EMPTY>
+	<!ATTLIST plan src CDATA #REQUIRED>
+<!ELEMENT gleise (zulaufstrecken+,hgleise+,ngleise?)>
+<!ELEMENT zulaufstrecken (links*,rechts*)>
+<!ELEMENT links (#PCDATA)>
+	<!ATTLIST links nr CDATA #REQUIRED>
+<!ELEMENT rechts (#PCDATA)>
+	<!ATTLIST rechts nr CDATA #REQUIRED>
+<!ELEMENT hgleise (gleis+)>
+<!ELEMENT ngleise (gleis+)>
+<!ELEMENT gleis (name,laenge,bemerkung?)>
+	<!ATTLIST gleis id ID #IMPLIED>
+<!ELEMENT laenge (#PCDATA)>
+	<!ATTLIST laenge einheit (mm|cm|achsen) "mm">
+<!ELEMENT pv (bahnsteig+,bemerkung?)>
+<!ELEMENT bahnsteig (name?,laenge)>
+	<!ATTLIST bahnsteig gleis IDREFS #REQUIRED>
+<!ELEMENT bemerkung (#PCDATA)>
+<!ELEMENT gv (ladestelle+,verlader+,bemerkung?)>
+<!ELEMENT ladestelle (name,laenge)>
+	<!ATTLIST ladestelle id ID #IMPLIED>
+	<!ATTLIST ladestelle gleis IDREFS #REQUIRED>
+<!ELEMENT verlader (name,empfang?,versand?)>
+<!ELEMENT empfang (ladegut+)>
+<!ELEMENT ladegut (name,gattung,wagen)>
+	<!ATTLIST ladegut ladestelle IDREFS #REQUIRED>
+<!ELEMENT gattung (#PCDATA)>
+<!ELEMENT wagen (#PCDATA)>
+	<!ATTLIST wagen zeitraum (tag|woche) "woche">
+<!ELEMENT versand (ladegut+)>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Görzke</name>
+  <kuerzel>GOE</kuerzel>
+  <typ>Bf, Ebf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>JuRam855-857</modulnr>
+  <plan src="goe.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gl1">
+        <name>1</name>
+        <laenge>760</laenge>
+        <bemerkung>Haupteinfahrgleis (mit Ziehgleis Nutzlänge = 1860 mm)</bemerkung>
+      </gleis>
+      <gleis id="gl2">
+        <name>2</name>
+        <laenge>500</laenge>
+        <bemerkung>Nutzung nur durch längere GmP oder GmP</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gl3">
+        <name>3</name>
+        <laenge>830</laenge>
+        <bemerkung>Ladestraße Kopframpe Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="gl4">
+        <name>4</name>
+        <laenge>400</laenge>
+        <bemerkung>Lokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gl5">
+        <name>5</name>
+        <laenge>0</laenge>
+        <bemerkung>ausgebaut, Ehemaliges zweites Lokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gl6">
+        <name>6</name>
+        <laenge>400</laenge>
+        <bemerkung>Güterschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gl11">
+        <name>11</name>
+        <laenge>900</laenge>
+        <bemerkung>Ausziehgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gl1">
+      <name>Hausbahnsteig</name>
+      <laenge>330</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gl2">
+      <name>Inselbahnsteig</name>
+      <laenge>500</laenge>
+    </bahnsteig>
+    <bemerkung>Pendlerverkehr mit Schulkindern und Arbeitern nach Ziesar und von dort zur Relation Magdeburg - Brandenburg</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="l1" gleis="gl3">
+      <name>Ladestraße</name>
+      <laenge>500</laenge>
+    </ladestelle>
+    <ladestelle id="l2" gleis="gl6">
+      <name>Güterschuppen</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <ladestelle id="l3" gleis="gl3">
+      <name>Laderampe (Kopf-Seit)</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <ladestelle id="l4" gleis="gl4">
+      <name>Betriebswerk/Lokschuppengleis</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <ladestelle id="l5" gleis="gl11">
+      <name>Seitenrampe</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Bahnmeisterei Görzke</name>
+      <versand>
+        <ladegut ladestelle="l4">
+          <name>Altschotter</name>
+          <gattung>F, E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="l4">
+          <name>Schienen</name>
+          <gattung>R, SS</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BW Görzke</name>
+      <empfang>
+        <ladegut ladestelle="l4">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="l4">
+          <name>Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="l4">
+          <name>Schlacke</name>
+          <gattung>E</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Märkische Keramik Manufaktur Görzke (MKM) (15)</name>
+      <empfang>
+        <ladegut ladestelle="l1">
+          <name>Kaolin von VEB Kaolinwerk Sperrgau</name>
+          <gattung>U</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1">
+          <name>Sand von VEB Kaolinwerk Sperrgau</name>
+          <gattung>R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="l2">
+          <name>Verpackungsmaterial Stückgut von VEB Kombinat Zellstoff Heidenau</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1">
+          <name>Brikett von VEB Brikettfabrik Lauchhammer</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="l3">
+          <name>Zuschlagstoffe, Chemikalien in Fässern von Leunawerken</name>
+          <gattung>G, E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="l1">
+          <name>Fertigware Abflußrohre BHG Beetzendorf</name>
+          <gattung>R, E</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1 l3">
+          <name>Fertigtöpferwaren an Kombinat Gaststätten u. Werksküchenporzellan</name>
+          <gattung>G, H, E, R</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="l2">
+          <name>Feinkeramikwaren Stückgut an dto.</name>
+          <gattung>G, H</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Staatlicher Forstwirtschaftsbetrieb Görzke (28)</name>
+      <versand>
+        <ladegut ladestelle="l1 l3">
+          <name>Stammholz an VEB Zündwarenwerke Riesa</name>
+          <gattung>R, H, E</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1 l3">
+          <name>Baumstämme an Sägewerke</name>
+          <gattung>R, H, S</gattung>
+          <wagen>8</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1 l3">
+          <name>Grubenholz BHG Beetzendorf</name>
+          <gattung>E</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="l1 l3">
+          <name>Resthölzer an VEB Papier- und Kartonagenfabrik Niederschlemma</name>
+          <gattung>R, E</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Verschiedene</name>
+      <empfang>
+        <ladegut ladestelle="l2">
+          <name>Stückgüter</name>
+          <gattung>G</gattung>
+          <wagen>7</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="l2">
+          <name>Stückgüter</name>
+          <gattung>G</gattung>
+          <wagen>7</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG Görzke</name>
+      <empfang>
+        <!--<ladegut ladestelle="lade2">
+                    <name>Düngemittel lose</name>
+                    <gattung>T, K</gattung>
+                    <wagen zeitraum="tag">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>Düngemittel gesackt</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">1</wagen>
+                </ladegut>-->
+        <ladegut ladestelle="l1">
+          <name>Dünger (lose / gesackt) von ACZ Dünger</name>
+          <gattung>T, G</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <!--<ladegut ladestelle="lade2">
+                    <name>Pestizide, Insektizide</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.06</wagen>
+                </ladegut>-->
+        <ladegut ladestelle="l3">
+          <name>Landmaschinen (Trecker, Hänger)</name>
+          <gattung>R, X</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="l1">
+          <name>Kartoffeln</name>
+          <gattung>E</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>vorwiegend Abfuhr/Anfuhr von Produkten der Töpfer- und Keramikindustrie, Forst- und Holzwirtschaft sowie landwirtschaftliche Produkte</bemerkung>
+  </gv>
+  <bemerkung>Zustand der Betriebsstelle dargestellt um 1960[br]Gesamtlänge 2550 mm (drei Module Joschidul zu je 850 x 400 mm)[br]Wahlweise auch als Durchgangsbahnhof benutzbar</bemerkung>
+</bahnhof>
+

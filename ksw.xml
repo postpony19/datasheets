@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Klein Starkow</name>
+	<kuerzel>KSW</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JoLan241</modulnr>
+	<plan src="ksw.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Gleis_1">
+				<name>1</name>
+				<laenge einheit="cm">150</laenge>
+				<!--<bemerkung>Ein- und Ausfahrgleis</bemerkung>-->
+			</gleis>
+			<gleis id="Gleis_2">
+				<name>2</name>
+				<laenge einheit="cm">130</laenge>
+				<!--<bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>-->
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Gleis_3">
+				<name>3</name>
+				<laenge einheit="cm">90</laenge>
+				<!--<bemerkung>Seitenrampe</bemerkung>-->
+			</gleis>
+			<gleis id="Gleis_4">
+				<name>4</name>
+				<laenge einheit="cm">60</laenge>
+				<!--<bemerkung>Bahnsteiggleis</bemerkung>-->
+			</gleis>
+			<gleis id="Gleis_5">
+				<name>5</name>
+				<laenge einheit="cm">75</laenge>
+				<!--<bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>-->
+			</gleis>
+			<gleis id="Gleis_5a">
+				<name>5a</name>
+				<laenge einheit="cm">30</laenge>
+				<!--<bemerkung>Einsatzstelle mit Triebwagenschuppen</bemerkung>-->
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Gleis_1">
+			<name>Bahnsteig</name>
+			<laenge einheit="cm">130</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="Gleis_2">
+			<name>Hausbahnsteig</name>
+			<laenge einheit="cm">120</laenge>
+		</bahnsteig>
+		<!--<bemerkung>Fremdenverkehrsort, Berufspendler, beliebtes Vatertagsziel</bemerkung>-->
+	</pv>
+	<gv>
+		<ladestelle id="Laderampe" gleis="Gleis_4">
+			<name>Laderampe</name>
+			<laenge einheit="cm">60</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestrasse" gleis="Gleis_3">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">90</laenge>
+		</ladestelle>
+		<ladestelle id="Gueterschuppen" gleis="Gleis_5a">
+			<name>Güterschuppen</name>
+			<laenge einheit="cm">30</laenge>
+		</ladestelle>
+		<verlader>
+			<name>MTS Klein Starkow</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Öle</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe">
+					<name>Schmierstoffe</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe">
+					<name>Maschinenteile</name>
+					<gattung>G, O</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kraftstoffe</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>BHG</name>
+			<empfang>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Baumaterial aller Art</name>
+					<gattung>E, R, S, G</gattung>
+					<wagen zeitraum="woche">5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Saatgut</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Dünger</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>LPG Klein Starkow</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kartoffeln</name>
+					<gattung>O</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Rüben</name>
+					<gattung>O</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Schlachtvieh</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Kohlehandel</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Heizöl</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="woche">3.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kohle</name>
+					<gattung>E, F</gattung>
+					<wagen zeitraum="woche">3.5</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Palettentischlerei Karl Schulz</name>
+			<empfang>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Bretter</name>
+					<gattung>R, O</gattung>
+					<wagen zeitraum="woche">2.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Kanthölzer</name>
+					<gattung>R, O</gattung>
+					<wagen zeitraum="woche">2.5</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>neue Paletten</name>
+					<gattung>O, G, K</gattung>
+					<wagen zeitraum="woche">2.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Kisten</name>
+					<gattung>O, G, K</gattung>
+					<wagen zeitraum="woche">2.5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>SERO</name>
+			<versand>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Glas</name>
+					<gattung>O, G</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Lumpen</name>
+					<gattung>O, G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Laderampe Ladestrasse">
+					<name>Papier</name>
+					<gattung>O, G</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<!--<bemerkung>Landwirtschaft, Kabelwerk, Schraubenwerk, Salzsäurewerk, Forstwirtschaft</bemerkung>-->
+	</gv>
+</bahnhof>

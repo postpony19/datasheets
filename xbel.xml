@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Bělá pod Bezdězem</name>
+  <kuerzel>XBEL</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>ČSD</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>PNov035 a-f, ž</modulnr>
+  <plan src="xbel.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">460</laenge>
+        <bemerkung>D-Züge,I.Personenzug, durchfahrende Güterzüge</bemerkung>
+      </gleis>
+      <gleis id="gleis_2b">
+        <name>2b</name>
+        <laenge einheit="cm">83</laenge>
+        <bemerkung>endende Schienenbusse (Kurswagen, Eilgut)</bemerkung>
+      </gleis>
+      <!--<gleis id="gleis3">
+                <name></name>
+                <laenge einheit="cm"></laenge>
+            </gleis>
+            <gleis id="gleis6">
+                <name>6</name>
+                <laenge einheit="cm">182</laenge>
+            </gleis>-->
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">475</laenge>
+        <bemerkung>kreuzende - II. Personen-/Güterzüge</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">450</laenge>
+        <bemerkung>ohne Bahnsteig, Güterzüge</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="cm">145</laenge>
+        <bemerkung>Wagen zum Ent-/Beladen</bemerkung>
+      </gleis>
+      <gleis id="gleis_2c">
+        <name>2c</name>
+        <laenge einheit="cm">175</laenge>
+        <bemerkung>Wagen von/für NG</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">128</laenge>
+        <bemerkung>Arbeitszug, Bahnmaschinen, Kopframpe</bemerkung>
+      </gleis>
+      <gleis id="gleis_7a">
+        <name>7a</name>
+        <laenge einheit="cm">223</laenge>
+        <bemerkung>Wagen von/für Anschlussbahn, Dieselversorgung</bemerkung>
+      </gleis>
+      <gleis id="gleis_7b">
+        <name>7b</name>
+        <laenge einheit="cm">247</laenge>
+        <bemerkung>gedeckte Wagen - Versand + Rohmaterialien, Kohle</bemerkung>
+      </gleis>
+      <gleis id="gleis_7c">
+        <name>7c</name>
+        <laenge einheit="cm">105</laenge>
+        <bemerkung>Wagen für Werkstatt</bemerkung>
+      </gleis>
+      <gleis id="gleis_9">
+        <name>9</name>
+        <laenge einheit="cm">130</laenge>
+        <bemerkung>Kesselwagen - Heizöl, PE, PVC, H2SO4, Asche, Ladefläche</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <laenge einheit="cm">150</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <laenge einheit="cm">176</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2b">
+      <laenge einheit="cm">83</laenge>
+    </bahnsteig>
+  </pv>
+  <!--<pv>
+        <bahnsteig gleis="gleis6">
+            <laenge einheit="cm">20</laenge>
+        </bahnsteig>
+        <bemerkung></bemerkung>
+    </pv>-->
+  <gv>
+    <ladestelle id="Bahnhofsg_terschuppen_A_" gleis="gleis_2b">
+      <name>Bahnhofsgüterschuppen (A)</name>
+      <laenge einheit="achsen">6</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlehandel_B_" gleis="gleis_2a">
+      <name>Kohlehandel (B)</name>
+      <laenge einheit="achsen">6</laenge>
+    </ladestelle>
+    <ladestelle id="Allg._Lagerfl_che_Rampe_Kopframpe_C_" gleis="gleis_2c gleis_4">
+      <name>Allg. Lagerfläche, Rampe, Kopframpe (C)</name>
+      <laenge einheit="achsen">14</laenge>
+    </ladestelle>
+    <!--<ladestelle id="lade4" gleis="gleis9">
+            <name>Plac ładunkowy {Ladeplatz}</name>
+            <laenge einheit="cm">80</laenge>
+        </ladestelle>-->
+    <ladestelle id="Allg._Lagerfl_che_freie_Fl_che_D_" gleis="gleis_2c gleis_4">
+      <name>Allg. Lagerfläche, freie Fläche (D)</name>
+      <laenge einheit="achsen">36</laenge>
+    </ladestelle>
+    <ladestelle id="Lagerfl_che_Streckendienst_E_" gleis="gleis_2c gleis_4">
+      <name>Lagerfläche Streckendienst (E)</name>
+      <laenge einheit="achsen">4</laenge>
+    </ladestelle>
+    <ladestelle id="Dieselversorgung_F_" gleis="gleis_7a">
+      <name>Dieselversorgung (F)</name>
+      <laenge einheit="achsen">4</laenge>
+    </ladestelle>
+    <ladestelle id="Freie_Fl_che_G_" gleis="gleis_9">
+      <name>Freie Fläche (G)</name>
+      <laenge einheit="achsen">12</laenge>
+    </ladestelle>
+    <ladestelle id="Ladeort_PE_PVC_H_" gleis="gleis_7a gleis_9">
+      <name>Ladeort PE, PVC (H)</name>
+      <laenge einheit="achsen">6</laenge>
+    </ladestelle>
+    <ladestelle id="Abziehort_Heiz_l_Teer_I_" gleis="gleis_9">
+      <name>Abziehort Heizöl, Teer (I)</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <ladestelle id="Versand_J_" gleis="gleis_7b">
+      <name>Versand (J)</name>
+      <laenge einheit="achsen">6</laenge>
+    </ladestelle>
+    <ladestelle id="Wareneingang_K_" gleis="gleis_7b">
+      <name>Wareneingang (K)</name>
+      <laenge einheit="achsen">10</laenge>
+    </ladestelle>
+    <ladestelle id="Abziehort_Asphalt_L_" gleis="gleis_7b">
+      <name>Abziehort Asphalt (L)</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlebunker_M_" gleis="gleis_7b">
+      <name>Kohlebunker (M)</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Jednota, spotřební družstvo</name>
+      <empfang>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Lebensmittel, Werkzeuge</name>
+          <gattung>G, Ta</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Kleinmaschinen</name>
+          <gattung>R, E</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Bier, Wein in Fassen und Flaschen</name>
+          <gattung>G</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>gefrorene Fische, exotische Früchte</name>
+          <gattung>I</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+      </empfang>
+      <!--<empfang>
+                <ladegut ladestelle="lade1">
+                    <name>zboże {Getreide}</name>
+                    <gattung>G, T, U</gattung>
+                    <wagen zeitraum="woche">105</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade4">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">14</wagen>
+                </ladegut>
+            </empfang>-->
+    </verlader>
+    <verlader>
+      <name>Uhelné sklady Česká Lípa, závod Bělá pod Bezdězem</name>
+      <empfang>
+        <ladegut ladestelle="Kohlehandel_B_">
+          <name>Kohle, Koks, Briketten</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlehandel_B_">
+          <name>Brennholz</name>
+          <gattung>E</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Autodružstvo Čermák, v.d.</name>
+      <empfang>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Treibstoffe, Schmiere</name>
+          <gattung>Z, G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Sběrné sur n.p. Mnichovo Hradiště</name>
+      <versand>
+        <ladegut ladestelle="Allg._Lagerfl_che_Rampe_Kopframpe_C_">
+          <name>Eisenschrott</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_Rampe_Kopframpe_C_">
+          <name>Glasscherben</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Mlýn Dolní Krupá</name>
+      <versand>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Mehl, Spreu</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <!--<bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung>-->
+    <verlader>
+      <name>Státní statek ZLATÝ KLAS Plužná</name>
+      <empfang>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Saatgut, Düngemittel - Saison</name>
+          <gattung>G, U</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_Rampe_Kopframpe_C_">
+          <name>Tiere, Geflügel, Pferde - Saison</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_Rampe_Kopframpe_C_">
+          <name>Landwirtschaftsmaschinen</name>
+          <gattung>R</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Düngemittel, Pestizide - Saison</name>
+          <gattung>U</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Allg._Lagerfl_che_Rampe_Kopframpe_C_">
+          <name>Tiere, Geflügel, Pferde - Saison</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Getreide, Frucht, Schrot</name>
+          <gattung>G, E</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Kartoffel - Saison</name>
+          <gattung>E</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Škrobárna Ralsko</name>
+      <empfang>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Kartoffel - Saison</name>
+          <gattung>E</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Bahnhofsg_terschuppen_A_">
+          <name>Stärke, Pudding</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Masný průmysl, n.p. Mladá Boleslav</name>
+      <versand>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Schweinehälften</name>
+          <gattung>I</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Stavebniny</name>
+      <empfang>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Kalk, Zement</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Ziegel, Träger</name>
+          <gattung>E, R</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Dřevařské závody, n.p. Bělá p. B.</name>
+      <versand>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Sägeholz, Balken</name>
+          <gattung>K, Res</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kablo Kladno s.p. /Dřev.záv. n.p. BpB</name>
+      <versand>
+        <ladegut ladestelle="Allg._Lagerfl_che_freie_Fl_che_D_">
+          <name>Kabeltrommel</name>
+          <gattung>E, K</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>TD Bakov nad Jizerou</name>
+      <empfang>
+        <ladegut ladestelle="Lagerfl_che_Streckendienst_E_">
+          <name>Gleisen, Schwellen</name>
+          <gattung>K, Res</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerfl_che_Streckendienst_E_">
+          <name>Kleineisen</name>
+          <gattung>E, G</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Dehtochema n.p.</name>
+      <empfang>
+        <ladegut ladestelle="Dieselversorgung_F_">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Farben, Füllstoffe</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Schwefelsäure</name>
+          <gattung>Z</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Ruß</name>
+          <gattung>Utz</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Löschkalk</name>
+          <gattung>Utz</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Maschinen, Förderzeuge</name>
+          <gattung>S, K</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>technol. Ausrüstung, Behälter</name>
+          <gattung>Uaa</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladeort_PE_PVC_H_">
+          <name>Polyethylen (PE)</name>
+          <gattung>Uacs-y</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladeort_PE_PVC_H_">
+          <name>Polyvinylazetat (PVC)</name>
+          <gattung>Uacs-y</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Abziehort_Heiz_l_Teer_I_">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Abziehort_Heiz_l_Teer_I_">
+          <name>Teer</name>
+          <gattung>Z</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Natriumhydroxid</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Kaolin</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Gewebe</name>
+          <gattung>G</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Sulphatzellulose</name>
+          <gattung>G</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Silliziumsand (Beutel)</name>
+          <gattung>E, G</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Verpackungspapier</name>
+          <gattung>G</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Blechdosen 5l, 10l, 20l (Paletten)</name>
+          <gattung>G, E</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Kalkkarbonat</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Wareneingang_K_">
+          <name>Altpapier</name>
+          <gattung>E, G</gattung>
+          <wagen>30</wagen>
+        </ladegut>
+        <ladegut ladestelle="Abziehort_Asphalt_L_">
+          <name>Asphalt</name>
+          <gattung>Z, Za</gattung>
+          <wagen>15</wagen>
+        </ladegut>
+        <ladegut ladestelle="Abziehort_Asphalt_L_">
+          <name>Transformator</name>
+          <gattung>Uaa</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlebunker_M_">
+          <name>Kohle</name>
+          <gattung>Wa, E</gattung>
+          <wagen>6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlebunker_M_">
+          <name>Brennholz, kurz</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Freie_Fl_che_G_">
+          <name>Asche</name>
+          <gattung>E</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Teerpapier</name>
+          <gattung>G</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Asphalt in Blechdosen</name>
+          <gattung>G</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Teer in Blechdosen</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Asphaltpapier glatt</name>
+          <gattung>G</gattung>
+          <wagen>20</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Asphaltpapier mit Sand</name>
+          <gattung>G</gattung>
+          <wagen>20</wagen>
+        </ladegut>
+        <ladegut ladestelle="Versand_J_">
+          <name>Bitagit</name>
+          <gattung>G</gattung>
+          <wagen>20</wagen>
+        </ladegut>
+        <ladegut ladestelle="Abziehort_Asphalt_L_">
+          <name>Transformator</name>
+          <gattung>Uaa</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+  <!--<bemerkung>Die allgemeinen Bemerkungen insbesondere die Rangierhinweise müssen noch konkret übersetzt werden!</bemerkung>-->
+  <bemerkung>Letzte Änderung 15.09.2016</bemerkung>
+</bahnhof>
+

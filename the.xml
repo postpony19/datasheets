@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Themar</name>
+  <kuerzel>THE</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MiSch219</modulnr>
+  <plan src="the.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">2gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="cm">355</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="cm">535</laenge>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="cm">415</laenge>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="cm">330</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="cm">293</laenge>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="cm">270</laenge>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="cm">223</laenge>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="cm">40</laenge>
+      </gleis>
+      <gleis id="gleis_9">
+        <name>9</name>
+        <laenge einheit="cm">230</laenge>
+      </gleis>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge einheit="cm">35</laenge>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge einheit="cm">55</laenge>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge einheit="cm">65</laenge>
+      </gleis>
+      <gleis id="gleis_13">
+        <name>13</name>
+        <laenge einheit="cm">25</laenge>
+        <bemerkung>Anschluß Kohlehandel</bemerkung>
+      </gleis>
+      <gleis id="gleis_14">
+        <name>14</name>
+        <laenge einheit="cm">95</laenge>
+      </gleis>
+      <!--<gleis id="gleis_M67">
+        <name>M67</name>
+        <laenge einheit="cm">2458</laenge>
+      </gleis>
+      <gleis id="gleis_M68">
+        <name>M68</name>
+        <laenge einheit="cm">130</laenge>
+      </gleis>
+      <gleis id="gleis_M70">
+        <name>M70</name>
+        <laenge einheit="cm">270</laenge>
+      </gleis>-->
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1</name>
+      <laenge einheit="cm">110</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2 gleis_3">
+      <name>2</name>
+      <laenge einheit="cm">170</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestra_e_I" gleis="gleis_7">
+      <name>Ladestraße I</name>
+      <laenge einheit="cm">371</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_II" gleis="gleis_9">
+      <name>Ladestraße II</name>
+      <laenge einheit="cm">22</laenge>
+    </ladestelle>
+    <ladestelle id="Kopframpe" gleis="gleis_9">
+      <name>Kopframpe</name>
+      <laenge einheit="cm">10</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe_I" gleis="gleis_9">
+      <name>Seitenrampe I</name>
+      <laenge einheit="cm">10</laenge>
+    </ladestelle>
+    <ladestelle id="Seitenrampe_II" gleis="gleis_9">
+      <name>Seitenrampe II</name>
+      <laenge einheit="cm">72</laenge>
+    </ladestelle>
+    <ladestelle id="G_terschuppen" gleis="gleis_12">
+      <name>Güterschuppen</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlehandel" gleis="gleis_13">
+      <name>Kohlehandel</name>
+      <laenge einheit="cm">60</laenge>
+    </ladestelle>
+    <ladestelle id="Minol" gleis="gleis_13">
+      <name>Minol</name>
+      <laenge einheit="cm">30</laenge>
+    </ladestelle>
+    <ladestelle id="Getreidehandel" gleis="gleis_8">
+      <name>Getreidehandel</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Sternradio Sonneberg</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Elektrobauteile</name>
+          <gattung>G / Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kunststoffgranulat</name>
+          <gattung>G, U</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Radios / Stereoanlagen</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Möbelwerk Themar</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+          <name>Bretter</name>
+          <gattung>R, E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+          <name>Spanplatte</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Möbelbeschläge</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Holzleim (Kanister)</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">0.1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Schrankwände / Tische</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Brennstoffhandel Süd</name>
+      <empfang>
+        <ladegut ladestelle="Kohlehandel">
+          <name>Briketts</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">8</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlehandel">
+          <name>Anfeuerholz</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Anker-Mechanik Eisfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Kupferdraht</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Bleche, Profile</name>
+          <gattung>G, E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Farben (Faßware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Elektronikbauteile, Normteile</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Modellflugzeuge, Spielzeug</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Baustoffhandel Themar</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe_I Kopframpe Ladestra_e_I">
+          <name>Baumaschinen, Aggregate</name>
+          <gattung>R, K, S</gattung>
+          <wagen zeitraum="woche">0.1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Ziegel, Hohlblocksteine</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Betonfertigteile</name>
+          <gattung>E, R, K</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Zement, Kalk (Sackware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kies</name>
+          <gattung>S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Schalbretter, Balken</name>
+          <gattung>E, K ,R</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Rote Rübe Hildburghausen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Gemüse</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Obst</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Brantwein (Faßware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Konservengläser</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Konservendosen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Zuckersirup (Faßware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Stärke (Sackware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Europaletten</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Obst- und Gemüsekonserven</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kartonagenwerk Eisfeld</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe_II Ladestra_e_I">
+          <name>Stammholz</name>
+          <gattung>E, R</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Altpapier</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe_II">
+          <name>Kaolin</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Seitenrampe_II G_terschuppen">
+          <name>Packpapier</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe_II G_terschuppen">
+          <name>Kartons</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Verpackungsmaterial</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Südthüringer Fleischkombinat</name>
+      <empfang>
+        <ladegut ladestelle="Seitenrampe_I Ladestra_e_I">
+          <name>Schlachtvieh</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Konservendosen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Konservengläser</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Fleisch- und Wurstkonserven</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Elektrogerätewerk Schleusingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Kunststoffgranulat</name>
+          <gattung>G, U</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Getriebgehäuse</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Wellen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Zahnräder</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Blechteile</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Elektrogeräte</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB IFA-Kombinat Hildburghausen</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe">
+          <name>Pkw</name>
+          <gattung>L</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Fahrräder und Ersatzteile</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Ersatzteile</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Plasta Werk Sonneberg</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kunststoffgranulat</name>
+          <gattung>U, G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Wolle</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Textilfarbe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Textilien</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Stoffe</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen Ladestra_e_I">
+          <name>Puppenköpfe</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen Ladestra_e_I">
+          <name>Puppenkleider</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">1.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Betonwerk Themar</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Betonstahl</name>
+          <gattung>R, E</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Sand</name>
+          <gattung>S, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Kies</name>
+          <gattung>S, E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Zement lose</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Zement gesackt</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">7</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Deckenträger, Platten WBS70</name>
+          <gattung>S</gattung>
+          <wagen zeitraum="tag">12</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Minol Hildburghausen</name>
+      <empfang>
+        <ladegut ladestelle="Minol">
+          <name>VK88</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Minol">
+          <name>VK95</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">7</wagen>
+        </ladegut>
+        <ladegut ladestelle="Minol">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">7</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Bekleidungswerk Römhild</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Stoffballen, Textilien, Textilfarbe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Herrenanzüge</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Oberbekleidung</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Hemden</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Piko Sonneberg</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+          <name>Kunststoffgranulat</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Elektronikbauteile, Normteile, Feindraht</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Modellbahn</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Spielzeug</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kraftverkehr Themar</name>
+      <empfang>
+        <ladegut ladestelle="Kopframpe">
+          <name>Fahrzeuge</name>
+          <gattung>L, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Hartsteinwerke Hüttengrund</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Maschinenteile</name>
+          <gattung>G, R</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Sprengstoff</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Schotter</name>
+          <gattung>F, E</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Kies</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Metallwaren Rensteig</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Roh- und Halbzeuge</name>
+          <gattung>G, R</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Elektronikbauteile</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Normteile</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Elektromotoren</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Trisola Steinach</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kunststoffgranulat</name>
+          <gattung>G, U</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Textilfarbe</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Glasfaserrollen, Glaswolle</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Papierrollen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Tapeten</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Glasfasertapeten</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Spielzeug</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Bekleidungswerke Vachdorf</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Stoffballen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Textilien</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Oberbekleidung</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Herrenanzüge</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Kinderbekleidung</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Maschinenwerk Grimmelshausen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Roh- und Halbzeuge</name>
+          <gattung>K, R</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Normteile</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Maschinenteile</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Schleifmaschinen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Bügelmaschinen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Bohrmaschinen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Winkelschleifer</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Trennschleifer</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG Zollbrück</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Ersatzteile</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Dünger</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe_I Kopframpe">
+          <name>Lndwirtschaftliche Fahrzeuge</name>
+          <gattung>R, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Kartoffeln</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Seitenrampe_II">
+          <name>Vieh</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Getreidehandel Themar</name>
+      <empfang>
+        <ladegut ladestelle="Getreidehandel">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Getreidehandel">
+          <name>Braunkohle</name>
+          <gattung>F, E</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Getreidehandel">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel Bernhard Weidlich</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Braunkohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Briketts</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Brennholz</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB Jagdwaffenfabrik Suhl</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Beschläge</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Spezielles Holz</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Eisenstangen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Jagd- und Sportwaffen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Thüringer Glaskunst</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Quarzsand</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Holzbretter</name>
+          <gattung>R, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Tuffstein</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Glasfarbe (Faßware)</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Rohglas</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kalk</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Glasfiguren</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Ampullen</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Baumschmuck Lauscha</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Glasfarbe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Glasgranulat</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Quarzsand</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Christbaumschmuck</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Thuringia Reurieth</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Granulat</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Farbe (Faßware)</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Normteile</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Elektronikbauteile</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Feindrahtrollen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Keramik, Waschbecken, Fliesen, Kochfelder</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Schraube Hildburghausen</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Kupferdraht</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Stahlrohre</name>
+          <gattung>R</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Feindraht</name>
+          <gattung>G, Stückgut</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Abzeichen</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Schrauben, Muttern</name>
+          <gattung>Stückgut</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Themar war Containerumschlagplatz für die gesamte Region. Frachten, die im G-Wagen laufen, können alternativ auch im Container transportiert werden.[br][br]Zusätzlich zum Einzelladungsverkehr besteht je nach Treffensausrichtung auch die Möglichkeit , bis zu drei Containerganzzugpaare in Themar zu behandeln.</bemerkung>
+  </gv>
+</bahnhof>
+

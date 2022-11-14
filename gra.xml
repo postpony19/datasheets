@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Granzlin</name>
+  <kuerzel>GRA</kuerzel>
+  <typ>Bf</typ>
+  <maszstab>120.0</maszstab>
+  <modulnr>MaRue202</modulnr>
+  <plan src="gra.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">1600.0</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1400.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">1000.0</laenge>
+        <bemerkung>Ladegleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>Bstg.1</name>
+      <laenge einheit="mm">500.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2">
+      <name>Bstg.2</name>
+      <laenge einheit="mm">450.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestra_e" gleis="gleis_3">
+      <name>Ladestraße</name>
+      <laenge>600.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>LPG (P) Granzlin</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Leerpaletten, Gemüsekisten</name>
+          <gattung>G/E</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Kartoffeln, Rüben, Getreide</name>
+          <gattung>T/G/E</gattung>
+          <wagen zeitraum="woche">4.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Gemüse</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel Granzlin</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Heizöl / Kraftstoffe</name>
+          <gattung>Z</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+

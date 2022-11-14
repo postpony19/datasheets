@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Altranft</name>
+  <kuerzel>ART</kuerzel>
+  <typ>Bf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>AdRan204</modulnr>
+  <plan src="art.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="bahnsteig">
+        <name>1</name>
+        <laenge einheit="cm">110</laenge>
+        <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="ladestrg">
+        <name>2</name>
+        <laenge einheit="cm">90</laenge>
+      </gleis>
+      <gleis id="laderampeg">
+        <name>2a</name>
+        <laenge einheit="cm">30</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="bahnsteig">
+      <name>1</name>
+      <laenge einheit="cm">110</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="ladestr" gleis="ladestrg">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">45</laenge>
+    </ladestelle>
+    <ladestelle id="laderampe" gleis="laderampeg">
+      <name>Laderampe</name>
+      <laenge einheit="cm">25</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Städtischer Kohlenhandel</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Kohle</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="ladestr">
+          <name>leere Paletten und Kisten</name>
+          <gattung>G, E, O</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Champignonzucht Altranft</name>
+      <versand>
+        <ladegut ladestelle="laderampe">
+          <name>Pilze (nur Herbst)</name>
+          <gattung>G (, I)</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Paletten, Kisten und Boxen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="laderampe">
+          <name>Anhänger</name>
+          <gattung>K, R, S</gattung>
+          <wagen zeitraum="tag">0.125</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="ladestr">
+          <name>Kartoffel</name>
+          <gattung>G, E</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr">
+          <name>Gemüse</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Konsum Altranft</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Lebensmittel</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Getränkestützpunkt Altranft</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Getränke</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="laderampe">
+          <name>Leere Glasflaschen</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="tag">0.125</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BHG</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Kies</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">0.125</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr">
+          <name>Zement</name>
+          <gattung>G, Zkz</gattung>
+          <wagen zeitraum="tag">0.125</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Forstamt Altranft</name>
+      <versand>
+        <ladegut ladestelle="laderampe">
+          <name>Baumstämme</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Stadtwirtschaft</name>
+      <versand>
+        <ladegut ladestelle="ladestr">
+          <name>Hausmüll</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="tag">0.25</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

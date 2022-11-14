@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Agrargenossenschaft Morgenroth</name>
+    <kuerzel>MOROT</kuerzel>
+    <typ>Awanst</typ>
+    <maszstab>120</maszstab>
+    <modulnr>BrPoo351</modulnr>
+	<plan src="morot.gif" />
+    <gleise>
+        <zulaufstrecken>
+           <links nr="1">1gl</links>
+           <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+           <gleis id="strecke">
+               <name>1</name>
+               <laenge einheit="cm">110</laenge>
+			   <bemerkung>Streckengleis</bemerkung>
+           </gleis>
+        </hgleise>
+        <ngleise>
+           <gleis id="ladestrg">
+               <name>2</name>
+               <laenge einheit="cm">70</laenge>
+           </gleis>
+           <gleis id="laderampeg">
+               <name>2a</name>
+               <laenge einheit="cm">18</laenge>
+           </gleis>
+        </ngleise>
+    </gleise>
+	<gv>
+		<ladestelle id="schuppen" gleis="ladestrg">
+			<name>Güterschuppen</name>
+			<laenge einheit="cm">20</laenge>
+		</ladestelle>
+		<ladestelle id="ladestr" gleis="ladestrg">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">20</laenge>
+		</ladestelle>
+		<ladestelle id="getreidesp" gleis="ladestrg">
+			<name>Getreidespeicher</name>
+			<laenge einheit="cm">20</laenge>
+		</ladestelle>
+		<ladestelle id="laderampe" gleis="laderampeg">
+			<name>Laderampe</name>
+			<laenge einheit="cm">18</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Agrargenossenschaft Morgenroth e.G.</name>
+            <empfang>
+                <ladegut ladestelle="laderampe">
+                    <name>Futtermittel</name>
+                    <gattung>G, T</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+                <ladegut ladestelle="schuppen">
+                    <name>Melkfett (Stückgut)</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="ladestr">
+                    <name>Diesel</name>
+                    <gattung>Z</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+            </empfang>
+			<versand>
+                <ladegut ladestelle="getreidesp">
+                    <name>Getreide</name>
+                    <gattung>Tdgs, Tadgs</gattung>
+                    <wagen zeitraum="tag">2</wagen>
+                </ladegut>            
+                <ladegut ladestelle="schuppen">
+                    <name>Nudeln</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="tag">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="schuppen">
+                    <name>Nudeln, abgepackt in Kisten</name>
+                    <gattung>G, H</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="schuppen">
+                    <name>Wurst, Fleisch</name>
+                    <gattung>I</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="schuppen">
+                    <name>Eier</name>
+                    <gattung>I</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+                <ladegut ladestelle="schuppen">
+                    <name>Obst, Gemüse</name>
+                    <gattung>G, H, I</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+			</versand>
+		</verlader>
+	</gv>
+</bahnhof>

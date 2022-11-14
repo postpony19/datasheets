@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Fiddelyard Niederlande</name>
+  <kuerzel>FYNL</kuerzel>
+  <typ>Sbf</typ>
+  <verwaltung>DR, DB, PKP, ČSD, MÁV, DB AG, BDŽ, DSB, SNCF, SBB, ÖBB, NS</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>DiSpe4100</modulnr>
+  <plan src="fynl.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">1575</laenge>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1749</laenge>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">1909</laenge>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">2070</laenge>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">2230</laenge>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">2391</laenge>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="mm">2391</laenge>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="mm">2230</laenge>
+      </gleis>
+      <gleis id="gleis_9">
+        <name>9</name>
+        <laenge einheit="mm">2070</laenge>
+      </gleis>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge einheit="mm">1909</laenge>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge einheit="mm">1735</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">811</laenge>
+      </gleis>
+      <gleis id="gleis_2a">
+        <name>2a</name>
+        <laenge einheit="mm">650</laenge>
+      </gleis>
+      <gleis id="gleis_4a">
+        <name>4a</name>
+        <laenge einheit="mm">315</laenge>
+      </gleis>
+      <gleis id="gleis_9a">
+        <name>9a</name>
+        <laenge einheit="mm">315</laenge>
+      </gleis>
+      <gleis id="gleis_11a">
+        <name>11a</name>
+        <laenge einheit="mm">650</laenge>
+      </gleis>
+      <gleis id="gleis_21">
+        <name>21</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_23">
+        <name>23</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_24">
+        <name>24</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_25">
+        <name>25</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_28">
+        <name>28</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_29">
+        <name>29</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_30">
+        <name>30</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_31">
+        <name>31</name>
+        <laenge einheit="mm">250</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_30b">
+        <name>30b</name>
+        <laenge einheit="mm">315</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_28b">
+        <name>28b</name>
+        <laenge einheit="mm">165</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_25b">
+        <name>25b</name>
+        <laenge einheit="mm">165</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_23b">
+        <name>23b</name>
+        <laenge einheit="mm">315</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_41">
+        <name>41</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_42">
+        <name>42</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_43">
+        <name>43</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_44">
+        <name>44</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_45">
+        <name>45</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_46">
+        <name>46</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_47">
+        <name>47</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_48">
+        <name>48</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_49">
+        <name>49</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_50">
+        <name>50</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+      <gleis id="gleis_51">
+        <name>51</name>
+        <laenge einheit="mm">230</laenge>
+        <bemerkung>Abstellgleis für Tfz</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+</bahnhof>
+

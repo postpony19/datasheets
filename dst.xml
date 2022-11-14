@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Dahmstadt</name>
+  <kuerzel>DST</kuerzel>
+  <typ>Bf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>JeRei230</modulnr>
+  <plan src="dst.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="G1">
+        <name>1</name>
+        <laenge>2700</laenge>
+        <bemerkung>Kreuzungsgleis</bemerkung>
+      </gleis>
+      <gleis id="G2">
+        <name>2</name>
+        <laenge>2620</laenge>
+        <bemerkung>Durchfahrtsgleis</bemerkung>
+      </gleis>
+      <gleis id="G3">
+        <name>3</name>
+        <laenge>2350.0</laenge>
+        <bemerkung>Güterzugbehandlungsgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge>850.0</laenge>
+        <bemerkung>Wagenbereitstellungsgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge>380.0</laenge>
+        <bemerkung>Lokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_13">
+        <name>13</name>
+        <laenge>230.0</laenge>
+        <bemerkung>Kopframpe</bemerkung>
+      </gleis>
+      <gleis id="gleis_14">
+        <name>14</name>
+        <laenge>670.0</laenge>
+        <bemerkung>Seiten-/Viehrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_21">
+        <name>21</name>
+        <laenge>500.0</laenge>
+        <bemerkung>Postgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge>1090.0</laenge>
+        <bemerkung>Reservegleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_23">
+        <name>23</name>
+        <laenge>600.0</laenge>
+        <bemerkung>Getreidegleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_34">
+        <name>34</name>
+        <laenge>550.0</laenge>
+        <bemerkung>Güterhalle</bemerkung>
+      </gleis>
+      <gleis id="gleis_35">
+        <name>35</name>
+        <laenge>650.0</laenge>
+        <bemerkung>Waagegleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_36">
+        <name>36</name>
+        <laenge>1000.0</laenge>
+        <bemerkung>Ladestrasse</bemerkung>
+      </gleis>
+      <gleis id="gleis_41">
+        <name>41</name>
+        <laenge>750.0</laenge>
+        <bemerkung>Sandverladung-1</bemerkung>
+      </gleis>
+      <gleis id="gleis_42">
+        <name>42</name>
+        <laenge>750.0</laenge>
+        <bemerkung>Sandverladung-2</bemerkung>
+      </gleis>
+      <gleis id="gleis_43">
+        <name>43</name>
+        <laenge>550.0</laenge>
+        <bemerkung>Likörfabrik-1 / -2</bemerkung>
+      </gleis>
+      <gleis id="gleis_45">
+        <name>45</name>
+        <laenge>500.0</laenge>
+        <bemerkung>Werklokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_46">
+        <name>46</name>
+        <laenge>600.0</laenge>
+        <bemerkung>Werner-Grünzweig</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="G1">
+      <name>A</name>
+      <laenge>1050.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="G2">
+      <name>B</name>
+      <laenge>1050</laenge>
+    </bahnsteig>
+    <bemerkung>Berufs- und Schülerverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Kohlebansen" gleis="gleis_11">
+      <name>Kohlebansen</name>
+      <laenge>100.0</laenge>
+    </ladestelle>
+    <ladestelle id="Kopframpe" gleis="gleis_13">
+      <name>Kopframpe</name>
+      <laenge>230.0</laenge>
+    </ladestelle>
+    <ladestelle id="Seiten-_Viehrampe" gleis="gleis_14">
+      <name>Seiten- / Viehrampe</name>
+      <laenge>300.0</laenge>
+    </ladestelle>
+    <ladestelle id="Postrampe" gleis="gleis_21">
+      <name>Postrampe</name>
+      <laenge>340.0</laenge>
+    </ladestelle>
+    <ladestelle id="Getreideverladung" gleis="gleis_23">
+      <name>Getreideverladung</name>
+      <laenge>600.0</laenge>
+    </ladestelle>
+    <ladestelle id="G_terhalle" gleis="gleis_34">
+      <name>Güterhalle</name>
+      <laenge>260.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestrasse" gleis="gleis_36">
+      <name>Ladestrasse</name>
+      <laenge>1000.0</laenge>
+    </ladestelle>
+    <ladestelle id="Sandverladung-1_Hochbunker" gleis="gleis_41">
+      <name>Sandverladung-1/ Hochbunker</name>
+      <laenge>750.0</laenge>
+    </ladestelle>
+    <ladestelle id="Sandverladung-2_Kopframpe" gleis="gleis_42">
+      <name>Sandverladung-2/ Kopframpe</name>
+      <laenge>750.0</laenge>
+    </ladestelle>
+    <ladestelle id="Lik_rfabrik-1" gleis="gleis_43">
+      <name>Likörfabrik-1</name>
+      <laenge>150.0</laenge>
+    </ladestelle>
+    <ladestelle id="Lik_rfabrik-2" gleis="gleis_43">
+      <name>Likörfabrik-2</name>
+      <laenge>400.0</laenge>
+    </ladestelle>
+    <ladestelle id="Werklokschuppen" gleis="gleis_45">
+      <name>Werklokschuppen</name>
+      <laenge>100.0</laenge>
+    </ladestelle>
+    <ladestelle id="Werner_Gr_nzweig_KG" gleis="gleis_46">
+      <name>Werner Grünzweig KG</name>
+      <laenge>600.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>DR Lokeinsatzstelle</name>
+      <empfang>
+        <ladegut ladestelle="Kohlebansen">
+          <name>Lokkohle, Tauschteile, Schmierstoffe</name>
+          <gattung>G, E, K, X</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kohlebansen">
+          <name>Altöl in Fässern, Schlacke, Tauschteile</name>
+          <gattung>G, K, X</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Deutsche Post</name>
+      <empfang>
+        <ladegut ladestelle="Postrampe">
+          <name>Post</name>
+          <gattung>Post</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Postrampe">
+          <name>Zeitungen</name>
+          <gattung>Post</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Postrampe">
+          <name>Post</name>
+          <gattung>Post</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Werner Grünzweig KG</name>
+      <empfang>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Kunststoffgranulat lose</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Gehäuserohlinge</name>
+          <gattung>G / H</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Elektrokleinteile</name>
+          <gattung>G / H</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Zulieferteile für Elektrogeräte als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Bügeleisen</name>
+          <gattung>G / H</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Postrampe">
+          <name>Tauchsieder als Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Elektrogrill</name>
+          <gattung>G / H</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+          <name>Elektrotoaster</name>
+          <gattung>G / H</gattung>
+          <wagen>1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Zuschlagstoffe, Betriebsteil 5, Kiesgrube Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Sandverladung-2_Kopframpe">
+          <name>Maschinen, LKW, Bagger, Ersatzteile</name>
+          <gattung>K, R, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Sandverladung-1_Hochbunker Sandverladung-2_Kopframpe">
+          <name>Kies</name>
+          <gattung>E, F, K, Re, S</gattung>
+          <wagen zeitraum="tag">10.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>BHG Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Briketts</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Futter- und Düngemittel, lose und gesackt</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Baustoffe aller Art</name>
+          <gattung>G, H, E, F, K, R, S</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Postrampe">
+          <name>Leergut als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Steinmetz</name>
+      <empfang>
+        <ladegut ladestelle="Postrampe">
+          <name>Holzwolle als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Steinblöcke aller Art, Schnittholz</name>
+          <gattung>K, R, S, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Bordsteine, Pflastersteine, Springbrunnen, Steinplastiken</name>
+          <gattung>G, K, R, S, E</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>GPG Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="G_terhalle">
+          <name>Leergut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terhalle Ladestrasse">
+          <name>Frischgemüse, Schnittblumen als Eilgut</name>
+          <gattung>I, G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Getreidewirtschaft, Betriebsteil IV Getreidelager Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Getreideverladung">
+          <name>diverses Saatgetreide lose und gesackt</name>
+          <gattung>G, Tg</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Getreideverladung">
+          <name>diverse Getreidesorten</name>
+          <gattung>Gg, Tg</gattung>
+          <wagen zeitraum="tag">10</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG (P) Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Maschinen</name>
+          <gattung>K, R, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Dünger lose</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Saatgut gesackt als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Saat- und Speisekartoffeln lose und gesackt, Zuckerrüben</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="tag">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG (T) Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Seiten-_Viehrampe">
+          <name>Jungvieh, Maschinen</name>
+          <gattung>V, G, K, R, S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Seiten-_Viehrampe">
+          <name>Schlachtrinder, Schlachtschweine</name>
+          <gattung>V, G</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH "Flinke Sohle" Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Postrampe">
+          <name>Leder, Leergut als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Postrampe">
+          <name>Schuhhalbzeuge als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Likörfabrik "Rote Nase" Dahmstadt</name>
+      <empfang>
+        <ladegut ladestelle="Lik_rfabrik-2">
+          <name>Leergut, Obst</name>
+          <gattung>G, H, Z, I</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lik_rfabrik-1">
+          <name>Melasse</name>
+          <gattung>Z</gattung>
+          <wagen>5.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lik_rfabrik-1">
+          <name>Rohalkohol</name>
+          <gattung>Z , G</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Postrampe">
+          <name>Obstbrände, Liköre als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lik_rfabrik-2">
+          <name>Obstbrände , Liköre</name>
+          <gattung>G</gattung>
+          <wagen>3.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+

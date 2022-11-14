@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Fiddlejardsen</name>
+  <kuerzel>FDJ</kuerzel>
+  <typ>Sbf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>JoLan110</modulnr>
+  <plan src="fdj.png"/>
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gl1">
+        <name>1</name>
+        <laenge einheit="mm">1800</laenge>
+      </gleis>
+      <gleis id="gl2">
+        <name>2</name>
+        <laenge einheit="mm">1880</laenge>
+      </gleis>
+      <gleis id="gl3">
+        <name>3</name>
+        <laenge einheit="mm">1880</laenge>
+      </gleis>
+      <gleis id="gl4">
+        <name>4</name>
+        <laenge einheit="mm">1880</laenge>
+        <bemerkung>Dreischienengleis (TT/N)</bemerkung>
+      </gleis>
+      <gleis id="gl5">
+        <name>5</name>
+        <laenge einheit="mm">1800</laenge>
+        <bemerkung>Dreischienengleis (TT/N)</bemerkung>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <bemerkung>Schwenkweiche ebenfalls als Dreischienengleis (TT/N) ausgeführt</bemerkung>
+</bahnhof>
+

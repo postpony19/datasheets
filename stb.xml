@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Stützerbach</name>
+  <kuerzel>STB</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaLob270</modulnr>
+  <plan src="stb.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1800</laenge>
+        <bemerkung>Bahnsteig-/ Richtungsgleis Schleusingen</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">2000</laenge>
+        <bemerkung>Bahnsteig-/ Richtungsgleis Ilmenau</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1300</laenge>
+        <bemerkung>Umfahrgleis/ Abstellgleis Güter- bzw. Wagenzug</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">1100</laenge>
+        <bemerkung>Ladegleis - Ladestraße I</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">280</laenge>
+        <bemerkung>Abstellgleis Güterwagen/ Übergaben/ Schneepflug</bemerkung>
+      </gleis>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>Ladegleis Rampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_1b">
+        <name>1b</name>
+        <laenge einheit="mm">800</laenge>
+        <bemerkung>Ladegleis - Ladestraße II &amp; Güterschuppen</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>1</name>
+      <laenge einheit="mm">875</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <name>2</name>
+      <laenge einheit="mm">875</laenge>
+    </bahnsteig>
+    <bemerkung>Berufs-, Schüler- und Ausflugsverkehr durch Urlauber &amp; Kurgäste</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Holzladerampe" gleis="gleis_1a">
+      <name>Holzladerampe</name>
+      <laenge einheit="mm">400</laenge>
+    </ladestelle>
+    <ladestelle id="G_terschuppen" gleis="gleis_1b">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">100</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_I" gleis="gleis_5">
+      <name>Ladestraße I</name>
+      <laenge einheit="mm">1000</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_II" gleis="gleis_1b">
+      <name>Ladestraße II</name>
+      <laenge einheit="mm">450</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Staatl. Forstwirtschaftsbetrieb Stützerbach</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Diesel/ Benzin</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Ersatzteile</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Holzladerampe">
+          <name>Stammholz</name>
+          <gattung>E, K, O, R, S</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzladerampe">
+          <name>Grubenholz</name>
+          <gattung>E, K, O, R, S</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Holzladerampe">
+          <name>Brennholz</name>
+          <gattung>E, K, O, R, S</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Brennholz im Netz (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Wild (Reh, Hirsch, Wildschwein als Stückgut)</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Laborglas Stützerbach</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Glasblaskunst (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Holzkohle, gesackt (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Weihnachtsbaumschmuck (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Holzschnitzereien (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Laborglas Sonderanfertigung (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Glaswerke Stützerbach (Westglas)</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Quarzsand, gesackt</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Quarzsand, lose</name>
+          <gattung>U, Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kohle</name>
+          <gattung>E, F, O</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Glasbruch, weiß</name>
+          <gattung>E, G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Bortrioxid, gesackt</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Laborgläser</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Laborgläser (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGB "Frischfisch" Manebach</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Fischfutter, gesackt</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Frischfisch (Forelle, Karpfen, Saibling)</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>GPG "Waldpilz" Stützerbach</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Pilze (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Waldbeeren (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kohlehandel Erfurt Zweigstelle Stützerbach</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+          <name>Braunkohlebriketts</name>
+          <gattung>E, F, O</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+          <name>Braunkohlebriketts, gesackt</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+          <name>Leere Kohlesäcke (Stückgut)</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>KONSUM Stützerbach</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Lebensmittel</name>
+          <gattung>G, H, I</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Getränkekisten</name>
+          <gattung>G, H</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_II">
+          <name>Leere Verpackungen/ Paletten</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH „Bau“ Stützerbach</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Sand</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Kies</name>
+          <gattung>E, O</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Zement, gesackt</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Ziegelsteine</name>
+          <gattung>E, O, G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Baustoffe</name>
+          <gattung>E, K, R, O, S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
+          <name>Schiefer</name>
+          <gattung>E, O, G, H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <bemerkung>Achtung! Im Bf. Stützerbach kann keine Militärverladung stattfinden.</bemerkung>
+  </gv>
+  <bemerkung>Überholungen von Personen- und Güterzügen sind nur bei Besetzung des Bahnhofs mit einer örtlicher Aufsicht und unter Beachtung der Gleisnutzlängen möglich. Wegen der nachfolgenden Steilstrecke können nur gebremste Güterwagen befördert werden.</bemerkung>
+</bahnhof>
+

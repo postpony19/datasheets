@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Dahme (Mark)</name>
+    <kuerzel>DA</kuerzel>
+   <typ>Ebf</typ>
+	<maszstab>120</maszstab>
+    <modulnr>ThWul225</modulnr>
+    <plan src="da.png"/>
+    <gleise>
+		<zulaufstrecken>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+       <gleis id="gl1">
+          <name>1</name>
+          <laenge einheit="cm">230</laenge>
+          <bemerkung>Ein- und Ausfahrgleis, Bahnsteiggleis</bemerkung>
+       </gleis>
+	</hgleise>
+	<ngleise>
+       <gleis id="gl2">
+          <name>2</name>
+          <laenge einheit="cm">125</laenge>
+          <bemerkung>Umfahrgleis</bemerkung>
+       </gleis>
+       <gleis id="gl2a">
+          <name>2a</name>
+          <laenge einheit="cm">30</laenge>
+          <bemerkung>Lokschuppengleis</bemerkung>
+       </gleis>
+       <gleis id="gl2b">
+          <name>2b</name>
+          <laenge einheit="cm">86</laenge>
+          <bemerkung>Abstellgleis</bemerkung>
+       </gleis>
+       <gleis id="gl3">
+          <name>3</name>
+          <laenge einheit="cm">95</laenge>
+          <bemerkung>Ladegleis</bemerkung>
+       </gleis>
+       <gleis id="gl3a">
+          <name>3</name>
+          <laenge einheit="cm">20</laenge>
+          <bemerkung>Güterschuppen</bemerkung>
+       </gleis>
+       <gleis id="gl3b">
+          <name>3b</name>
+          <laenge einheit="cm">14</laenge>
+          <bemerkung>Rampengleis</bemerkung>
+       </gleis>
+       <gleis id="gl4">
+          <name>4</name>
+          <laenge einheit="cm">65</laenge>
+          <bemerkung>Ladegleis</bemerkung>
+       </gleis>
+       <gleis id="gl5">
+          <name>5</name>
+          <laenge einheit="cm">30</laenge>
+          <bemerkung>Lokschuppengleis</bemerkung>
+       </gleis>
+       <gleis id="gl6">
+          <name>6</name>
+          <laenge einheit="cm">157</laenge>
+          <bemerkung>Ladegleis</bemerkung>
+       </gleis>
+	</ngleise>
+    </gleise>
+   <pv>
+      <bahnsteig gleis="gl1">
+         <laenge einheit="cm">84</laenge>
+      </bahnsteig>
+   </pv>
+   <gv>
+      <ladestelle id="lade1a" gleis="gl3">
+         <name>Ladestraße 1 (Gl. 3)</name>
+         <laenge></laenge>
+      </ladestelle>
+      <ladestelle id="gboden" gleis="gl3a">
+         <name>Güterschuppen</name>
+         <laenge></laenge>
+      </ladestelle>
+      <ladestelle id="lade1b" gleis="gl4">
+         <name>Ladestraße 1 (Gl. 4)</name>
+         <laenge></laenge>
+      </ladestelle>
+      <ladestelle id="lade2" gleis="gl6">
+         <name>Ladestraße 2</name>
+         <laenge></laenge>
+      </ladestelle>
+      <ladestelle id="ksrampe" gleis="gl3b">
+         <name>Kopf- und Seitenrampe</name>
+         <laenge></laenge>
+      </ladestelle>
+      <ladestelle id="lschuppen" gleis="gl5">
+         <name>Lokschuppen</name>
+         <laenge></laenge>
+      </ladestelle>
+      <verlader>
+         <name>ACZ Hohenseefeld</name>
+         <empfang>
+            <ladegut ladestelle="lade2">
+               <name>Düngemittel lose</name>
+               <gattung>T, K</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Düngemittel gesackt</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Pestizide, Insektizide</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.06</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Landmaschinen</name>
+               <gattung>R</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>BHG Dahme</name>
+         <empfang>
+            <ladegut ladestelle="lade2">
+               <name>Brikett</name>
+               <gattung>Fc</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Braunkohle, Steinkohle, Koks</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Zement gesackt</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Tonrohre</name>
+               <gattung>O, R</gattung>
+               <wagen zeitraum="tag">0.5</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade2">
+               <name>Kalksandsteine, Ziegelsteine</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">0.5</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>BHG Hohenseefeld</name>
+         <empfang>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Brikett</name>
+               <gattung>Fc</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Braunkohle, Steinkohle, Koks</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>Fa. Münchberg Straßenbau</name>
+         <empfang>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Granitpflaster</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">0.5</wagen>
+            </ladegut>
+         </empfang>
+      </verlader>
+      <verlader>
+         <name>LPG Dahme</name>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Rüben</name>
+               <gattung>E</gattung>
+               <wagen zeitraum="tag">0</wagen><!-- S -->
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Schweine, Rinder</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0</wagen><!-- S -->
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Kartoffeln gesackt</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>LPG Schwebendorf</name>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Milchvieh</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0</wagen><!-- S -->
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>LPG Rosenthal</name>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Rüben</name>
+               <gattung>E</gattung>
+               <wagen zeitraum="tag">0</wagen><!-- S -->
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Kartoffeln gesackt</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Vereinigte Holzindustrie (ehem. Harz u. Dähne)</name>
+         <empfang>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Stammholz</name>
+               <gattung>R</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Europaletten</name>
+               <gattung>E, (R)</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>VEB Feinkartonagen (ehem. Klatt KG)</name>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Wellpappe auf Paletten</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>VEB Maschinenfabrik Dahme</name>
+         <empfang>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Maschinennormteile</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.2</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Blechtafeln, Stahlprofile</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.4</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Farben, Lacke</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.2</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Zubehör (Gummi, PVC)</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.1</wagen>
+            </ladegut>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Öle, Fette in Fässern</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.1</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Drehteile, Frästeile, Schweißbaugruppen für Landmaschinen, Kopiergeräte</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">2</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Schuhindustrie</name>
+         <empfang>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Leder, Gummi</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.5</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Schuhwaren</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>VEB Obstbau Cottbus, BT Rietdorf</name>
+         <versand>
+            <ladegut ladestelle="lade1a lade1b">
+               <name>Obst in Gitterboxpaletten</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Deutsche Post</name>
+         <empfang>
+            <ladegut ladestelle="gboden">
+               <name>Postsendungen</name>
+               <gattung>Pwg</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="gboden">
+               <name>Postsendungen</name>
+               <gattung>Pwg</gattung>
+               <wagen zeitraum="tag">1</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Deutsche Reichsbahn</name>
+         <empfang>
+            <ladegut ladestelle="lschuppen">
+               <name>Lokomotivkohle</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">0.3</wagen>
+            </ladegut>
+            <ladegut ladestelle="lschuppen">
+               <name>Hilfsstoffe</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">0.08</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="lschuppen">
+               <name>Schlacke</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">0.04</wagen>
+            </ladegut>
+            <ladegut ladestelle="lschuppen">
+               <name>Müll</name>
+               <gattung>O</gattung>
+               <wagen zeitraum="tag">0.02</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <verlader>
+         <name>Diverse VEB</name>
+         <empfang>
+            <ladegut ladestelle="gboden lade1b">
+               <name>Stückgut</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+         </empfang>
+         <versand>
+            <ladegut ladestelle="gboden lade1b">
+               <name>Stückgut</name>
+               <gattung>G</gattung>
+               <wagen zeitraum="tag">3</wagen>
+            </ladegut>
+         </versand>
+      </verlader>
+      <bemerkung>Das Abstoßen und Ablaufen lassen von Wagen und Fahrzeugen ist grundsätzlich verboten.</bemerkung>
+   </gv>
+    <bemerkung>Bahnhof besitzt keine Ausfahrsignale</bemerkung>
+</bahnhof>

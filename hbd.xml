@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Hindenburgdamm</name>
+  <kuerzel>HBD</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>ThTro929</modulnr>
+  <plan src="hbd.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <rechts nr="1">2gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Regelgleis">
+        <name>Regelgleis</name>
+        <laenge>1000.0</laenge>
+      </gleis>
+      <gleis id="gleis_Gegengleis">
+        <name>Gegengleis</name>
+        <laenge>1000.0</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_Regelgleis">
+      <laenge>990.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_Gegengleis">
+      <laenge>990.0</laenge>
+    </bahnsteig>
+  </pv>
+</bahnhof>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Gertrudshall</name>
+	<kuerzel>GTH</kuerzel>
+	<typ>Abzw</typ>
+	<maszstab>120</maszstab>
+	<modulnr>StMen410</modulnr>
+	<plan src="gth.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+			<rechts nr="2">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis>
+				<name>1a</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+			<gleis id="ng2">
+				<name>2</name>
+				<laenge einheit="cm">25</laenge>
+			</gleis>
+			<gleis id="ng3">
+				<name>3</name>
+				<laenge einheit="cm">50</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="hg1">
+			<laenge einheit="cm">25</laenge>
+		</bahnsteig>
+	</pv>
+	<gv>
+		<ladestelle id="kranbahn" gleis="ng3">
+			<name>Krahnbahn</name>
+			<laenge einheit="cm">17</laenge>
+		</ladestelle>
+		<ladestelle id="silo" gleis="ng3">
+			<name>Silo</name>
+			<laenge einheit="cm">10</laenge>
+		</ladestelle>
+		<ladestelle id="hochbehaelter" gleis="ng3">
+			<name>Hochbehälter</name>
+			<laenge einheit="cm">10</laenge>
+		</ladestelle>
+		<ladestelle id="sole1" gleis="ng3">
+			<name>Soleverladung</name>
+			<laenge einheit="cm">13</laenge>
+		</ladestelle>
+		<ladestelle id="sole2" gleis="ng2">
+			<name>Soleverladung</name>
+			<laenge einheit="cm">25</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB KSBS Werk Getrudshall</name>
+			<empfang>
+				<ladegut ladestelle="kranbahn">
+					<name>Grubenholz</name>
+					<gattung>G, H, E, R</gattung>
+					<wagen>2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="silo">
+					<name>Fonolith</name>
+					<gattung>K, Z</gattung>
+					<wagen>0</wagen>
+				</ladegut>
+				<ladegut ladestelle="silo">
+					<name>Steinsalz</name>
+					<gattung>K, Z, G</gattung>
+					<wagen zeitraum="tag">6</wagen>
+				</ladegut>
+				<ladegut ladestelle="hochbehaelter">
+					<name>Mutterlauge</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Ratiomittelbau Getrudshall</name>
+			<empfang>
+				<ladegut ladestelle="kranbahn">
+					<name>Halbzeuge</name>
+					<gattung>G, H, E, R</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="kranbahn">
+					<name>Bleche</name>
+					<gattung>G, H, E, R</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+				<ladegut ladestelle="kranbahn">
+					<name>Profilstahl</name>
+					<gattung>G, H, E, R</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="kranbahn">
+					<name>Stahlbaukonstruktionen</name>
+					<gattung>R</gattung>
+					<wagen>1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Objekt "e"</name>
+			<empfang>
+				<ladegut ladestelle="kranbahn">
+					<name>Munition</name>
+					<gattung>G, H</gattung>
+					<wagen>0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="kranbahn">
+					<name>Munition</name>
+					<gattung>G, H</gattung>
+					<wagen>0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Staatsreservelager</name>
+			<empfang>
+				<ladegut ladestelle="kranbahn">
+					<name>Container</name>
+					<gattung>G, K, R</gattung>
+					<wagen>0</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="kranbahn">
+					<name>Container</name>
+					<gattung>G, K, R</gattung>
+					<wagen>0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Die erforderlichen Wagenmengen müssen noch ermittelt werden!</bemerkung>
+</bahnhof>

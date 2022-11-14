@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Abzw. Reichertshausen</name>
+  <kuerzel>RHS</kuerzel>
+  <typ>Bf</typ>
+  <maszstab>120</maszstab>
+  <modulnr>TTBay415</modulnr>
+  <plan src="rhs.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <links nr="2">2gl</links>
+      <links nr="3">1gl</links>
+      <rechts nr="1">2gl</rechts>
+      <rechts nr="2">2gl</rechts>
+      <rechts nr="3">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="G1">
+        <name>1</name>
+        <laenge>1500</laenge>
+        <bemerkung>Hauptgleis Hauptstrecke</bemerkung>
+      </gleis>
+      <gleis id="G2">
+        <name>2</name>
+        <laenge>1500</laenge>
+        <bemerkung>Hauptgleis Hauptstrecke</bemerkung>
+      </gleis>
+      <gleis id="G3">
+        <name>3</name>
+        <laenge>1600</laenge>
+        <bemerkung>Hauptgleis Nebenbahn</bemerkung>
+      </gleis>
+    </hgleise>
+  </gleise>
+</bahnhof>
+

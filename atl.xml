@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Albertsthal</name>
+  <kuerzel>ATL</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>ThSch201</modulnr>
+  <plan src="atl.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <rechts nr="1">2gl</rechts>
+      <rechts nr="2">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="bahnsteig2">
+        <name>1</name>
+        <laenge einheit="mm">1250</laenge>
+      </gleis>
+      <gleis id="hauptgleis">
+        <name>2</name>
+        <laenge einheit="mm">1250</laenge>
+      </gleis>
+      <gleis id="bahnsteig1">
+        <name>3</name>
+        <laenge einheit="mm">1100</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="rampe">
+        <name>3a</name>
+        <laenge einheit="mm">400</laenge>
+      </gleis>
+      <gleis id="freiladegleis">
+        <name>4</name>
+        <laenge einheit="mm">1100</laenge>
+      </gleis>
+      <gleis id="a">
+        <name>4a</name>
+        <laenge einheit="mm">400</laenge>
+      </gleis>
+      <gleis id="b">
+        <name>4b</name>
+        <laenge einheit="mm">390</laenge>
+		<bemerkung>Abstellgleis Triebwagen oder Reisezugwagengruppen</bemerkung>
+      </gleis>
+      <gleis id="ausziehgleis">
+        <name>5</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>Gleis wegen Gefälle nicht zum Abstellen von ungebremsten Wagengruppen geeignet</bemerkung>
+      </gleis>
+      <gleis id="Lokschuppen">
+        <name>6a</name>
+        <laenge einheit="mm">320</laenge>
+      </gleis>
+      <gleis id="Kohleschuppen">
+        <name>6b</name>
+        <laenge einheit="mm">370</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="bahnsteig1">
+      <name>1</name>
+      <laenge einheit="mm">900</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="bahnsteig2">
+      <name>3</name>
+      <laenge einheit="mm">1100</laenge>
+    </bahnsteig>
+    <bemerkung>Berufs- und Schülerverkehr, Urlauber, Wochenendausflugsverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="seitenrampe" gleis="rampe">
+      <name>Expressgutschuppen, Seitenrampe</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <ladestelle id="ladestrasse" gleis="freiladegleis">
+      <name>Ladestraße</name>
+      <laenge einheit="achsen">20</laenge>
+    </ladestelle>
+    <ladestelle id="anlieferung" gleis="a">
+      <name>Papierfabrik Anlieferung</name>
+      <laenge einheit="achsen">8</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Papierfabrik</name>
+      <empfang>
+        <ladegut ladestelle="ladestrasse">
+          <name>Stammholz, kurz</name>
+          <gattung>E, K</gattung>
+          <wagen zeitraum="woche">12</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestrasse">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="anlieferung">
+          <name>Säuren und Laugen</name>
+          <gattung>K</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="anlieferung">
+          <name>Holzhackschnitzel</name>
+          <gattung>G, H, T</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestrasse">
+          <name>Altpapier</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">12</wagen>
+        </ladegut>
+        <ladegut ladestelle="anlieferung">
+          <name>Kaolin</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="ladestrasse">
+          <name>Kraftpackpapier, Papiersäcke</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">12</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstamt Albertsthal</name>
+      <versand>
+        <ladegut ladestelle="ladestrasse">
+          <name>Stammholz, lang</name>
+          <gattung>R, K</gattung>
+          <wagen zeitraum="woche">10</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlenhandel</name>
+      <empfang>
+        <ladegut ladestelle="ladestrasse">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Molkerei</name>
+      <empfang>
+        <ladegut ladestelle="seitenrampe">
+          <name>Milch</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="woche">12</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="seitenrampe">
+          <name>Käse, Quark</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bahnhof Albersthal</name>
+      <empfang>
+        <ladegut ladestelle="seitenrampe">
+          <name>Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="seitenrampe">
+          <name>Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="woche">6</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Einsatzstelle Albersthal</name>
+      <empfang>
+        <ladegut ladestelle="Kohleschuppen">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kohleschuppen">
+          <name>Schlacke</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+  <bemerkung>Züge mit mehr als 1,25 m Länge können auf den Gleisen 1 und 2 unter Mitnutzung der Weichenbereiche bis 1,64 m grenzzeichenfrei beginnen, enden, kreuzen oder Überholen.[br]Kreuzungen von Zügen größer als 1,64 m - Zug 1 von A einfahren, zu langer Zugteil nach 5 abdrücken und sichern. In 1 oder 2 auf Kreuzung warten. Zug 2 vom eingl. Strecke einfahren und ausfahren. Zug 1 Wagen von 5 aufnehmen und Ri. eingl. Strecke ausfahren.</bemerkung>
+</bahnhof>
+

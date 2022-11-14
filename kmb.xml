@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Krümelburg</name>
+  <kuerzel>KMB</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DB</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>DiWin560</modulnr>
+  <plan src="kmb.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <links nr="2">IBahn</links>
+      <rechts nr="1">2gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">3980</laenge>
+        <bemerkung>Bahnsteig und Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">3830</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">3650</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">3530</laenge>
+        <bemerkung>Durchfahrtsgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">3630</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">4160</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="mm">620</laenge>
+        <bemerkung>Bekohlung</bemerkung>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="mm">800</laenge>
+        <bemerkung>Ein-/Ausfahrt BW</bemerkung>
+      </gleis>
+      <gleis id="gleis_9">
+        <name>9</name>
+        <laenge einheit="mm">890</laenge>
+        <bemerkung>Tankstelle und Ein-/Ausfahrt BW</bemerkung>
+      </gleis>
+      <gleis id="gleis_10">
+        <name>10</name>
+        <laenge einheit="mm">320</laenge>
+        <bemerkung>neben Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge einheit="mm">310</laenge>
+        <bemerkung>neben Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge einheit="mm">310</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_13">
+        <name>13</name>
+        <laenge einheit="mm">310</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_14">
+        <name>14</name>
+        <laenge einheit="mm">310</laenge>
+        <bemerkung>Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_15">
+        <name>15</name>
+        <laenge einheit="mm">310</laenge>
+        <bemerkung>neben Lokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_16">
+        <name>16</name>
+        <laenge einheit="mm">320</laenge>
+        <bemerkung>neben Lokschuppen</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1</name>
+      <laenge einheit="mm">1480</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2">
+      <name>2</name>
+      <laenge einheit="mm">3640</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <name>3</name>
+      <laenge einheit="mm">3480</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_5">
+      <name>4</name>
+      <laenge einheit="mm">3450</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_6">
+      <name>5</name>
+      <laenge einheit="mm">3790</laenge>
+    </bahnsteig>
+    <bemerkung>Alle Zuggattungen ohne Einschränkung</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Ladestra_e_mit_Lagerhallen_und_G_terschuppen" gleis="gleis_1">
+      <name>Ladestraße mit Lagerhallen und Güterschuppen</name>
+      <laenge einheit="mm">2200</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlebunker" gleis="gleis_7">
+      <name>Kohlebunker</name>
+      <laenge einheit="mm">620</laenge>
+    </ladestelle>
+    <ladestelle id="Tankstelle_mt_Tanklager" gleis="gleis_9">
+      <name>Tankstelle mt Tanklager</name>
+      <laenge einheit="mm">840</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Bundespost Sortierzentrum Krümelburg</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Briefe, Päckchen, Pakete</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Briefe, Päckchen, Pakete</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Daimler Benz Werk Sindelfingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Kfz-Zulieferteile</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Stahlblech</name>
+          <gattung>K,R,S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>BW Krümelburg Bekohlungsanlage</name>
+      <empfang>
+        <ladegut ladestelle="Kohlebunker">
+          <name>Kohle</name>
+          <gattung>E,F</gattung>
+          <wagen zeitraum="woche">3</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>BW Krümelburg Lokomotivtankstelle</name>
+      <empfang>
+        <ladegut ladestelle="Tankstelle_mt_Tanklager">
+          <name>Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>ALB - GOLD Teigwaren Trochtelfingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Hartweizen in Säcken</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Nudelprodukte auf Paletten</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Robert Bosch Werk Reutlingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Maschinen und Maschinenteile</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Kabel und Leitungen</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Scheinwerfer, Anlasser, Lichtmaschinen</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Samen Fetzer Reutlingen-Gönningen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Blumenzwiebeln und Samen in Säcken</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Blumenzwiebeln und Samen in Säcken</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Leibftitz Schotterwerk Sonnenbühl</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Aushuberde, belastete Deponieerde</name>
+          <gattung>E,F</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Schotter</name>
+          <gattung>E,F</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Trigema Textilwerke Albstadt</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Stoffballen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Textilmaschinen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Bekleidungsstücke</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Schlacht- und Zerlegebetrieb Bauer GmbH  Reutlingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Schlachtvieh</name>
+          <gattung>H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Häusermann Kelterei Neckartailfingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Streuobst in Säcken</name>
+          <gattung>G,U</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Weinfässer</name>
+          <gattung>G,U</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Saft und Wein in Flaschen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Sägewerk Hailfinger Bau GmbH &amp; Co. KG Undingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Rohholz</name>
+          <gattung>E,F,K,R,S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Hobelware (Balken und Bretter)</name>
+          <gattung>E,F,K,R,S</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>WAFIOS GmbH</name>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Spezialmaschinen, Werkzeugmaschinen</name>
+          <gattung>G,H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Straßenmeisterei Reutlingen</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Schotter</name>
+          <gattung>E,F,K,R,S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_mit_Lagerhallen_und_G_terschuppen">
+          <name>Pflastersteine</name>
+          <gattung>E,F,K,R,S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+  <bemerkung>Epoche III / IV Deutsche Bundesbahn[br][br]Bahnhof hauptsächlich für Personenzüge mit angeschlossenem Betriebswerk inklusive Drehscheibe.[br]Es besteht begrenzte Kapazitäten zur Güterabfertigung an der Ladestraße.[br]Die Einfahrten der (im FKTT-Betrieb) stillgelegten Wendeschleife können als Abstellgleise verwendet werden.[br][br]Gedanken zum Einsatz bei Planung des Bahnhofs:[br][br]In Krümelburg endet (oder beginnt) eine zweigleisige elektrifizierte Hauptstrecke und beginnt (oder endet) eine eingleisige nicht elektrifizierte Nebenstrecke.[br]Fernzüge enden hier oder fahren als Nahverkehrszüge weiter, bzw. Nahverkehrszüge beginnen hier.[br]Es findet ein Traktionswechel statt von Dampf/Diesel auf Elektrisch und umgekehrt. Loks werden entsprechend im BW vorgehalten und gewartet.[br]Züge, die von der zweigleisigen Strecke kommend hier enden, fahren auf Gleis 1 und 2 ein. Auf Gleis 3, 5 und 6 halten weiterfahrende Züge. Das Gleis 4 ist als Durchfahrtsgleis vorgesehen.[br]Die Wendeschleife ist nur im Ausstellungsbetrieb der Anlage in Verwendung.</bemerkung>
+</bahnhof>
+

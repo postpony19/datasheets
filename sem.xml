@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Semolice/Semolitz</name>
+    <kuerzel>SEM</kuerzel>
+    <typ>Hp</typ>
+    <maszstab>120</maszstab>
+    <modulnr>ThHan301</modulnr>
+    <gleise>
+        <zulaufstrecken>
+           <links nr="1">1gl</links>
+           <rechts nr="1">2gl</rechts>
+           <!-- es sind folgende Werte zugelassen 1gl, 2gl und IBahn -->
+        </zulaufstrecken>
+        <hgleise>
+           <gleis id="hg1">
+               <name>1</name>
+               <laenge>550</laenge>
+           </gleis>
+        </hgleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="hg1">
+            <name>Hausbahnsteig</name>
+            <laenge>500</laenge>
+        </bahnsteig>
+        <bemerkung>Schülerverkehr, Berufspendler, Schwammerlsucher</bemerkung>
+    </pv>
+    <gv>
+        <ladestelle id="rampe" gleis="hg1">
+            <name>am Standort des Packwagens</name>
+            <laenge einheit="achsen">2</laenge>
+        </ladestelle>
+        <verlader>
+            <name>Stückgut: Milch</name>
+            <empfang>
+                <ladegut ladestelle="rampe">
+                    <name>Milchkannen (leer)</name>
+                    <gattung>G, Pw</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="rampe">
+                    <name>Milchkannen (voll)</name>
+                    <gattung>G, Pw</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Eilgut: Waldbeeren</name>
+            <versand>
+                <ladegut ladestelle="rampe">
+                    <name>Körbe</name>
+                    <gattung>Pw</gattung>
+                    <wagen zeitraum="tag">0.5</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <bemerkung>Bedienung durch N, GmP und Ng</bemerkung>
+    </gv>		
+    <bemerkung>(austauschbares) Wartehäuschen mit Fernsprechapparat</bemerkung>
+</bahnhof>

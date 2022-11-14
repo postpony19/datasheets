@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Getreide Schulz</name>
+  <kuerzel>GTW</kuerzel>
+  <typ>Awanst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaRue354</modulnr>
+  <plan src="gtw.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="strecke">
+        <name>Strecke</name>
+        <laenge einheit="cm">0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gl1">
+        <name>1</name>
+        <laenge einheit="cm">105</laenge>
+        <bemerkung>Wagenübergabe; Länge Prell-Prell 165 cm, erste Angabe 60 cm</bemerkung>
+      </gleis>
+      <gleis id="gl1a">
+        <name>1a</name>
+        <laenge einheit="cm">15</laenge>
+      </gleis>
+      <gleis id="gl1b">
+        <name>1b</name>
+        <laenge einheit="cm">45</laenge>
+      </gleis>
+      <gleis id="gl2">
+        <name>2</name>
+        <laenge einheit="cm">35</laenge>
+        <bemerkung>inklusive Weichenverbindung nach 4!</bemerkung>
+      </gleis>
+      <gleis id="gl3">
+        <name>3</name>
+        <laenge einheit="cm">65</laenge>
+      </gleis>
+      <gleis id="gl4">
+        <name>4</name>
+        <laenge einheit="cm">55</laenge>
+        <bemerkung>Zufahrt zum Kleinlokschuppen</bemerkung>
+      </gleis>
+      <gleis id="gl5">
+        <name>5</name>
+        <laenge einheit="cm">85</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="glager" gleis="gl3">
+      <name>Getreidelager</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="ladestr" gleis="gl5">
+      <name>Ladestraße</name>
+      <laenge einheit="cm">30</laenge>
+    </ladestelle>
+    <ladestelle id="laderampe" gleis="gl5">
+      <name>Laderampe</name>
+      <laenge einheit="cm">25</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Getreidelager SCHULZ</name>
+      <versand>
+        <ladegut ladestelle="glager">
+          <name>Getreide</name>
+          <gattung>T</gattung>
+          <wagen zeitraum="woche">20</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Kohlehandel</name>
+      <empfang>
+        <ladegut ladestelle="ladestr">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="woche">3.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">3.5</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>VEB OGS</name>
+      <empfang>
+        <ladegut ladestelle="ladestr laderampe">
+          <name>Kartoffeln lose</name>
+          <gattung>O, E, G</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr laderampe">
+          <name>Kartoffeln gesackt</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr laderampe">
+          <name>Obst aller Art</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="ladestr laderampe">
+          <name>Gemüse aller Art</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Konservenfabrik</name>
+      <empfang>
+        <ladegut ladestelle="laderampe">
+          <name>Blechdosen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="laderampe">
+          <name>Konservengläser</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="laderampe">
+          <name>Kartonagen</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="laderampe">
+          <name>Obstkonserven</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="laderampe">
+          <name>Gemüsekonserven</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="laderampe">
+          <name>Trockengemüse</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+  <bemerkung>Es gibt noch einen Fehlerchen im Gleisplan.</bemerkung>
+</bahnhof>
+

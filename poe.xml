@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Pöhlau Güterbahnhof</name>
+  <kuerzel>POE</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>BeKas247</modulnr>
+  <plan src="poe.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">IBahn</links>
+      <rechts nr="1">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_102">
+        <name>102</name>
+        <laenge einheit="mm">7000.0</laenge>
+        <bemerkung>Durchfahrtsgleis Hauptbahn</bemerkung>
+      </gleis>
+      <gleis id="gleis_103">
+        <name>103</name>
+        <laenge einheit="mm">7000.0</laenge>
+        <bemerkung>Durchfahrtsgleis Hauptbahn</bemerkung>
+      </gleis>
+      <gleis id="gleis_101">
+        <name>101</name>
+        <laenge einheit="mm">3000.0</laenge>
+        <bemerkung>Zufuhrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_100">
+        <name>100</name>
+        <laenge einheit="mm">3000.0</laenge>
+        <bemerkung>Abfuhrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">2800.0</laenge>
+        <bemerkung>Aufstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">2500.0</laenge>
+        <bemerkung>Aufstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">2500.0</laenge>
+        <bemerkung>Aufstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">2000.0</laenge>
+        <bemerkung>Lokumfahrgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_3a">
+        <name>3a</name>
+        <laenge einheit="mm">400.0</laenge>
+        <bemerkung>Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge einheit="mm">800.0</laenge>
+        <bemerkung>Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_14">
+        <name>14</name>
+        <laenge einheit="mm">800.0</laenge>
+        <bemerkung>Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge einheit="mm">2000.0</laenge>
+        <bemerkung>Abstellgleis BHG</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="mm">400.0</laenge>
+        <bemerkung>WÜST</bemerkung>
+      </gleis>
+      <gleis id="gleis_8">
+        <name>8</name>
+        <laenge einheit="mm">400.0</laenge>
+        <bemerkung>WÜST</bemerkung>
+      </gleis>
+      <gleis id="gleis_Schuppengleis">
+        <name>Schuppengleis</name>
+        <laenge einheit="mm">200</laenge>
+        <bemerkung>Schuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_Tankgleis">
+        <name>Tankgleis</name>
+        <laenge einheit="mm">200</laenge>
+        <bemerkung>Tankstelle</bemerkung>
+      </gleis>
+      <gleis id="gleis_Schweissplatz">
+        <name>Schweissplatz</name>
+        <laenge einheit="mm">200</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_103">
+      <name>Bahnsteig 1</name>
+      <laenge einheit="mm">1800.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_102">
+      <name>Bahnsteig 2</name>
+      <laenge einheit="mm">1800.0</laenge>
+    </bahnsteig>
+    <bemerkung>Haltepunkt für Arbeiter-, Berufs- und Ausflugsverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="Rampe" gleis="gleis_3a">
+      <name>Rampe</name>
+      <laenge einheit="mm">300</laenge>
+    </ladestelle>
+    <ladestelle id="Kohleverladung_1" gleis="gleis_7">
+      <name>Kohleverladung 1</name>
+      <laenge einheit="mm">800</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlerverladung_2" gleis="gleis_8">
+      <name>Kohlerverladung 2</name>
+      <laenge einheit="mm">800</laenge>
+    </ladestelle>
+    <ladestelle id="Lokschuppen" gleis="gleis_22">
+      <name>Lokschuppen</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Verlader</name>
+    </verlader>
+  </gv>
+  <bemerkung>Der Bahnhof dient als Sammelbahnhof für die angeschlossenen Betriebsstellen der  I-Bahn. Zur Zeit hat der Bahnhof  keinen eigenen Ladungsverkehr.[br]Bahnhof befindet sich derzeit im Aufbau. Rote Gleise nicht befahrbahr.</bemerkung>
+</bahnhof>
+

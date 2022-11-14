@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Hp. Apenburg mit "Jägerheim"</name>
+	<kuerzel>APB</kuerzel>
+	<typ>Hp</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JeBuc308</modulnr>
+	<plan src="apb.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Bahnsteiggleis">
+				<name>1</name>
+				<laenge>0</laenge>
+			</gleis>
+		</hgleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Bahnsteiggleis">
+			<name>1</name>
+			<laenge>0</laenge>
+		</bahnsteig>
+		<bemerkung></bemerkung>
+	</pv>
+</bahnhof>

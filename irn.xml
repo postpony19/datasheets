@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>FY Irun</name>
+  <kuerzel>IRN</kuerzel>
+  <typ>Sbf</typ>
+  <verwaltung>DR, DB, DB AG</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>GuBue113</modulnr>
+  <plan src="irn.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">3550</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  rt</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  bl</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  gn</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  ws</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  ge</bemerkung>
+      </gleis>
+      <gleis id="gleis_6">
+        <name>6</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  te</bemerkung>
+      </gleis>
+      <gleis id="gleis_7">
+        <name>7</name>
+        <laenge einheit="mm">3350</laenge>
+        <bemerkung>1200 / 2100 / 3000 mm  -  sw</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge>220</laenge>
+        <bemerkung>Abstellgleis  -  rt</bemerkung>
+      </gleis>
+      <gleis id="gleis_12">
+        <name>12</name>
+        <laenge>220</laenge>
+        <bemerkung>Abstellgleis  -  sw</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1A">
+        <name>1A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - rt</bemerkung>
+      </gleis>
+      <gleis id="gleis_2A">
+        <name>2A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - bl</bemerkung>
+      </gleis>
+      <gleis id="gleis_3A">
+        <name>3A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - gn</bemerkung>
+      </gleis>
+      <gleis id="gleis_4A">
+        <name>4A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - ws</bemerkung>
+      </gleis>
+      <gleis id="gleis_5A">
+        <name>5A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - ge</bemerkung>
+      </gleis>
+      <gleis id="gleis_6A">
+        <name>6A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - te</bemerkung>
+      </gleis>
+      <gleis id="gleis_7A">
+        <name>7A</name>
+        <laenge>300</laenge>
+        <bemerkung>Abstellgleis - sw</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <bemerkung>Fiddleyard mit Schleppweiche und drehbarer Schiebebühne für TT und H0, bestehend aus max 5 Segmente a 900 mm. Alle Gleise sind Dreischienengleis für TT und H0.[br]Es können 3, 4 oder 5 Segmente aufgebaut werden, dementsprechend beträgt die nutzbare Gleislänge an Gl. 1 bis 7  jeweils 1.200 mm,  2.100 mm oder 3.000 mm, an Gl. 11 und 12 jeweils 220mm, sowie an Gleis 1A bis 7A jeweils 300 mm[br]</bemerkung>
+</bahnhof>
+

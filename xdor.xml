@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Dorkafalva</name>
+  <kuerzel>XDOR</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>MAV</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>PeKal771 (HuKalPet03)</modulnr>
+  <plan src="xdor.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <links nr="2">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">3000.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">2680.0</laenge>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">2470.0</laenge>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">1320.0</laenge>
+        <bemerkung>Csonka/Stumpf/Spur</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">290.0</laenge>
+        <bemerkung>Mozdonyszín/Lokschuppen/Depot</bemerkung>
+      </gleis>
+      <gleis id="gleis_A">
+        <name>A</name>
+        <laenge einheit="mm">1220.0</laenge>
+        <bemerkung>Csonka/Stumpf/Spur</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_A">
+      <name>A</name>
+      <laenge einheit="mm">1070.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_1">
+      <name>B</name>
+      <laenge einheit="mm">2200.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2 gleis_1">
+      <name>C</name>
+      <laenge einheit="mm">2000.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2 gleis_3">
+      <name>D</name>
+      <laenge einheit="mm">1640.0</laenge>
+    </bahnsteig>
+    <bemerkung>Az A vágány csak a mellékvonalra csatlakozik[br]Gleis A schließt sich nur an die Nebenbahn[br]Track A connects only to the side line.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="a_R_mpa" gleis="gleis_3">
+      <name>a) Rámpa</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <ladestelle id="b_Rakt_r_G_tersch." gleis="gleis_4">
+      <name>b) Raktár/Gütersch.</name>
+      <laenge einheit="mm">300.0</laenge>
+    </ladestelle>
+    <ladestelle id="c_Rakod_Ladefl_che" gleis="gleis_4">
+      <name>c) Rakodó/Ladefläche</name>
+      <laenge einheit="mm">350.0</laenge>
+    </ladestelle>
+    <ladestelle id="d_Rakod_Ladefl_che" gleis="gleis_3">
+      <name>d) Rakodó/Ladefläche</name>
+      <laenge einheit="mm">250.0</laenge>
+    </ladestelle>
+    <ladestelle id="e_Homlokrak._Stirnr." gleis="gleis_4">
+      <name>e) Homlokrak./Stirnr.</name>
+      <laenge einheit="mm">170.0</laenge>
+    </ladestelle>
+    <ladestelle id="F_t_h_z_Lokschuppen" gleis="gleis_5">
+      <name>Fűtőház/Lokschuppen</name>
+      <laenge einheit="mm">290.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>MgTSz</name>
+      <empfang>
+        <ladegut ladestelle="a_R_mpa">
+          <name>Műtrágya/Dünger/Fertilizer</name>
+          <gattung>G H T</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="e_Homlokrak._Stirnr.">
+          <name>Traktor</name>
+          <gattung>K R</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="c_Rakod_Ladefl_che">
+          <name>Gázolaj/Diesel</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="b_Rakt_r_G_tersch.">
+          <name>Alkatrész/Ersatzteile/Spare parts</name>
+          <gattung>G H K</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="a_R_mpa">
+          <name>Élő állat/Lebende Tiere</name>
+          <gattung>G H</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="a_R_mpa c_Rakod_Ladefl_che">
+          <name>Gabona</name>
+          <gattung>G T</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Fűrészüzem</name>
+      <empfang>
+        <ladegut ladestelle="c_Rakod_Ladefl_che">
+          <name>Fa/Holz/Wood</name>
+          <gattung>E K</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="b_Rakt_r_G_tersch.">
+          <name>Alkatrész/Ersatzteile/Spareparts</name>
+          <gattung>G H K</gattung>
+          <wagen zeitraum="woche">0.5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="d_Rakod_Ladefl_che">
+          <name>Raklap/Paletten</name>
+          <gattung>E G K</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="d_Rakod_Ladefl_che">
+          <name>Fűrészáru/Schnittholz/Timber</name>
+          <gattung>E G K</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="c_Rakod_Ladefl_che">
+          <name>Fűrészpor/Sägesp./Sawdust</name>
+          <gattung>G H T</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Tüzép/Kohlehändler</name>
+      <empfang>
+        <ladegut ladestelle="c_Rakod_Ladefl_che">
+          <name>Szén/Kohle/Coal</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Étterem/Restaurant</name>
+      <empfang>
+        <ladegut ladestelle="b_Rakt_r_G_tersch.">
+          <name>Mirelite</name>
+          <gattung>I</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>MÁV</name>
+      <empfang>
+        <ladegut ladestelle="F_t_h_z_Lokschuppen">
+          <name>Gázolaj/Diesel/Petrol</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="F_t_h_z_Lokschuppen">
+          <name>Homok</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+

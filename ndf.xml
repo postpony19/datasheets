@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Neuendorf</name>
+    <kuerzel>NDF</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>FrBuc245</modulnr>
+    <plan src="ndf.gif"/>
+    <gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+	<hgleise>
+        <gleis id="hauptgleis">
+            <name>1a</name>
+            <laenge>500</laenge>
+        </gleis>
+        <gleis id="bahnsteig">
+            <name>1b</name>
+            <laenge>600</laenge>
+        </gleis>
+	</hgleise>
+	<ngleise>
+        <gleis id="anschlbhg">
+            <name>2a</name>
+            <laenge>330</laenge>
+        </gleis>
+        <gleis>
+            <name>2b</name>
+            <laenge>170</laenge>
+        </gleis>
+        <gleis id="freiladegleis">
+            <name>2c</name>
+            <laenge>600</laenge>
+        </gleis>
+        <gleis id="ruebengleis">
+            <name>3</name>
+            <laenge>700</laenge>
+            <bemerkung>nur zur Rübenverladung; max. 4 Eas</bemerkung>
+        </gleis>
+	</ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="bahnsteig">
+            <name>1</name>
+            <laenge>600</laenge>
+        </bahnsteig>
+        <bemerkung>Pendler, Schülerverkehr</bemerkung>
+    </pv>
+    <gv>
+      <ladestelle id="ladestrasse" gleis="freiladegleis">
+        <name>Ladestraße</name>
+        <laenge einheit="achsen">10</laenge>
+      </ladestelle>
+      <ladestelle id="rampe" gleis="freiladegleis">
+        <name>Kopf- / Seitenrampe</name>
+        <laenge einheit="achsen">2</laenge>
+      </ladestelle>
+      <ladestelle id="bhg" gleis="anschlbhg">
+        <name>Anschluß BHG</name>
+        <laenge einheit="achsen">6</laenge>
+      </ladestelle>
+      <ladestelle id="hochrampe" gleis="ruebengleis">
+        <name>Hochrampe</name>
+        <laenge einheit="mm">500</laenge>
+      </ladestelle>
+      <verlader>
+          <name>BHG Neuendorf</name>
+          <empfang>
+              <ladegut ladestelle="bhg">
+                  <name>Saatgut</name>
+                  <gattung>E, F, G</gattung>
+                  <wagen zeitraum="tag">0.2</wagen>
+              </ladegut>
+              <ladegut ladestelle="bhg">
+                  <name>Dünger</name>
+                  <gattung>E, F, G</gattung>
+                  <wagen zeitraum="tag">0.2</wagen>
+              </ladegut>
+              <ladegut ladestelle="bhg">
+                  <name>Kohle</name>
+                  <gattung>E, F, G</gattung>
+                  <wagen zeitraum="tag">0.2</wagen>
+              </ladegut>
+              <ladegut ladestelle="bhg">
+                  <name>Baumaterial</name>
+                  <gattung>E, F, G</gattung>
+                  <wagen zeitraum="tag">0.2</wagen>
+              </ladegut>
+              <ladegut ladestelle="bhg">
+                  <name>Arbeitsgeräte</name>
+                  <gattung>E, F, G</gattung>
+                  <wagen zeitraum="tag">0.2</wagen>
+              </ladegut>
+          </empfang>
+      </verlader>
+      <verlader>
+          <name>VEB Metallbau Neuendorf</name>
+          <empfang>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Halbzeuge</name>
+                  <gattung>G</gattung>
+                  <wagen>2</wagen>
+              </ladegut>
+          </empfang>
+          <versand>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Metallkleinteile aller Art</name>
+                  <gattung>G</gattung>
+                  <wagen>2</wagen>
+              </ladegut>
+          </versand>
+      </verlader>
+      <verlader>
+        <name>VEB Fahrzeugbau Kakerbeck</name>
+          <empfang>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Bleche</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Kunststoffplatten</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Isoliermaterial</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Stahlprofile</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Reifen</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Fahrzeugteile</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+              <ladegut ladestelle="ladestrasse">
+                  <name>Chassis</name>
+                  <gattung>G, K</gattung>
+                  <wagen>1</wagen>
+              </ladegut>
+          </empfang>
+        <versand>
+          <ladegut ladestelle="rampe">
+            <name>Bauwagen</name>
+            <gattung>K</gattung>
+            <wagen>0.67</wagen>
+          </ladegut>
+          <ladegut ladestelle="rampe">
+            <name>diverse Anhänger</name>
+            <gattung>K</gattung>
+            <wagen>0.67</wagen>
+          </ladegut>
+          <ladegut ladestelle="rampe">
+            <name>fertige LKW</name>
+            <gattung>K</gattung>
+            <wagen>0.67</wagen>
+          </ladegut>
+        </versand>
+      </verlader>
+      <verlader>
+        <name>LPG Pflanzenproduktion Neuendorf</name>
+        <versand>
+          <ladegut ladestelle="hochrampe">
+            <name>Rüben</name>
+            <gattung>E</gattung>
+            <wagen zeitraum="tag">0<!--8--></wagen>
+          </ladegut>
+          <ladegut ladestelle="ladestrasse">
+            <name>Kartoffeln</name>
+            <gattung>E, G</gattung>
+            <wagen>3</wagen>
+          </ladegut>
+        </versand>
+      </verlader>
+      <bemerkung>Landwirtschaft, Metallverarbeitung, Fahrzeugbau</bemerkung>
+    </gv>
+    <bemerkung>Grundstellung aller Weichen ist gerade</bemerkung>
+</bahnhof>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Hp Kablow</name>
+  <kuerzel>KBW</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MaKoh300</modulnr>
+  <plan src="kbw.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis1">
+        <name>Strecke</name>
+        <laenge einheit="mm">1800</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis1">
+      <laenge einheit="mm">1240</laenge>
+    </bahnsteig>
+  </pv>
+  <bemerkung>Der Hp Kablow verfügt über einen 1240 mm langen Bahnsteig.</bemerkung>
+</bahnhof>
+

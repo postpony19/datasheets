@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Buckow (TF)</name>
+  <kuerzel>BUW</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>DaGra217</modulnr>
+  <plan src="buw.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge einheit="mm">1700.0</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge einheit="mm">1400.0</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_1b">
+        <name>1b</name>
+        <laenge einheit="mm">450.0</laenge>
+        <bemerkung>Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge einheit="mm">1200.0</laenge>
+        <bemerkung>Verkehrsgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3a">
+        <name>3a</name>
+        <laenge einheit="mm">170.0</laenge>
+        <bemerkung>Betriebsstoffe</bemerkung>
+      </gleis>
+      <gleis id="gleis_3b">
+        <name>3b</name>
+        <laenge einheit="mm">150.0</laenge>
+        <bemerkung>Viehrampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge einheit="mm">840.0</laenge>
+        <bemerkung>Rampe</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge einheit="mm">1250.0</laenge>
+        <bemerkung>Ladestrasse</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>Hausbahnsteig</name>
+      <laenge einheit="mm">680.0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_2">
+      <name>Bahnsteig</name>
+      <laenge einheit="mm">900.0</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Viehrampe" gleis="gleis_3b">
+      <name>Viehrampe</name>
+      <laenge einheit="mm">150.0</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestrasse" gleis="gleis_5">
+      <name>Ladestrasse</name>
+      <laenge einheit="mm">1250.0</laenge>
+    </ladestelle>
+    <ladestelle id="G_terschuppen" gleis="gleis_1b">
+      <name>Güterschuppen</name>
+      <laenge einheit="mm">450.0</laenge>
+    </ladestelle>
+    <ladestelle id="Betriebsstoffe" gleis="gleis_3a">
+      <name>Betriebsstoffe</name>
+      <laenge einheit="mm">170.0</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Tierproduktion</name>
+      <versand>
+        <ladegut ladestelle="Viehrampe">
+          <name>Rinder</name>
+          <gattung>V/He</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Viehrampe">
+          <name>Schweine</name>
+          <gattung>V/He</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEG Pflanzenproduktion</name>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Getreide</name>
+          <gattung>Tds</gattung>
+          <wagen zeitraum="woche">3.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Kartoffeln in Säcke</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Rüben</name>
+          <gattung>O</gattung>
+          <wagen>2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>LPG Werkstatt</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Ersatzteile</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Serosammelstelle</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Serostoffe</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaft</name>
+      <versand>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Holz</name>
+          <gattung>R</gattung>
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Saatzucht Petkus</name>
+      <versand>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Saatgut in Säcke</name>
+          <gattung>G</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Bahnhof</name>
+      <empfang>
+        <ladegut ladestelle="Betriebsstoffe">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Betriebsstoffe">
+          <name>Diesel</name>
+          <gattung>ZM/Z</gattung>
+          <wagen zeitraum="woche">1.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>ZBO Buckow</name>
+      <empfang>
+        <ladegut ladestelle="Ladestrasse">
+          <name>Baustoffe</name>
+          <gattung />
+          <wagen zeitraum="woche">2.0</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+

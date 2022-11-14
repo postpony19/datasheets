@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Blechteilewerk</name>
+	<kuerzel>BTW</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JoIff365</modulnr>
+	<plan src="btw.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge einheit="cm">85</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="ng2">
+				<name>2</name>
+				<laenge einheit="cm">28</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="rampe" gleis="ng2">
+			<name>Seitenrampe</name>
+			<laenge einheit="cm">15</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Blechteile</name>
+			<empfang>
+				<ladegut ladestelle="rampe">
+					<name>Blechpakete</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Coils</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="rampe">
+					<name>Baubeschläge</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Möbelbeschläge</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Kofferbeschläge</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Schnallen für Schuhindustrie</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<ladegut ladestelle="rampe">
+					<name>Luftleitkästen Phänomen/Robur</name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>
+				<!--<ladegut ladestelle="rampe">
+					<name></name>
+					<gattung></gattung>
+					<wagen></wagen>
+				</ladegut>-->
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Die erforderlichen Ladegüter sowie deren Mengen müssen noch ermittelt werden!</bemerkung>
+</bahnhof>

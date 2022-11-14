@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Bahnhof Finkenheerd</name>
+  <kuerzel>FIH</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>RaGra 232</modulnr>
+  <plan src="fih.gif" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <links nr="2">IBahn</links>
+      <rechts nr="1">2gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Gl1">
+        <name>1</name>
+        <laenge>4100</laenge>
+        <bemerkung>Durchgangsgleis Richtung Süd</bemerkung>
+      </gleis>
+      <gleis id="Gl2">
+        <name>2</name>
+        <laenge>3370</laenge>
+        <bemerkung>Durchgangsgleis Richtung Nord</bemerkung>
+      </gleis>
+      <gleis id="Gl3">
+        <name>3</name>
+        <laenge>3140</laenge>
+        <bemerkung>Überholgleis beide Richtungen</bemerkung>
+      </gleis>
+      <gleis id="Gl4">
+        <name>4</name>
+        <laenge>3370</laenge>
+        <bemerkung>Überholgleis Nord</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="Gl5">
+        <name>5</name>
+        <laenge>2100</laenge>
+        <bemerkung>Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="Gl6">
+        <name>6</name>
+        <laenge>1650</laenge>
+        <bemerkung>Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="Gl7">
+        <name>7</name>
+        <laenge>1800</laenge>
+        <bemerkung>Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="Gl8">
+        <name>8</name>
+        <laenge>800</laenge>
+        <bemerkung>Rangiergleis</bemerkung>
+      </gleis>
+      <gleis id="Gl9">
+        <name>9</name>
+        <laenge>1085</laenge>
+        <bemerkung>Freiladegleis</bemerkung>
+      </gleis>
+      <gleis id="Gl8a">
+        <name>8a</name>
+        <laenge>200</laenge>
+        <bemerkung>Ladegleis Güterschuppen (nur Ep 3)</bemerkung>
+      </gleis>
+      <gleis id="Gl10">
+        <name>10</name>
+        <laenge>240</laenge>
+        <bemerkung>Kopf- Seitenrampe</bemerkung>
+      </gleis>
+      <gleis id="Gl11">
+        <name>11</name>
+        <laenge>1650</laenge>
+        <bemerkung>Ladegleis Kohlehandel (BHG) / ACZ (Portalkran)</bemerkung>
+      </gleis>
+      <gleis id="Gl12">
+        <name>12</name>
+        <laenge>400</laenge>
+        <bemerkung>Kleinlokschuppengleis</bemerkung>
+      </gleis>
+      <gleis id="Gl13">
+        <name>13</name>
+        <laenge>700</laenge>
+        <bemerkung>Stückgutschuppen (BHG / Konservenfabrik)</bemerkung>
+      </gleis>
+      <gleis id="Gl21">
+        <name>21</name>
+        <laenge>2850</laenge>
+        <bemerkung>WüSt Kraftwerk / I-Bahn (Eingang)</bemerkung>
+      </gleis>
+      <gleis id="Gl22">
+        <name>22</name>
+        <laenge>2500</laenge>
+        <bemerkung>WüSt Kraftwerk / I-Bahn (Eingang)</bemerkung>
+      </gleis>
+      <gleis id="Gl23">
+        <name>23</name>
+        <laenge>2300</laenge>
+        <bemerkung>WüSt Kraftwerk / I-Bahn (Lokverkehrsgleis)</bemerkung>
+      </gleis>
+      <gleis id="Gl24">
+        <name>24</name>
+        <laenge>2400</laenge>
+        <bemerkung>Zuführungsgleis I-Bahn / Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="Gl25">
+        <name>25</name>
+        <laenge>1300</laenge>
+        <bemerkung>Abstellgleis / Kohlebunker</bemerkung>
+      </gleis>
+      <gleis id="Gl26">
+        <name>26</name>
+        <laenge>1300</laenge>
+        <bemerkung>Zuführungsgleis Kraftwerk /I-Bahn / Abstellgleis</bemerkung>
+      </gleis>
+      <gleis id="Gl_A2">
+        <name>A2</name>
+        <laenge>400</laenge>
+        <bemerkung>WüSt Kranbau Finkenheerd</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Gl1">
+      <name>1</name>
+      <laenge>1600</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="Gl2">
+      <name>2</name>
+      <laenge>1600</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="Gl3">
+      <name>3</name>
+      <laenge>500</laenge>
+    </bahnsteig>
+    <bemerkung>Schüler- und Berufsverkehr</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="freiladegleis" gleis="Gl9">
+      <name>Freiladegleis</name>
+      <laenge>350</laenge>
+    </ladestelle>
+    <ladestelle gleis="Gl8a">
+      <name>Ladegleis</name>
+      <laenge>180</laenge>
+    </ladestelle>
+    <ladestelle gleis="Gl8a" id="G_terschuppen">
+      <name>Güterschuppen</name>
+      <laenge>180</laenge>
+    </ladestelle>
+    <ladestelle gleis="Gl_A2" id="Kranbau">
+      <name>Kranbau</name>
+      <laenge>630</laenge>
+    </ladestelle>
+    <ladestelle gleis="Gl10" id="Kopf-_und_Seitenrampe">
+      <name>Kopf- und Seitenrampe</name>
+      <laenge>230</laenge>
+    </ladestelle>
+    <ladestelle gleis="Gl11">
+      <name>Ladegleis</name>
+      <laenge>247</laenge>
+    </ladestelle>
+    <ladestelle id="lg11bhg" gleis="Gl11">
+      <name>Kohlenhandel (BHG)</name>
+      <laenge>247</laenge>
+    </ladestelle>
+    <ladestelle id="lg11b" gleis="Gl11">
+      <name>ACZ (Portalkran)</name>
+      <laenge>247</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgutschuppen_BHG_Konservenfabrik_" gleis="Gl13">
+      <name>Stückgutschuppen (BHG/Konservenfabrik)</name>
+      <laenge>600</laenge>
+    </ladestelle>
+    <!--<ladestelle gleis="Gl25">
+			<name>Kohlenbunker</name>
+			<laenge></laenge>
+		</ladestelle>-->
+    <verlader>
+      <name>ACZ</name>
+      <empfang>
+        <ladegut ladestelle="lg11b">
+          <name>Düngemittel</name>
+          <gattung>G, T</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>BHG</name>
+      <empfang>
+        <ladegut ladestelle="lg11bhg">
+          <name>Feste Brennstoffe (Briketts, Rohbraunkohle, Koks)</name>
+          <gattung>E</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg">
+          <name>Baustoffe (Ziegelsteine, Hohlblocksteine, Dachziegel usw.)</name>
+          <gattung>E, R</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg">
+          <name>Bauholz (Bretter, Kanthölzer, Balken, Dachstühle)</name>
+          <gattung>E, R</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg stkschuppen">
+          <name>Saatgut</name>
+          <gattung>T, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg stkschuppen">
+          <name>Futtermittel (Getreide, Kleie, Schrot)</name>
+          <gattung>T, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Baustoffe (Zement, Anhydrit in Säcken)</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Fenster/Türen</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Schalbretter</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg">
+          <name>Kalk</name>
+          <gattung>G, T</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="lg11bhg">
+          <name>Zuckerrüben</name>
+          <gattung>E</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="lg11bhg">
+          <name>Getreide</name>
+          <gattung>G, T</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Konservenfabrik "Oderfrucht"</name>
+      <empfang>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Konservengläser</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Pulpe (Marmeladenrohstoff) in Fässern</name>
+          <gattung>G</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Kristallzucker</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>4</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Verpackungsmaterial (Kartonagen, Pappeimer)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Frischobst</name>
+          <gattung>I</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Marmelade</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Sirup</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Citronat</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+          <name>Pflaumenmus</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Betonwerk</name>
+      <empfang>
+        <ladegut ladestelle="freiladegleis">
+          <name>Zement</name>
+          <gattung>U</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Betonstahl</name>
+          <gattung>E, R, S</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Kies</name>
+          <gattung>S, R, E</gattung>
+          <wagen zeitraum="tag">5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Schalöl</name>
+          <gattung>Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="freiladegleis">
+          <name>Kabelkanäle</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Schleuderbetonmaste</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Röhren</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Winkelstützelemente</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="freiladegleis">
+          <name>Deckenträger</name>
+          <gattung>E, R, S</gattung>
+          <wagen>2.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>VEB Kranbau Eberswalde BT Finkenheerd</name>
+      <empfang>
+        <ladegut ladestelle="Kranbau">
+          <name>Walzmaterial aller Art (Bleche, Rohre, Profile: I, L, U)</name>
+          <gattung>E, R, S</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Drahtseile</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Schmiedestücke</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Farbe in Fässern (Latex, Chlorbuna)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Verpackungsmaterial (Kistenbretter, Kanthölzer, RÃ¶deldraht)</name>
+          <gattung>E, R</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Diverse Zuschnittteile</name>
+          <gattung>E, R, S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Normteile (Schrauben, Bolzen usw.)</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Kranbau">
+          <name>Kranausleger, Stahlbauteile</name>
+          <gattung>R</gattung>
+          <wagen>20</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Maschinenteile</name>
+          <gattung>E, R, S und Stückgut</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Badewannenfüße (Konsumgüter)</name>
+          <gattung>G und Stückgut</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Schrott (Späne oder Kernschrott)</name>
+          <gattung>E</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Hubböcke</name>
+          <gattung>H, G und Stückgut</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbau">
+          <name>Ersatzteile</name>
+          <gattung>Mittelcontainer</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Die Angaben beziehen sich auf die Epoche 4 etwa von 1970-1989</bemerkung>
+  </gv>
+  <bemerkung />
+</bahnhof>
+

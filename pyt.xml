@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Anst. Pyrotechnik</name>
+	<kuerzel>PYT</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>JuUhl350</modulnr>
+	<plan src="pyt.jpg"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="hg1">
+				<name>1</name>
+				<laenge>400</laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="A1">
+				<name>A1</name>
+				<laenge>400</laenge>
+				<bemerkung>Verladeschuppen</bemerkung>
+			</gleis>
+			<gleis id="A2">
+				<name>A2</name>
+				<laenge>150</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="Verladeschuppen" gleis="A1">
+			<name>Verladeschuppen</name>
+			<laenge>150</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Pyrotechnisches Lager</name>
+			<empfang>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Feuerwerkskörper</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Sprengstoff</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">4</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Munition</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Zement</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Bausand</name>
+					<gattung>E, K</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Bauholz</name>
+					<gattung>K, R</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>pyrotechnische Erzeugnisse</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Sprengstoff</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Sondermüll</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Verladeschuppen">
+					<name>Munition für KK-Waffen</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<bemerkung>Alle Wagen mit Explosivstoffen werden durch Mitarbeiter der Trapo begleitet (Begleitwagen beigeben).</bemerkung>
+	</gv>
+</bahnhof>

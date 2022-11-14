@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Bw Tim</name>
+  <kuerzel>BTI</kuerzel>
+  <typ>Bw</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>TiKas294</modulnr>
+  <plan src="bti.png" />
+  <gleise>
+    <zulaufstrecken />
+    <hgleise>
+      <gleis id="gleis_Kohlegleis">
+        <name>Kohlegleis</name>
+        <laenge einheit="mm">400</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Tankgleis">
+        <name>Tankgleis</name>
+        <laenge einheit="mm">200</laenge>
+      </gleis>
+      <gleis id="gleis_Stoffgleis">
+        <name>Stoffgleis</name>
+        <laenge einheit="mm">200</laenge>
+      </gleis>
+      <gleis id="gleis_Krangleis">
+        <name>Krangleis</name>
+        <laenge einheit="mm">200</laenge>
+        <bemerkung>Überkrantes Freigleis hinter Schuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_Schlackegleis">
+        <name>Schlackegleis</name>
+        <laenge einheit="mm">500</laenge>
+        <bemerkung>je 2x 250mm</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Stoffgleis" gleis="gleis_Stoffgleis">
+      <name>Stoffgleis</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <ladestelle id="Tankgleis" gleis="gleis_Tankgleis">
+      <name>Tankgleis</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <ladestelle id="Kohlegleis" gleis="gleis_Kohlegleis">
+      <name>Kohlegleis</name>
+      <laenge einheit="mm">400</laenge>
+    </ladestelle>
+    <ladestelle id="Schlackegleis" gleis="gleis_Schlackegleis">
+      <name>Schlackegleis</name>
+      <laenge einheit="mm">500</laenge>
+    </ladestelle>
+    <ladestelle id="Krangleis" gleis="gleis_Krangleis">
+      <name>Krangleis</name>
+      <laenge einheit="mm">200</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Kohlebansen</name>
+      <empfang>
+        <ladegut ladestelle="Kohlegleis">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Tankstelle</name>
+      <empfang>
+        <ladegut ladestelle="Tankgleis">
+          <name>Diesel</name>
+          <gattung>U Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Magazin</name>
+      <empfang>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Sand</name>
+          <gattung>U E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Arnaturen repariert</name>
+          <gattung>G H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Holz</name>
+          <gattung>E R</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Ersatzteile</name>
+          <gattung>G H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Krangleis">
+          <name>Motor</name>
+          <gattung>K R S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Schmierstoffe</name>
+          <gattung>G H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Schlackegleis">
+          <name>Schlacke</name>
+          <gattung>E</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Stoffgleis">
+          <name>Armaturen defekt</name>
+          <gattung>G H</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Krangleis">
+          <name>Motor</name>
+          <gattung>K R S</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+  <bemerkung>Einsatzstelle für kleine und mittlere Lokomotiven wie 106,110, 118, oder 86, 50 und 52. Schwere Schnellzugloks wenden hier nur.</bemerkung>
+</bahnhof>
+

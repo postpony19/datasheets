@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+  <name>Wittgensdorf Mitte</name>
+  <kuerzel>DWIM</kuerzel>
+  <typ>Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>DaPon309</modulnr>
+  <plan src="dwim.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <rechts nr="1">2gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="Bahnsteiggleis_1">
+        <name>1</name>
+        <laenge einheit="mm">0</laenge>
+      </gleis>
+      <gleis id="Bahnsteiggleis_2">
+        <name>2</name>
+        <laenge einheit="mm">0</laenge>
+      </gleis>
+    </hgleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="Bahnsteiggleis_1">
+      <name>1</name>
+      <laenge einheit="mm">0</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="Bahnsteiggleis_2">
+      <name>2</name>
+      <laenge einheit="mm">0</laenge>
+    </bahnsteig>
+  </pv>
+  <bemerkung>Letzte Änderung 02.01.2017</bemerkung>
+</bahnhof>
+

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Frauenwald</name>
+	<kuerzel>FW</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>MaMic227</modulnr>
+	<plan src="fw.gif"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Gl1">
+				<name>1</name>
+				<laenge>930</laenge>
+				<bemerkung>Bahnsteiggleis</bemerkung>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Gl2">
+				<name>2</name>
+				<laenge>1100</laenge>
+				<bemerkung>Umfahrgleis</bemerkung>
+			</gleis>
+			<gleis id="Gl3">
+				<name>3</name>
+				<laenge>650</laenge>
+				<bemerkung>Güterschuppen</bemerkung>
+			</gleis>
+			<gleis id="Gl4">
+				<name>4</name>
+				<laenge>900</laenge>
+				<bemerkung>Holzrampe, Ladestr., Kopframpe</bemerkung>
+			</gleis>
+			<gleis id="Gl5">
+				<name>5</name>
+				<laenge>550</laenge>
+				<bemerkung>Wagenhalle</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Gl1">
+			<name>1</name>
+			<laenge>760</laenge>
+		</bahnsteig>
+		<bemerkung>Berufsverkehr, Urlauber, Wanderer</bemerkung>
+	</pv>
+	<gv>
+		<ladestelle id="Holzrampe" gleis="Gl4">
+			<name>Holzrampe</name>
+			<laenge>400</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestrasse" gleis="Gl4">
+			<name>Ladestraße</name>
+			<laenge>500</laenge>
+		</ladestelle>
+		<ladestelle id="Kopframpe" gleis="Gl4">
+			<name>Kopframpe</name>
+			<laenge>0</laenge>
+		</ladestelle>
+		<ladestelle id="Gueterschuppen" gleis="Gl3">
+			<name>Güterschuppen</name>
+			<laenge>200</laenge>
+		</ladestelle>
+		<ladestelle id="Lokschuppen" gleis="Gl1">
+			<name>Lokschuppen</name>
+			<laenge>200</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Forstamt Frauenwald</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Ersatzteile</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Holzrampe">
+					<name>Stammholz</name>
+					<gattung>L,S,SS,R,E</gattung>
+					<wagen zeitraum="tag">12</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Bauholz</name>
+					<gattung>E,R</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Brennholz</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Lichtspiele</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Kiste Filme</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Kiste Filme</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>PGH Hochvakuumtechnik</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Laborgeräte</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.5</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>CO2-Kartuschen</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.5</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Otto Schmidt jr. Co.K.G.</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Käsehorden</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Erich Gleichmann</name>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Heidelbeeren</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="tag">0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Lokeinsatzstelle</name>
+			<empfang>
+				<ladegut ladestelle="Lokschuppen">
+					<name>Ersatzteile</name>
+					<gattung>G,E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Lokschuppen">
+					<name>Betriebsstoffe</name>
+					<gattung>Z,U</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Lokschuppen">
+					<name>Schlacke</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>LPG-T Frauenwald</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Zuchtbullen</name>
+					<gattung>V</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Freiwillige Feuerwehr</name>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Ersatzteile</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Glasbläserei Ewald</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Quarzsand gesackt</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Chemikalien</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Weihnachtsschmuck und Kunstglas</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Köhlerei Weißhaupt</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Holzkohle</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">7</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Kohlehandel Lösche</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Brikett</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">4</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>PGH Bau</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Zement</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Sand/Kies</name>
+					<gattung>E,L</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Steinbruch Hartmann</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Natursteine</name>
+					<gattung>R,E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Ziegelei Lehmbruch</name>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Ziegel</name>
+					<gattung>R,E</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>LPG-P Frauenwald</name>
+			<empfang>
+				<ladegut ladestelle="Kopframpe">
+					<name>W50 Mannschaftstransporter</name>
+					<gattung>L,S,R</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Heu</name>
+					<gattung>R,E</gattung>
+					<wagen zeitraum="woche">7</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Obst/Gemüse</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kartoffeln</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Brennerei Lemke</name>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Kräuterlikör</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>HOG Frauenwald</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Servietten</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Klopapier</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">0.25</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+</bahnhof>

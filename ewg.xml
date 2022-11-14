@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Erdweg</name>
+	<kuerzel>EWG</kuerzel>
+	<typ>Anst</typ>
+	<maszstab>120</maszstab>
+	<modulnr>HeMuf391</modulnr>
+	<plan src="ewg.png" />
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Strecke">
+				<name>Strecke</name>
+				<laenge einheit="mm"></laenge>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Anschluß">
+				<name>1</name>
+				<laenge einheit="mm">500</laenge>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<gv>
+		<ladestelle id="Hochrampe" gleis="Anschluß">
+			<name>Hochrampe</name>
+			<laenge einheit="mm">430</laenge>
+		</ladestelle>
+		<verlader>
+			<name>VEB Bauzuschlagstoffe, Werk IV, Steinbruch Erdweg</name>
+			<versand>
+				<ladegut ladestelle="Hochrampe">
+					<name>Schotter</name>
+					<gattung>E,F,X</gattung>
+					<wagen zeitraum="tag">4</wagen>
+				</ladegut>
+				<ladegut ladestelle="Hochrampe">
+					<name>Splitt</name>
+					<gattung>E,F</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="Hochrampe">
+					<name>Kies</name>
+					<gattung>E, F</gattung>
+					<wagen zeitraum="tag">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEG Erdweg</name>
+			<versand>
+				<ladegut ladestelle="Hochrampe">
+					<name>Zuckerrüben (Saison)</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">0</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+	</gv>
+	<bemerkung>Die Grundstellung der Weiche "Gerade" ist dem zuständigen FDL nach Ende der Rangierfahrt zu melden</bemerkung>
+</bahnhof>

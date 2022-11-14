@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Rennsteig</name>
+	<kuerzel>REN</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>DiWan248</modulnr>
+	<plan src="ren.gif"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">1gl</links>
+			<links nr="2">1gl</links>
+			<rechts nr="1">1gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Bst2">
+				<name>2</name>
+				<laenge>1500</laenge>
+				<bemerkung>Bahnsteiggleis</bemerkung>
+			</gleis>
+			<gleis id="Bst3">
+				<name>3</name>
+				<laenge>1300</laenge>
+				<bemerkung>Bahnsteiggleis</bemerkung>
+			</gleis>
+			<gleis id="Kleinbahn">
+				<name>6</name>
+				<laenge>1000</laenge>
+				<bemerkung>Ausfahrgleis, Bahnsteiggleis Kleinbahn</bemerkung>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Ladestrasseg">
+				<name>1</name>
+				<laenge>900</laenge>
+				<bemerkung>Güterschuppen, Ladestraße, Seitenrampe</bemerkung>
+			</gleis>
+			<gleis id="UGL">
+				<name>4</name>
+				<laenge>1000</laenge>
+				<bemerkung>Umfahrungsgleis</bemerkung>
+			</gleis>
+			<gleis id="Uegl">
+				<name>5</name>
+				<laenge>1200</laenge>
+				<bemerkung>Übergabegleis Kleinbahn</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Bst2">
+			<name>2</name>
+			<laenge>900</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="Bst3">
+			<name>3</name>
+			<laenge>1050</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="Kleinbahn">
+			<name>6</name>
+			<laenge>500</laenge>
+		</bahnsteig>
+		<bemerkung>Übergangsreisende, Urlauber, Wanderer, Vatertagsfreunde</bemerkung>
+	</pv>
+	<gv>
+		<ladestelle id="Gueterschuppen" gleis="Ladestrasseg">
+			<name>Güterschuppen (1a)</name>
+			<laenge>200</laenge>
+		</ladestelle>
+		<ladestelle id="Ladestrasse" gleis="Ladestrasseg">
+			<name>Ladestraße (1b)</name>
+			<laenge>300</laenge>
+		</ladestelle>
+		<ladestelle id="Seitenrampe" gleis="Ladestrasseg">
+			<name>Seitenrampe (1c)</name>
+			<laenge>400</laenge>
+		</ladestelle>
+		<verlader>
+			<name>Forstamt Rennsteig</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Werkzeug</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Seitenrampe">
+					<name>Stammmholz</name>
+					<gattung>E,X,R</gattung>
+					<wagen zeitraum="tag">3</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Wild (Reh, Hirsch, Wildschwein)</name>
+					<gattung>G, H,</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>VEB Glaskunst Lauscha BT II Rennsteig</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Sand</name>
+					<gattung>L,R</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Pottasche gesackt</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Christbaumschmuck</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="tag">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Ferienlager Wilhelm Pieck SDAG Wismut</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kartoffeln lose</name>
+					<gattung>G,E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Gemüse</name>
+					<gattung>H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kleinvieh</name>
+					<gattung>V</gattung>
+					<wagen zeitraum="woche">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Rindvieh</name>
+					<gattung>V</gattung>
+					<wagen zeitraum="woche">0.5</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Kohle (Rohbraunkohle)</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>Stückgutschuppen</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Stückgut, Expressgut</name>
+					<gattung>G ,PWg</gattung>
+					<wagen zeitraum="woche">7</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Stückgut, Expressgut</name>
+					<gattung>G,Pwg</gattung>
+					<wagen zeitraum="woche">7</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<bemerkung>Güterwagen für die Kleinbahn sind auf Gleis 5 abzustellen.</bemerkung>
+	</gv>
+	<bemerkung>Weichen der Kleinbahn bei Ausfahrt in Grundstellung.[br]Alle Züge müssen Kopf machen.</bemerkung>
+</bahnhof>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Kleinzschattwitz</name>
+    <kuerzel>KZZ</kuerzel>
+    <typ>Sbf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>ChKet125</modulnr>
+	<plan src="kzz.gif"/>
+    <gleise>
+        <zulaufstrecken>
+           <links nr="1">2gl</links>
+           <links nr="2">IBahn</links>
+           <!-- es sind folgende Werte zugelassen 1gl, 2gl und IBahn -->
+        </zulaufstrecken>
+        <hgleise>
+           <gleis><name>1</name><laenge>3830</laenge></gleis>
+           <gleis><name>2</name><laenge>3940</laenge></gleis>
+           <gleis><name>3</name><laenge>4140</laenge></gleis>
+           <gleis><name>4</name><laenge>4330</laenge></gleis>
+           <gleis><name>5</name><laenge>4520</laenge></gleis>
+           <gleis><name>6</name><laenge>4520</laenge></gleis>
+           <gleis><name>7</name><laenge>4330</laenge></gleis>
+           <gleis><name>8</name><laenge>4140</laenge></gleis>
+           <gleis><name>9</name><laenge>3940</laenge></gleis>
+           <gleis><name>10</name><laenge>3830</laenge></gleis>
+        </hgleise>
+        <ngleise>
+           <gleis><name>11</name><laenge>430</laenge><bemerkung>Lokabstellgleis</bemerkung></gleis>
+           <gleis><name>12</name><laenge>450</laenge><bemerkung>IBahngleis/Lokabstellgleis</bemerkung></gleis>
+           <gleis><name>13</name><laenge>280</laenge><bemerkung>Lokabstellgleis</bemerkung></gleis>
+        </ngleise>
+    </gleise>
+	<bemerkung>Gesamtausdehnung 418 x 4810mm, bestehend aus 4 Segmenten. Aufbau auch mit 2 und 3 Segmenten möglich. Gleislängen der Hauptgleise dann jeweils um 1200mm kürzen.</bemerkung>
+</bahnhof>

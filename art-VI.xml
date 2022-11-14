@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Altranft</name>
+    <kuerzel>ART</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>AdRan204</modulnr>
+
+	<plan src="art.png" />
+    <gleise>
+        <zulaufstrecken>
+           <links nr="1">1gl</links>
+           <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+           <gleis id="bahnsteig">
+
+               <name>1</name>
+               <laenge einheit="cm">110</laenge>
+			   <bemerkung>Durchgehendes Hauptgleis</bemerkung>
+           </gleis>
+        </hgleise>
+        <ngleise>
+           <gleis id="ladestrg">
+
+               <name>2</name>
+               <laenge einheit="cm">90</laenge>
+           </gleis>
+           <gleis id="laderampeg">
+               <name>2a</name>
+               <laenge einheit="cm">30</laenge>
+           </gleis>
+
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="bahnsteig">
+            <name>1</name>
+            <laenge einheit="cm">110</laenge>
+        </bahnsteig>
+    </pv>
+
+	<gv>
+		<ladestelle id="ladestr" gleis="ladestrg">
+			<name>Ladestraße</name>
+			<laenge einheit="cm">45</laenge>
+		</ladestelle>
+		<ladestelle id="laderampe" gleis="laderampeg">
+			<name>Laderampe</name>
+
+			<laenge einheit="cm">25</laenge>
+		</ladestelle>
+        <verlader>
+            <name>Landesforstverwaltung Brandenburg / Forstwirtschaft Barnim</name>
+            <versand>
+                <ladegut ladestelle="ladestr">
+                    <name>Baumstämme</name>
+                    <gattung>E, L</gattung>
+                    <wagen zeitraum="tag">0.25</wagen>
+                </ladegut>
+            </versand>
+	</verlader>
+	</gv>
+</bahnhof>

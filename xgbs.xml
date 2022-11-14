@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+    <name>Grabie Stare</name>
+    <kuerzel>XGBS</kuerzel>
+    <typ>Bf</typ>
+    <maszstab>120</maszstab>
+    <modulnr>Grzegorz Barski</modulnr>
+    <plan src="xgbs.png"/>
+    <gleise>
+        <zulaufstrecken>
+            <links nr="1">1gl</links>
+            <rechts nr="1">1gl</rechts>
+        </zulaufstrecken>
+        <hgleise>
+            <gleis id="gleis1">
+                <name>1</name>
+                <laenge einheit="cm">120</laenge>
+            </gleis>
+            <gleis id="gleis2">
+                <name>2</name>
+                <laenge einheit="cm">120</laenge>
+            </gleis>
+        </hgleise>
+        <ngleise>
+            <gleis id="gleis3">
+                <name>3</name>
+                <laenge einheit="cm">90</laenge>
+                <bemerkung>Umfahrgleis</bemerkung>
+            </gleis>
+            <gleis id="gleis3a">
+                <name>3a</name>
+                <laenge einheit="cm">45</laenge>
+            </gleis>
+            <gleis id="gleis4">
+                <name>4</name>
+                <laenge einheit="cm">50</laenge>
+            </gleis>
+        </ngleise>
+    </gleise>
+    <pv>
+        <bahnsteig gleis="gleis1 gleis2">
+            <laenge einheit="cm">90</laenge>
+        </bahnsteig>
+    </pv>
+    <gv>
+        <ladestelle id="lade1" gleis="gleis3a">
+            <name>Plac ładunkowy (A) {Ladeplatz (A)}</name>
+            <laenge einheit="mm">500</laenge>
+        </ladestelle>
+        <ladestelle id="lade2" gleis="gleis3">
+            <name>Plac ładunkowy (B) {Ladeplatz (B)}</name>
+            <laenge einheit="mm">500</laenge>
+        </ladestelle>
+        <ladestelle id="lade3" gleis="">
+            <name>Magazyn {Lagerhaus}</name>
+            <laenge einheit="mm">150</laenge>
+        </ladestelle>
+        <verlader>
+            <name>GS Grabie St. {BHG Grabie St.}</name>
+            <empfang>
+                <ladegut ladestelle="lade1">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>drobnica (wyroby gotowe) {Stückgut (Fertigwaren)}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>cement, wapno {Zement, Kalk}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>pasze {Futtermittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+        </verlader>
+        <verlader>
+            <name>Fabryka Maszyn Rolniczych {Landmaschinenfabrik}</name>
+            <empfang>
+                <ladegut ladestelle="lade3">
+                    <name>drobnica (wyroby gotowe) {Stückgut (Fertigwaren)}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade2">
+                    <name>maszyny {Maschinen}</name>
+                    <gattung>R</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>drobny sprzęt dla gospodarstw rolniczych {Kleingeräte für Betriebe}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>PGR {LPG}</name>
+            <empfang>
+                <ladegut ladestelle="lade2">
+                    <name>paliwo dla PGR-u {Treibstoff für die LPG}</name>
+                    <gattung>Z</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade1">
+                    <name>węgiel {Kohle}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>nawozy {Düngemittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade3">
+                    <name>pasze {Futtermittel}</name>
+                    <gattung>G</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </empfang>
+            <versand>
+                <ladegut ladestelle="lade2">
+                    <name>trzoda chlewna i bydło {Schweine und Rinder}</name>
+                    <gattung>G (V)</gattung>
+                    <wagen zeitraum="woche">1</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <verlader>
+            <name>Nadleśnictwo Grabie St. {Forstverwaltung Grabie St.}</name>
+            <versand>
+                <ladegut ladestelle="lade2">
+                    <name>dłużyca {lange Bretter/Baumstämme}</name>
+                    <gattung>E, K, R</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+                <ladegut ladestelle="lade2">
+                    <name>cięte drewno {Schnittholz}</name>
+                    <gattung>E</gattung>
+                    <wagen zeitraum="woche">2</wagen>
+                </ladegut>
+            </versand>
+        </verlader>
+        <!--<bemerkung>Hier können allgemeine Bemerkungen zum Güterverkehr stehen.[br]Einen Zeilenumbruch kann man mittels ['br] erzeugen, wobei das Hochkommata wegzulassen ist!</bemerkung>-->
+    </gv>
+    <bemerkung>Die allgemeinen Bemerkungen insbesondere die Rangierhinweise müssen noch konkret übersetzt werden!</bemerkung>
+</bahnhof>

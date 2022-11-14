@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd" >
+<?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
+<bahnhof>
+	<name>Vieselbach</name>
+	<kuerzel>VIE</kuerzel>
+	<typ>Bf</typ>
+	<maszstab>120</maszstab>
+	<modulnr>StErf260</modulnr>
+	<plan src="vie.png"/>
+	<gleise>
+		<zulaufstrecken>
+			<links nr="1">2gl</links>
+			<rechts nr="1">2gl</rechts>
+		</zulaufstrecken>
+		<hgleise>
+			<gleis id="Ueberholungsgleis">
+				<name>1</name>
+				<laenge>3500</laenge>
+				<bemerkung>Ueberholungsgleis in beide Fahrtrichtungen</bemerkung>
+			</gleis>
+			<gleis id="Durchgangsgleis_2">
+				<name>2</name>
+				<laenge>5000</laenge>
+				<bemerkung>Durchgangsgleis im Richtungsverkehr</bemerkung>
+			</gleis>
+			<gleis id="Durchgangsgleis_3">
+				<name>3</name>
+				<laenge>5000</laenge>
+				<bemerkung>Durchgangsgleis im Richtungsverkehr</bemerkung>
+			</gleis>
+		</hgleise>
+		<ngleise>
+			<gleis id="Abstellgleis">
+				<name>5</name>
+				<laenge>950</laenge>
+				<bemerkung>Abstellgleis</bemerkung>
+			</gleis>
+			<gleis id="Ladestrasseg">
+				<name>6</name>
+				<laenge>2100</laenge>
+				<bemerkung>Rangiergleis, Ladestraße</bemerkung>
+			</gleis>
+			<gleis id="Gueterschuppeng">
+				<name>7</name>
+				<laenge>950</laenge>
+				<bemerkung>Rangiergleis, Güterschuppen</bemerkung>
+			</gleis>
+			<gleis id="Kopframpeg">
+				<name>8</name>
+				<laenge>200</laenge>
+				<bemerkung>Kopframpe</bemerkung>
+			</gleis>
+			<gleis id="A1a">
+				<name>A1a</name>
+				<laenge>1300</laenge>
+				<bemerkung>Anschluß ACZ, Ladestraße</bemerkung>
+			</gleis>
+			<gleis id="A1b">
+				<name>A1b</name>
+				<laenge>700</laenge>
+				<bemerkung>Anschluß ACZ, Ladestraße</bemerkung>
+			</gleis>
+			<gleis id="A2a">
+				<name>A2a</name>
+				<laenge>1100</laenge>
+				<bemerkung>Umfahrgleis ACZ</bemerkung>
+			</gleis>
+			<gleis id="A2b">
+				<name>A2b</name>
+				<laenge>1200</laenge>
+				<bemerkung>Anschluß ZOE, hier kann ein Normübergang Joschidul angebracht werden</bemerkung>
+			</gleis>
+		</ngleise>
+	</gleise>
+	<pv>
+		<bahnsteig gleis="Ueberholungsgleis">
+			<name>1</name>
+			<laenge>1500</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="Durchgangsgleis_2">
+			<name>2</name>
+			<laenge>1500</laenge>
+		</bahnsteig>
+		<bahnsteig gleis="Durchgangsgleis_3">
+			<name>3</name>
+			<laenge>1500</laenge>
+		</bahnsteig>
+		<bemerkung>Halt lediglich für Regionalverkehr</bemerkung>
+	</pv>
+	<gv>
+		<ladestelle id="Ladestrasse" gleis="Ladestrasseg">
+			<name>Ladestrasse</name>
+			<laenge>750</laenge>
+		</ladestelle>
+		<ladestelle id="ACZ" gleis="A1a">
+			<name>ACZ</name>
+			<laenge>2000</laenge>
+		</ladestelle>
+		<ladestelle id="Kopframpe" gleis="Kopframpeg">
+			<name>Kopframpe</name>
+			<laenge>200</laenge>
+		</ladestelle>
+		<ladestelle id="Gueterschuppen" gleis="Gueterschuppeng">
+			<name>Gueterschuppen</name>
+			<laenge>350</laenge>
+		</ladestelle>
+		<verlader>
+			<name>ACZ Vieselbach</name>
+			<empfang>
+				<ladegut ladestelle="ACZ">
+					<name>Dünger</name>
+					<gattung>G, T, E</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="ACZ">
+					<name>Pestizide</name>
+					<gattung>Z</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>LPG (P) Vieselbach</name>
+			<empfang>
+				<ladegut ladestelle="Kopframpe">
+					<name>Landmaschinen</name>
+					<gattung>K, R, S</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Futterrüben</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Roggen</name>
+					<gattung>T, G</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Bahnmeisterei</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Gleisschotter</name>
+					<gattung>F, E, K</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Schienen</name>
+					<gattung>R, S</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Holzschwellen</name>
+					<gattung>R, S, K</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Baustellenrückstände</name>
+					<gattung>E, K, R</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+		<verlader>
+			<name>LPG (T) Hochstedt</name>
+			<empfang>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Impfstoffe</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Aufzuchtfutter</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Mastrinder</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Schweine</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Getreidemühle Vieselbach</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Weizen</name>
+					<gattung>G, T</gattung>
+					<wagen zeitraum="woche">3</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Weizenmehl</name>
+					<gattung>G, T</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Weizenschrot</name>
+					<gattung>G, T</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Brauerei Vieselbach</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Leergut</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Flaschenverschlüsse</name>
+					<gattung>G</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Reinigungsmittel</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Reinigungsmittel</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Getränke</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Möbelwek Wüstemann</name>
+			<empfang>
+				<ladegut ladestelle="Kopframpe">
+					<name>Möbelspanplatten</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+				<ladegut ladestelle="Gueterschuppen">
+					<name>Beschläge</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+			<versand>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Möbel</name>
+					<gattung>G, H</gattung>
+					<wagen zeitraum="woche">2</wagen>
+				</ladegut>
+			</versand>
+		</verlader>
+		<verlader>
+			<name>Kohlehandel Vieselbach</name>
+			<empfang>
+				<ladegut ladestelle="Ladestrasse">
+					<name>Braunkohlenbrikett</name>
+					<gattung>E, F</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+				<ladegut ladestelle="Ladestrasse">
+					<name>BHT-Koks</name>
+					<gattung>E</gattung>
+					<wagen zeitraum="woche">1</wagen>
+				</ladegut>
+			</empfang>
+		</verlader>
+	</gv>
+	<bemerkung>Vorbahnhof zu großem Bahnhof</bemerkung>
+</bahnhof>

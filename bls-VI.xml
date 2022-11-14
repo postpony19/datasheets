@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>BHG Lilienstraße</name>
+  <kuerzel>BLS</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120.0</maszstab>
+  <modulnr>JaDan363</modulnr>
+  <plan src="bls.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Hauptgleis">
+        <name>Hauptgleis</name>
+        <laenge einheit="cm">90.0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_BHG">
+        <name>BHG</name>
+        <laenge einheit="cm">40.0</laenge>
+        <bemerkung>Anschlussgleis mit Gleissperre</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+</bahnhof>
+
