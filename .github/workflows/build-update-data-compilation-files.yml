@@ -1,0 +1,33 @@
+# .github/workflows
+name: Build/Update data compilation file workflow
+
+on:
+  workflow_dispatch:
+  push:
+
+env:
+  target_file: bahnhof.json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v3 # Checkout the repository content to github runner.
+
+      - name: Setup Python Version
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8 # Install the python version needed
+
+      - name: Execute Python script # Run build_update_json.py file building/updating {{ target_file }} in {{ github.workspace }}
+        run: python .github/scripts/build_update_json.py -o {{ env.target_file }} {{ github.workspace }}
+
+      - name: Listing
+        run: |
+          ls ${{ github.workspace }}
+
+      - name: Commit changes on data compilations back to repository
+        uses: stefanzweifel/git-auto-commit-action@v4 # authentication done via runner checkout token
+        with:
+          commit_message: Apply generated data compilation changes
