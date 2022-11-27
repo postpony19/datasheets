@@ -12,103 +12,90 @@
   <gleise>
     <zulaufstrecken>
       <links nr="1">2gl</links>
-      <links nr="2">1gl</links>
     </zulaufstrecken>
     <hgleise>
       <gleis>
         <name>1</name>
-        <laenge>3000.0</laenge>
+        <laenge>3020.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 192 cm</bemerkung>
       </gleis>
       <gleis>
         <name>2</name>
-        <laenge>3150.0</laenge>
+        <laenge>2920.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 182 cm</bemerkung>
       </gleis>
       <gleis>
         <name>3</name>
-        <laenge>3250.0</laenge>
+        <laenge>2920.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 182 cm</bemerkung>
       </gleis>
       <gleis>
         <name>4</name>
-        <laenge>3250.0</laenge>
+        <laenge>3370.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 227 cm</bemerkung>
       </gleis>
       <gleis>
         <name>5</name>
-        <laenge>3600.0</laenge>
+        <laenge>3370.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 227 cm</bemerkung>
       </gleis>
       <gleis>
         <name>6</name>
-        <laenge>3500.0</laenge>
+        <laenge>3370.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 227 cm</bemerkung>
       </gleis>
       <gleis>
         <name>7</name>
-        <laenge>3500.0</laenge>
+        <laenge>3370.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 227 cm</bemerkung>
       </gleis>
       <gleis>
         <name>8</name>
-        <laenge>3200.0</laenge>
+        <laenge>2920.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 182 cm</bemerkung>
       </gleis>
       <gleis>
         <name>9</name>
-        <laenge>3200.0</laenge>
+        <laenge>2920.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 182 cm</bemerkung>
       </gleis>
       <gleis>
         <name>10</name>
-        <laenge>1600.0</laenge>
-      </gleis>
-      <gleis>
-        <name>11</name>
-        <laenge>1300.0</laenge>
-      </gleis>
-      <gleis>
-        <name>12</name>
-        <laenge>1600.0</laenge>
+        <laenge>3020.0</laenge>
+        <bemerkung>Nutzlänge Kurzaufbau: 192 cm</bemerkung>
       </gleis>
     </hgleise>
     <ngleise>
       <gleis>
-        <name>A1</name>
-        <laenge>1500.0</laenge>
+        <name>11</name>
+        <laenge>1080.0</laenge>
       </gleis>
       <gleis>
-        <name>A2</name>
-        <laenge>1300.0</laenge>
+        <name>12</name>
+        <laenge>520.0</laenge>
       </gleis>
       <gleis>
-        <name>A3</name>
+        <name>13</name>
+        <laenge>520.0</laenge>
+      </gleis>
+      <gleis>
+        <name>17</name>
+        <laenge>500.0</laenge>
+      </gleis>
+      <gleis>
+        <name>18</name>
+        <laenge>650.0</laenge>
+      </gleis>
+      <gleis>
+        <name>19</name>
+        <laenge>650.0</laenge>
+      </gleis>
+      <gleis>
+        <name>20</name>
         <laenge>800.0</laenge>
-      </gleis>
-      <gleis>
-        <name>A4</name>
-        <laenge>550.0</laenge>
-      </gleis>
-      <gleis>
-        <name>A5</name>
-        <laenge>820.0</laenge>
-      </gleis>
-      <gleis>
-        <name>A6</name>
-        <laenge>1000.0</laenge>
-        <bemerkung>Ein-/Ausfahrten in Zusammenhang mit RHS möglich</bemerkung>
-      </gleis>
-      <gleis>
-        <name>A7</name>
-        <laenge>400.0</laenge>
-      </gleis>
-      <gleis>
-        <name>A8</name>
-        <laenge>700.0</laenge>
-        <bemerkung>Umfahrgleis</bemerkung>
-      </gleis>
-      <gleis>
-        <name>A9</name>
-        <laenge>1450.0</laenge>
-      </gleis>
-      <gleis>
-        <name>A10</name>
-        <laenge>1450.0</laenge>
       </gleis>
     </ngleise>
   </gleise>
-  <bemerkung>Gleis 1 kann als Test- und Programiergleis umgeschaltet werden.</bemerkung>
+  <bemerkung>Gleis 1/11 kann als Test- und Programiergleis umgeschaltet werden.[br] 4 Segmente zu je 1100mmx500mm; Kurzaufbau mit 3 Segmenten möglich</bemerkung>
 </bahnhof>
 
