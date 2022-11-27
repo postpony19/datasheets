@@ -21,7 +21,7 @@ jobs:
           python-version: 3.8 # Install the python version needed
 
       - name: Execute Python script # Run build_update_json.py file building/updating {{ target_file }} in {{ github.workspace }}
-        run: python .github/scripts/build_update_json.py -o {{ env.target_file }} {{ github.workspace }}
+        run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
 
       - name: Listing
         run: |
