@@ -55,7 +55,7 @@
     <p><a href="https://github.com/fktt-module/datasheets/archive/refs/heads/main.zip" title="Archiv mit allen Datenblättern">Archiv mit allen Datenbl&auml;ttern</a>&nbsp;(<span id="zip-file-time-stamp"></span>)</p>
     <!--  und Gelben Seiten -->
     <script>
-        let bstlistHandler = function() {
+        let bstlistHandler = function(baseUrl) {
             const defaultEpoch = 'IV';
             const languages = {0: 'DE', 1: 'EN', 2: 'CS'};
             const sortingColumnOptions = [{
@@ -84,7 +84,7 @@
             }
             function createHyperRefElement(href, title, className, text) {
                 let _e = _ce('a');
-                _e.setAttribute('href', href);
+                _e.setAttribute('href', baseUrl + href);
                 _e.setAttribute('title', title);
                 _e.setAttribute('class', className);
                 _e.textContent = text;
@@ -92,7 +92,7 @@
             }
             function createOptionElement(valueText, valueAttr = null, selected = false) {
                 let _e = _ce('option');
-                if (valueAttr !== null) _e.setAttribute('value', valueAttr);
+                if (valueAttr !== null) _e.setAttribute('value', baseUrl + valueAttr);
                 if (selected) _e.setAttribute('selected', 'selected')
                 _e.textContent = valueText;
                 return _e;
@@ -132,7 +132,7 @@
                 return _e;
             }
             function transformRenderAndShow(xslUrl, xmlUrl) {
-                let xslt = fetch(xslUrl).then(result => result.text()).then(content => {
+                let xslt = fetch(baseUrl + xslUrl).then(result => result.text()).then(content => {
                     let xsltProcessor = new XSLTProcessor();
                     // noinspection JSCheckFunctionSignatures
                     xsltProcessor.importStylesheet(new DOMParser().parseFromString(content, 'application/xml'));
@@ -145,11 +145,16 @@
                 Promise.all([xslt, xml]).then(([processor, xmlDocument]) => {
                     let htmlDocument = processor.transformToDocument(xmlDocument);
                     const printPreview = window.open('', 'Betriebsstellendatenblatt ' + htmlDocument.title);
+                    // check if there is an image tag in dom and update the url if present
+                    let trackmap = htmlDocument.body.getElementsByTagName('img')[0];
+                    if (trackmap !== undefined) {
+                        trackmap.setAttribute('src', baseUrl + trackmap.getAttribute('src'));
+                    }
                     // https://stackoverflow.com/a/2032594
                     // noinspection HtmlRequiredTitleElement
                     let serialized =
                         '<head>' +
-                            htmlDocument.head.innerHTML +
+                            htmlDocument.head.innerHTML.replace('bahnhof.css', baseUrl + 'bahnhof.css') +
                         '</head><body>' +
                             htmlDocument.body.innerHTML +
                         '</body>';
@@ -301,7 +306,8 @@
                 }
             }
         }
-        fetch('bahnhof.json').then(data => data.json()).then(content => bstlistHandler().run(content));
+        const baseUrl = 'https://fktt-module.github.io/datasheets/';
+        fetch(baseUrl + 'bahnhof.json').then(data => data.json()).then(content => bstlistHandler(baseUrl).run(content));
     </script>
     <!-- BSTLIST_FLUSH_FOR_FKTT_PORTAL -->
 </fktt-sds-plugin>
