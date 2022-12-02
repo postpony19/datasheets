@@ -54,7 +54,8 @@
     </p>
     <p><a href="https://github.com/fktt-module/datasheets/archive/refs/heads/main.zip" title="Archiv mit allen Datenblättern">Archiv mit allen Datenbl&auml;ttern</a>&nbsp;(<span id="zip-file-time-stamp"></span>)</p>
     <!--  und Gelben Seiten -->
-    <script>
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
         let bstlistHandler = function(baseUrl) {
             const defaultEpoch = 'IV';
             const languages = {0: 'DE', 1: 'EN', 2: 'CS'};
@@ -308,6 +309,7 @@
         }
         const baseUrl = 'https://fktt-module.github.io/datasheets/';
         fetch(baseUrl + 'bahnhof.json').then(data => data.json()).then(content => bstlistHandler(baseUrl).run(content));
+    //--><!]]>
     </script>
     <!-- BSTLIST_FLUSH_FOR_FKTT_PORTAL -->
 </fktt-sds-plugin>
