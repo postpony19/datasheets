@@ -93,7 +93,7 @@
             }
             function createOptionElement(valueText, valueAttr = null, selected = false) {
                 let _e = _ce('option');
-                if (valueAttr !== null) _e.setAttribute('value', baseUrl + valueAttr);
+                if (valueAttr !== null) _e.setAttribute('value', (valueAttr.endsWith('xml')) ? baseUrl + valueAttr : valueAttr);
                 if (selected) _e.setAttribute('selected', 'selected')
                 _e.textContent = valueText;
                 return _e;
