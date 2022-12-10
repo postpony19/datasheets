@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Abzweig Gasanstalt</name>
+  <kuerzel>AGA</kuerzel>
+  <typ>Abzw</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JeRei432</modulnr>
+  <plan src="aga.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <links nr="2">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Strecke">
+        <name>Strecke</name>
+        <laenge>0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Anschlussgleis">
+        <name>Anschlussgleis</name>
+        <laenge einheit="cm">40</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Anschlu_Karl_Nall_Gasanstalt" gleis="gleis_Anschlussgleis">
+      <name>Anschluß Karl Nall Gasanstalt</name>
+      <laenge einheit="cm">40</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Karl Nall Gasanstalt</name>
+      <empfang>
+        <ladegut ladestelle="Anschlu_Karl_Nall_Gasanstalt">
+          <name>Propangas</name>
+          <gattung>Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+  </gv>
+</bahnhof>
+
