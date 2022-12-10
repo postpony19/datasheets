@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>WÜST mit Kohlenladeplatz</name>
+  <kuerzel>WUEK</kuerzel>
+  <typ>WÜST</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JeRei382</modulnr>
+  <plan src="wuek.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Durchfahrgleis">
+        <name>Durchfahrgleis</name>
+        <laenge einheit="cm">116</laenge>
+      </gleis>
+      <gleis id="gleis_Eingangsgleis">
+        <name>Eingangsgleis</name>
+        <laenge einheit="cm">128</laenge>
+      </gleis>
+      <gleis id="gleis_Ausgangsgleis">
+        <name>Ausgangsgleis</name>
+        <laenge einheit="cm">113</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Kohlenladeplatz">
+        <name>Kohlenladeplatz</name>
+        <laenge einheit="cm">123</laenge>
+        <bemerkung>Umladung für VEB Feingußkohle</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+</bahnhof>
+
