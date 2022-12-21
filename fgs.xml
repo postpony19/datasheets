@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschluß Feinguß &amp; Steinmetz</name>
+  <kuerzel>FGS</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>JeRei381</modulnr>
+  <plan src="fgs.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_Streckengleis">
+        <name>Streckengleis</name>
+        <laenge>0</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Kohlebansen">
+        <name>Kohlebansen</name>
+        <laenge einheit="cm">45</laenge>
+      </gleis>
+      <gleis id="gleis_Halle_Feinguss">
+        <name>Halle (VEB Feinguß)</name>
+        <laenge einheit="cm">15</laenge>
+      </gleis>
+      <gleis id="gleis_Holzladeplatz">
+        <name>Holzladeplatz</name>
+        <laenge einheit="cm">47</laenge>
+      </gleis>
+      <gleis id="gleis_Anlieferung">
+        <name>Anlieferung</name>
+        <laenge einheit="cm">24</laenge>
+      </gleis>
+      <gleis id="gleis_Halle_Steinmetz">
+        <name>Halle (PHG Steinmetz)</name>
+        <laenge einheit="cm">20</laenge>
+      </gleis>
+      <gleis id="gleis_Kranbahn">
+        <name>Kranbahn</name>
+        <laenge einheit="cm">35</laenge>
+      </gleis>
+      <gleis id="gleis_Rampe">
+        <name>Rampe</name>
+        <laenge einheit="cm">22</laenge>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Kohlebansen_Kohlebunker" gleis="gleis_Kohlebansen">
+      <name>Kohlebansen/Kohlebunker</name>
+      <laenge einheit="cm">45</laenge>
+    </ladestelle>
+    <ladestelle id="Halle_VEB_Feingu_" gleis="gleis_Halle_Feinguss">
+      <name>Halle (VEB Feinguß)</name>
+      <laenge einheit="cm">15</laenge>
+    </ladestelle>
+    <ladestelle id="Rampe" gleis="gleis_Rampe">
+      <name>Rampe</name>
+      <laenge einheit="cm">22</laenge>
+    </ladestelle>
+    <ladestelle id="Holzladeplatz" gleis="gleis_Holzladeplatz">
+      <name>Holzladeplatz</name>
+      <laenge einheit="cm">47</laenge>
+    </ladestelle>
+    <ladestelle id="Anlieferung" gleis="gleis_Anlieferung">
+      <name>Anlieferung</name>
+      <laenge einheit="cm">24</laenge>
+    </ladestelle>
+    <ladestelle id="Halle_PGH_Steinmetz_" gleis="gleis_Halle_Steinmetz">
+      <name>Halle (PGH Steinmetz)</name>
+      <laenge einheit="cm">20</laenge>
+    </ladestelle>
+    <ladestelle id="Kranbahn" gleis="gleis_Kranbahn">
+      <name>Kranbahn</name>
+      <laenge einheit="cm">35</laenge>
+    </ladestelle>
+    <verlader>
+      <name>VEB Feinguß</name>
+      <empfang>
+        <ladegut ladestelle="Holzladeplatz">
+          <name>Holz/Bretter</name>
+          <gattung>R, K</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anlieferung">
+          <name>Masseln</name>
+          <gattung>E, G, H</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anlieferung">
+          <name>Formsand</name>
+          <gattung>U</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kohlebansen_Kohlebunker">
+          <name>Kohle</name>
+          <gattung>E, F</gattung>
+          <wagen zeitraum="tag">4</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Rampe">
+          <name>Feingußteile aller Art</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Rampe">
+          <name>Feingußteile aller Art als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>PGH Steinmetz</name>
+      <empfang>
+        <ladegut ladestelle="Kranbahn">
+          <name>Holz/Bretter</name>
+          <gattung>R, K</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kranbahn">
+          <name>Steinblöcke</name>
+          <gattung>R, S, E</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Halle_PGH_Steinmetz_">
+          <name>Steinfiguren und Springbrunnen</name>
+          <gattung>G, H</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Halle_PGH_Steinmetz_">
+          <name>Steinfiguren und Springbrunnen als Stückgut</name>
+          <gattung>G, H</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Zur Kohle: Umladung in werkseigene OOT im Kohleladeplatz WUEK</bemerkung>
+  </gv>
+</bahnhof>
+
