@@ -1,19 +1,32 @@
 # .github/workflows
-name: Build/Update data compilation file workflow
+name: Build/Update data compilation file(s) and deploy
 
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
+    paths:
+      - '*.xml'
+      - '*.jpg'
+      - '*.jpeg'
+      - '*.png'
+      - '*.gif'
+      - '*.css'
+      - '*.dtd'
+      - '*.xsl'
+      - '*.html'
 
 env:
   target_file: bahnhof.json
 
 jobs:
-  build:
+  build_update_compilation_files:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the repository content to github runner.
       - name: Checkout repository content
-        uses: actions/checkout@v3 # Checkout the repository content to github runner.
+        uses: actions/checkout@v3
 
       - name: Restore file meta data (last change)
         run: perl .github/scripts/git-store-meta.pl --apply
@@ -23,15 +36,54 @@ jobs:
         with:
           python-version: 3.8 # Install the python version needed
 
-      - name: Execute Python script # Run build_update_json.py file building/updating {{ target_file }} in {{ github.workspace }}
+      # Run build_update_json.py file
+      # building/updating {{ target_file }} in {{ github.workspace }}
+      - name: Execute Python script
         run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
 
-      - name: Listing
-        run: |
-          ls ${{ github.workspace }}
+      #- name: Listing
+      #  run: |
+      #    ls ${{ github.workspace }}
 
+      # authentication done via runner checkout token
       - name: Commit changes on data compilations back to repository
-        uses: stefanzweifel/git-auto-commit-action@v4 # authentication done via runner checkout token
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply generated data compilation changes
 
+  # Build job
+  build:
+    # Add a dependency to the build update compilation files job
+    needs: build_update_compilation_files
+    # Specify runner + build step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+  # Report build status
+
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
