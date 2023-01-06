@@ -17,6 +17,11 @@ on:
       - '*.xsl'
       - '*.html'
 
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 env:
   target_file: bahnhof.json
 
@@ -60,13 +65,17 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-  # Report build status
 
-  # Deploy job
+  # Deployment job
   deploy:
     # Add a dependency to the build job
     needs: build
