@@ -65,8 +65,8 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v3
-        with:
-          ref: ${{ needs.build_update_compilation_files.outputs.commit_hash }}
+        # with:  # this does not work correct
+        #  ref: ${{ needs.build_update_compilation_files.outputs.commit_hash }}
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
