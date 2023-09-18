@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Anschl. Kraftwerk Ebersdorf</name>
+  <kuerzel>KED</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>ClEbe388</modulnr>
+  <plan src="ked.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">IBahn</links>
+      <rechts nr="1">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1 I-Bahn Stammgleis</name>
+        <laenge>1800</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_Kohleverladung">
+        <name>2 Kohle Entladegleis</name>
+        <laenge>630</laenge>
+        <bemerkung>Schwerkraftentladung über Kohlebansen</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3 Entladegleis Kohle, Gips</name>
+        <laenge>600</laenge>
+        <bemerkung>Schwerkraftentladung Kohle, Silowaggons mit Druck</bemerkung>
+      </gleis>
+      <gleis id="gleis_5">
+        <name>5 Ladegleis Güterfrachten</name>
+        <laenge>310</laenge>
+        <bemerkung>Güterabfertigung für alles zum KED und Kreideverladung</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4 Ladegleis Kreideverladung</name>
+        <laenge>560</laenge>
+        <bemerkung>Be und Entladung von Silowaggons mittels Druck</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Gl.2_Kohlebansen" gleis="gleis_Kohleverladung">
+      <name>Gl.2 Kohlebansen</name>
+      <laenge>400</laenge>
+    </ladestelle>
+    <ladestelle id="Gl.3_Kohle_und_Gipsverladung" gleis="gleis_3">
+      <name>Gl.3 Kohle und Gipsverladung</name>
+      <laenge>500</laenge>
+    </ladestelle>
+    <ladestelle id="Gl.4_Kreideverladung" gleis="gleis_4">
+      <name>Gl.4 Kreideverladung</name>
+      <laenge>300</laenge>
+    </ladestelle>
+    <ladestelle id="Gl.5_G_terfrachten" gleis="gleis_5">
+      <name>Gl.5 Güterfrachten</name>
+      <laenge>310</laenge>
+    </ladestelle>
+    <verlader>
+      <name>KED Kraftwerk Ebersdorf</name>
+      <empfang>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung Gl.2_Kohlebansen">
+          <name>Steinkohle</name>
+          <gattung>O, F,</gattung>
+          <wagen zeitraum="tag">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung Gl.2_Kohlebansen">
+          <name>Braunkohle</name>
+          <gattung>O, F</gattung>
+          <wagen zeitraum="tag">6</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung Gl.2_Kohlebansen">
+          <name>Koks</name>
+          <gattung>O, F</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.4_Kreideverladung">
+          <name>Kreide Rauchgasentschwefelung</name>
+          <gattung>Z, U</gattung>
+          <wagen>15</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Stückgut Ersatzteile</name>
+          <gattung>G, K, R, O</gattung>
+          <wagen zeitraum="tag">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Container Maschinen/Turbinenteile</name>
+          <gattung>K, R, O</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Schmierstoffe/Öle/Fette</name>
+          <gattung>G, Z</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung">
+          <name>Asche</name>
+          <gattung>U, Z</gattung>
+          <wagen>5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung">
+          <name>Gips</name>
+          <gattung>U, Z</gattung>
+          <wagen>10</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung">
+          <name>Schlacke</name>
+          <gattung>O, Z</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.3_Kohle_und_Gipsverladung">
+          <name>Stückgut Ersatzteile</name>
+          <gattung>G, K, R, O</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Container Maschine/Turbinenteile</name>
+          <gattung>R, R, O</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Metallschrott</name>
+          <gattung>O</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Gl.5_G_terfrachten">
+          <name>Recykling/Schadstoffe in Fässern</name>
+          <gattung>G, H</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Alle Angabe für Waggonmengen sind Maximalangaben.</bemerkung>
+  </gv>
+</bahnhof>
+
