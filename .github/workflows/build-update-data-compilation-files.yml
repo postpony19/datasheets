@@ -31,7 +31,7 @@ jobs:
     steps:
       # Checkout the repository content to github runner.
       - name: Checkout repository content
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Restore file meta data (last change)
         run: perl .github/scripts/git-store-meta.pl --apply
@@ -50,6 +50,7 @@ jobs:
       #  run: |
       #    ls ${{ github.workspace }}
 
+      # https://github.com/stefanzweifel/git-auto-commit-action
       # authentication done via runner checkout token
       - name: Commit changes on data compilations back to repository
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -64,9 +65,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository content
-        uses: actions/checkout@v3
-        # with:  # this does not work correct
-        #  ref: ${{ needs.build_update_compilation_files.outputs.commit_hash }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - run: git checkout HEAD^
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
