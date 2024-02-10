@@ -251,17 +251,17 @@
       <gleis id="gleis_M1">
         <name>M1</name>
         <laenge einheit="mm">2100</laenge>
-        <bemerkung>Öhlmüle Eingang (Ausgang Lg)</bemerkung>
+        <bemerkung>Ölmühle Eingang</bemerkung>
       </gleis>
       <gleis id="gleis_M2">
         <name>M2</name>
         <laenge einheit="mm">800</laenge>
-        <bemerkung>Öhmühle Ausgang</bemerkung>
+        <bemerkung>Ölmühle Ausgang</bemerkung>
       </gleis>
       <gleis id="gleis_M3">
         <name>M3</name>
         <laenge einheit="mm">300</laenge>
-        <bemerkung>Öhlmühle Freiladegleis</bemerkung>
+        <bemerkung>Ölmühle Freiladegleis</bemerkung>
       </gleis>
       <gleis id="gleis_M4">
         <name>M4</name>
