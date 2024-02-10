@@ -37,7 +37,7 @@ jobs:
         run: perl .github/scripts/git-store-meta.pl --apply
 
       - name: Setup Python Version
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.8 # Install the python version needed
 
@@ -53,7 +53,7 @@ jobs:
       # https://github.com/stefanzweifel/git-auto-commit-action
       # authentication done via runner checkout token
       - name: Commit changes on data compilations back to repository
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply generated data compilation changes
 
@@ -66,18 +66,18 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-      - run: git checkout HEAD^
+        #with:
+        #  fetch-depth: 2
+      #- run: git checkout HEAD^
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v4
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -99,4 +99,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
