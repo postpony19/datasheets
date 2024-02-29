@@ -32,6 +32,8 @@ jobs:
       # Checkout the repository content to github runner.
       - name: Checkout repository content
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Restore file meta data (last change)
         run: perl .github/scripts/git-store-meta.pl --apply
@@ -66,9 +68,8 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v4
-        #with:
-        #  fetch-depth: 2
-      #- run: git checkout HEAD^
+        with:
+          ref: ${{ github.ref_name }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
