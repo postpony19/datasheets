@@ -24,20 +24,20 @@
       <gleis id="Gleis_3b">
         <name>3b</name>
         <laenge einheit="mm">1550</laenge>
-        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge</bemerkung>
       </gleis>
       <gleis id="Gleis_5">
         <name>5</name>
         <laenge einheit="mm">1600</laenge>
-        <bemerkung>Ein- und Ausfahrgleis für Güterzüge, Gleis für Zugbildung</bemerkung>
+        <bemerkung>Ein- und Ausfahrgleis für Güterzüge</bemerkung>
+      </gleis>
+      <gleis id="Gleis_1a">
+        <name>1a</name>
+        <laenge einheit="mm">840.0</laenge>
+        <bemerkung>Hausbahnsteig</bemerkung>
       </gleis>
     </hgleise>
     <ngleise>
-      <gleis id="Gleis_1a">
-        <name>1a</name>
-        <laenge einheit="mm">840</laenge>
-        <bemerkung>Bahnsteiggleis</bemerkung>
-      </gleis>
       <gleis id="Gleis_2a">
         <name>2a</name>
         <laenge einheit="mm">500</laenge>
@@ -65,13 +65,13 @@
       </gleis>
       <gleis id="Gleis_A1">
         <name>A1</name>
-        <laenge einheit="mm">950</laenge>
-        <bemerkung>Entladegleis Valentin-Gas</bemerkung>
+        <laenge einheit="mm">350.0</laenge>
+        <bemerkung>Sammelgleis Salzsäure</bemerkung>
       </gleis>
-      <gleis id="gleis_A2">
+      <gleis id="gleisA2">
         <name>A2</name>
-        <laenge>600</laenge>
-        <bemerkung>Sammelgleis Valentin-Gas</bemerkung>
+        <laenge einheit="mm">370.0</laenge>
+        <bemerkung>Abfüll- und Entladestelle Salzsäure</bemerkung>
       </gleis>
     </ngleise>
   </gleise>
@@ -80,7 +80,7 @@
       <name>Hausbahnsteig</name>
       <laenge einheit="mm">800</laenge>
     </bahnsteig>
-    <bemerkung>Trotz des Taktfahrplanes ist das Fahrgastaufkommen stark zurückgegangen. Das allgegenwärtige Auto hat den Kampf längst gewonnen. Inzwischen bedient ein privates EVU die Strecke mit Triebwagen. Lediglich der traditionelle Ausflugsverkehr zum Vatertag und zum Stadtfest ist geblieben. Die Bahn ist eine Touristenbahn geworden, Pendler benutzen sie nicht mehr.</bemerkung>
+    <bemerkung>Taktverkehr in der Regel mit Triebwagen prägen das Vorbild in der Zeit ab 1995. In der Folge wird der Bahnhof zum Haltepunkt umgebaut.[br]Bei eingeschränktem Güterverkehr kann das Güterschuppengleis als Bahnsteiggleis für kurze Züge oder Triebwagen genutzt werden. Beachte dann aber die Ausfahrrichtung.</bemerkung>
   </pv>
   <gv>
     <ladestelle id="Kopframpe" gleis="Gleis_4">
@@ -97,22 +97,22 @@
     </ladestelle>
     <ladestelle id="Güterschuppen" gleis="Gleis_3c">
       <name>Güterschuppen</name>
-      <laenge einheit="mm">650</laenge>
-    </ladestelle>
-    <ladestelle id="Valentin_Gas_Entladegleis" gleis="gleis_A2">
-      <name>Valentin Gas Entladegleis</name>
-      <laenge einheit="mm">950</laenge>
+      <laenge einheit="mm">450.0</laenge>
     </ladestelle>
     <ladestelle id="Einsatzstelle" gleis="Gleis_2a">
       <name>Einsatzstelle</name>
       <laenge einheit="mm">500</laenge>
     </ladestelle>
-    <ladestelle id="Valentin_Gas_Sammelgleis" gleis="Gleis_A1">
-      <name>Valentin Gas Sammelgleis</name>
-      <laenge>600</laenge>
+    <ladestelle id="Valentin_Fl_ssiggas" gleis="Gleis_A1">
+      <name>Valentin Flüssiggas</name>
+      <laenge einheit="mm">370.0</laenge>
+    </ladestelle>
+    <ladestelle id="Entladestelle_Valentin_Fl_ssiggas" gleis="gleisA2">
+      <name>Entladestelle Valentin Flüssiggas</name>
+      <laenge einheit="mm">350.0</laenge>
     </ladestelle>
     <verlader>
-      <name>Kabel AG, Werk Kranichsfeld</name>
+      <name>Kabel-AG, Werk Kranichsfeld</name>
       <empfang>
         <ladegut ladestelle="Ladestraße">
           <name>Plastgranulat</name>
@@ -129,103 +129,19 @@
         <ladegut ladestelle="Ladestraße">
           <name>Installationskabel</name>
           <gattung>H</gattung>
-          <wagen zeitraum="woche">2</wagen>
+          <wagen zeitraum="woche">2.0</wagen>
         </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaftsbetrieb Kranichsfeld</name>
+      <empfang>
         <ladegut ladestelle="Ladestraße">
-          <name>Buntmetallschrott</name>
-          <gattung>E</gattung>
+          <name>Pestizide</name>
+          <gattung>Z/G/H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="Kopframpe">
-          <name>Installationskabel (Export)</name>
-          <gattung>Container</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestraße">
-          <name>Trommelkabel</name>
-          <gattung>K/R</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Frischgemüse GmbHKranichsfeld</name>
-      <empfang>
-        <ladegut ladestelle="Ladestraße">
-          <name>Saatgut</name>
-          <gattung>G/H</gattung>
-          <wagen zeitraum="woche">0.5</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestraße">
-          <name>Verpackungsmaterial (Pappstiegen)</name>
-          <gattung>H</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestraße">
-          <name>Verleihstiegen (Plast)</name>
-          <gattung>H</gattung>
-          <wagen>1</wagen>
-        </ladegut>
       </empfang>
-      <versand>
-        <ladegut ladestelle="Ladestraße">
-          <name>Edelgemüse</name>
-          <gattung>I</gattung>
-          <wagen zeitraum="woche">4</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Herris und Kröll</name>
-      <empfang>
-        <ladegut ladestelle="Ladestraße">
-          <name>Federdraht</name>
-          <gattung>H</gattung>
-          <wagen>3</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Schraubenfedern</name>
-          <gattung>H</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Stilmöbel Kranichsfeld</name>
-      <empfang>
-        <ladegut ladestelle="Ladestraße">
-          <name>Bretter</name>
-          <gattung>H</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Güterschuppen">
-          <name>Beschläge</name>
-          <gattung>H</gattung>
-          <wagen zeitraum="woche">0.5</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Ladestraße">
-          <name>Möbel</name>
-          <gattung>H</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Kommunaler Stadtwirtschaftsbetrieb Kranichsfeld</name>
-      <empfang>
-        <ladegut ladestelle="Ladestraße">
-          <name>Hausmüll, gepresst</name>
-          <gattung>Container</gattung>
-          <wagen>4</wagen>
-        </ladegut>
-      </empfang>
-    </verlader>
-    <verlader>
-      <name>Forstwirtschaft Ilmtal GmbH</name>
       <versand>
         <ladegut ladestelle="Ladestraße">
           <name>Stammholz</name>
@@ -240,97 +156,60 @@
       </versand>
     </verlader>
     <verlader>
-      <name>Körnerfrüchte Kranichsfeld</name>
+      <name>Schraubenwerk Kranichsfeld</name>
+      <empfang>
+        <ladegut ladestelle="Ladestraße">
+          <name>Rundstahl</name>
+          <gattung>X/E/R</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestraße">
+          <name>Schrauben, Muttern</name>
+          <gattung>G/H</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopframpe">
+          <name>Holzschrauben</name>
+          <gattung>Container</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Agrargenossenschaft Kranichsfeld</name>
       <empfang>
         <ladegut ladestelle="Ladestraße">
           <name>Saatgut</name>
-          <gattung>H/T</gattung>
+          <gattung>G/H/T</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
       </empfang>
       <versand>
         <ladegut ladestelle="Ladestraße">
           <name>Getreide</name>
-          <gattung>H/T</gattung>
+          <gattung>G/H/T</gattung>
           <wagen zeitraum="woche">4</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestraße">
           <name>Braugerste</name>
-          <gattung>H</gattung>
+          <gattung>G/H/Container</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="Kopframpe">
-          <name>Braugerste (Export)</name>
-          <gattung>Container</gattung>
-          <wagen>2</wagen>
-        </ladegut>
       </versand>
     </verlader>
     <verlader>
-      <name>CHuV Metalltechnik Kranichsfeld</name>
+      <name>Valentin Flüssiggas</name>
       <empfang>
-        <ladegut ladestelle="Ladestraße">
-          <name>Coils</name>
-          <gattung>S</gattung>
-          <wagen>4</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Ladestraße">
-          <name>Stanzabfälle</name>
-          <gattung>E</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestraße">
-          <name>Stanzteile</name>
-          <gattung>H</gattung>
-          <wagen>3</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Bahnachsen Kranichsfeld</name>
-      <empfang>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Güterwagenachsen zur Aufarbeitung</name>
-          <gattung>K</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Schmalspurdrehgestelle zur Aufarbeitung</name>
-          <gattung>K</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Schmalspurdrehgestelle aufgearbeitet</name>
-          <gattung>K</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Güterwagenachsen aufgearbeitet</name>
-          <gattung>K</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Einsatzstelle">
-          <name>Kernschrott</name>
-          <gattung>E</gattung>
-          <wagen>0.5</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Valentin Gas</name>
-      <empfang>
-        <ladegut ladestelle="Valentin_Gas_Entladegleis">
+        <ladegut ladestelle="Entladestelle_Valentin_Fl_ssiggas">
           <name>Flüssiggas</name>
           <gattung>Z</gattung>
-          <wagen>4</wagen>
+          <wagen>3</wagen>
         </ladegut>
       </empfang>
     </verlader>
-    <bemerkung>Die politische Wende hat zu massiven Einbußen im Güterverkehr geführt. Das Salzsäurewerk wurde aufgelassen. In diesem Anschluss entläd jetzt ein Flüssiggashändler (Valentin-Gas). Der VEB Metalltechnik wurde zu CHuV Metalltechnik und stanzt Blechteile. Dazu empfängt er regelmäßig Coils. In der ehemaligen Einsatzstelle arbeitet die Firma Bahnachsen in geringem Umfang Güterwagenachsen und Schmalspurdrehgestelle auf. Das Kabelwerk konnte sich am Markt behaupten und transportiert ein Teil seiner Produkte mit der Bahn. Der Stadtwirtschaftsbetrieb versendet Hausmüll zur Müllverbrennungsanlage Hier steht bereits ein privates EVU in den Startlöchern um die Transportleistung zu übernehmen. Herris und Kröll haben sich neu angesiedelt und profuzieren Spiralfedern, die sie zum Teil per Bahn  verschicken.</bemerkung>
+    <bemerkung>Landwirtschaft, Kabelwerk, Schraubenwerk, Forstwirtschaft, Flüssiggashändler</bemerkung>
   </gv>
+  <bemerkung>Der Endbahnhof der Ilmtalbahn Kranichfeld diente als erstes Vorbild für den Modulbahnhof. Inzwischen hat der Bahnhof etliche Erweiterungen erfahren und kann auch als Durchgangsbahnhof betrieben werden.</bemerkung>
 </bahnhof>
-
