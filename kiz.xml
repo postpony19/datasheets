@@ -6,7 +6,7 @@
   <name>Knotitz</name>
   <kuerzel>KIZ</kuerzel>
   <typ>Bf</typ>
-  <verwaltung>DR</verwaltung>
+  <verwaltung/>
   <maszstab>120</maszstab>
   <modulnr>JeFel206</modulnr>
   <plan src="kiz.jpg" />
@@ -44,6 +44,11 @@
         <name>4</name>
         <laenge einheit="mm">3200</laenge>
         <bemerkung>Güterzuggleis - alle Richtungen</bemerkung>
+      </gleis>
+      <gleis id="gleis4a">
+        <name>4a</name>
+        <laenge einheit="mm">450</laenge>
+        <bemerkung>Güterzuggleis - kein Fahrweg zur Nebenstrecke (Gesamtnutzlänge 4 + 4a  = 4100mm)</bemerkung>
       </gleis>
       <gleis id="gleis5">
         <name>5</name>
@@ -95,7 +100,7 @@
       <gleis id="gleis10a">
         <name>10a/10b</name>
         <laenge einheit="mm">0</laenge>
-        <bemerkung>Betriebsgleis</bemerkung>
+        <bemerkung>Betriebsgleis (maximale Ausziehlänge in 10b = 380mm)</bemerkung>
       </gleis>
       <gleis id="gleis12">
         <name>12</name>
@@ -251,7 +256,7 @@
       <gleis id="gleis_M1">
         <name>M1</name>
         <laenge einheit="mm">2100</laenge>
-        <bemerkung>Ölmühle Eingang</bemerkung>
+        <bemerkung>Ölmühle Eingang (Ausgang Lg)</bemerkung>
       </gleis>
       <gleis id="gleis_M2">
         <name>M2</name>
@@ -343,7 +348,7 @@
       <name>Ölmühle Freiladebereich</name>
       <laenge einheit="mm">300</laenge>
     </ladestelle>
-    <ladestelle id="_lm_hle_Heizölentladung" gleis="gleis_M4">
+    <ladestelle id="_lm_hle_Heiz_lentladung" gleis="gleis_M4">
       <name>Ölmühle Heizölentladung</name>
       <laenge einheit="mm">200</laenge>
     </ladestelle>
@@ -365,7 +370,7 @@
     </ladestelle>
     <ladestelle id="Gleitlagerwerk" gleis="gleis_24k">
       <name>Gleitlagerwerk</name>
-      <laenge>200</laenge>
+      <laenge einheit="mm">200</laenge>
     </ladestelle>
     <verlader>
       <name>BM Knotitz</name>
@@ -824,7 +829,7 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="_lm_hle_Heizölentladung">
+        <ladegut ladestelle="_lm_hle_Heiz_lentladung">
           <name>Heizöl S</name>
           <gattung>Z</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -864,7 +869,7 @@
         <ladegut ladestelle="_lm_hle_lschrotenverladung">
           <name>Ölschroten/Futtermittel</name>
           <gattung>E</gattung>
-          <wagen>8</wagen>
+          <wagen zeitraum="woche">8</wagen>
         </ladegut>
       </versand>
     </verlader>
