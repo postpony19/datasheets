@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Stückgutumschlag</name>
+  <kuerzel>SUM</kuerzel>
+  <typ>Anst</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>EmOtt396</modulnr>
+  <plan src="sum.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">IBahn</links>
+      <rechts nr="1">IBahn</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_I-Bahn-Stammgleis">
+        <name>I-Bahn-Stammgleis</name>
+        <laenge>1800</laenge>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge>1000</laenge>
+        <bemerkung>Umladung Feuergut</bemerkung>
+      </gleis>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>1500</laenge>
+        <bemerkung>Umladung Stückgut</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>1500</laenge>
+        <bemerkung>Umladung Stückgut</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>2000</laenge>
+        <bemerkung>Umladung Stückgut</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge>2000</laenge>
+        <bemerkung>Abstellung Wagen</bemerkung>
+      </gleis>
+      <gleis id="gleis_31">
+        <name>31</name>
+        <laenge>1800</laenge>
+        <bemerkung>Abstellung Wagen / Umfahrung</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Feuergutrampe" gleis="gleis_11">
+      <name>Feuergutrampe</name>
+      <laenge>1000</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgutrampe_A" gleis="gleis_1">
+      <name>Stückgutrampe A</name>
+      <laenge>1400</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgutrampe_B" gleis="gleis_2">
+      <name>Stückgutrampe B</name>
+      <laenge>1500</laenge>
+    </ladestelle>
+    <ladestelle id="St_ckgutrampe_C" gleis="gleis_3">
+      <name>Stückgutrampe C</name>
+      <laenge>1600</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Stückgutumschlag</name>
+    </verlader>
+  </gv>
+</bahnhof>
+
