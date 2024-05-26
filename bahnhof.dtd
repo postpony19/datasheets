@@ -31,6 +31,7 @@
 <!ELEMENT empfang (ladegut+)>
 <!ELEMENT ladegut (name,gattung,wagen)>
 	<!ATTLIST ladegut ladestelle IDREFS #REQUIRED>
+	<!ATTLIST ladegut typ (normal|stueckgut|expressgut) "normal">
 <!ELEMENT gattung (#PCDATA)>
 <!ELEMENT wagen (#PCDATA)>
 	<!ATTLIST wagen zeitraum (tag|woche) "woche">
