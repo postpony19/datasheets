@@ -7,6 +7,8 @@
 	<xsl:variable name="scale"><xsl:value-of select="//bahnhof/maszstab"/></xsl:variable>
 	<xsl:variable name="locolength">20</xsl:variable>
 	<xsl:variable name="meanaxlelength">5</xsl:variable>
+	<xsl:variable name="filterStueckgut" select="'stueckgut'" />
+	<xsl:variable name="filterExpressgut" select="'expressgut'"/>
    <xsl:template match="/">
       <html>
 			<head>
@@ -393,6 +395,30 @@
          </td>
       </tr>
    </xsl:template>
+	<xsl:template name="max">
+		<xsl:param name="v1" />
+		<xsl:param name="v2" />
+		<xsl:choose>
+			<xsl:when test="$v1 &lt; $v2">
+				<xsl:value-of select="$v2"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$v1"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:template name="min">
+		<xsl:param name="v1" />
+		<xsl:param name="v2" />
+		<xsl:choose>
+			<xsl:when test="$v2 &lt; $v1">
+				<xsl:value-of select="$v2"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$v1"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
 	<xsl:template name="caroutput">
 		<!-- diesen wert nehmen und dann je nachdem ob Tag oder Woche ist mit 1 oder 5,5 multiplizieren und addieren -->
 		<!-- Wichtig zu wissen!!!
@@ -404,29 +430,81 @@
 			  somit erhaelt man die Wochenmenge, wobei egal ist ob beim Zeitraum Woche angegeben ist oder nicht!
 			  Man erhaelt auf diese Weise IMMER die richtige Menge am Ende!
 		-->
-		<tr>
-		   <td colspan="{$maxcols -7}" style="text-align:right;"><xsl:text disable-output-escaping="yes">Cars-\Quantity</xsl:text></td>
-			<td><xsl:text>per day</xsl:text></td>
-			<td colspan="{$maxcols -8}"><xsl:text>per week</xsl:text></td>
-			<td colspan="{$maxcols -6}" rowspan="4"><xsl:text disable-output-escaping="yes">&#160;</xsl:text></td>
+		<xsl:variable name="FrachtgutEmpfang"    select="gv/verlader/empfang/ladegut[not(@typ=$filterStueckgut) and not(@typ=$filterExpressgut)]/wagen"/>
+		<xsl:variable name="FrachtgutEmpfangTag" select="gv/verlader/empfang/ladegut[not(@typ=$filterStueckgut) and not(@typ=$filterExpressgut)]/wagen[@zeitraum='tag']"/>
+		<xsl:variable name="FrachtgutVersand"    select="gv/verlader/versand/ladegut[not(@typ=$filterStueckgut) and not(@typ=$filterExpressgut)]/wagen"/>
+		<xsl:variable name="FrachtgutVersandTag" select="gv/verlader/versand/ladegut[not(@typ=$filterStueckgut) and not(@typ=$filterExpressgut)]/wagen[@zeitraum='tag']"/>
+		<xsl:variable name="StueckgutEmpfang"    select="gv/verlader/empfang/ladegut[@typ=$filterStueckgut]/wagen"/>
+		<xsl:variable name="StueckgutEmpfangTag" select="gv/verlader/empfang/ladegut[@typ=$filterStueckgut]/wagen[@zeitraum='tag']"/>
+		<xsl:variable name="StueckgutVersand"    select="gv/verlader/versand/ladegut[@typ=$filterStueckgut]/wagen"/>
+		<xsl:variable name="StueckgutVersandTag" select="gv/verlader/versand/ladegut[@typ=$filterStueckgut]/wagen[@zeitraum='tag']"/>
+		<xsl:variable name="ExpressgutEmpfang"    select="gv/verlader/empfang/ladegut[@typ=$filterExpressgut]/wagen"/>
+		<xsl:variable name="ExpressgutEmpfangTag" select="gv/verlader/empfang/ladegut[@typ=$filterExpressgut]/wagen[@zeitraum='tag']"/>
+		<xsl:variable name="ExpressgutVersand"    select="gv/verlader/versand/ladegut[@typ=$filterExpressgut]/wagen"/>
+		<xsl:variable name="ExpressgutVersandTag" select="gv/verlader/versand/ladegut[@typ=$filterExpressgut]/wagen[@zeitraum='tag']"/>
+        <tr>
+			<td colspan="{$maxcols}" class="mitte">
+				<table border="1" style="margin: 0 auto;">
+					<tr>
+						<td rowspan="2"><xsl:text disable-output-escaping="yes">&#160;&#160;&#160;</xsl:text></td>
+						<td colspan="2"><xsl:text disable-output-escaping="yes">Cargo cars quantity</xsl:text></td>
+						<td rowspan="5"><xsl:text disable-output-escaping="yes">&#160;&#160;&#160;</xsl:text></td>
+						<td colspan="2"><xsl:text disable-output-escaping="yes">General cargo cars quantity</xsl:text></td>
+						<td rowspan="5"><xsl:text disable-output-escaping="yes">&#160;&#160;&#160;</xsl:text></td>
+						<td colspan="2"><xsl:text disable-output-escaping="yes">Express goods cars quantity</xsl:text></td>
+					</tr>
+					<tr>
+						<td><xsl:text disable-output-escaping="yes">per day</xsl:text></td>
+						<td><xsl:text disable-output-escaping="yes">per week</xsl:text></td>
+						<td><xsl:text disable-output-escaping="yes">per day</xsl:text></td>
+						<td><xsl:text disable-output-escaping="yes">per week</xsl:text></td>
+						<td><xsl:text disable-output-escaping="yes">per day</xsl:text></td>
+						<td><xsl:text disable-output-escaping="yes">per week</xsl:text></td>
+					</tr>
+					<tr>
+						<td style="text-align:right;"><xsl:text disable-output-escaping="yes">Receiving</xsl:text></td>
+						<td><xsl:value-of select="format-number(sum($FrachtgutEmpfangTag)+((sum($FrachtgutEmpfang)-sum($FrachtgutEmpfangTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($FrachtgutEmpfangTag))+(sum($FrachtgutEmpfang)-sum($FrachtgutEmpfangTag))"/></td>
+						<td><xsl:value-of select="format-number(sum($StueckgutEmpfangTag)+((sum($StueckgutEmpfang)-sum($StueckgutEmpfangTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($StueckgutEmpfangTag))+(sum($StueckgutEmpfang)-sum($StueckgutEmpfangTag))"/></td>
+						<td><xsl:value-of select="format-number(sum($ExpressgutEmpfangTag)+((sum($ExpressgutEmpfang)-sum($ExpressgutEmpfangTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($ExpressgutEmpfangTag))+(sum($ExpressgutEmpfang)-sum($ExpressgutEmpfangTag))"/></td>
+					</tr>
+					<tr>
+						<td style="text-align:right;"><xsl:text disable-output-escaping="yes">Distribution</xsl:text></td>
+						<td><xsl:value-of select="format-number(sum($FrachtgutVersandTag)+((sum($FrachtgutVersand)-sum($FrachtgutVersandTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($FrachtgutVersandTag))+(sum($FrachtgutVersand)-sum($FrachtgutVersandTag))"/></td>
+						<td><xsl:value-of select="format-number(sum($StueckgutVersandTag)+((sum($StueckgutVersand)-sum($StueckgutVersandTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($StueckgutVersandTag))+(sum($StueckgutVersand)-sum($StueckgutVersandTag))"/></td>
+						<td><xsl:value-of select="format-number(sum($ExpressgutVersandTag)+((sum($ExpressgutVersand)-sum($ExpressgutVersandTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* sum($ExpressgutVersandTag))+(sum($ExpressgutVersand)-sum($ExpressgutVersandTag))"/></td>
+					</tr>
+					<tr style="font-weight:bold;">
+						<td style="text-align:right;"><xsl:text disable-output-escaping="yes">Total</xsl:text></td>
+						<td><xsl:value-of select="format-number(sum($FrachtgutEmpfangTag)+sum($FrachtgutVersandTag)+((sum($FrachtgutEmpfang)+sum($FrachtgutVersand)-sum($FrachtgutEmpfangTag)-sum($FrachtgutVersandTag)) div $week),'###.#')"/></td>
+						<td><xsl:value-of select="($week* ( sum($FrachtgutEmpfangTag)+sum($FrachtgutVersandTag) ))+(sum($FrachtgutEmpfang)+sum($FrachtgutVersand)-sum($FrachtgutEmpfangTag)-sum($FrachtgutVersandTag))"/></td>
+						<td><xsl:call-template name="max">
+							<xsl:with-param name="v1" select="format-number(sum($StueckgutEmpfangTag) + ((sum($StueckgutEmpfang)-sum($StueckgutEmpfangTag)) div $week), '###.#')"/>
+							<xsl:with-param name="v2" select="format-number(sum($StueckgutVersandTag) + ((sum($StueckgutVersand)-sum($StueckgutVersandTag)) div $week), '###.#')"/>
+						</xsl:call-template></td>
+						<td><xsl:call-template name="max">
+							<xsl:with-param name="v1" select="($week * sum($StueckgutEmpfangTag)) + (sum($StueckgutEmpfang)-sum($StueckgutEmpfangTag))"/>
+							<xsl:with-param name="v2" select="($week * sum($StueckgutVersandTag)) + (sum($StueckgutVersand)-sum($StueckgutVersandTag))"/>
+						</xsl:call-template></td>
+						<td><xsl:call-template name="max">
+							<xsl:with-param name="v1" select="format-number(sum($ExpressgutEmpfangTag) + ((sum($ExpressgutEmpfang)-sum($ExpressgutEmpfangTag)) div $week), '###.#')"/>
+							<xsl:with-param name="v2" select="format-number(sum($ExpressgutVersandTag) + ((sum($ExpressgutVersand)-sum($ExpressgutVersandTag)) div $week), '###.#')"/>
+						</xsl:call-template></td>
+						<td><xsl:call-template name="max">
+							<xsl:with-param name="v1" select="($week * sum($ExpressgutEmpfangTag)) + (sum($ExpressgutEmpfang)-sum($ExpressgutEmpfangTag))"/>
+							<xsl:with-param name="v2" select="($week * sum($ExpressgutVersandTag)) + (sum($ExpressgutVersand)-sum($ExpressgutVersandTag))"/>
+						</xsl:call-template></td>
+					</tr>
+				</table>
+			</td>
 		</tr>
 		<tr>
-			<td colspan="{$maxcols -7}" style="text-align:right;"><xsl:text>Receiving</xsl:text></td>
-			<td><xsl:value-of select="format-number(sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])+((sum(gv/verlader/empfang/ladegut/wagen)-sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])) div $week),'###.#')"/></td>
-			<td colspan="{$maxcols -8}"><xsl:value-of select="($week* sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag']))+(sum(gv/verlader/empfang/ladegut/wagen)-sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag']))"/></td>
-		</tr>
-		<tr>
-			<td colspan="{$maxcols -7}" style="text-align:right;"><xsl:text>Distribution</xsl:text></td>
-			<td><xsl:value-of select="format-number(sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag'])+((sum(gv/verlader/versand/ladegut/wagen)-sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag'])) div $week),'###.#')"/></td>
-			<td colspan="{$maxcols -8}"><xsl:value-of select="($week* sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag']))+(sum(gv/verlader/versand/ladegut/wagen)-sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag']))"/></td>
-		</tr>
-		<tr style="font-weight:bold;">
-			<td colspan="{$maxcols -7}" style="text-align:right;"><xsl:text>Total</xsl:text></td>
-			<td><xsl:value-of select="format-number(sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])+sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag'])+((sum(gv/verlader/empfang/ladegut/wagen)+sum(gv/verlader/versand/ladegut/wagen)-sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])-sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag'])) div $week),'###.#')"/></td>
-			<td colspan="{$maxcols -8}"><xsl:value-of select="($week* ( sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])+sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag']) ))+(sum(gv/verlader/empfang/ladegut/wagen)+sum(gv/verlader/versand/ladegut/wagen)-sum(gv/verlader/empfang/ladegut/wagen[@zeitraum='tag'])-sum(gv/verlader/versand/ladegut/wagen[@zeitraum='tag']))"/></td>
-		</tr>
-		<tr>
-		   <td colspan="{$maxcols}"><xsl:text disable-output-escaping="yes">Note: The results are calculated based on assumptions: 7 days a week and no reloading of empty cars!</xsl:text></td>
+		   <td colspan="{$maxcols}"><xsl:text disable-output-escaping="yes">Note: The results for the </xsl:text><span style="font-size:medium"><xsl:text disable-output-escaping="yes">cargo cars quantity</xsl:text></span><xsl:text disable-output-escaping="yes"> are calculated based on assumptions: 7 days a week and no reloading of empty cars!</xsl:text></td>
 		</tr>
 	</xsl:template>
 </xsl:stylesheet>
