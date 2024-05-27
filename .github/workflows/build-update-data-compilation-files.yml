@@ -48,9 +48,12 @@ jobs:
       - name: Execute Python script
         run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
 
-      #- name: Listing
-      #  run: |
-      #    ls ${{ github.workspace }}
+      - name: Listing
+        run: |
+          ls ${{ github.workspace }}
+
+      - name: Check file meta data for json file
+        run: perl .github/scripts/git-store-meta.pl --dry-run --store
 
       # https://github.com/stefanzweifel/git-auto-commit-action
       # authentication done via runner checkout token
