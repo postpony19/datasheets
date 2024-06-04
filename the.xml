@@ -139,7 +139,7 @@
     <verlader>
       <name>VEB Sternradio Sonneberg</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e_I">
+        <ladegut ladestelle="Ladestra_e_I" typ="stueckgut">
           <name>Elektrobauteile</name>
           <gattung>G / Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -151,7 +151,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e_I">
+        <ladegut ladestelle="Ladestra_e_I" typ="stueckgut">
           <name>Radios / Stereoanlagen</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -171,19 +171,19 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Möbelbeschläge</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Holzleim (Kanister)</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">0.1</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Schrankwände / Tische</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">3</wagen>
@@ -208,7 +208,7 @@
     <verlader>
       <name>VEB Anker-Mechanik Eisfeld</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen" typ="stueckgut">
           <name>Kupferdraht</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
@@ -223,14 +223,14 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen" typ="stueckgut">
           <name>Elektronikbauteile, Normteile</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen" typ="stueckgut">
           <name>Modellflugzeuge, Spielzeug</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
@@ -344,17 +344,17 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Seitenrampe_II G_terschuppen">
+        <ladegut ladestelle="Seitenrampe_II G_terschuppen" typ="stueckgut">
           <name>Packpapier</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="Seitenrampe_II G_terschuppen">
+        <ladegut ladestelle="Seitenrampe_II G_terschuppen" typ="stueckgut">
           <name>Kartons</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Verpackungsmaterial</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -401,24 +401,24 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Wellen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Zahnräder</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.25</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen" typ="stueckgut">
           <name>Blechteile</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e_II G_terschuppen">
+        <ladegut ladestelle="Ladestra_e_II G_terschuppen" typ="stueckgut">
           <name>Elektrogeräte</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -433,12 +433,12 @@
           <gattung>L</gattung>
           <wagen zeitraum="woche">5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Fahrräder und Ersatzteile</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Ersatzteile</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -453,7 +453,7 @@
           <gattung>U, G</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Wolle</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -468,19 +468,19 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Stoffe</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen Ladestra_e_I">
+        <ladegut ladestelle="G_terschuppen Ladestra_e_I" typ="stueckgut">
           <name>Puppenköpfe</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen Ladestra_e_I">
+        <ladegut ladestelle="G_terschuppen Ladestra_e_I" typ="stueckgut">
           <name>Puppenkleider</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">1.25</wagen>
@@ -552,19 +552,19 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Herrenanzüge</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Oberbekleidung</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Hemden</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -579,7 +579,7 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Elektronikbauteile, Normteile, Feindraht</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">5</wagen>
@@ -591,7 +591,7 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Spielzeug</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
@@ -643,19 +643,19 @@
           <gattung>G, R</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Elektronikbauteile</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="tag">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Normteile</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Elektromotoren</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -687,12 +687,12 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Tapeten</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Glasfasertapeten</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
@@ -724,12 +724,12 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Herrenanzüge</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Kinderbekleidung</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
@@ -744,7 +744,7 @@
           <gattung>K, R</gattung>
           <wagen zeitraum="woche">4</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Normteile</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -761,22 +761,22 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">4</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Bügelmaschinen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Bohrmaschinen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Winkelschleifer</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Trennschleifer</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.2</wagen>
@@ -786,7 +786,7 @@
     <verlader>
       <name>LPG Zollbrück</name>
       <empfang>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Ersatzteile</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -865,24 +865,24 @@
     <verlader>
       <name>VEB Jagdwaffenfabrik Suhl</name>
       <empfang>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Beschläge</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Spezielles Holz</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Eisenstangen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Jagd- und Sportwaffen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="tag">1</wagen>
@@ -924,12 +924,12 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Glasfiguren</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="tag">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Ampullen</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="tag">3</wagen>
@@ -956,7 +956,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Christbaumschmuck</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="tag">1</wagen>
@@ -966,27 +966,27 @@
     <verlader>
       <name>VEB Thuringia Reurieth</name>
       <empfang>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Granulat</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Farbe (Faßware)</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Normteile</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Elektronikbauteile</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Feindrahtrollen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -1003,7 +1003,7 @@
     <verlader>
       <name>VEB Schraube Hildburghausen</name>
       <empfang>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Kupferdraht</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -1013,19 +1013,19 @@
           <gattung>R</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Feindraht</name>
           <gattung>G, Stückgut</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Abzeichen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Schrauben, Muttern</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="tag">1</wagen>

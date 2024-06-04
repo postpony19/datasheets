@@ -113,12 +113,12 @@
           <gattung>E, K, O, R, S</gattung>
           <wagen zeitraum="tag">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Brennholz im Netz (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Wild (Reh, Hirsch, Wildschwein als Stückgut)</name>
           <gattung>G, I</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -128,27 +128,27 @@
     <verlader>
       <name>PGH Laborglas Stützerbach</name>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Glasblaskunst (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Holzkohle, gesackt (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Weihnachtsbaumschmuck (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Holzschnitzereien (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Laborglas Sonderanfertigung (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -190,7 +190,7 @@
           <gattung>G, H</gattung>
           <wagen zeitraum="tag">1</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestra_e_I">
+        <ladegut ladestelle="Ladestra_e_I" typ="stueckgut">
           <name>Laborgläser (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">3</wagen>
@@ -217,12 +217,12 @@
     <verlader>
       <name>GPG "Waldpilz" Stützerbach</name>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Pilze (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Waldbeeren (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -244,7 +244,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I">
+        <ladegut ladestelle="Ladestra_e_II Ladestra_e_I" typ="stueckgut">
           <name>Leere Kohlesäcke (Stückgut)</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">2</wagen>

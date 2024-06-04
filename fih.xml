@@ -257,7 +257,7 @@
     <verlader>
       <name>Konservenfabrik "Oderfrucht"</name>
       <empfang>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Konservengläser</name>
           <gattung>G und Stückgut</gattung>
           <wagen>2</wagen>
@@ -267,7 +267,7 @@
           <gattung>G</gattung>
           <wagen>4</wagen>
         </ladegut>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Kristallzucker</name>
           <gattung>G und Stückgut</gattung>
           <wagen>4</wagen>
@@ -284,22 +284,22 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Marmelade</name>
           <gattung>G und Stückgut</gattung>
           <wagen>2</wagen>
         </ladegut>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Sirup</name>
           <gattung>G und Stückgut</gattung>
           <wagen>1</wagen>
         </ladegut>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Citronat</name>
           <gattung>G und Stückgut</gattung>
           <wagen>1</wagen>
         </ladegut>
-        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_">
+        <ladegut ladestelle="St_ckgutschuppen_BHG_Konservenfabrik_" typ="stueckgut">
           <name>Pflaumenmus</name>
           <gattung>G und Stückgut</gattung>
           <wagen>1</wagen>
@@ -403,12 +403,12 @@
           <gattung>R</gattung>
           <wagen>20</wagen>
         </ladegut>
-        <ladegut ladestelle="Kranbau">
+        <ladegut ladestelle="Kranbau" typ="stueckgut">
           <name>Maschinenteile</name>
           <gattung>E, R, S und Stückgut</gattung>
           <wagen>10</wagen>
         </ladegut>
-        <ladegut ladestelle="Kranbau">
+        <ladegut ladestelle="Kranbau" typ="stueckgut">
           <name>Badewannenfüße (Konsumgüter)</name>
           <gattung>G und Stückgut</gattung>
           <wagen>1</wagen>
@@ -418,7 +418,7 @@
           <gattung>E</gattung>
           <wagen>10</wagen>
         </ladegut>
-        <ladegut ladestelle="Kranbau">
+        <ladegut ladestelle="Kranbau" typ="stueckgut">
           <name>Hubböcke</name>
           <gattung>H, G und Stückgut</gattung>
           <wagen>0</wagen>

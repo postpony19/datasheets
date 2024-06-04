@@ -50,7 +50,7 @@ jobs:
 
       - name: Listing
         run: |
-          ls ${{ github.workspace }}
+          ls -la ${{ github.workspace }}
 
       - name: Check file meta data for json file
         run: perl .github/scripts/git-store-meta.pl --dry-run --store
@@ -74,7 +74,12 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - name: Setup Pages
+        id: pagessetup
         uses: actions/configure-pages@v4
+      - name: Check url values
+        run: echo "${{ steps.pagessetup.outputs.base_url }}"
+      - name: Replace base url using production
+        run: sed -i "s|const baseUrl = '';|const baseUrl = '${{ steps.pagessetup.outputs.base_url }}/';|g" index.html
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

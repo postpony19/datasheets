@@ -408,19 +408,19 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden">
+        <ladegut ladestelle="G_terboden" typ="stueckgut">
           <name>Möbelbeschläge</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.25</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Holzleim (Kanister)</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">0.1</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Kleinmöbel</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">3.0</wagen>
@@ -445,7 +445,7 @@
     <verlader>
       <name>PGH Elektro Knotitz</name>
       <empfang>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Kupferdraht</name>
           <gattung>Stückgut,G</gattung>
           <wagen zeitraum="woche">0.2</wagen>
@@ -462,12 +462,12 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Elektromotoren nach Kundenwunsch</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Schaltelemente Ex-geschützt</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">0.5</wagen>
@@ -586,17 +586,17 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Packpapier</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">2.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Druckpapier</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">2.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden">
+        <ladegut ladestelle="G_terboden" typ="stueckgut">
           <name>Schreibpapier (Stückgut)</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">2.0</wagen>
@@ -643,24 +643,24 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
         </ladegut>
-        <ladegut ladestelle="Gleitlagerwerk">
+        <ladegut ladestelle="Gleitlagerwerk" typ="stueckgut">
           <name>Wellen</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
-        <ladegut ladestelle="Gleitlagerwerk">
+        <ladegut ladestelle="Gleitlagerwerk" typ="stueckgut">
           <name>Zahnräder</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.25</wagen>
         </ladegut>
-        <ladegut ladestelle="Gleitlagerwerk">
+        <ladegut ladestelle="Gleitlagerwerk" typ="stueckgut">
           <name>Blechteile</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Gleitlagerwerk">
+        <ladegut ladestelle="Gleitlagerwerk" typ="stueckgut">
           <name>Getriebe</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">2.0</wagen>
@@ -676,7 +676,7 @@
           <wagen zeitraum="woche">5.0</wagen>
         </ladegut>
         <ladegut ladestelle="ladestrasse">
-          <name>Errsatzteile</name>
+          <name>Ersatzteile</name>
           <gattung>G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
         </ladegut>
@@ -697,7 +697,7 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Drahtrollen</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
@@ -712,19 +712,19 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">1.0</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden">
+        <ladegut ladestelle="G_terboden" typ="stueckgut">
           <name>Garn</name>
           <gattung>Stückgut</gattung>
           <wagen zeitraum="woche">0.5</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Kinderwagen</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">2.5</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terboden ladestrasse">
+        <ladegut ladestelle="G_terboden ladestrasse" typ="stueckgut">
           <name>Puppenwagen</name>
           <gattung>Stückgut, G</gattung>
           <wagen zeitraum="woche">1.25</wagen>

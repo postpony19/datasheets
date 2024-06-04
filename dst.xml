@@ -232,7 +232,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Werner_Gr_nzweig_KG">
+        <ladegut ladestelle="Werner_Gr_nzweig_KG" typ="stueckgut">
           <name>Zulieferteile für Elektrogeräte als Stückgut</name>
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -242,7 +242,7 @@
           <gattung>G / H</gattung>
           <wagen>2.0</wagen>
         </ladegut>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Tauchsieder als Stückgut</name>
           <gattung>G</gattung>
           <wagen>0.5</wagen>
@@ -296,7 +296,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Leergut als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">3</wagen>
@@ -306,7 +306,7 @@
     <verlader>
       <name>PGH Steinmetz</name>
       <empfang>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Holzwolle als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -335,7 +335,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terhalle Ladestrasse">
+        <ladegut ladestelle="G_terhalle Ladestrasse" typ="expressgut">
           <name>Frischgemüse, Schnittblumen als Eilgut</name>
           <gattung>I, G</gattung>
           <wagen zeitraum="tag">1</wagen>
@@ -372,7 +372,7 @@
           <gattung>T</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestrasse">
+        <ladegut ladestelle="Ladestrasse" typ="stueckgut">
           <name>Saatgut gesackt als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -406,14 +406,14 @@
     <verlader>
       <name>PGH "Flinke Sohle" Dahmstadt</name>
       <empfang>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Leder, Leergut als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Schuhhalbzeuge als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -440,7 +440,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Postrampe">
+        <ladegut ladestelle="Postrampe" typ="stueckgut">
           <name>Obstbrände, Liköre als Stückgut</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">3</wagen>

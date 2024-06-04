@@ -175,7 +175,7 @@
     <verlader>
       <name>Güterschuppen</name>
       <empfang>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
           <wagen zeitraum="tag">2</wagen>
@@ -187,7 +187,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
           <wagen zeitraum="tag">2</wagen>

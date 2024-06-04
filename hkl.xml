@@ -377,7 +377,7 @@
                <gattung>G, H</gattung>
                <wagen zeitraum="woche">2</wagen>
             </ladegut>
-            <ladegut ladestelle="Lad6">
+            <ladegut ladestelle="Lad6" typ="stueckgut">
                <name>Stückgüter</name>
                <gattung>G, H</gattung>
                <wagen zeitraum="woche">2</wagen>
