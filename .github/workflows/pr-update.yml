@@ -1,0 +1,26 @@
+name: Build/Update data compilation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '*.xml'
+      - '*.jpg'
+      - '*.jpeg'
+      - '*.png'
+      - '*.gif'
+
+env:
+  target_file: bahnhof.json
+
+jobs:
+  update_compilation_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Listing
+        run: |
+          ls -la ${{ github.workspace }}
