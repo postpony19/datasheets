@@ -123,6 +123,11 @@
           <gattung>G, I</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+          <name>Wild (Reh, Hirsch, Wildschwein als Expressgut)</name>
+          <gattung>G, I</gattung>
+          <wagen zeitraum="woche">1</wagen>
+        </ladegut>
       </versand>
     </verlader>
     <verlader>
@@ -207,8 +212,8 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen">
-          <name>Frischfisch (Forelle, Karpfen, Saibling)</name>
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+          <name>Frischfisch (Forelle, Karpfen, Saibling als Expressgut)</name>
           <gattung>G, I</gattung>
           <wagen zeitraum="woche">1</wagen>
         </ladegut>
