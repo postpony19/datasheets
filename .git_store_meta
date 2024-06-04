@@ -2,7 +2,8 @@
 <file>	<type>	<mtime>
 .github/scripts/build_update_json.py	f	2022-12-22T21:23:17Z
 .github/scripts/git-store-meta.pl	f	2022-11-29T15:25:46Z
-.github/workflows/build-update-data-compilation-files.yml	f	2024-06-01T09:36:04Z
+.github/workflows/build-update-data-compilation-files.yml	f	2024-06-04T11:11:00Z
+.github/workflows/pr-update.yml	f	2024-06-04T11:04:37Z
 .gitignore	f	2022-12-22T19:03:29Z
 abm.jpeg	f	2022-06-26T07:26:24Z
 abm.xml	f	2022-12-10T18:55:21Z
@@ -277,7 +278,7 @@ snd.xml	f	2022-01-03T21:17:27Z
 spz.png	f	2018-05-24T12:38:24Z
 spz.xml	f	2018-05-24T12:38:27Z
 stb.jpg	f	2021-02-21T16:42:36Z
-stb.xml	f	2024-06-04T04:18:03Z
+stb.xml	f	2024-06-04T11:08:40Z
 suk.png	f	2018-05-24T12:38:35Z
 suk.xml	f	2018-05-24T12:38:39Z
 sum.jpg	f	2024-05-01T19:50:36Z
