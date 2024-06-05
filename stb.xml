@@ -118,12 +118,7 @@
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
-          <name>Wild (Reh, Hirsch, Wildschwein als Stückgut)</name>
-          <gattung>G, I</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+        <ladegut ladestelle="G_terschuppen" typ="expressgut">
           <name>Wild (Reh, Hirsch, Wildschwein als Expressgut)</name>
           <gattung>G, I</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -179,6 +174,11 @@
           <wagen zeitraum="tag">1</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e_I">
+          <name>Erd-/Flüssiggas</name>
+          <gattung>U, Z</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_I">
           <name>Glasbruch, weiß</name>
           <gattung>E, G</gattung>
           <wagen zeitraum="woche">2</wagen>
@@ -212,7 +212,7 @@
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+        <ladegut ladestelle="G_terschuppen" typ="expressgut">
           <name>Frischfisch (Forelle, Karpfen, Saibling als Expressgut)</name>
           <gattung>G, I</gattung>
           <wagen zeitraum="woche">1</wagen>
@@ -315,6 +315,6 @@
     </verlader>
     <bemerkung>Achtung! Im Bf. Stützerbach kann keine Militärverladung stattfinden.</bemerkung>
   </gv>
-  <bemerkung>Überholungen von Personen- und Güterzügen sind nur bei Besetzung des Bahnhofs mit einer örtlicher Aufsicht und unter Beachtung der Gleisnutzlängen möglich. Wegen der nachfolgenden Steilstrecke können nur gebremste Güterwagen befördert werden.</bemerkung>
+  <bemerkung>Überholungen bzw. Kreuzungen von Personen- und Güterzügen sind nur bei Besetzung des Bahnhofs mit einer örtlichen Aufsicht und unter Beachtung der Gleisnutzlängen möglich. Wegen der nachfolgenden Steilstrecke können nur gebremste Güterwagen befördert werden.</bemerkung>
 </bahnhof>
 
