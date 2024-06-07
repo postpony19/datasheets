@@ -38,6 +38,17 @@ jobs:
       - name: Restore file meta data (last change)
         run: perl .github/scripts/git-store-meta.pl --apply
 
+      - name: Listing
+        run: |
+          ls -la ${{ github.workspace }}
+
+      - name: Check for file meta data changes in repo
+        run: perl .github/scripts/git-store-meta.pl --store
+
+      - name: Listing
+        run: |
+          ls -la ${{ github.workspace }}
+
       - name: Setup Python Version
         uses: actions/setup-python@v5
         with:
@@ -47,13 +58,6 @@ jobs:
       # building/updating {{ target_file }} in {{ github.workspace }}
       - name: Execute Python script
         run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
-
-      - name: Listing
-        run: |
-          ls -la ${{ github.workspace }}
-
-      - name: Check file meta data for json file
-        run: perl .github/scripts/git-store-meta.pl --dry-run --store
 
       - name: Check git status
         run: |
