@@ -97,7 +97,7 @@
     </ladestelle>
     <ladestelle id="G_terschuppen" gleis="gleis_4a">
       <name>Güterschuppen</name>
-      <laenge einheit="mm">600</laenge>
+      <laenge einheit="mm">150</laenge>
     </ladestelle>
     <ladestelle id="LR" gleis="gleis_6a">
       <name>Laderampe</name>
