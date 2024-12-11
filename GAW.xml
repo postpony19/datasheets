@@ -5,10 +5,10 @@
 <bahnhof>
   <name>Abzw. Gabelow</name>
   <kuerzel>GAW</kuerzel>
-  <typ>Bf</typ>
+  <typ>Abzw</typ>
   <verwaltung>DR</verwaltung>
   <maszstab>120</maszstab>
-  <modulnr>MiRos 413</modulnr>
+  <modulnr>MiRos413</modulnr>
   <plan src="GAW.png" />
   <gleise>
     <zulaufstrecken>
