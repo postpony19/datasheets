@@ -36,7 +36,7 @@
       </gleis>
       <gleis id="gleis_31">
         <name>31</name>
-        <laenge>20</laenge>
+        <laenge>200</laenge>
         <bemerkung>Ziehgleis</bemerkung>
       </gleis>
     </ngleise>
