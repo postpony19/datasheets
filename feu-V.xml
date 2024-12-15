@@ -45,32 +45,65 @@
   <gv>
     <ladestelle id="Ladestra_e" gleis="gleis_3">
       <name>Ladestraße</name>
-      <laenge>350</laenge>
+      <laenge>200</laenge>
+    </ladestelle>
+    <ladestelle id="Jauchegrube" gleis="gleis_3">
+      <name>Jauchegrube</name>
+      <laenge>120</laenge>
+    </ladestelle>
+    <ladestelle id="Holzverladung" gleis="gleis_3">
+      <name>Holzverladung</name>
+      <laenge>150</laenge>
     </ladestelle>
     <verlader>
       <name>Güterschuppen</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
-          <wagen>0.25</wagen>
+          <wagen>1</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Kunst-Dünger od. Kalk</name>
           <gattung>T, U</gattung>
-          <wagen>0.5</wagen>
+          <wagen>1.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Brennstoffe (Öl in Fässern, Kohle)</name>
+          <gattung>G, E</gattung>
+          <wagen>2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
-          <wagen>0.25</wagen>
+          <wagen>1</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Obst, Gemüse, landwirtsch. Produkte</name>
           <gattung>E, G, I, T</gattung>
-          <wagen>0.5</wagen>
+          <wagen>2</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Jauchegrube</name>
+      <empfang>
+        <ladegut ladestelle="Jauchegrube">
+          <name>Beton zum Verfüllen</name>
+          <gattung>Z, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+    </verlader>
+    <verlader>
+      <name>Forstwirtschaft</name>
+      <versand>
+        <ladegut ladestelle="Holzverladung">
+          <name>Stammholz, ganze Stämme</name>
+          <gattung>R</gattung>
+          <wagen>3</wagen>
         </ladegut>
       </versand>
     </verlader>

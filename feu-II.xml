@@ -58,32 +58,37 @@
     <verlader>
       <name>Güterschuppen</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
-          <wagen>0.75</wagen>
+          <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Kunst-Dünger od. Kalk</name>
           <gattung>G, K</gattung>
-          <wagen>0.5</wagen>
+          <wagen>1</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>landwirtschaftliche Maschinen</name>
           <gattung>O, R, S</gattung>
-          <wagen>0.1</wagen>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Hausbrand (Kohle)</name>
+          <gattung>O</gattung>
+          <wagen>1</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G</gattung>
-          <wagen>0.75</wagen>
+          <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Obst, Gemüse, landwirtsch. Produkte</name>
           <gattung>O, G, Wärmeschutzwagen, Kühlwagen, R</gattung>
-          <wagen>1.5</wagen>
+          <wagen>3</wagen>
         </ladegut>
       </versand>
     </verlader>
@@ -93,7 +98,7 @@
         <ladegut ladestelle="Jauchegrube">
           <name>Jauche</name>
           <gattung>Sonderwagen</gattung>
-          <wagen>2</wagen>
+          <wagen>3</wagen>
         </ladegut>
       </empfang>
     </verlader>
@@ -103,12 +108,12 @@
         <ladegut ladestelle="Holzverladung">
           <name>Stammholz, geschnitten</name>
           <gattung>O, R</gattung>
-          <wagen>1</wagen>
+          <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Holzverladung">
           <name>Langholz, ganze Stämme</name>
           <gattung>H, R, S</gattung>
-          <wagen>1</wagen>
+          <wagen>2</wagen>
         </ladegut>
       </versand>
     </verlader>

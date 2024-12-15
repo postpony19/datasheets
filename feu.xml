@@ -58,32 +58,37 @@
     <verlader>
       <name>Güterschuppen</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G, H</gattung>
-          <wagen>1.5</wagen>
+          <wagen>2.5</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Kunst-Dünger od. Kalk</name>
           <gattung>G, T, U</gattung>
-          <wagen>2</wagen>
+          <wagen>3</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>landwirtschaftliche Maschinen</name>
           <gattung>E, K, L, O, R, S, U</gattung>
-          <wagen>0.5</wagen>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Jauchegrube">
+          <name>Hausbrand (Kohle)</name>
+          <gattung>E</gattung>
+          <wagen>2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
           <name>Stückgut</name>
           <gattung>G, H</gattung>
-          <wagen>1</wagen>
+          <wagen>2.5</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Obst, Gemüse, landwirtsch. Produkte</name>
           <gattung>E, G, H, I, O, T, U</gattung>
-          <wagen>2.5</wagen>
+          <wagen>3.5</wagen>
         </ladegut>
       </versand>
     </verlader>
@@ -93,7 +98,7 @@
         <ladegut ladestelle="Jauchegrube">
           <name>Jauche</name>
           <gattung>Z, Sonderwagen</gattung>
-          <wagen>0.25</wagen>
+          <wagen>1</wagen>
         </ladegut>
       </empfang>
     </verlader>
@@ -103,12 +108,12 @@
         <ladegut ladestelle="Holzverladung">
           <name>Stammholz, geschnitten</name>
           <gattung>E, K, L, O, R, S</gattung>
-          <wagen>1.5</wagen>
+          <wagen>2.5</wagen>
         </ladegut>
         <ladegut ladestelle="Holzverladung">
           <name>Langholz, ganze Stämme</name>
           <gattung>K, L, R, S</gattung>
-          <wagen>2</wagen>
+          <wagen>3.5</wagen>
         </ladegut>
       </versand>
     </verlader>
