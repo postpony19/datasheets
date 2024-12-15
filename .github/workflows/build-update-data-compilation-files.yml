@@ -42,22 +42,25 @@ jobs:
         run: |
           ls -la ${{ github.workspace }}
 
+      - name: Setup Python Version
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.8 # Install the python version needed
+
+      - name: Check and correct files last change time due to reference file
+        run: python .github/scripts/validate-correct-file-mtime.py -v -r ${{ env.target_file }}
+
+      # Run build_update_json.py file
+      # building/updating {{ target_file }} in {{ github.workspace }}
+      - name: Execute Python script
+        run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
+
       - name: Check for file meta data changes in repo
         run: perl .github/scripts/git-store-meta.pl --store
 
       - name: Listing
         run: |
           ls -la ${{ github.workspace }}
-
-      - name: Setup Python Version
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.8 # Install the python version needed
-
-      # Run build_update_json.py file
-      # building/updating {{ target_file }} in {{ github.workspace }}
-      - name: Execute Python script
-        run: python .github/scripts/build_update_json.py -o ${{ env.target_file }} ${{ github.workspace }}
 
       - name: Check git status
         run: |
