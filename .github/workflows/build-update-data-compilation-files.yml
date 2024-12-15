@@ -47,8 +47,8 @@ jobs:
         with:
           python-version: 3.8 # Install the python version needed
 
-      - name: Check and correct files last change time due to reference file
-        run: python .github/scripts/validate-correct-file-mtime.py -v -r ${{ env.target_file }}
+      #- name: Check and correct files last change time due to reference file
+      #  run: python .github/scripts/validate-correct-file-mtime.py -v -r ${{ env.target_file }}
 
       # Run build_update_json.py file
       # building/updating {{ target_file }} in {{ github.workspace }}
