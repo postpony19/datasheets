@@ -3,19 +3,173 @@
 <!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
 
 <bahnhof>
-  <name>Bhf Titan</name>
+  <name>Titan</name>
   <kuerzel>TIT</kuerzel>
   <typ>Bf</typ>
-  <verwaltung>DR</verwaltung>
+  <verwaltung>DB AG, NS</verwaltung>
   <maszstab>120</maszstab>
-  <modulnr />
+  <modulnr>DiSpe4200</modulnr>
+  <plan src="tit.png" />
   <gleise>
-    <zulaufstrecken />
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+      <rechts nr="2">1gl</rechts>
+      <rechts nr="3">1gl</rechts>
+    </zulaufstrecken>
     <hgleise>
-      <gleis id="gleis_1">
-        <name>1</name>
-        <laenge>0</laenge>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>2120</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3b">
+        <name>3b</name>
+        <laenge>1520</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge>2300</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_31b">
+        <name>31b</name>
+        <laenge>1560</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_3a">
+        <name>3a</name>
+        <laenge>340</laenge>
+        <bemerkung>Bahnsteiggleis</bemerkung>
       </gleis>
     </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>886</laenge>
+        <bemerkung>Stumpf Bahnsteiggleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_11">
+        <name>11</name>
+        <laenge>660</laenge>
+        <bemerkung>Stumpfgleis alte Güterschuppen</bemerkung>
+      </gleis>
+      <gleis id="gleis_20">
+        <name>20</name>
+        <laenge>220</laenge>
+        <bemerkung>Stumpfgleis Lagerhaus</bemerkung>
+      </gleis>
+      <gleis id="gleis_21">
+        <name>21</name>
+        <laenge>380</laenge>
+        <bemerkung>Umfahrgleis</bemerkung>
+      </gleis>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge>400</laenge>
+        <bemerkung>Stumpfgleis Lagerhaus</bemerkung>
+      </gleis>
+      <gleis id="gleis_23">
+        <name>23</name>
+        <laenge>520</laenge>
+        <bemerkung>Stumpfgleis Lagerhaus</bemerkung>
+      </gleis>
+      <gleis id="gleis_24">
+        <name>24</name>
+        <laenge>470</laenge>
+        <bemerkung>Stumpfgleis Lagerhaus</bemerkung>
+      </gleis>
+    </ngleise>
   </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Bahnsteig 1</name>
+      <laenge>1750</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_4 gleis_3a gleis_3b">
+      <name>Bahnsteig 2</name>
+      <laenge>2150</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_11">
+      <name>Bahnsteig 1 Stumpf</name>
+      <laenge>830</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Lagerhaus_Fertigprodukt" gleis="gleis_23">
+      <name>Lagerhaus Fertigprodukt</name>
+      <laenge>450</laenge>
+    </ladestelle>
+    <ladestelle id="Lagerhaus_Rohmaterialien" gleis="gleis_24">
+      <name>Lagerhaus Rohmaterialien</name>
+      <laenge>430</laenge>
+    </ladestelle>
+    <ladestelle id="Heiz_l" gleis="gleis_22">
+      <name>Heizöl</name>
+      <laenge>150</laenge>
+    </ladestelle>
+    <verlader>
+      <name>YIK Ferdernwerk</name>
+      <empfang>
+        <ladegut ladestelle="Lagerhaus_Rohmaterialien">
+          <name>Coils</name>
+          <gattung>S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Rohmaterialien">
+          <name>Verpackungskisten Verpackungsmaterial aus Holz</name>
+          <gattung>K, G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Rohmaterialien">
+          <name>Federstahl</name>
+          <gattung>S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Rohmaterialien">
+          <name>Stahlplatte</name>
+          <gattung>S</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Heiz_l">
+          <name>Heizöl</name>
+          <gattung>Z</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Rohmaterialien">
+          <name>Schmiermittel</name>
+          <gattung>G, H</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Lagerhaus_Fertigprodukt">
+          <name>Eisenbahnfedern</name>
+          <gattung>G, H, S</gattung>
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Fertigprodukt">
+          <name>Blatt- und Parabelfedern</name>
+          <gattung>G, H, S</gattung>
+          <wagen zeitraum="tag">0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Fertigprodukt">
+          <name>Evolutfedern</name>
+          <gattung>G, H</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Fertigprodukt">
+          <name>Technische Federn</name>
+          <gattung>G, H</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lagerhaus_Fertigprodukt">
+          <name>Sprungfedern</name>
+          <gattung>G,H</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
 </bahnhof>
