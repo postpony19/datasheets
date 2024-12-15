@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Freest Nord</name>
+  <kuerzel>AFN</kuerzel>
+  <typ>Anst,Hp</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>TiSpr389</modulnr>
+  <plan src="afn.jpg" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>300</laenge>
+        <bemerkung>Personenverkehr</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_5">
+        <name>5</name>
+        <laenge>600</laenge>
+        <bemerkung>Anschluss Tanklager</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>200</laenge>
+        <bemerkung>Anschluss Brettspiel Fabrik</bemerkung>
+      </gleis>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>200</laenge>
+        <bemerkung>leer</bemerkung>
+      </gleis>
+      <gleis id="gleis_4">
+        <name>4</name>
+        <laenge>320</laenge>
+        <bemerkung>Ladestrasse + Rampe</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_1">
+      <name>1</name>
+      <laenge>300</laenge>
+    </bahnsteig>
+  </pv>
+  <gv>
+    <ladestelle id="Anschluss_Tanklager" gleis="gleis_5">
+      <name>Anschluss Tanklager</name>
+      <laenge>600</laenge>
+    </ladestelle>
+    <ladestelle id="Anschluss_Brettspiel_Fabrik" gleis="gleis_2">
+      <name>Anschluss Brettspiel Fabrik</name>
+      <laenge>200</laenge>
+    </ladestelle>
+    <ladestelle id="Freiladestrasse" gleis="gleis_4">
+      <name>Freiladestrasse</name>
+      <laenge>120</laenge>
+    </ladestelle>
+    <ladestelle id="Kombirampe" gleis="gleis_4">
+      <name>Kombirampe</name>
+      <laenge>200</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Verlader</name>
+      <empfang>
+        <ladegut ladestelle="Anschluss_Tanklager">
+          <name>Kraftstoff</name>
+          <gattung>Z</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_Brettspiel_Fabrik">
+          <name>Papier</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_Brettspiel_Fabrik">
+          <name>Farbe</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Anschluss_Brettspiel_Fabrik">
+          <name>Edelholz</name>
+          <gattung>G</gattung>
+          <wagen>0.25</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freiladestrasse">
+          <name>Kohle</name>
+          <gattung>E</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kombirampe Freiladestrasse">
+          <name>Baustoffe</name>
+          <gattung>E,G,K</gattung>
+          <wagen>0</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kombirampe">
+          <name>Fahrzeuge</name>
+          <gattung>K</gattung>
+          <wagen>0.001</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Anschluss_Brettspiel_Fabrik">
+          <name>Brettspiele</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="Freiladestrasse">
+          <name>Getreide, Rüben, Kartoffeln</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kombirampe">
+          <name>Vieh</name>
+          <gattung>G</gattung>
+          <wagen>0.001</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+
