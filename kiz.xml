@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
 
 <?xml-stylesheet type="text/xsl" href="./bahnhof.xsl" ?>
@@ -48,7 +48,7 @@
       <gleis id="gleis4a">
         <name>4a</name>
         <laenge einheit="mm">450</laenge>
-        <bemerkung>Güterzuggleis - kein Fahrweg zur Nebenstrecke (Gesamtnutzlänge 4 + 4a  = 4100mm)</bemerkung>
+        <bemerkung>Güterzuggleis - kein Fahrweg zur Nebenstrecke (Gesamtnutzlänge 4 + 4a = 4100 mm)</bemerkung>
       </gleis>
       <gleis id="gleis5">
         <name>5</name>
@@ -100,7 +100,7 @@
       <gleis id="gleis10a">
         <name>10a/10b</name>
         <laenge einheit="mm">0</laenge>
-        <bemerkung>Betriebsgleis (maximale Ausziehlänge in 10b = 380mm)</bemerkung>
+        <bemerkung>Betriebsgleis (maximale Ausziehlänge in 10b = 380 mm)</bemerkung>
       </gleis>
       <gleis id="gleis12">
         <name>12</name>
@@ -875,6 +875,6 @@
     </verlader>
     <bemerkung>Der Anschluß Ölmühle kann zusätzlich zum Einzelwagenverkehr auch mit Ganzzügen bedient werden. Im Idealfall abwechselnd pro Session ein Gag und ein Lg. Maximale Wagenzuglänge 2400 mm.</bemerkung>
   </gv>
-  <bemerkung>Arrangementplaner:[br]- bei eingleisiger Nutzung der zweigleisigen Strecke beidseitig jeweils das Einfahrgleis nutzen, da nur dort vollständige Signalisierung möglich ist.[br]- das erste an C gereihte Modul muß eigene Modulbeine haben. [br]- alle angeschlossenen Äste / Betriebsstellen müssen zwingend per RGZM angebunden sein.[br]Fahrplaner:[br]- bei starker Auslastung muß der Fahrplan mit drei Wochen Vorlauf fertig sein [br]- Fahrstraßen werden auch von den Fahrstraßen blockiert, deren Durchrutschweg berührt/gekreuzt wird - Zeitbedarf berücksichtigen![br]- Rangierzeiten berücksichtigen! Beim Kopfmachen ohne Lokwechsel sind z.B. rund 14m zurückzulegen - das geht nicht in 10 Modellminuten[br]- Vmax von Esig links bis Bahnsteiganfang 100 km/h, ansonsten 120 km/h[br]- vorrangige Fahrwege für Durchfahrten mit Streckenübergang Gleis 2 rechts und Gleis 3 links, da dort V nur auf 60 km/h reduziert werden muß (sonst 40 km/h)</bemerkung>
+  <bemerkung>Arrangementplaner:[br]- bei eingleisiger Nutzung der zweigleisigen Strecke beidseitig jeweils das Einfahrgleis nutzen, da nur dort vollständige Signalisierung möglich ist.[br]- das erste an C gereihte Modul muß eigene Modulbeine haben. [br]- alle angeschlossenen Äste / Betriebsstellen müssen zwingend per RGZM angebunden sein.[br]Fahrplaner:[br]- bei starker Auslastung muß der Fahrplan mit drei Wochen Vorlauf fertig sein [br]- Fahrstraßen werden auch von den Fahrstraßen blockiert, deren Durchrutschweg berührt/gekreuzt wird - Zeitbedarf berücksichtigen![br]- Rangierzeiten berücksichtigen! Beim Kopfmachen ohne Lokwechsel sind z.B. rund 14 m zurückzulegen - das geht nicht in 10 Modellminuten[br]- Auf Gleisen, die als Betriebsgleise definiert sind, dürfen keine Wagen abgestellt werden.[br]- Vmax von Esig links bis Bahnsteiganfang 100 km/h, ansonsten 120 km/h [br]- Durchfahrten sind sicherungstechnisch nur durch die Gleise 1, 2 und 3 möglich. [br]- vorrangige Fahrwege für Durchfahrten mit Streckenübergang Gleis 2 rechts und Gleis 3 links, da dort V nur auf 60 km/h reduziert werden muß (sonst 40 km/h)</bemerkung>
 </bahnhof>
 
