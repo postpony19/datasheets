@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Abzw. Gabelow</name>
+  <kuerzel>GAW</kuerzel>
+  <typ>Abzw</typ>
+  <verwaltung>DR</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>MiRos413</modulnr>
+  <plan src="gaw.png" />
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">2gl</links>
+      <rechts nr="1">1gl</rechts>
+      <rechts nr="2">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_21">
+        <name>21</name>
+        <laenge>700</laenge>
+        <bemerkung>Abstellgleis</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_22">
+        <name>22</name>
+        <laenge>700</laenge>
+        <bemerkung>Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_23">
+        <name>23</name>
+        <laenge>700</laenge>
+        <bemerkung>Anschlussgleis Hängersdorfer Brauerei</bemerkung>
+      </gleis>
+      <gleis id="gleis_31">
+        <name>31</name>
+        <laenge>200</laenge>
+        <bemerkung>Ziehgleis</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <gv>
+    <ladestelle id="Ladestra_e" gleis="gleis_22">
+      <name>Ladestraße</name>
+      <laenge>700</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Verlader</name>
+    </verlader>
+    <verlader>
+      <name>Hängersdorfer Brauerei</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Flaschen (leere)</name>
+          <gattung>G</gattung>
+          <wagen>7</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
+          <name>Kronkorken (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
+          <name>Etiketten (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e" typ="stueckgut">
+          <name>Hefe (Stückgut)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Malz</name>
+          <gattung>E, T</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Bierkästen</name>
+          <gattung>G, E</gattung>
+          <wagen>7</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Hopfen</name>
+          <gattung>E, T</gattung>
+          <wagen>3</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Bier</name>
+          <gattung>G, E</gattung>
+          <wagen>7</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+  </gv>
+</bahnhof>
+
