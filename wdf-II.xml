@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./bahnhof.xsl" type="text/xsl"?>
+<!DOCTYPE bahnhof SYSTEM "./bahnhof.dtd">
+
+<bahnhof>
+  <name>Walthersdorf (Erzgeb)</name>
+  <kuerzel>WDF</kuerzel>
+  <typ>Bf</typ>
+  <verwaltung>DRG</verwaltung>
+  <maszstab>120</maszstab>
+  <modulnr>SvMeh256</modulnr>
+  <plan src="wdf.svg"/>
+  <gleise>
+    <zulaufstrecken>
+      <links nr="1">1gl</links>
+      <rechts nr="1">1gl</rechts>
+      <rechts nr="2">1gl</rechts>
+    </zulaufstrecken>
+    <hgleise>
+      <gleis id="gleis_3">
+        <name>3</name>
+        <laenge>1560</laenge>
+        <bemerkung>Durchgehendes Streckengleis; Bahnsteig</bemerkung>
+      </gleis>
+      <gleis id="gleis_2">
+        <name>2</name>
+        <laenge>1010</laenge>
+        <bemerkung>Ein- und Ausfahrt für Abzweig; Bahnsteig; Einschluss für hier haltende Züge bei Kreuzungen / Überholungen</bemerkung>
+      </gleis>
+    </hgleise>
+    <ngleise>
+      <gleis id="gleis_1">
+        <name>1</name>
+        <laenge>1090</laenge>
+        <bemerkung>Ladegleis; Ladestraße</bemerkung>
+      </gleis>
+      <gleis id="gleis_1a">
+        <name>1a</name>
+        <laenge>500</laenge>
+        <bemerkung>Güterschuppen; Abstellung</bemerkung>
+      </gleis>
+    </ngleise>
+  </gleise>
+  <pv>
+    <bahnsteig gleis="gleis_2">
+      <name>Schüttbahnsteig</name>
+      <laenge>1000</laenge>
+    </bahnsteig>
+    <bahnsteig gleis="gleis_3">
+      <name>Schüttbahnsteig</name>
+      <laenge>1000</laenge>
+    </bahnsteig>
+    <bemerkung>Bahnsteig ist nebenbahntypisch nur geschüttet, Zustieg von Personen aber auf gesamter Länge möglich.[br][br]Personenverkehr in benachbarte Dörfer und Städte (bis zu 10 Zugpaare / Tag, typisch als GmP in den Abzweig Richtung Crottendorf).[br][br]Beim Vorbild (Strecke Schwarzenberg - Annaberg bzw. Walthersdorf Crottendorf) endeten keine Züge in Walthersdorf.[br][br]Ggf. Wintersportzüge als Umleiter ohne Halt möglich.</bemerkung>
+  </pv>
+  <gv>
+    <ladestelle id="G_terschuppen" gleis="gleis_1a">
+      <name>Güterschuppen</name>
+      <laenge>150</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_Kohleverladung" gleis="gleis_1">
+      <name>Ladestraße Kohleverladung</name>
+      <laenge>200</laenge>
+    </ladestelle>
+    <ladestelle id="Ladestra_e_Holzverladung" gleis="gleis_1">
+      <name>Ladestraße Holzverladung</name>
+      <laenge>200</laenge>
+    </ladestelle>
+    <verlader>
+      <name>Güterschuppen</name>
+      <empfang>
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.5</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Lebensmittel aller Art</name>
+          <gattung>G; Kühlwagen</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="G_terschuppen" typ="stueckgut">
+          <name>Stückgut</name>
+          <gattung>G</gattung>
+          <wagen>0.75</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Möbel</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="G_terschuppen">
+          <name>Kleinvieh (z.B. Hühner)</name>
+          <gattung>G</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <verlader>
+      <name>Ladestraße</name>
+      <empfang>
+        <ladegut ladestelle="Ladestra_e_Kohleverladung">
+          <name>Kohle</name>
+          <gattung>E; O</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Holzverladung">
+          <name>Holz</name>
+          <gattung />
+          <wagen zeitraum="tag">1</wagen>
+        </ladegut>
+      </empfang>
+      <versand>
+        <ladegut ladestelle="Ladestra_e_Kohleverladung">
+          <name>Kartoffeln</name>
+          <gattung>E; O</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e_Holzverladung">
+          <name>Holzhackschnitzel</name>
+          <gattung>E</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+      </versand>
+    </verlader>
+    <bemerkung>Verhältnismäßig hoher Bedarf an Holz für die Möbelfabrik Georg Adler, sowie Kohle. Abgehend landwirtschaftliche Erzeugnisse, z.B. Kartoffeln.[br][br]Internationaler Versand von Möbeln und Holzwaren, sowie erzgebirgische Volkskunst als Stückgut.</bemerkung>
+  </gv>
+  <bemerkung>Kleiner sächsischer Nebenbahn-Bahnhof im Erzgebirge an der Strecke Buchholz-Schwarzenberg. In Walthersdorf zweigt die Strecke nach Crottendorf ab.[br][br]Zugkreuzungen sind möglich. Mittlerer Ortsgüterverkehr sowie Personenverkehr vorgesehen. Güterverkehr hauptsächlich Kohle, Holz eingehend. Ausgang Möbel und kleine Holzwaren aus der nahegelegenen Fabrik Georg Adler.[br]Züge in und aus Crottendorf oftmals als GmP[br][br]Der "komplette" Bahnhof besteht aus 4 Teilen: 3 Teile bilden den eigentlichen Bahnhof + eine Käseecke für den Abzweig nach Crottendorf.</bemerkung>
+</bahnhof>
