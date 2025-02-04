@@ -62,7 +62,7 @@
       <name>Bahnsteig 2</name>
       <laenge einheit="mm">740</laenge>
     </bahnsteig>
-    <bemerkung>Epoche IV (fiktiv)[br]Berufspendler, Ausflugsverkehr, Urlauber. Nach der Blütezeit des Berufs- und  Ausflugsverkehrs in den ersten drei Jahrzehnten des Betriebes ging der Personenverkehr nach dem zweiten Weltkrieg erheblich zurück und beschränkte sich auf die Bewältigung des Arbeiterverkehrs mit zuletzt nur noch zwei Personenzügen täglich.</bemerkung>
+    <bemerkung>Epoche II[br]Berufspendler, Ausflugsverkehr, Urlauber. Zwischen 1908 und 1914 verkehrten täglich acht Zugpaare sowie zusätzlich zahlreiche saisonspezifische "Extrafahrten". Ab 1930 deutlicher Rückgang des Fahrgastaufkommens durch neu einsetzenden Kraftomnibusbetrieb Dresden-Possendorf.</bemerkung>
   </pv>
   <gv>
     <ladestelle id="Kopf-_und_Seitenladerampe" gleis="gleis_6a">
@@ -98,151 +98,69 @@
       <laenge einheit="mm">950</laenge>
     </ladestelle>
     <verlader>
-      <name>BHG</name>
+      <name>Rittergut Possendorf</name>
       <empfang>
-        <ladegut ladestelle="Lager-_und_G_tergeb_ude">
-          <name>Düngemittel, gesackt</name>
-          <gattung>G, H</gattung>
-          <wagen zeitraum="woche">2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Lager-_und_G_tergeb_ude">
-          <name>Saatgut</name>
-          <gattung>G, H, T</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Lager-_und_G_tergeb_ude">
-          <name>Betriebs-, Kraft- und Schmierstoffe</name>
-          <gattung>G, H</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Maschinen, Gerätschaften</name>
-          <gattung>E, F, K</gattung>
-          <wagen zeitraum="woche">2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Baustoffe (Ziegel, Hohlblocksteine, Dachziegel, usw.)</name>
-          <gattung>E, R</gattung>
-          <wagen zeitraum="woche">3</wagen>
-        </ladegut>
         <ladegut ladestelle="Ladestra_e">
+          <name>Jauche</name>
+          <gattung>Sonderwagen</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e Lager-_und_G_tergeb_ude">
+          <name>Kunstdünger</name>
+          <gattung>G,T</gattung>
+          <wagen>1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e Lager-_und_G_tergeb_ude">
+          <name>Saatgetreide</name>
+          <gattung>G, H, T</gattung>
+          <wagen zeitraum="woche">0.1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e Lager-_und_G_tergeb_ude">
+          <name>Saatkartoffeln</name>
+          <gattung>G, H, T</gattung>
+          <wagen>0.1</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Futtermittel (Getreide, Schrot, Kleie)</name>
           <gattung>T, G, E</gattung>
           <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Bauholz (Bretter, Kanthölzer, Dachbinder, Balken)</name>
-          <gattung>E, R</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Baustoffe (Zement in Säcken)</name>
-          <gattung>G</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Fenster, Türen</name>
-          <gattung>G</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Schalbretter</name>
-          <gattung>G</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Kalk</name>
-          <gattung>G, T</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Kleinvieh</name>
-          <gattung>V</gattung>
-          <wagen zeitraum="woche">2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Äpfel</name>
-          <gattung>G, E</gattung>
-          <wagen zeitraum="woche">5</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Stammholz, lang</name>
-          <gattung>Lc, R</gattung>
-          <wagen zeitraum="tag">2</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>LPG (P) Vorgebirge Bannewitz</name>
-      <empfang>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Kunstdünger (NPK)</name>
-          <gattung>T</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Saatgut</name>
-          <gattung>G,H,T</gattung>
-          <wagen zeitraum="woche">1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Agrarmaschinen</name>
-          <gattung>E,F,K,R</gattung>
-          <wagen zeitraum="woche">2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Ersatzteile, Normteile</name>
-          <gattung>E,F,K,R</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Betriebs- und Schmierstoffe in Fässern</name>
-          <gattung>G,E</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Walzmaterial aller Art (Bleche, Profile, Stangen)</name>
-          <gattung>E,R,S</gattung>
-          <wagen>0.1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Druckgasflaschen (Acetylen, Sauerstoff) in Transportgestell</name>
-          <gattung>E,R</gattung>
-          <wagen>0.01</wagen>
         </ladegut>
       </empfang>
       <versand>
         <ladegut ladestelle="Ladestra_e">
           <name>Getreide</name>
-          <gattung>G,H</gattung>
-          <wagen>5</wagen>
+          <gattung>G, H</gattung>
+          <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Zuckerrüben</name>
           <gattung>E</gattung>
-          <wagen>5</wagen>
+          <wagen zeitraum="woche">2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Kartoffeln, lose</name>
-          <gattung>E</gattung>
-          <wagen>5</wagen>
+          <gattung>G, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Kohl</name>
-          <gattung>E</gattung>
-          <wagen>3</wagen>
+          <gattung>G, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Äpfel</name>
+          <gattung>G, E</gattung>
+          <wagen zeitraum="woche">2</wagen>
         </ladegut>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Maschinen, Ersatzteile</name>
-          <gattung>E,F,K,R,G</gattung>
-          <wagen>1</wagen>
+          <name>Kleinvieh</name>
+          <gattung>V</gattung>
+          <wagen zeitraum="woche">2</wagen>
         </ladegut>
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Kohlenhandel</name>
+      <name>Kohlenhandel Possendorf</name>
       <empfang>
         <ladegut ladestelle="Ladestra_e">
           <name>Briketts</name>
@@ -269,115 +187,49 @@
       </versand>
     </verlader>
     <verlader>
-      <name>PGH Gerätebau Wilmsdorf</name>
+      <name>Baumeister Arthur Schöne</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e G_terschuppen Lager-_und_G_tergeb_ude">
-          <name>Normteile, Zulieferteile</name>
+        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
+          <name>Zement in Säcken</name>
           <gattung>G</gattung>
           <wagen>1</wagen>
         </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Friseurstühle</name>
-          <gattung>G</gattung>
-          <wagen zeitraum="woche">1</wagen>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Sand, Kies</name>
+          <gattung>K,R,L</gattung>
+          <wagen>2</wagen>
         </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>VEB Präma Dresden, BT IV Possendorf</name>
-      <empfang>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Walzmaterial aller Art (Stangen, Profile, Bleche)</name>
-          <gattung>E,R,S</gattung>
-          <wagen>1</wagen>
+        <ladegut ladestelle="Ladestra_e Privatlagerplatz">
+          <name>Baustoffe (Ziegelsteine, Dachziegel, Schieferschindeln, usw.)</name>
+          <gattung>E,R,K</gattung>
+          <wagen>3</wagen>
         </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e G_terschuppen Lager-_und_G_tergeb_ude">
-          <name>Schmierstoffe</name>
-          <gattung>E</gattung>
-          <wagen>0.1</wagen>
+        <ladegut ladestelle="Ladestra_e">
+          <name>loses Baumaterial, Schüttgut</name>
+          <gattung>E,K</gattung>
+          <wagen>2</wagen>
         </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Verpackungsmaterial (Kartonagen, Kistenbretter, Kanthölzer)</name>
-          <gattung>E,R</gattung>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Kalk</name>
+          <gattung>T</gattung>
           <wagen>0.25</wagen>
         </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Halbzeuge, Schmiedeteile in Kisten</name>
-          <gattung>G</gattung>
-          <wagen>1</wagen>
+        <ladegut ladestelle="Privatlagerplatz Lager-_und_G_tergeb_ude">
+          <name>Bauholz</name>
+          <gattung>E,H,K</gattung>
+          <wagen>2</wagen>
         </ladegut>
       </empfang>
       <versand>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe G_terschuppen">
-          <name>Drehteile in Kisten</name>
-          <gattung>G</gattung>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Aushub</name>
+          <gattung>E,K</gattung>
           <wagen>1</wagen>
         </ladegut>
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Spezialdichtungen Possendorf</name>
-      <empfang>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Rohmaterialien (Elastomere, Kautschuk, Silikon, Textil, Filz)</name>
-          <gattung>G</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Maschinen, Ersatzteile</name>
-          <gattung>G,E,R</gattung>
-          <wagen>0.1</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
-          <name>Verpackungsmaterial (Kartonagen, Kistenbretter, Kanthölzer)</name>
-          <gattung>E,R</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Federstahldraht auf Trommeln</name>
-          <gattung>E,R</gattung>
-          <wagen>0.1</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Flachdichtungen, gedrehte Dichtungen, Simmerringe, Stopfbuchsen in Kisten</name>
-          <gattung>G</gattung>
-          <wagen>1</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>Karl-Walter Godzik, Kfz-Betrieb</name>
-      <empfang>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Ersatzteile für Skoda PKW und CSSR Kleintraktoren</name>
-          <gattung>G,E,R</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-        <ladegut ladestelle="G_terschuppen">
-          <name>Normteile, Schmierstoffe in Fässern</name>
-          <gattung>G</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Kleintraktoren</name>
-          <gattung>R,S,F</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-      </empfang>
-      <versand>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
-          <name>Kleintraktoren</name>
-          <gattung>R,S,F</gattung>
-          <wagen>0.25</wagen>
-        </ladegut>
-      </versand>
-    </verlader>
-    <verlader>
-      <name>VEB Hutfabrik Kreischa</name>
+      <name>Strohhutfabrik Possendorf Otto Noack</name>
       <empfang>
         <ladegut ladestelle="G_terschuppen Lager-_und_G_tergeb_ude">
           <name>Pappkartons</name>
@@ -443,14 +295,14 @@
       </versand>
     </verlader>
     <verlader>
-      <name>Mühlenbetrieb Herbert Scholz</name>
+      <name>Mühlenbetrieb Georg Scholz</name>
       <empfang>
         <ladegut ladestelle="Ladestra_e">
           <name>Getreide</name>
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="Ladestra_e G_terschuppen">
           <name>Verpackungsmaterial (Papiersäcke)</name>
           <gattung>G</gattung>
           <wagen>0.01</wagen>
@@ -460,29 +312,24 @@
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
           <name>Mehl in Säcken</name>
           <gattung>G</gattung>
-          <wagen zeitraum="woche">2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Futterschrot</name>
-          <gattung>G</gattung>
-          <wagen>1</wagen>
+          <wagen zeitraum="woche">1</wagen>
         </ladegut>
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Kombinat Schnittholz, BT Possendorf</name>
+      <name>Sargfabrik Possendorf</name>
       <empfang>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Bretter, Sperrhölzer, Hartfaserplatten, Kanthölzer</name>
-          <gattung>G</gattung>
-          <wagen>0.5</wagen>
+          <gattung>G, R</gattung>
+          <wagen>1</wagen>
         </ladegut>
       </empfang>
       <versand>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Erdmöbel</name>
-          <gattung>G</gattung>
-          <wagen zeitraum="woche">1</wagen>
+          <name>Särge aller Arten</name>
+          <gattung>G, R</gattung>
+          <wagen zeitraum="woche">2</wagen>
         </ladegut>
       </versand>
     </verlader>
@@ -562,7 +409,7 @@
         </ladegut>
       </versand>
     </verlader>
-    <bemerkung>Der Betrieb des Modules in Epoche IV ist rein fiktiv.[br][br]Güterzüge fahren über Gleis 3 ein</bemerkung>
+    <bemerkung>Der Güterverkehr orientiert sich an die tatsächlich in Epoche II ansässigen Betriebe.[br][br]Güterzüge fahren über Gleis 3 ein</bemerkung>
   </gv>
-  <bemerkung>Endbahnhof der Windbergbahn, der betrieblich von 1908-1951 genutzt wurde.[br]Der Betrieb des Modules in Epoche IV ist daher rein fiktiv.[br][br]Bitte nur mit NEM-konformen Radsätzen befahren!</bemerkung>
+  <bemerkung>Endbahnhof der Windbergbahn, der betrieblich von 1908-1951 genutzt wurde.[br]Bitte nur mit NEM-konformen Radsätzen befahren!</bemerkung>
 </bahnhof>

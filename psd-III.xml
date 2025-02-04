@@ -62,7 +62,7 @@
       <name>Bahnsteig 2</name>
       <laenge einheit="mm">740</laenge>
     </bahnsteig>
-    <bemerkung>Epoche IV (fiktiv)[br]Berufspendler, Ausflugsverkehr, Urlauber. Nach der Blütezeit des Berufs- und  Ausflugsverkehrs in den ersten drei Jahrzehnten des Betriebes ging der Personenverkehr nach dem zweiten Weltkrieg erheblich zurück und beschränkte sich auf die Bewältigung des Arbeiterverkehrs mit zuletzt nur noch zwei Personenzügen täglich.</bemerkung>
+    <bemerkung>Epoche III: [br]Berufspendler, Ausflugsverkehr, Urlauber. Nach der Blütezeit des Berufs- und  Ausflugsverkehrs in den ersten drei Jahrzehnten des Betriebes ging der Personenverkehr nach dem zweiten Weltkrieg erheblich zurück und beschränkte sich auf die Bewältigung des Arbeiterverkehrs mit zuletzt nur noch zwei Personenzügen täglich.</bemerkung>
   </pv>
   <gv>
     <ladestelle id="Kopf-_und_Seitenladerampe" gleis="gleis_6a">
@@ -101,9 +101,14 @@
       <name>BHG</name>
       <empfang>
         <ladegut ladestelle="Lager-_und_G_tergeb_ude">
-          <name>Düngemittel, gesackt</name>
+          <name>Kunstdünger gesackt</name>
           <gattung>G, H</gattung>
           <wagen zeitraum="woche">2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Ladestra_e">
+          <name>Jauche</name>
+          <gattung>Z, Sonderwagen</gattung>
+          <wagen>1</wagen>
         </ladegut>
         <ladegut ladestelle="Lager-_und_G_tergeb_ude">
           <name>Saatgut</name>
@@ -125,6 +130,16 @@
           <gattung>E, R</gattung>
           <wagen zeitraum="woche">3</wagen>
         </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
+          <name>Baustoffe (Zement in Säcken)</name>
+          <gattung>G</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
+          <name>Kalk</name>
+          <gattung>G, T</gattung>
+          <wagen>2</wagen>
+        </ladegut>
         <ladegut ladestelle="Ladestra_e">
           <name>Futtermittel (Getreide, Schrot, Kleie)</name>
           <gattung>T, G, E</gattung>
@@ -136,11 +151,6 @@
           <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Baustoffe (Zement in Säcken)</name>
-          <gattung>G</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
           <name>Fenster, Türen</name>
           <gattung>G</gattung>
           <wagen>1</wagen>
@@ -148,11 +158,6 @@
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Schalbretter</name>
           <gattung>G</gattung>
-          <wagen>2</wagen>
-        </ladegut>
-        <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Kalk</name>
-          <gattung>G, T</gattung>
           <wagen>2</wagen>
         </ladegut>
       </empfang>
@@ -167,7 +172,7 @@
           <gattung>G, E</gattung>
           <wagen zeitraum="woche">5</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestra_e">
+        <ladegut ladestelle="Kopf-_und_Seitenladerampe">
           <name>Stammholz, lang</name>
           <gattung>Lc, R</gattung>
           <wagen zeitraum="tag">2</wagen>
@@ -175,17 +180,22 @@
       </versand>
     </verlader>
     <verlader>
-      <name>LPG (P) Vorgebirge Bannewitz</name>
+      <name>LPG (Typ III) "Neuer Weg"</name>
       <empfang>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Kunstdünger (NPK)</name>
-          <gattung>T</gattung>
+        <ladegut ladestelle="Lager-_und_G_tergeb_ude">
+          <name>Kunstdünger</name>
+          <gattung>G,H</gattung>
           <wagen>2</wagen>
         </ladegut>
         <ladegut ladestelle="Ladestra_e">
+          <name>Jauche</name>
+          <gattung>Z, Sonderwagen</gattung>
+          <wagen>2</wagen>
+        </ladegut>
+        <ladegut ladestelle="Lager-_und_G_tergeb_ude">
           <name>Saatgut</name>
           <gattung>G,H,T</gattung>
-          <wagen zeitraum="woche">1</wagen>
+          <wagen>1</wagen>
         </ladegut>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
           <name>Agrarmaschinen</name>
@@ -205,10 +215,10 @@
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
           <name>Walzmaterial aller Art (Bleche, Profile, Stangen)</name>
           <gattung>E,R,S</gattung>
-          <wagen>0.1</wagen>
+          <wagen>0.01</wagen>
         </ladegut>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e">
-          <name>Druckgasflaschen (Acetylen, Sauerstoff) in Transportgestell</name>
+          <name>Druckgasflaschen (Acetytlen, Sauerstoff) im Transportgestell</name>
           <gattung>E,R</gattung>
           <wagen>0.01</wagen>
         </ladegut>
@@ -242,7 +252,7 @@
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Kohlenhandel</name>
+      <name>Kohlenhandel Possendorf</name>
       <empfang>
         <ladegut ladestelle="Ladestra_e">
           <name>Briketts</name>
@@ -286,7 +296,7 @@
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Präma Dresden, BT IV Possendorf</name>
+      <name>Karl Kürbs Fassondreherei</name>
       <empfang>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Walzmaterial aller Art (Stangen, Profile, Bleche)</name>
@@ -318,7 +328,7 @@
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Spezialdichtungen Possendorf</name>
+      <name>Peter Glau Gummipresserei</name>
       <empfang>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Rohmaterialien (Elastomere, Kautschuk, Silikon, Textil, Filz)</name>
@@ -350,7 +360,7 @@
       </versand>
     </verlader>
     <verlader>
-      <name>Karl-Walter Godzik, Kfz-Betrieb</name>
+      <name>Karl Bayreuther, Kfz-Betrieb</name>
       <empfang>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe">
           <name>Ersatzteile für Skoda PKW und CSSR Kleintraktoren</name>
@@ -377,7 +387,7 @@
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Hutfabrik Kreischa</name>
+      <name>Possendorfer Hutfabrik Inh. Georg Schneider</name>
       <empfang>
         <ladegut ladestelle="G_terschuppen Lager-_und_G_tergeb_ude">
           <name>Pappkartons</name>
@@ -450,7 +460,7 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="G_terschuppen">
+        <ladegut ladestelle="Ladestra_e G_terschuppen">
           <name>Verpackungsmaterial (Papiersäcke)</name>
           <gattung>G</gattung>
           <wagen>0.01</wagen>
@@ -462,15 +472,10 @@
           <gattung>G</gattung>
           <wagen zeitraum="woche">2</wagen>
         </ladegut>
-        <ladegut ladestelle="Ladestra_e">
-          <name>Futterschrot</name>
-          <gattung>G</gattung>
-          <wagen>1</wagen>
-        </ladegut>
       </versand>
     </verlader>
     <verlader>
-      <name>VEB Kombinat Schnittholz, BT Possendorf</name>
+      <name>Sargfabrik Possendorf</name>
       <empfang>
         <ladegut ladestelle="Kopf-_und_Seitenladerampe Ladestra_e Lager-_und_G_tergeb_ude">
           <name>Bretter, Sperrhölzer, Hartfaserplatten, Kanthölzer</name>
@@ -562,7 +567,7 @@
         </ladegut>
       </versand>
     </verlader>
-    <bemerkung>Der Betrieb des Modules in Epoche IV ist rein fiktiv.[br][br]Güterzüge fahren über Gleis 3 ein</bemerkung>
+    <bemerkung>Der Güterverkehr orientiert sich an die tatsächlich in Epoche III ansässigen Betriebe, nun unter teilweise veränderten Eigentumsverhältnissen. [br]Die Einstellung des Bahnbetriebs erfolgte am 19. April 1951.[br][br]Güterzüge fahren über Gleis 3 ein</bemerkung>
   </gv>
-  <bemerkung>Endbahnhof der Windbergbahn, der betrieblich von 1908-1951 genutzt wurde.[br]Der Betrieb des Modules in Epoche IV ist daher rein fiktiv.[br][br]Bitte nur mit NEM-konformen Radsätzen befahren!</bemerkung>
+  <bemerkung>Endbahnhof der Windbergbahn, der betrieblich von 1908-1951 genutzt wurde. [br][br]Bitte nur mit NEM-konformen Radsätzen befahren!</bemerkung>
 </bahnhof>
